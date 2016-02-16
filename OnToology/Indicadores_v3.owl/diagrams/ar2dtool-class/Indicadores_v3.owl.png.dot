@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Indicator" "base:Municipality" "base:EducationIndicator" ; /*classes style*/
+	"base:EducationIndicator" -> "xsd:string" [ label = "base:refersToLevel" ];
+	"base:Indicator" -> "base:Municipality" [ label = "base:indicatorOf" ];
+	"base:Municipality" -> "base:Indicator" [ label = "base:hasIndicator" ];
+	"base:EducationIndicator" -> "xsd:string" [ label = "base:refersToCycle" ];
+
+}
