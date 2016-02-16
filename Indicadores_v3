@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#"
+     xml:base="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/state:OWLObjectProperty_74aa1691_62fb_45be_bd2c_74e7dbbb21aa 
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/state:OWLObjectProperty_74aa1691_62fb_45be_bd2c_74e7dbbb21aa">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="pt">dbpedia-owl:state</rdfs:label>
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion:OWLClass_12595393_33f1_4c3d_9862_c0bdb2f91c4d"/>
+        <rdfs:domain rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Municipality"/>
+    </owl:ObjectProperty>
+    -->
+
+
+    <!-- http://purl.org/dc/terms/subject:OWLObjectProperty_2decfbe6_8daf_485a_97a4_a12f6cb88816 -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#indicatorOf">
+        <rdfs:label xml:lang="pt">indicatorOf</rdfs:label>
+        <rdfs:range rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Municipality"/>
+        <rdfs:domain rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#OWLObjectProperty_53119c67_8597_468c_a577_ec3c177e2586 -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#hasIndicator">
+        <rdfs:label xml:lang="pt">hasIndicator</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.org/dc/terms/subject:OWLObjectProperty_2decfbe6_8daf_485a_97a4_a12f6cb88816"/>
+        <rdfs:domain rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Municipality"/>
+        <rdfs:range rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/subject:OWLDataProperty_62ab59a3_3059_41b7_8857_2348b9eaf3b7 -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#refersToCycle">
+        <rdfs:label xml:lang="pt">refersToCycle</rdfs:label>
+        <rdfs:domain rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EducationIndicator"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject:OWLDataProperty_bef976cd_d823_410f_9edc_fc6d73a0663d -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#refersToLevel">
+        <rdfs:label xml:lang="pt">refersToLevel</rdfs:label>
+        <rdfs:domain rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EducationIndicator"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/AdministrativeRegion:OWLClass_12595393_33f1_4c3d_9862_c0bdb2f91c4d 
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AdministrativeRegion">
+        <rdfs:label>dbpedia-owl:AdministrativeRegion</rdfs:label>
+        <rdfs:label rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion"/>
+    </owl:Class>
+    -->
+
+
+    <!-- http://purl.org/dc/terms/OWLClass_34e525c9_101b_4b5a_a210_a79301910e6d
+
+    <owl:Class rdf:about="vocab.e.gov.br/id/governo#educacao-basica">
+        <rdfs:label xml:lang="pt">VCGE</rdfs:label>
+    </owl:Class>
+     -->
+
+
+    <!-- http://purl.org/dc/terms/subject:OWLClass_38c7b300_9c4a_4899_af76_2a2cd7013d46 -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#GDPPerCapita">
+        <rdfs:label xml:lang="pt">GDPPerCapita</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EconomicIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject:OWLClass_5f25eeba_ddc5_4def_9ffa_c412b21278ec -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#MDHI">
+        <rdfs:label xml:lang="pt">MDHI</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EconomicIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject:OWLClass_9fedf819_b74d_4b21_9909_1822d473f0ce -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#SVI">
+        <rdfs:label xml:lang="pt">SVI</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EconomicIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject:OWLClass_cee89391_bb28_415c_a0b6_c9be47181aa2 -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Population">
+        <rdfs:label xml:lang="pt">Population</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#DemographicIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno.penteado/ontologies/2015/11/dbpedia.org/ontology/City#OWLClass_34122267_f3f6_4a57_bf3e_a233384bce27 
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/City">
+        <rdfs:label xml:lang="pt">dbpedia-owl:City</rdfs:label>
+    </owl:Class>
+    -->
+
+
+    <!-- https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Estado -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Estado">
+        <rdfs:label>State</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/AdministrativeRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Gini -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Gini">
+        <rdfs:subClassOf rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EconomicIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#IDEB -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#IDEB">
+        <rdfs:subClassOf rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EducationIndicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EconomicIndicator -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EconomicIndicator">
+        <rdfs:subClassOf rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EducationIndicator -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#EducationIndicator">
+        <rdfs:subClassOf rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Municipality -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Municipality">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/City"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#DemographicIndicator -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#DemographicIndicator">
+        <rdfs:label xml:lang="pt">DemographicIndicator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Indicator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Indicator -->
+
+    <owl:Class rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Indicator">
+        <rdfs:label xml:lang="pt">Indicator</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
