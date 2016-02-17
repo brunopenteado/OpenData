@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Gini" "base:IDEB" "base:DemographicIndicator" "base:GDPPerCapita" "base:Population" "base:SVI" "base:Indicator" "base:Estado" "base:Municipality" "base:EducationIndicator" "base:MDHI" "base:EconomicIndicator" ; /*classes style*/
+	"base:Municipality" -> "http://dbpedia.org/ontology/City" [ label = "rdfs:subClassOf" ];
+	"base:Gini" -> "base:EconomicIndicator" [ label = "rdfs:subClassOf" ];
+	"base:EconomicIndicator" -> "base:Indicator" [ label = "rdfs:subClassOf" ];
+	"base:MDHI" -> "base:EconomicIndicator" [ label = "rdfs:subClassOf" ];
+	"base:EducationIndicator" -> "base:Indicator" [ label = "rdfs:subClassOf" ];
+	"base:SVI" -> "base:EconomicIndicator" [ label = "rdfs:subClassOf" ];
+	"base:Population" -> "base:DemographicIndicator" [ label = "rdfs:subClassOf" ];
+	"base:DemographicIndicator" -> "base:Indicator" [ label = "rdfs:subClassOf" ];
+	"base:GDPPerCapita" -> "base:EconomicIndicator" [ label = "rdfs:subClassOf" ];
+	"base:IDEB" -> "base:EducationIndicator" [ label = "rdfs:subClassOf" ];
+	"base:Estado" -> "http://dbpedia.org/ontology/AdministrativeRegion" [ label = "rdfs:subClassOf" ];
+
+}
