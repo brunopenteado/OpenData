@@ -56,7 +56,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#hasIndicator">
         <rdfs:label xml:lang="pt">hasIndicator</rdfs:label>
-        <owl:inverseOf rdf:resource="http://purl.org/dc/terms/subject:OWLObjectProperty_2decfbe6_8daf_485a_97a4_a12f6cb88816"/>
+        <owl:inverseOf rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#indicatorOf"/>
         <rdfs:domain rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Municipality"/>
         <rdfs:range rdf:resource="https://github.com/brunopenteado/OpenData/blob/master/Indicadores_v3.owl#Indicator"/>
     </owl:ObjectProperty>
