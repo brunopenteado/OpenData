@@ -1,0 +1,1740 @@
+{
+  "@context" : {
+    "codMunicipioResidencia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codMunicipioResidencia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AI_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temMedioComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMedioComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFormacaoDireitosHumanos" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoDireitosHumanos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "localTemploIgreja" : {
+      "@id" : "http://localhost/educacao-basica/ontology/localTemploIgreja",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "statusFuncionamento" : {
+      "@id" : "http://localhost/educacao-basica/ontology/statusFuncionamento",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ideb_AI_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "esgotoRedePublica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/esgotoRedePublica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_3ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_3ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "eCapital" : {
+      "@id" : "http://localhost/educacao-basica/ontology/eCapital",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "rendimentoAI_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAI_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_8ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_8ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "codEstruturaHierarquica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codEstruturaHierarquica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "naoTemFormacaoContinuada" : {
+      "@id" : "http://localhost/educacao-basica/ontology/naoTemFormacaoContinuada",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "totalCopiadoras" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalCopiadoras",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "totalComputadoresAdministrativos" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalComputadoresAdministrativos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_1ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temAlojamentoAlunos" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temAlojamentoAlunos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codMicrorregiao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codMicrorregiao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "instituicaoCurso1" : {
+      "@id" : "http://localhost/educacao-basica/ontology/instituicaoCurso1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "notaPB_AI_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temCamera" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temCamera",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AI_LP_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_LP_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "Docente" : {
+      "@id" : "http://localhost/educacao-basica/ontology/Docente"
+    },
+    "temPreEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temPreEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_7ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_7ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ideb_AI_projecao_2019" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_projecao_2019",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AI_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temDeficienciaIntelectual" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temDeficienciaIntelectual",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temBanheiroInfantil" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temBanheiroInfantil",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "turmaEstudosSociaisSociologia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaEstudosSociaisSociologia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_5ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_5ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "etapaProfissionalizante" : {
+      "@id" : "http://localhost/educacao-basica/ontology/etapaProfissionalizante",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "inicioCurso3" : {
+      "@id" : "http://localhost/educacao-basica/ontology/inicioCurso3"
+    },
+    "temFax" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFax",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codCompletoMunicipio" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codCompletoMunicipio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temProjetorMultimidia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temProjetorMultimidia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "totalAparelhosSom" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalAparelhosSom",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_1a5ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1a5ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temCegueira" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temCegueira",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_8ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_8ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "aguaPoco" : {
+      "@id" : "http://localhost/educacao-basica/ontology/aguaPoco",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFormacaoAmbiental" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoAmbiental",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temConvenioPP" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temConvenioPP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codUFNascimento" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codUFNascimento",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "codIESCurso1" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codIESCurso1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "siglaRegiao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/siglaRegiao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "codTurma" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codTurma",
+      "@type" : "@id"
+    },
+    "temBanheiroDentro" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temBanheiroDentro",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "tipoDocente" : {
+      "@id" : "http://localhost/educacao-basica/ontology/tipoDocente",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_5ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_5ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "tipoLocalizacaoDiferenciada" : {
+      "@id" : "http://localhost/educacao-basica/ontology/tipoLocalizacaoDiferenciada",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_5ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_5ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AI_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "NSE" : {
+      "@id" : "http://localhost/educacao-basica/ontology/NSE",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "rendimentoAF_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAF_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temBiblioteca" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temBiblioteca",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFormacaoMedio" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoMedio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_5ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_5ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temDeficienciaMultipla" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temDeficienciaMultipla",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AI_LP_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_LP_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "codIESCurso2" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codIESCurso2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "rendimentoAI_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAI_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temSalaDiretoria" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temSalaDiretoria",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_6ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temEjaFundamentalEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temEjaFundamentalEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "uf" : {
+      "@id" : "http://localhost/educacao-basica/ontology/uf",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "temLaboratorioInformatica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temLaboratorioInformatica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFormacaoFundAF" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoFundAF",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "turmaBiologia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaBiologia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "tipoLinguaIndigena" : {
+      "@id" : "http://localhost/educacao-basica/ontology/tipoLinguaIndigena",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AI_projecao_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_projecao_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "predioEscolar" : {
+      "@id" : "http://localhost/educacao-basica/ontology/predioEscolar",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AI_MAT_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_MAT_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temMedioNormalEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMedioNormalEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temClasseEspecialExclusiva" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temClasseEspecialExclusiva",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "localPrisaoSocioeducativa" : {
+      "@id" : "http://localhost/educacao-basica/ontology/localPrisaoSocioeducativa",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "rendimentoAI_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAI_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temLavanderia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temLavanderia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "idadeReferencia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/idadeReferencia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "aguaRio" : {
+      "@id" : "http://localhost/educacao-basica/ontology/aguaRio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFormacaoPorAlternancia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoPorAlternancia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "totalSalasUtilizadas" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalSalasUtilizadas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaEstudosSociais" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaEstudosSociais",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "totalImpressoras" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalImpressoras",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "situacaoCurso2" : {
+      "@id" : "http://localhost/educacao-basica/ontology/situacaoCurso2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "sexo" : {
+      "@id" : "http://localhost/educacao-basica/ontology/sexo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AI_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temAuditorio" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temAuditorio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temInternetBandaLarga" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temInternetBandaLarga",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temCrecheComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temCrecheComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "lixoQueima" : {
+      "@id" : "http://localhost/educacao-basica/ontology/lixoQueima",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codINEP" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codINEP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temMedioNormalComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMedioNormalComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_6a9ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6a9ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "dataInicioFuncionamento" : {
+      "@id" : "http://localhost/educacao-basica/ontology/dataInicioFuncionamento",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "notaPB_AF_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "notaPB_AF_LP_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_LP_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "codUFResidencia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codUFResidencia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "rede" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rede",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "IdebAnosFinais" : {
+      "@id" : "http://localhost/educacao-basica/ontology/IdebAnosFinais"
+    },
+    "temTV" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temTV",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ideb_AF_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temOutrasDependencias" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temOutrasDependencias",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temMestrado" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMestrado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFormacaoOutra" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoOutra",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "aguaCacimba" : {
+      "@id" : "http://localhost/educacao-basica/ontology/aguaCacimba",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_7ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_7ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temTecnicoEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temTecnicoEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "turmaCiencias" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaCiencias",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temMediacaoPresencial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMediacaoPresencial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temAlojamentoProfessores" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temAlojamentoProfessores",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "localGalpao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/localGalpao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "turmaGeografia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaGeografia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codIESCurso3" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codIESCurso3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaSociologia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaSociologia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "tipoOcupacao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/tipoOcupacao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_5ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_5ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "atividadeComplementar" : {
+      "@id" : "http://localhost/educacao-basica/ontology/atividadeComplementar",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temEjaMedioEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temEjaMedioEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFormacaoCulturaAfricana" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoCulturaAfricana",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temBrasilAlfabetizado" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temBrasilAlfabetizado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temBibliotecaSalaLeitura" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temBibliotecaSalaLeitura",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "areaCurso3" : {
+      "@id" : "http://localhost/educacao-basica/ontology/areaCurso3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temFormacaoIndigena" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoIndigena",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temEjaProfissionalComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temEjaProfissionalComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "situacaoCurso1" : {
+      "@id" : "http://localhost/educacao-basica/ontology/situacaoCurso1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AI_projecao_2017" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_projecao_2017",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaFilosofia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaFilosofia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codPaisOrigem" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codPaisOrigem",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_1ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaAEE" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaAEE",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_9ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_9ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "taxaAprovacao_1a5ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1a5ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temCrecheEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temCrecheEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Turma" : {
+      "@id" : "http://localhost/educacao-basica/ontology/Turma"
+    },
+    "temRetroprojetor" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temRetroprojetor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "IdebAnosIniciais" : {
+      "@id" : "http://localhost/educacao-basica/ontology/IdebAnosIniciais"
+    },
+    "fimCurso2" : {
+      "@id" : "http://localhost/educacao-basica/ontology/fimCurso2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "notaPB_AF_MAT_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_MAT_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Municipio" : {
+      "@id" : "http://localhost/educacao-basica/ontology/Municipio"
+    },
+    "lixoColetaPeriodica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/lixoColetaPeriodica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "lixoEnterra" : {
+      "@id" : "http://localhost/educacao-basica/ontology/lixoEnterra",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AF_MAT_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_MAT_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "turmaLibras" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaLibras",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFormacaoEja" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoEja",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temPatioCoberto" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temPatioCoberto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_7ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_7ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temBanheiroFora" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temBanheiroFora",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFundamentalAIComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFundamentalAIComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_1a5ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1a5ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "codMunicipioNascimento" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codMunicipioNascimento",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaHistoria" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaHistoria",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_7ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_7ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "fimCurso1" : {
+      "@id" : "http://localhost/educacao-basica/ontology/fimCurso1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "tipoAEE" : {
+      "@id" : "http://localhost/educacao-basica/ontology/tipoAEE",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temPreComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temPreComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_6ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temMedioIntegradoEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMedioIntegradoEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AF_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "lixoRecicla" : {
+      "@id" : "http://localhost/educacao-basica/ontology/lixoRecicla",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temImpressoraMultifuncional" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temImpressoraMultifuncional",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temMediacaoEad" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMediacaoEad",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AI_LP_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_LP_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "notaPB_AI_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temParabolica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temParabolica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temTecnicoComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temTecnicoComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temQuadraDescoberta" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temQuadraDescoberta",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "areaCurso1" : {
+      "@id" : "http://localhost/educacao-basica/ontology/areaCurso1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "instituicaoCurso2" : {
+      "@id" : "http://localhost/educacao-basica/ontology/instituicaoCurso2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "notaPB_AF_LP_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_LP_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "energiaOutros" : {
+      "@id" : "http://localhost/educacao-basica/ontology/energiaOutros",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temSurdocegueira" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temSurdocegueira",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "nomeDistrito" : {
+      "@id" : "http://localhost/educacao-basica/ontology/nomeDistrito",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "rendimentoAI_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAI_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_1a5ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1a5ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temDeficienciaAuditiva" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temDeficienciaAuditiva",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AI_MAT_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_MAT_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temFormacaoDireitosCriancas" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoDireitosCriancas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_1ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "etapaEJA" : {
+      "@id" : "http://localhost/educacao-basica/ontology/etapaEJA",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "licenciaturaCurso3" : {
+      "@id" : "http://localhost/educacao-basica/ontology/licenciaturaCurso3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codUF" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codUF",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "localOutros" : {
+      "@id" : "http://localhost/educacao-basica/ontology/localOutros",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "escolaIndigena" : {
+      "@id" : "http://localhost/educacao-basica/ontology/escolaIndigena",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "curso3" : {
+      "@id" : "http://localhost/educacao-basica/ontology/curso3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "situacaoCurso3" : {
+      "@id" : "http://localhost/educacao-basica/ontology/situacaoCurso3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temCozinha" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temCozinha",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFundamentalAFEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFundamentalAFEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "aguaFiltrada" : {
+      "@id" : "http://localhost/educacao-basica/ontology/aguaFiltrada",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "rendimentoAF_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAF_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "taxaAprovacao_2ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_2ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "notaPB_AI_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temFormacaoPre" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoPre",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temEjaProfissionalEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temEjaProfissionalEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_4ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_4ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temLaboratorioCiencias" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temLaboratorioCiencias",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codMunicipio" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codMunicipio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_1ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "totalFuncionarios" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalFuncionarios",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_6a9ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6a9ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "notaPB_AI_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "localUnidadePrisional" : {
+      "@id" : "http://localhost/educacao-basica/ontology/localUnidadePrisional",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_2ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_2ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temDeficiencia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temDeficiencia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AF_LP_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_LP_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "dataAutorizacao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/dataAutorizacao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "curso2" : {
+      "@id" : "http://localhost/educacao-basica/ontology/curso2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "taxaAprovacao_3ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_3ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaOutraDisciplina" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaOutraDisciplina",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "rendimentoAF_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAF_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ideb_AF_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ideb_AI_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_6ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "mantidaPorSistemaS" : {
+      "@id" : "http://localhost/educacao-basica/ontology/mantidaPorSistemaS",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temBanheiroPNE" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temBanheiroPNE",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "totalParabolicas" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalParabolicas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "regiao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/regiao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "taxaAprovacao_3ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_3ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "codEscolaSede" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codEscolaSede",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "totalCameras" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalCameras",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "rendimentoAF_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAF_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "instituicaoCurso3" : {
+      "@id" : "http://localhost/educacao-basica/ontology/instituicaoCurso3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temComputador" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temComputador",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "mesorregiao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/mesorregiao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "temDvd" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temDvd",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AF_LP_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_LP_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "inicioCurso1" : {
+      "@id" : "http://localhost/educacao-basica/ontology/inicioCurso1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temFormacaoFundAI" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoFundAI",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AI_LP_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_LP_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_1ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_5ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_5ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temFormacaoEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temEjaFundamentalComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temEjaFundamentalComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "tipoConvenioPP" : {
+      "@id" : "http://localhost/educacao-basica/ontology/tipoConvenioPP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_9ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_9ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "energiaRedePublica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/energiaRedePublica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ideb_AF_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "notaPB_AF_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "turmaLP" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaLP",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "complementacaoCurso1" : {
+      "@id" : "http://localhost/educacao-basica/ontology/complementacaoCurso1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temParqueInfantil" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temParqueInfantil",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_2ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_2ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temMedioIntegradoComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMedioIntegradoComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_1a5ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1a5ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "linguaIndigena" : {
+      "@id" : "http://localhost/educacao-basica/ontology/linguaIndigena",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "licenciaturaCurso1" : {
+      "@id" : "http://localhost/educacao-basica/ontology/licenciaturaCurso1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "licenciaturaCurso2" : {
+      "@id" : "http://localhost/educacao-basica/ontology/licenciaturaCurso2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temSecretaria" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temSecretaria",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AF_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temOrganizacaoPorCiclos" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temOrganizacaoPorCiclos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AF_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "taxaAprovacao_6a9ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6a9ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temSurdez" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temSurdez",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_2ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_2ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temDoutorado" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temDoutorado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_9ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_9ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temEspecializacao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temEspecializacao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "turmaEspanhol" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaEspanhol",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_9ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_9ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "CadastroMunicipal" : {
+      "@id" : "http://localhost/educacao-basica/ontology/CadastroMunicipal"
+    },
+    "taxaAprovacao_7ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_7ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "turmaArtes" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaArtes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "possuiMagisterio" : {
+      "@id" : "http://localhost/educacao-basica/ontology/possuiMagisterio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "energiaGerador" : {
+      "@id" : "http://localhost/educacao-basica/ontology/energiaGerador",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "microrregiao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/microrregiao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "mantidaPorSemFinsLucrativos" : {
+      "@id" : "http://localhost/educacao-basica/ontology/mantidaPorSemFinsLucrativos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temMaterialIndigena" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMaterialIndigena",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temVideocassete" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temVideocassete",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_4ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_4ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "semEnergia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/semEnergia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_8ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_8ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "dependenciaAdmin" : {
+      "@id" : "http://localhost/educacao-basica/ontology/dependenciaAdmin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AI_projecao_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_projecao_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "totalProjetoresMultimidia" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalProjetoresMultimidia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temFormacaoCreche" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoCreche",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codIES" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codIES",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AF_projecao_2017" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_projecao_2017",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "localCasaProfessor" : {
+      "@id" : "http://localhost/educacao-basica/ontology/localCasaProfessor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "turmaEducacaoFisica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaEducacaoFisica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codDocente" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codDocente",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "Escola" : {
+      "@id" : "http://localhost/educacao-basica/ontology/Escola"
+    },
+    "turmaInformatica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaInformatica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_2ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_2ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temAparelhoSom" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temAparelhoSom",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "totalDvds" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalDvds",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "notaPB_AF_MAT_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_MAT_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "inicioCurso2" : {
+      "@id" : "http://localhost/educacao-basica/ontology/inicioCurso2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temDespensa" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temDespensa",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ocupacaoPredioEscolar" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ocupacaoPredioEscolar",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "localSocioeducativo" : {
+      "@id" : "http://localhost/educacao-basica/ontology/localSocioeducativo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temAreaVerde" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temAreaVerde",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ideb_AF_projecao_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_projecao_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temImpressora" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temImpressora",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "siglaUF" : {
+      "@id" : "http://localhost/educacao-basica/ontology/siglaUF",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "taxaAprovacao_3ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_3ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temDeficienciaFisica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temDeficienciaFisica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "turmaDiversidadeSociocultural" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaDiversidadeSociocultural",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codEOL" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codEOL",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "etapaRegular" : {
+      "@id" : "http://localhost/educacao-basica/ontology/etapaRegular",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ideb_AF_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temMedioEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMedioEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AI_MAT_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_MAT_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AF_projecao_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_projecao_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temQuadraEsportes" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temQuadraEsportes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "totalComputadoresAlunos" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalComputadoresAlunos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaQuimica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaQuimica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "naoUsaMaterialEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/naoUsaMaterialEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AF_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "totalFax" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalFax",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_6ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "atoCriacao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/atoCriacao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "turmaIngles" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaIngles",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_1ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "notaPB_AI_MAT_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_MAT_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_4ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_4ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "notaPB_AI_LP_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_LP_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temDependenciasPNE" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temDependenciasPNE",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ideb_AF_projecao_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_projecao_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temSalaProfessor" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temSalaProfessor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "esgotoFossa" : {
+      "@id" : "http://localhost/educacao-basica/ontology/esgotoFossa",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ItemEjaMedioComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ItemEjaMedioComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "regulamentada" : {
+      "@id" : "http://localhost/educacao-basica/ontology/regulamentada",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaFisica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaFisica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temBercario" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temBercario",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "School" : {
+      "@id" : "http://schema.org/School"
+    },
+    "ideb_AI_projecao_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_projecao_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "notaPB_AF_MAT_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_MAT_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "notaPB_AI_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AF_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "zonaResidencial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/zonaResidencial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "dataCriacao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/dataCriacao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "taxaAprovacao_6ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "situacaoFuncionamento" : {
+      "@id" : "http://localhost/educacao-basica/ontology/situacaoFuncionamento",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_4ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_4ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "complementacaoCurso3" : {
+      "@id" : "http://localhost/educacao-basica/ontology/complementacaoCurso3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AF_LP_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_LP_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "totalTVs" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalTVs",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_1a5ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_1a5ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaProfissionalizante" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaProfissionalizante",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "lixoOutros" : {
+      "@id" : "http://localhost/educacao-basica/ontology/lixoOutros",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "totalSalas" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalSalas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "redeVinculacao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/redeVinculacao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "nacionalidade" : {
+      "@id" : "http://localhost/educacao-basica/ontology/nacionalidade",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_6a9ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6a9ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "catEscolaPrivada" : {
+      "@id" : "http://localhost/educacao-basica/ontology/catEscolaPrivada",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_8ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_8ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "rendimentoAI_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAI_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "totalRetroprojetores" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalRetroprojetores",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_4ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_4ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaPedagogica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaPedagogica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "docCriacao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/docCriacao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "mantidaPorSindicato" : {
+      "@id" : "http://localhost/educacao-basica/ontology/mantidaPorSindicato",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFormacaoDiversidadeSexual" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoDiversidadeSexual",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "turmaEnsinoReligioso" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaEnsinoReligioso",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temFormacaoCampo" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFormacaoCampo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temInternet" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temInternet",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "semAgua" : {
+      "@id" : "http://localhost/educacao-basica/ontology/semAgua",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AF_MAT_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_MAT_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "complementacaoCurso2" : {
+      "@id" : "http://localhost/educacao-basica/ontology/complementacaoCurso2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "turmaLinguaIndigena" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaLinguaIndigena",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "totalComputadores" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalComputadores",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "turmaFrances" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaFrances",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temBaixaVisao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temBaixaVisao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temSalaLeitura" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temSalaLeitura",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "notaPB_AI_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AF_projecao_2021" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_projecao_2021",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "turmaOutraLingua" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaOutraLingua",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_3ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_3ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temQuadraCoberta" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temQuadraCoberta",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ideb_AF_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "taxaAprovacao_9ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_9ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "rendimentoAF_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAF_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temAlimentacaoEscolar" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temAlimentacaoEscolar",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temMediacaoSemipresencial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMediacaoSemipresencial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ideb_AI_projecao_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_projecao_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "codOrgaoRegionalEnsino" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codOrgaoRegionalEnsino"
+    },
+    "notaPB_AI_MAT_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_MAT_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_9ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_9ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "naoTemPos" : {
+      "@id" : "http://localhost/educacao-basica/ontology/naoTemPos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ideb_AF_projecao_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_projecao_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "codSetor" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codSetor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "localSalaOutraEscola" : {
+      "@id" : "http://localhost/educacao-basica/ontology/localSalaOutraEscola",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "curso1" : {
+      "@id" : "http://localhost/educacao-basica/ontology/curso1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "notaPB_AI_MAT_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_MAT_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temAlmoxarifado" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temAlmoxarifado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temRefeitorio" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temRefeitorio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temSAE" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temSAE",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codDistrito" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codDistrito",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "semEsgoto" : {
+      "@id" : "http://localhost/educacao-basica/ontology/semEsgoto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temChuveiroBanheiro" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temChuveiroBanheiro",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AI_LP_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AI_LP_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AF_projecao_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_projecao_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "rendimentoAF_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAF_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "taxaAprovacao_8ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_8ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "taxaAprovacao_6ano_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6ano_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ideb_AI_projecao_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_projecao_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "fimCurso3" : {
+      "@id" : "http://localhost/educacao-basica/ontology/fimCurso3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temFundamentalAFComum" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFundamentalAFComum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "areaCurso2" : {
+      "@id" : "http://localhost/educacao-basica/ontology/areaCurso2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "rendimentoAI_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/rendimentoAI_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "codCIE" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codCIE",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "notaPB_AF_LP_2013" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_LP_2013",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temPatioDescoberto" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temPatioDescoberto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_6a9ano_2015" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6a9ano_2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "abreAosFimDeSemanas" : {
+      "@id" : "http://localhost/educacao-basica/ontology/abreAosFimDeSemanas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "turmaMatematica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/turmaMatematica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "notaPB_AF_MAT_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/notaPB_AF_MAT_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "totalVideocassetes" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalVideocassetes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "codMesorregiao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codMesorregiao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "predioCompartilhado" : {
+      "@id" : "http://localhost/educacao-basica/ontology/predioCompartilhado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temMaterialQuilombola" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temMaterialQuilombola",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "tipoContratacao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/tipoContratacao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "localSalaEmpresa" : {
+      "@id" : "http://localhost/educacao-basica/ontology/localSalaEmpresa",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "codRegiao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/codRegiao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_2ano_2005" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_2ano_2005",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ideb_AI_projecao_2021" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AI_projecao_2021",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "raca" : {
+      "@id" : "http://localhost/educacao-basica/ontology/raca",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "localizacao" : {
+      "@id" : "http://localhost/educacao-basica/ontology/localizacao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_8ano_2011" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_8ano_2011",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ideb_AF_projecao_2019" : {
+      "@id" : "http://localhost/educacao-basica/ontology/ideb_AF_projecao_2019",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "temFundamentalAIEspecial" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temFundamentalAIEspecial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "escolaridade" : {
+      "@id" : "http://localhost/educacao-basica/ontology/escolaridade",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "mantidaPorOng" : {
+      "@id" : "http://localhost/educacao-basica/ontology/mantidaPorOng",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "pertenceDRE" : {
+      "@id" : "http://localhost/educacao-basica/ontology/pertenceDRE",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_7ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_7ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "taxaAprovacao_4ano_2007" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_4ano_2007",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "taxaAprovacao_3ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_3ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "mantidaPorEmpresa" : {
+      "@id" : "http://localhost/educacao-basica/ontology/mantidaPorEmpresa",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "temCopiadora" : {
+      "@id" : "http://localhost/educacao-basica/ontology/temCopiadora",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "aguaRedePublica" : {
+      "@id" : "http://localhost/educacao-basica/ontology/aguaRedePublica",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "lixoOutrasAreas" : {
+      "@id" : "http://localhost/educacao-basica/ontology/lixoOutrasAreas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "taxaAprovacao_6a9ano_2009" : {
+      "@id" : "http://localhost/educacao-basica/ontology/taxaAprovacao_6a9ano_2009",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "totalImpressorasMultifuncionais" : {
+      "@id" : "http://localhost/educacao-basica/ontology/totalImpressorasMultifuncionais",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "municipio" : {
+      "@id" : "http://localhost/educacao-basica/ontology/municipio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
