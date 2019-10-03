@@ -1,0 +1,466 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix pav:     <http://pav-ontology.github.io/pav/> .
+@prefix dqv:     <http://www.w3.org/ns/dqv#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix schema:  <http://schema.org/> .
+@prefix void:	 <https://www.w3.org/TR/void/> .
+@prefix :        <http://localhost:3030/educacao-basica/> .
+
+##################################
+# Agents/creators of this document
+
+:usp   a foaf:Organization, prov:Agent;
+	foaf:name "Universidade de São Paulo - USP";
+	schema:url <http://www.usp.br> .
+
+:bruno a foaf:Person, prov:Agent;
+  foaf:givenName "Bruno Elias Penteado";
+  foaf:mbox "mailto:brunopenteado@usp.br";
+  prov:actedOnBehalfOf :usp.
+  
+:inep  a foaf:Organization, prov:Agent;
+	foaf:name "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - INEP";
+	schema:url <http://inep.gov.br> .
+  
+:ibge  a foaf:Organization, prov:Agent;
+	foaf:name "Instituto Brasileiro de Geografia e Estatística - IBGE";
+	schema:url <http://ibge.gov.br> .
+  
+:smesp  a foaf:Organization, prov:Agent;
+	foaf:name "Secretaria Municipal de Educação de São Paulo - SME-SP";
+	schema:url <http://portal.sme.prefeitura.sp.gov.br/> .
+
+##################################
+# Data catalog
+
+<http://localhost:3030/educacao-basica/>
+  a dcat:Catalog;
+  ## Mandatory metadata
+  # Basic info
+  dcterms:title "Dados da educação básica";
+  rdfs:label "Dados da educação básica";
+  foaf:homepage <http://localhost:3030>;
+  dcterms:publisher :usp;
+  dcterms:creator :bruno;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/pt>  ;
+  # Distributions available
+  dcat:dataset <http://localhost:3030/geografia/Municipios/>;
+  dcat:dataset <http://localhost:3030/educacao-basica/Escolas/>;
+  dcat:dataset <http://localhost:3030/educacao-basica/Escolas/SP/>;
+  dcat:dataset <http://localhost:3030/educacao-basica/IDEB/SP/>;
+  dcat:dataset <http://localhost:3030/educacao-basica/Docentes/>;
+  # Tags
+  dcat:keyword "censo", "escola" ,"educação básica", "docente", "professor", "IDEB", "rendimento escolar".
+
+
+##################################
+# Datasets
+
+
+<http://localhost:3030/geografia/Municipios/>
+  a dcat:Dataset;
+  ## Mandatory metadata
+  # Basic info
+  schema:name "Dados dos municípios brasileiros";
+  schema:description "View do IBGE contendo dados sobre todos os municípios do Brasil em 2018." ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :ibge;
+  # Topics of the dataset
+  dcat:theme <http://vocab.e.gov.br/2011/03/vcge#informacoes-estatisticas> ;
+  # Distributions available
+  dcat:distribution <http://localhost:3030/educacao-basica/Municipios/2018/>;
+ 
+  ## Optional metadata
+  # Tags
+  dcat:keyword "censo", "municipios", "estatística", "regiões";
+  # Temporal coverage and granularity
+  dcterms:temporal <http://reference.data.gov.uk/id/year/2018>;
+  dcterms:accrualPeriodicity <http://purl.org/linked-data/sdmx/2009/code#freq-A>;
+  # Geographic coverage and granularity
+  dcterms:spatial <http://www.geonames.org/3469034>;
+  dcterms:coverage "city";
+  # Methodology  
+  schema:measurementTechnique "census";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/pt>;
+  # Political coverage and granularity
+  dcterms:coverage <http://vocab.e.gov.br/2011/03/vcge#governo-federal>;
+  dcterms:coverage <http://vocab.e.gov.br/2011/03/vcge#poder-executivo> .
+  
+  
+<http://localhost:3030/educacao-basica/Escolas/>
+  a dcat:Dataset;
+  ## Mandatory metadata
+  # Basic info
+  schema:name "Censo das escolas brasileiras";
+  schema:description "O Censo Escolar é um levantamento de dados estatístico-educacionais de âmbito nacional realizado todos os anos e coordenado pelo Inep. Ele é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." ;
+  # original dataset
+  schema:contentUrl <http://inep.gov.br/web/guest/microdados#Censo%20Escolar> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :inep;
+  # Topics of the dataset
+  dcat:theme <http://vocab.e.gov.br/2011/03/vcge#educacao-basica> ;
+  dcat:theme <http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais>;
+  # Distributions available
+  dcat:distribution <http://localhost:3030/educacao-basica/Escolas/2016/>;
+  dcat:distribution <http://localhost:3030/educacao-basica/Escolas/2017/>;
+
+  ## Optional metadata
+  # Tags
+  dcat:keyword "censo", "escola", "educação básica";
+  # Temporal coverage and granularity
+  dcterms:temporal <http://reference.data.gov.uk/id/year/2016>;
+  dcterms:accrualPeriodicity <http://purl.org/linked-data/sdmx/2009/code#freq-A>;
+  # Geographic coverage and granularity
+  dcterms:spatial <http://www.geonames.org/3469034>;
+  dcterms:coverage "country";
+  # Methodology  
+  schema:measurementTechnique "census";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/pt>;
+  # Political coverage and granularity
+  dcterms:coverage <http://vocab.e.gov.br/2011/03/vcge#governo-federal>;
+  dcterms:coverage <http://vocab.e.gov.br/2011/03/vcge#poder-executivo> .
+  
+  
+<http://localhost:3030/educacao-basica/Docentes/>
+  a dcat:Dataset;
+  ## Mandatory metadata
+  # Basic info
+  schema:name "Censo das escolas brasileiras";
+  schema:description "O Censo Escolar é um levantamento de dados estatístico-educacionais de âmbito nacional realizado todos os anos e coordenado pelo Inep. Ele é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." ;
+  # original dataset
+  schema:contentUrl <http://inep.gov.br/web/guest/microdados#Censo%20Escolar> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :inep;
+  # Topics of the dataset
+  dcat:theme <http://vocab.e.gov.br/2011/03/vcge#educacao-basica> ;
+  dcat:theme <http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais>;
+  # Distributions available
+  dcat:distribution <http://localhost:3030/educacao-basica/Escolas/2016/>;
+  dcat:distribution <http://localhost:3030/educacao-basica/Escolas/2017/>;
+
+  ## Optional metadata
+  # Tags
+  dcat:keyword "censo", "escola", "educação básica";
+  # Temporal coverage and granularity
+  dcterms:temporal <http://reference.data.gov.uk/id/year/2016>;
+  dcterms:accrualPeriodicity <http://purl.org/linked-data/sdmx/2009/code#freq-A>;
+  # Geographic coverage and granularity
+  dcterms:spatial <http://www.geonames.org/3469034>;
+  dcterms:coverage "country";
+  # Methodology  
+  schema:measurementTechnique "census";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/pt>;
+  # Political coverage and granularity
+  dcterms:coverage <http://vocab.e.gov.br/2011/03/vcge#governo-federal>;
+  dcterms:coverage <http://vocab.e.gov.br/2011/03/vcge#poder-executivo> .
+  
+  
+<http://localhost:3030/educacao-basica/Escolas/SP/>
+  a dcat:Dataset;
+  ## Mandatory metadata
+  # Basic info
+  schema:name "Cadastro de escolas municipais, conveniadas e privadas - SP";
+  schema:description "Cadastro de escolas municipais, conveniadas e privadas, tanto ativas como extintas, com informações sobre a quantidade de turnos de funcionamento da escola e geolocalização. Dados do Sistema EOL." ;
+  # original dataset
+  schema:contentUrl <http://dados.prefeitura.sp.gov.br/dataset/cadastro-de-escolas-municipais-conveniadas-e-privadas> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :smesp;
+  # Topics of the dataset
+  dcat:theme <http://vocab.e.gov.br/2011/03/vcge#educacao-basica> ;
+  dcat:theme <http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais>;
+  # Distributions available
+  dcat:distribution <http://localhost:3030/educacao-basica/Escolas/SP/2018/>;
+
+  ## Optional metadata
+  # Tags
+  dcat:keyword "unidades educacionais", "escolas", "educação";
+  # Temporal coverage and granularity
+  dcterms:temporal <http://reference.data.gov.uk/id/year/2018>;
+  dcterms:accrualPeriodicity <http://purl.org/linked-data/sdmx/2009/code#freq-A>;
+  # Geographic coverage and granularity
+  dcterms:spatial <http://www.geonames.org/6324358>;
+  dcterms:coverage "city";
+  # Methodology  
+  schema:measurementTechnique "census";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/pt>;
+  # Political coverage and granularity
+  dcterms:coverage <http://vocab.e.gov.br/2011/03/vcge#governo-municipal>;
+  dcterms:coverage <http://vocab.e.gov.br/2011/03/vcge#poder-executivo> ;
+  schema:datePublished "2018-12-30"^^xsd:date ;
+  .
+  
+  
+<http://localhost:3030/educacao-basica/IDEB/SP/>
+  a dcat:Dataset;
+  ## Mandatory metadata
+  # Basic info
+  schema:name "Ideb e Prova Brasil na Rede Municipal de Ensino (2005-2015)";
+  schema:description "Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação." ;
+  # original dataset
+  schema:contentUrl <http://dados.prefeitura.sp.gov.br/dataset/ideb-e-prova-brasil-na-rede-municipal-de-ensino> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :smesp;
+  # Topics of the dataset
+  dcat:theme <http://vocab.e.gov.br/2011/03/vcge#educacao-basica> ;
+  dcat:theme <http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais>;
+  # Distributions available
+  dcat:distribution <http://localhost:3030/educacao-basica/Escolas/IDEB/SP/2015/AI/>;
+  dcat:distribution <http://localhost:3030/educacao-basica/Escolas/IDEB/SP/2015/AF/>;
+
+  ## Optional metadata
+  # Tags
+  dcat:keyword "aprovação", "avaliação", "ensino fundamental", "escolas", "ideb", "qualidade da educação", "rendimento";
+  # Temporal coverage and granularity
+  dcterms:temporal <http://reference.data.gov.uk/id/year/2018>;
+  dcterms:accrualPeriodicity <http://purl.org/linked-data/sdmx/2009/code#freq-A>;
+  # Geographic coverage and granularity
+  dcterms:spatial <http://www.geonames.org/3469034>;
+  dcterms:coverage "country";
+  # Methodology  
+  schema:measurementTechnique "assessment";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/pt>;
+  # Political coverage and granularity
+  dcterms:coverage <http://vocab.e.gov.br/2011/03/vcge#governo-municipal>;
+  dcterms:coverage <http://vocab.e.gov.br/2011/03/vcge#poder-executivo> .
+  
+  
+##################################
+# Data distributions
+
+
+<http://localhost:3030/educacao-basica/Municipios/2018/>
+  a dcat:Distribution;
+  ## Mandatory metadata
+  # Basico info
+  schema:name "Municípios brasileiros em 2018.";
+  schema:description "Levantamento do IBGE com dados geográficos de todas as cidades do país."@pt ;
+  #schema:contentUrl <http://download.inep.gov.br/microdados/micro_censo_escolar_2017.zip> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :inep;
+  schema:datePublished "2017";
+  schema:dateModified "2019-10-01"^^xsd:date;
+  dcat:mediaType "application/rdf+xml";
+  dcat:downloadURL <>;
+
+  # Versioning info
+  owl:versionInfo "1.0";
+  pav:version "1.0";
+  # Licensing info
+  dcterms:license <https://opendatacommons.org/licenses/odbl>;
+  
+  ## Optional metadata
+  void:vocabulary <http://localhost:3030/ontology/educacao-basica.owl>;
+  .
+  
+
+<http://localhost:3030/educacao-basica/Escolas/2017/>
+  a dcat:Distribution;
+  ## Mandatory metadata
+  # Basico info
+  schema:name "Censo escolar 2017.";
+  schema:description "O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." ;
+  schema:contentUrl <http://download.inep.gov.br/microdados/micro_censo_escolar_2017.zip> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :inep;
+  schema:datePublished "2017";
+  schema:dateModified "2019-10-01"^^xsd:date;
+  dcat:mediaType "application/rdf+xml";
+  void:sparqlEndpoint <http:localhost:3030/sparql>;
+
+  # Versioning info
+  owl:versionInfo "1.0";
+  pav:version "1.0";
+  # Licensing info
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/>;
+  
+  ## Optional metadata
+  # documentacao + referencias externas + ontologia
+  void:vocabulary <http://localhost:3030/ontology/educacao-basica.owl>;
+  schema:valueReference <http://localhost:3030/geografia/Municipios/>;
+  .
+
+ 
+<http://localhost:3030/educacao-basica/Escolas/2016/>
+  a dcat:Distribution;
+  ## Mandatory metadata
+  # Basico info
+  schema:name "Censo escolar 2016.";
+  schema:description "O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." ;
+  schema:contentUrl <http://download.inep.gov.br/microdados/micro_censo_escolar_2016.zip> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :inep;
+  schema:datePublished "2016";
+  schema:dateModified "2019-10-01"^^xsd:date;
+  dcat:mediaType "application/rdf+xml";
+  void:sparqlEndpoint <http:localhost:3030/sparql>;
+
+  # Versioning info
+  owl:versionInfo "1.0";
+  pav:version "1.0";
+  # Licensing info
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/>;
+  
+  ## Optional metadata
+  # documentacao + referencias externas + ontologia
+  void:vocabulary <http://localhost:3030/ontology/educacao-basica.owl>;
+  schema:valueReference :municipios
+  .
+ 
+ 
+<http://localhost:3030/educacao-basica/Docentes/2017/>
+  a dcat:Distribution;
+  ## Mandatory metadata
+  # Basico info
+  schema:name "Docentes do Brasil - 2017.";
+  schema:description "Registro de todos os docentes do país, levantados pelo Censo Escolar. O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." ;
+  schema:contentUrl <http://download.inep.gov.br/microdados/micro_censo_escolar_2017.zip> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :inep;
+  schema:datePublished "2017";
+  schema:dateModified "2019-10-01"^^xsd:date;
+  dcat:mediaType "application/rdf+xml";
+  void:sparqlEndpoint <http:localhost:3030/sparql>;
+
+  # Versioning info
+  owl:versionInfo "1.0";
+  pav:version "1.0";
+  # Licensing info
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/>;
+  
+  ## Optional metadata
+  # documentacao + referencias externas + ontologia
+  void:vocabulary <http://localhost:3030/ontology/educacao-basica.owl>;
+  schema:valueReference :municipios;
+  .
+
+   
+<http://localhost:3030/educacao-basica/Docentes/2016/>
+  a dcat:Distribution;
+  ## Mandatory metadata
+  # Basico info
+  schema:name "Docentes do Brasil - 2016.";
+  schema:description "Registro de todos os docentes do país, levantados pelo Censo Escolar. O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." ;
+  schema:contentUrl <http://download.inep.gov.br/microdados/micro_censo_escolar_2016.zip> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :inep;
+  schema:datePublished "2016";
+  schema:dateModified "2019-10-01"^^xsd:date;
+  dcat:mediaType "application/rdf+xml";
+  void:sparqlEndpoint <http:localhost:3030/sparql>;
+
+  # Versioning info
+  owl:versionInfo "1.0";
+  pav:version "1.0";
+  # Licensing info
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/>;
+  
+  ## Optional metadata
+  # documentacao + referencias externas + ontologia
+  void:vocabulary <http://localhost:3030/ontology/educacao-basica.owl>;
+  schema:valueReference :municipios;
+  .
+  
+  
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/>
+  a dcat:Distribution;
+  ## Mandatory metadata
+  # Basico info
+  schema:name "IDEB das escolas municipais de São Paulo até 2015 - Anos Iniciais.";
+  schema:description "Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação.." ;
+  schema:contentUrl <http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :smesp;
+  schema:datePublished "2015";
+  schema:dateModified "2019-10-01"^^xsd:date;
+  dcat:mediaType "application/rdf+xml";
+  void:sparqlEndpoint <http:localhost:3030/sparql>;
+
+  # Versioning info
+  owl:versionInfo "1.0";
+  pav:version "1.0";
+  # Licensing info
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+  
+  ## Optional metadata
+  # documentacao + referencias externas + ontologia
+  void:vocabulary <http://localhost:3030/ontology/educacao-basica.owl>;
+  schema:valueReference <http://localhost:3030/geografia/Municipios/>;
+  schema:valueReference <http://localhost:3030/educacao-basica/Escolas/>;
+  .
+  
+  
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/>
+  a dcat:Distribution;
+  ## Mandatory metadata
+  # Basico info
+  schema:name "IDEB das escolas municipais de São Paulo até 2015 - Anos Finais.";
+  schema:description "Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação.." ;
+  schema:contentUrl <http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :smesp;
+  schema:datePublished "2015";
+  schema:dateModified "2019-10-01"^^xsd:date;
+  dcat:mediaType "application/rdf+xml";
+  void:sparqlEndpoint <http:localhost:3030/sparql>;
+
+  # Versioning info
+  owl:versionInfo "1.0";
+  pav:version "1.0";
+  # Licensing info
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+  
+  ## Optional metadata
+  # documentacao + referencias externas + ontologia
+  void:vocabulary <http://localhost:3030/ontology/educacao-basica.owl>;
+  schema:valueReference <http://localhost:3030/geografia/Municipios/>;
+  schema:valueReference <http://localhost:3030/educacao-basica/Escolas/>;
+  .  
+
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/>
+  a dcat:Distribution;
+  ## Mandatory metadata
+  # Basico info
+  schema:name "Cadastro de escolas municipais, conveniadas e privadas, até 2018.";
+  schema:description "Cadastro de escolas municipais, conveniadas e privadas, tanto ativas como extintas, com informações sobre a quantidade de turnos de funcionamento da escola e geolocalização. Dados do Sistema EOL."@pt ;
+  schema:contentUrl <http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx> ;
+  # Responsible
+  dcterms:creator :bruno;
+  dcterms:publisher :smesp;
+  schema:datePublished "2018";
+  schema:dateModified "2019-10-01"^^xsd:date;
+  dcat:mediaType "application/rdf+xml";
+  void:sparqlEndpoint <http:localhost:3030/sparql>;
+
+  # Versioning info
+  owl:versionInfo "1.0";
+  pav:version "1.0";
+  # Licensing info
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+  
+  ## Optional metadata
+  # documentacao + referencias externas + ontologia
+  void:vocabulary <http://localhost:3030/ontology/educacao-basica.owl>;
+  schema:valueReference <http://localhost:3030/geografia/Municipios/>;
+  schema:valueReference <http://localhost:3030/educacao-basica/Escolas/>;
+  .
+
+
