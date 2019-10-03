@@ -1,0 +1,2315 @@
+@prefix schema: <http://schema.org/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix pd: <http://localhost/educacao-basica/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+#######
+## Contém:
+# .IDEB SP Anos Iniciais
+# .IDEB SP Anos Finais
+# .Cadastro escolas SME SP
+# Escolas INEP
+# .Municipios IBGE
+# Docentes INEP
+
+########################################
+# IDEB
+
+pd:IdebAnosIniciais rdf:type owl:Class ;
+	rdfs:comment "Classe que representa o valor do IDEB para os anos Iniciais de uma Escola."@pt;
+	.
+pd:IdebAnosFinais rdf:type owl:Class ;
+	rdfs:comment "Classe que representa o valor do IDEB para os anos iniciais de uma Escola."@pt;
+	.
+pd:CadastroMunicipal rdf:type owl:Class ;
+	rdfs:comment "Classe que representa escolas municipais de São Paulo."@pt;
+	.
+pd:Municipio  rdf:type owl:Class ;
+	rdfs:comment "Classe que representa um município brasileiro."@pt;
+	.
+pd:Escola rdf:type owl:Class, schema:School;
+	rdfs:comment "Classe que representa escolas brasileiras."@pt;
+	.
+pd:Docente rdf:type owl:Class, foaf:Person;
+	rdfs:comment "Representa um docente (professor) brasileiro de qualque etapa de ensino em uma determinada Turma"@pt;	
+	.
+pd:Turma rdf:type owl:Class;
+	rdfs:comment "Turma em uma escola"@pt;	
+	.
+########################
+# Municipios
+
+pd:codMunicipio rdf:type owl:DatatypeProperty;
+	rdfs:comment "Código IBGE do município" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:codUF rdf:type owl:DatatypeProperty;
+	rdfs:comment "Código da unidade federativa à qual o município pertence" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:microrregiao rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nome da microrregião" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:string ;
+  .
+pd:siglaUF  rdf:type owl:DatatypeProperty;
+	rdfs:comment "Sigla da unidade federativa" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:string ;
+  .
+pd:eCapital  rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indica se o município é capital de sua unidade federativa" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:boolean ;
+  .
+pd:codRegiao  rdf:type owl:DatatypeProperty;
+	rdfs:comment "Código da macro região brasileira" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:uf  rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nome da unidade federativa" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:string ;
+  .
+pd:siglaRegiao rdf:type owl:DatatypeProperty;
+	rdfs:comment "Sigla da região brasileira" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:string ;
+  .
+pd:codMesorregiao  rdf:type owl:DatatypeProperty;
+	rdfs:comment "Código da mesorregião" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:municipio  rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nome do município" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:string ;
+  .
+pd:regiao  rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nome da região" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:string ;
+  .
+pd:codMicrorregiao  rdf:type owl:DatatypeProperty;
+	rdfs:comment "Código da microrregião" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:codCompletoMunicipio  rdf:type owl:DatatypeProperty;
+	rdfs:comment "Código de 12 dígitos do município" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:mesorregiao rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nome da mesorregião" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:string ;
+  .
+	
+########################
+# CadastroMunicipa.
+pd:atoCriacao rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:codCIE rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:codDistrito rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:nomeDistrito rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:string ;
+  .
+pd:codEOL rdf:type owl:DatatypeProperty;
+	rdfs:comment "código EOL da escola (Escola On Line, sistema da Secretaria Municipal de Educação)." ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:codEstruturaHierarquica rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:codINEP rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:codSetor rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:dataAutorizacao rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:date ;
+  .
+pd:dataCriacao rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:date ;
+  .
+pd:dataInicioFuncionamento rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:date ;
+  .
+pd:docCriacao rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:date ;
+  .
+#  pd:pertenceDRE <http://localhost:3333/DRE/BT>;
+# sigla da Diretoria Regional de Educação (descrição no campo 'DIRETORIA')
+
+  pd:redeVinculacao  rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:string ;
+  .
+pd:statusFuncionamento rdf:type owl:DatatypeProperty;
+	rdfs:comment "" ;
+	rdfs:domain 	pd:CadastroMunicipal ;
+	rdfs:range		xsd:string ;
+  .
+#  schema:address "140"@pt, "Avenida JOAO CAIAFFA";
+#  schema:addressLocality "JARDIM TABOAO"@pt;
+#  schema:alternateName "ALIPIO CORREA NETO, PROF."@pt;
+#  schema:datePublished "30/12/2018"^^xsd:date;
+#  schema:memberOf "BUTANTA"@pt, "DIRETORIA REGIONAL DE EDUCACAO BUTANTA"@pt;
+#  schema:name "ALIPIO CORREA NETO, PROF"@pt;
+#  schema:postalCode "5742100";
+#  schema:telephone "58450121";
+#  wgs84:lat "-23.612237";
+#  wgs84:long "-46.749888";
+#  skos:broader "EMEF"@pt .
+
+#######################
+# Properties 'pd:IdebAnosIniciais' e 'pd:IdenAnosFinais.
+pd:NSE rdf:type owl:DatatypeProperty;
+	rdfs:comment 	"O nível socioeconômico (NSE) sintetiza as características dos estudantes com relação à renda familiar, à posse de bens e contratação de serviços de empregados domésticos pela família  e ao nível de escolaridade de seus pais ou responsáveis, coletadas a partir de questionário contextual no momento de aplicação da Prova Brasil. Valor numérico numa escala de 0 a 100. Mais detalhes em: http://download.inep.gov.br/educacao_basica/saeb/ana/resultados/2014/nota_tecnica_inse.pdf." ;
+	rdfs:domain 	pd:IdebAnosIniciais, pd:IdebAnosFinais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+ .
+pd:codINEP rdf:type owl:DatatypeProperty;
+	rdfs:comment "Código da Unidade Educacional no INEP/MEC" ;
+	rdfs:domain 	pd:IdebAnosIniciais, pd:IdebAnosFinais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:codMunicipio rdf:type owl:DatatypeProperty;
+	rdfs:comment "Código do Município no IBGE";
+	rdfs:domain 	pd:IdebAnosIniciais, pd:IdebAnosFinais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:pertenceDRE rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nome da Diretoria Regional de Educação";
+	rdfs:domain 	pd:IdebAnosIniciais, pd:IdebAnosFinais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:rede rdf:type owl:DatatypeProperty;
+	rdfs:comment "Rede de Ensino. Nesta base de dados, estão disponíveis apenas as escolas da Rede Municipal.";
+	rdfs:domain 	pd:IdebAnosIniciais, pd:IdebAnosFinais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:municipio rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nome do municipio";
+	rdfs:domain 	pd:IdebAnosIniciais, pd:IdebAnosFinais ;
+	rdfs:range		xsd:string ; 
+ .
+pd:ideb_AI_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Inicias em 2005";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Inicias em 2007";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Inicias em 2009";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Inicias em 2011";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Inicias em 2013";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Inicias em 2015";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_projecao_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb em 2007.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_projecao_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb em 2009.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_projecao_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb em 2011.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_projecao_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb em 2013.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_projecao_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb em 2015.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_projecao_2017 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb em 2017.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_projecao_2019 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb em 2019.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:ideb_AI_projecao_2021 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb em 2021.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2005, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf ";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2007, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf ";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2009, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf ";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2011, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf ";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2013, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf ";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2015, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf ";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_LP_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2005, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_LP_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2007, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_LP_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2009, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_LP_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2011, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_LP_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2013, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_LP_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Língua Portuguesa dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2015, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_MAT_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Matemática dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2005, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_MAT_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Matemática dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2007, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_MAT_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Matemática dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2009, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_MAT_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Matemática dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2011, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_MAT_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Matemática dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2013, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:notaPB_AI_MAT_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Nota obtida em Matemática dos estudantes dos anos iniciais de cada etapa do ensino fundamental em 2015, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+
+  pd:rendimentoAI_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2005, baseado na taxa de aprovação da etapa de ensino dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:rendimentoAI_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2007, baseado na taxa de aprovação da etapa de ensino dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:rendimentoAI_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2009, baseado na taxa de aprovação da etapa de ensino dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:rendimentoAI_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2011, baseado na taxa de aprovação da etapa de ensino dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:rendimentoAI_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2013, baseado na taxa de aprovação da etapa de ensino dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:rendimentoAI_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2015, baseado na taxa de aprovação da etapa de ensino dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1a5ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos iniciais do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1a5ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos iniciais do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1a5ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos iniciais do fundamental em 2009.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1a5ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos iniciais do fundamental em 2011.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1a5ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos iniciais do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1a5ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos iniciais do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 1ª série do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 1ª série do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 1ª série do fundamental em 2009.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 1ª série do fundamental em 2011.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 1ª série do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_1ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 1ª série do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_2ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 2ª série do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_2ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 2ª série do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_2ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 2ª série do fundamental em 2009.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_2ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 2ª série do fundamental em 2011.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_2ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 2ª série do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_2ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 2ª série do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_3ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 3ª série do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_3ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 3ª série do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_3ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 3ª série do fundamental em 2009.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_3ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 3ª série do fundamental em 2011.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_3ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 3ª série do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_3ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 3ª série do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_4ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 4ª série do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_4ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 4ª série do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_4ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 4ª série do fundamental em 2008.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_4ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 4ª série do fundamental em 2011.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_4ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 4ª série do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_4ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 4ª série do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_5ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 5ª série do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_5ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 5ª série do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_5ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 5ª série do fundamental em 2009.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_5ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 5ª série do fundamental em 2011.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_5ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 5ª série do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+pd:taxaAprovacao_5ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 5ª série do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosIniciais ;
+	rdfs:range		xsd:nonNegativeInteger ;
+  .
+  # dbo:state "SP";
+  # schema:name "CEU EMEF BUTANTA" .
+  
+#####################
+#  pd:codINEP "35245185";
+#  pd:codMunicipio "3550308".
+pd:ideb_AF_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Finais em 2005";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Finais em 2007";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Finais em 2009";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Finais em 2011";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Finais em 2013";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Índice de Desenvolvimento da Educação Básica (Nota Média Padronizada x Indicador de Rendimento) - Anos Finais em 2015";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_projecao_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb dos anos finais em 2007.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_projecao_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb dos anos finais em 2009.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_projecao_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb dos anos finais em 2011.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_projecao_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb dos anos finais em 2013.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_projecao_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb dos anos finais em 2015.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_projecao_2017 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb dos anos finais em 2017.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_projecao_2019 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb dos anos finais em 2019.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:ideb_AF_projecao_2021 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Meta definida pelo Inep/MEC para o Ideb dos anos finais em 2021.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+#  pd:municipio "São Paulo".
+pd:notaPB_AF_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2005, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2007, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2009, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2011, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2013, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática e Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2015, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_LP_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2005, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_LP_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2007, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_LP_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2009, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_LP_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2011, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_LP_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2013, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_LP_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Língua Portuguesa dos estudantes dos anos finais de cada etapa do ensino fundamental em 2015, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_MAT_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática dos estudantes dos anos finais de cada etapa do ensino fundamental em 2005, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_MAT_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática dos estudantes dos anos finais de cada etapa do ensino fundamental em 2007, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_MAT_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática dos estudantes dos anos finais de cada etapa do ensino fundamental em 2009, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_MAT_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática dos estudantes dos anos finais de cada etapa do ensino fundamental em 2011, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_MAT_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática dos estudantes dos anos finais de cada etapa do ensino fundamental em 2013, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:notaPB_AF_MAT_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Notas obtidas em Matemática dos estudantes dos anos finais de cada etapa do ensino fundamental em 2015, medida pela escala de proficiência do Sistema de Avaliação da Educação Básica - SAEB. Detalhes sobre a escala SAEB em: http://download.inep.gov.br/educacao_basica/prova_brasil_saeb/escala/escala_proficiencia/2013/escalas_ensino_fundamental_2013.pdf";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+#  pd:nse "48.6483642071363";
+#  pd:pertenceDRE "Jaçanã/Tremembé";
+#  pd:rede "Municipal".
+pd:rendimentoAF_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2005, baseado na taxa de aprovação dos anos finais do fundamental dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:rendimentoAF_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2007, baseado na taxa de aprovação dos anos finais do fundamental dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:rendimentoAF_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2009, baseado na taxa de aprovação dos anos finais do fundamental dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:rendimentoAF_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2011, baseado na taxa de aprovação dos anos finais do fundamental dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:rendimentoAF_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2013, baseado na taxa de aprovação dos anos finais do fundamental dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:rendimentoAF_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Indicador de rendimento em 2015, baseado na taxa de aprovação dos anos finais do fundamental dos alunos da unidade educacional.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+pd:taxaAprovacao_6a9ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos finais do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6a9ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos finais do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6a9ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos finais do fundamental em 2009.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6a9ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos finais do fundamental em 2011.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6a9ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos finais do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6a9ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para os anos finais do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 6ª série do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 6ª série do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 6ª série do fundamental em 2009.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 6ª série do fundamental em 2011.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 6ª série do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_6ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 6ª série do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_7ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 7ª série do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_7ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 7ª série do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_7ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 7ª série do fundamental em 2009.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_7ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 7ª série do fundamental em 2011.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_7ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 7ª série do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_7ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 7ª série do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_8ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 8ª série do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_8ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 8ª série do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_8ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 8ª série do fundamental em 2009.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_8ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 8ª série do fundamental em 2011.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_8ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 8ª série do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_8ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 8ª série do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_9ano_2005 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 9ª série do fundamental em 2005.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_9ano_2007 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 9ª série do fundamental em 2007.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_9ano_2009 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 9ª série do fundamental em 2009.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_9ano_2011 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 9ª série do fundamental em 2012.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_9ano_2013 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 9ª série do fundamental em 2013.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+  pd:taxaAprovacao_9ano_2015 rdf:type owl:DatatypeProperty;
+	rdfs:comment "Taxa de aprovação (em %) para a 9ª série do fundamental em 2015.";
+	rdfs:domain 	pd:IdebAnosFinais ;
+	rdfs:range		xsd:decimal ;
+  .
+
+#  dbo:state "SP";
+#  schema:name "EMEF PAULO CARNEIRO THOMAZ ALVES GAL" .  
+
+############################
+# Escola
+
+# Escola
+
+# time:year;
+# schema:name;
+# schema:startDate
+# schema:endDate
+# dbo:state
+
+  pd:codINEP rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Código da escola perante o INEP";
+  rdfs:domain pd:Escola;
+.
+
+  pd:codOrgaoRegionalEnsino rdf:type owl:DatatypeProperty;
+  rdfs:comment "Código do órgão regional de ensino.";
+  rdfs:domain pd:Escola;
+.
+pd:situacaoFuncionamento rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Status da situação de funcionamento da escola (1: em atividade; 2: paralisada; 3: extinta (ano do censo); 4: extinta em anos anteriores)";
+  rdfs:domain pd:Escola;
+.
+pd:codRegiao rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Código da região geográfica onde a escola se situa";
+  rdfs:domain pd:Escola;
+.
+pd:codMesorregiao rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Código da mesorregião onde a escola se situa";
+  rdfs:domain pd:Escola;
+.
+pd:codMicrorregiao rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Código da microrregião onde a escola se situa";
+  rdfs:domain pd:Escola;
+.
+pd:codMunicipio rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Código do município no IBGE";
+  rdfs:domain pd:Escola;
+.
+pd:codDistrito rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Código completo do distrito do município onde a escola se situa";
+  rdfs:domain pd:Escola;
+.
+pd:dependenciaAdmin rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Dependência administrativa da escola (1 - Federal; 2 - Estadual; 3 - Municipal; 4 - Privada)";
+  rdfs:domain pd:Escola;
+.
+pd:localizacao rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Localização da escola (1 - urbana; 2 - rural)";
+  rdfs:domain pd:Escola;
+.
+pd:catEscolaPrivada rdf:type owl:DatatypeProperty;
+  rdfs:comment "Categoria da escola privada (1 - Particular; 2 - Comunitária; 3 - Confessional; 4 - Filantrópica)";
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:domain pd:Escola;
+.
+pd:temConvenioPP rdf:type owl:DatatypeProperty;
+  rdfs:comment "Conveniada com o poder público";
+  rdfs:domain pd:Escola;
+  rdfs:range xsd:boolean ;
+.
+pd:tipoConvenioPP rdf:type owl:DatatypeProperty;
+  rdfs:comment "Dependência do convênio com o poder público (1 - Municipal; 2 - Estadual; 3 - Estadual e Municipal)";
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:domain pd:Escola;
+.
+pd:mantidaPorEmpresa rdf:type owl:DatatypeProperty;
+  rdfs:comment "Mantenedora da escola privada - Empresa, grupo empresarial do setor privado ou pessoa física";
+  rdfs:range xsd:boolean ;
+  rdfs:domain pd:Escola;
+.
+pd:mantidaPorOng rdf:type owl:DatatypeProperty;
+  rdfs:comment "Mantenedora da escola privada - Organização não governamental (ONG) - internacional ou nacional. Organização da Sociedade Civil de Interesse Público (Oscip)";
+  rdfs:range xsd:boolean ;
+  rdfs:domain pd:Escola;
+.
+pd:mantidaPorSindicato rdf:type owl:DatatypeProperty;
+  rdfs:comment "Mantenedora da escola privada - Sindicatos de trabalhadores ou patronais, associações e cooperativas";
+  rdfs:range xsd:boolean ;
+  rdfs:domain pd:Escola;
+.
+pd:mantidaPorSistemaS rdf:type owl:DatatypeProperty;
+  rdfs:comment "Mantenedora da escola privada - Sistema S (Sesi, Senai, Sesc, Outros)";
+  rdfs:range xsd:boolean ;
+  rdfs:domain pd:Escola;
+.
+pd:mantidaPorSemFinsLucrativos rdf:type owl:DatatypeProperty;
+  rdfs:comment "Mantenedora da escola privada - Instituições sem fins lucrativos";
+  rdfs:range xsd:boolean ;
+  rdfs:domain pd:Escola;
+.
+pd:codEscolaSede rdf:type owl:DatatypeProperty;
+  rdfs:comment "Código da escola sede";
+  rdfs:range xsd:boolean ;
+  rdfs:domain pd:Escola;
+.
+pd:codIES rdf:type owl:DatatypeProperty;
+  rdfs:comment "Código da IES (Instituição de Ensino Superior) vinculada à escola";
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:domain pd:Escola;
+.
+pd:regulamentada rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Regulamentação/Autorização no conselho ou órgão municipal, estadual ou federal de educação (0 - Não; 1 - Sim; 2 - Em tramitação)";
+  rdfs:domain pd:Escola;
+.
+pd:predioEscolar rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Local de funcionamento da escola - Prédio Escolar";
+  rdfs:domain pd:Escola;
+.
+pd:ocupacaoPredioEscolar rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Forma de ocupação do Prédio escolar (1 - Próprio; 2 - Alugado; 3 - Cedido)";
+  rdfs:domain pd:Escola;
+.
+pd:localSalaEmpresa rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Local de funcionamento da escola - Salas de empresa";
+  rdfs:domain pd:Escola;
+.
+pd:localSocioeducativo rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Local de funcionamento da escola - Unidade de Atendimento socioeducativo";
+  rdfs:domain pd:Escola;
+.
+pd:localUnidadePrisional rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Local de funcionamento da escola - Unidade Prisional";
+  rdfs:domain pd:Escola;
+.
+pd:localPrisaoSocioeducativa rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Local de funcionamento da escola - Unidade Prisional ou Unidade de atendimento socioeducativo";
+  rdfs:domain pd:Escola;
+.
+pd:localTemploIgreja rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Local de funcionamento da escola - Templo/Igreja";
+  rdfs:domain pd:Escola;
+.
+pd:localCasaProfessor rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Local de funcionamento da escola - Casa do professor";
+  rdfs:domain pd:Escola;
+.
+pd:localGalpao rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Local de funcionamento da escola - Galpão/Rancho/Paiol/Barracão";
+  rdfs:domain pd:Escola;
+.
+pd:tipoOcupacao rdf:type owl:DatatypeProperty;
+  rdfs:comment "Forma de ocupação do Galpão/Rancho/Paiol/Barracão (1 - Próprio; 2 - Alugado; 3 - Cedido; 4 - Não informado)";
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:domain pd:Escola;
+.
+pd:localSalaOutraEscola rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Local de funcionamento da escola - Salas em outra escola";
+  rdfs:domain pd:Escola;
+.
+pd:localOutros rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Local de funcionamento da escola - Outros";
+  rdfs:domain pd:Escola;
+.
+pd:predioCompartilhado rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Prédio compartilhado com outra escola";
+  rdfs:domain pd:Escola;
+.
+pd:aguaFiltrada rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean  ;
+  rdfs:comment "Água consumida pelos alunos na escola passa por um processo de ﬁltragem";
+  rdfs:domain pd:Escola;
+.
+pd:aguaRedePublica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Abastecimento de água - Rede pública";
+  rdfs:domain pd:Escola;
+.
+pd:aguaPoco rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Abastecimento de água - Poço artesiano";
+  rdfs:domain pd:Escola;
+.
+pd:aguaCacimba rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Abastecimento de água - Cacimba/Cisterna/Poço";
+  rdfs:domain pd:Escola;
+.
+pd:aguaRio rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Abastecimento de água - Fonte/Rio/Igarapé/Riacho/Córrego";
+  rdfs:domain pd:Escola;
+.
+pd:semAgua rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Abastecimento de água - Inexistente";
+  rdfs:domain pd:Escola;
+.
+pd:energiaRedePublica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Abastecimento de energia elétrica - Rede pública";
+  rdfs:domain pd:Escola;
+.
+pd:energiaGerador rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Abastecimento de energia elétrica - Gerador";
+  rdfs:domain pd:Escola;
+.
+pd:energiaOutros rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Abastecimento de energia elétrica - Outros (Energia alternativa)";
+  rdfs:domain pd:Escola;
+.
+pd:semEnergia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Abastecimento de energia elétrica - Inexistente";
+  rdfs:domain pd:Escola;
+.
+pd:esgotoRedePublica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Esgoto sanitário - Rede pública";
+  rdfs:domain pd:Escola;
+.
+pd:esgotoFossa rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Esgoto sanitário - Fossa";
+  rdfs:domain pd:Escola;
+.
+pd:semEsgoto rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Esgoto sanitário - Inexistente";
+  rdfs:domain pd:Escola;
+.
+pd:lixoColetaPeriodica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Destinação do lixo - Coleta periódica";
+  rdfs:domain pd:Escola;
+.
+pd:lixoQueima rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Destinação do lixo - Queima";
+  rdfs:domain pd:Escola;
+.
+pd:lixoOutrasAreas rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Destinação do lixo - Joga em outra área";
+  rdfs:domain pd:Escola;
+.
+pd:lixoRecicla rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Destinação do lixo - Recicla";
+  rdfs:domain pd:Escola;
+.
+pd:lixoEnterra rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Destinação do lixo - Enterra";
+  rdfs:domain pd:Escola;
+.
+pd:lixoOutros rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Destinação do lixo - Outros";
+  rdfs:domain pd:Escola;
+.
+pd:temSalaDiretoria rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Sala de Diretoria";
+  rdfs:domain pd:Escola;
+.
+pd:temSalaProfessor rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Sala de professores";
+  rdfs:domain pd:Escola;
+.
+pd:temLaboratorioInformatica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Laboratório de informática";
+  rdfs:domain pd:Escola;
+.
+pd:temLaboratorioCiencias rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Laboratório de ciências";
+  rdfs:domain pd:Escola;
+.
+pd:temSAE rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Sala de recursos Multifuncionais para Atendimento Educacional Especializado (AEE)";
+  rdfs:domain pd:Escola;
+.
+pd:temQuadraCoberta rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Quadra de esportes Coberta";
+  rdfs:domain pd:Escola;
+.
+pd:temQuadraDescoberta rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Quadra de esportes Descoberta";
+  rdfs:domain pd:Escola;
+.
+pd:temQuadraEsportes rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Quadra de esportes coberta ou descoberta";
+  rdfs:domain pd:Escola;
+.
+pd:temCozinha rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Cozinha";
+  rdfs:domain pd:Escola;
+.
+pd:temBiblioteca rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Biblioteca";
+  rdfs:domain pd:Escola;
+.
+pd:temSalaLeitura rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Sala de Leitura";
+  rdfs:domain pd:Escola;
+.
+pd:temBibliotecaSalaLeitura rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Biblioteca e/ou Sala de leitura";
+  rdfs:domain pd:Escola;
+.
+pd:temParqueInfantil rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Parque infantil";
+  rdfs:domain pd:Escola;
+.
+pd:temBercario rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Berçário";
+  rdfs:domain pd:Escola;
+.
+pd:temBanheiroFora rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Banheiro fora do prédio";
+  rdfs:domain pd:Escola;
+.
+pd:temBanheiroDentro rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Banheiro dentro do prédio";
+  rdfs:domain pd:Escola;
+.
+pd:temBanheiroInfantil rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Banheiro adequado à educação infantil";
+  rdfs:domain pd:Escola;
+.
+pd:temBanheiroPNE rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Banheiro adequado ao uso dos alunos com deficiência ou mobilidade reduzida";
+  rdfs:domain pd:Escola;
+.
+pd:temDependenciasPNE rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Dependências e vias adequadas a alunos com deficiência ou mobilidade reduzida";
+  rdfs:domain pd:Escola;
+.
+pd:temSecretaria rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Sala de secretaria";
+  rdfs:domain pd:Escola;
+.
+pd:temChuveiroBanheiro rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Banheiro com chuveiro";
+  rdfs:domain pd:Escola;
+.
+pd:temRefeitorio rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Refeitório";
+  rdfs:domain pd:Escola;
+.
+pd:temDespensa rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Despensa";
+  rdfs:domain pd:Escola;
+.
+pd:temAlmoxarifado rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Almoxarifado";
+  rdfs:domain pd:Escola;
+.
+pd:temAuditorio rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Auditório";
+  rdfs:domain pd:Escola;
+.
+pd:temPatioCoberto rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Pátio Coberto";
+  rdfs:domain pd:Escola;
+.
+pd:temPatioDescoberto rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Pátio Descoberto";
+  rdfs:domain pd:Escola;
+.
+pd:temAlojamentoAlunos rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Alojamento de Aluno";
+  rdfs:domain pd:Escola;
+.
+pd:temAlojamentoProfessores rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Alojamento de professor";
+  rdfs:domain pd:Escola;
+.
+pd:temAreaVerde rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Área Verde";
+  rdfs:domain pd:Escola;
+.
+pd:temLavanderia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Lavanderia";
+  rdfs:domain pd:Escola;
+.
+pd:temOutrasDependencias rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Dependências existentes na escola - Nenhuma das dependência relacionadas";
+  rdfs:domain pd:Escola;
+.
+pd:totalSalas rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Número de salas de aula existentes na escola";
+  rdfs:domain pd:Escola;
+.
+pd:totalSalasUtilizadas rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Número de salas utilizadas como salas de aula (dentro e fora do prédio)";
+  rdfs:domain pd:Escola;
+.
+pd:temTV rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Aparelho de televisão";
+  rdfs:domain pd:Escola;
+.
+pd:temVideocassete rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Videocassete";
+  rdfs:domain pd:Escola;
+.
+pd:temDvd rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - DVD";
+  rdfs:domain pd:Escola;
+.
+pd:temParabolica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Antena parabólica";
+  rdfs:domain pd:Escola;
+.
+pd:temCopiadora rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Copiadora";
+  rdfs:domain pd:Escola;
+.
+pd:temRetroprojetor rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Retroprojetor";
+  rdfs:domain pd:Escola;
+.
+pd:temImpressora rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Impressora";
+  rdfs:domain pd:Escola;
+.
+pd:temImpressoraMultifuncional rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Impressora Multifuncional";
+  rdfs:domain pd:Escola;
+.
+pd:temAparelhoSom rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Aparelho de som";
+  rdfs:domain pd:Escola;
+.
+pd:temProjetorMultimidia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Projetor Multimídia (Datashow)";
+  rdfs:domain pd:Escola;
+.
+pd:temFax rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Fax";
+  rdfs:domain pd:Escola;
+.
+pd:temCamera rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Máquina fotográfica/Filmadora";
+  rdfs:domain pd:Escola;
+.
+pd:temComputador rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Equipamentos existentes na escola - Computador";
+  rdfs:domain pd:Escola;
+.
+pd:totalTVs rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de Aparelhos de televisão";
+  rdfs:domain pd:Escola;
+.
+pd:totalVideocassetes rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de Videocassetes";
+  rdfs:domain pd:Escola;
+.
+pd:totalDvds rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de Aparelhos de DVD";
+  rdfs:domain pd:Escola;
+.
+pd:totalParabolicas rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de Antenas parabólicas";
+  rdfs:domain pd:Escola;
+.
+pd:totalCopiadoras rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de Copiadoras";
+  rdfs:domain pd:Escola;
+.
+pd:totalRetroprojetores rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de Retroprojetores";
+  rdfs:domain pd:Escola;
+.
+pd:totalImpressoras rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de impressoras";
+  rdfs:domain pd:Escola;
+.
+pd:totalImpressorasMultifuncionais rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de impressoras multifuncionais";
+  rdfs:domain pd:Escola;
+.
+pd:totalAparelhosSom rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade aparelhos de som";
+  rdfs:domain pd:Escola;
+.
+pd:totalProjetoresMultimidia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de Projetores Multimídias (Datashow)";
+  rdfs:domain pd:Escola;
+.
+pd:totalFax rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de fax";
+  rdfs:domain pd:Escola;
+.
+pd:totalCameras rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de Máquinas Fotográficas/ Filmadoras";
+  rdfs:domain pd:Escola;
+.
+pd:totalComputadores rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de computadores na escola";
+  rdfs:domain pd:Escola;
+.
+pd:totalComputadoresAdministrativos rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de computadores de uso administrativo";
+  rdfs:domain pd:Escola;
+.
+pd:totalComputadoresAlunos rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Quantidade de computadores para uso dos alunos";
+  rdfs:domain pd:Escola;
+.
+pd:temInternet rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean  ;
+  rdfs:comment "Acesso à Internet";
+  rdfs:domain pd:Escola;
+.
+pd:temInternetBandaLarga rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Internet Banda Larga";
+  rdfs:domain pd:Escola;
+.
+pd:totalFuncionarios rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Total de funcionários da escola (inclusive profissionais escolares em sala de aula)";
+  rdfs:domain pd:Escola;
+.
+pd:temAlimentacaoEscolar rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Alimentação escolar para os alunos";
+  rdfs:domain pd:Escola;
+.
+pd:tipoAEE rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Atendimento Educacional Especializado (AEE) (0 - Não oferece; 1 - Não exclusivamente; 2 - Exclusivamente)";
+  rdfs:domain pd:Escola;
+.
+pd:atividadeComplementar rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Atividade complementar (0 - Não oferece; 1 - Não exclusivamente; 2 - Exclusivamente)";
+  rdfs:domain pd:Escola;
+.
+pd:temOrganizacaoPorCiclos rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Ensino Fundamental organizado em ciclos";
+  rdfs:domain pd:Escola;
+.
+pd:tipoLocalizacaoDiferenciada rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Localização diferenciada da escola (0 - Não se aplica; 1 - Área de assentamento; 2 - Terra indígena; 3 - Área remanescente de quilombos; 4 - Unidade de uso sustentável; 5 - Unidade de uso sustentável em terra indígena; 6 - Unidade de uso sustentável em área remanescente de quilombos)";
+  rdfs:domain pd:Escola;
+.
+pd:temMaterialQuilombola rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Materiais didáticos específicos para atendimento à diversidade sociocultural - Quilombolas";
+  rdfs:domain pd:Escola;
+.
+pd:temMaterialIndigena rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Materiais didáticos específicos para atendimento à diversidade sociocultural - Indígena";
+  rdfs:domain pd:Escola;
+.
+pd:naoUsaMaterialEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Materiais didáticos específicos para atendimento à diversidade sociocultural - Não utiliza";
+  rdfs:domain pd:Escola;
+.
+pd:escolaIndigena rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola Indígena";
+  rdfs:domain pd:Escola;
+.
+pd:tipoLinguaIndigena rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Educação Indígena - Língua em que o ensino é ministrado (1 - Somente em Língua Indígena; 2 - Somente em Língua Portuguesa; 3 - Em Língua Indígena e em Língua Portuguesa)";
+  rdfs:domain pd:Escola;
+.
+pd:linguaIndigena rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger ;
+  rdfs:comment "Educação Indígena - Língua em que o ensino é ministrado - Língua Indígena - Código da língua Indígena";
+  rdfs:domain pd:Escola;
+.
+pd:temBrasilAlfabetizado rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola cede espaço para turmas do Programa Brasil Alfabetizado";
+  rdfs:domain pd:Escola;
+.
+pd:abreAosFimDeSemanas rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola abre aos finais de semana para a comunidade";
+  rdfs:domain pd:Escola;
+.
+pd:temFormacaoPorAlternancia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola com proposta pedagógica de formação por alternância";
+  rdfs:domain pd:Escola;
+.
+pd:temMediacaoPresencial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Mediação didático-pedagógica oferecida pela escola - Presencial";
+  rdfs:domain pd:Escola;
+.
+pd:temMediacaoSemipresencial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Mediação didático-pedagógica oferecida pela escola - Semipresencial";
+  rdfs:domain pd:Escola;
+.
+pd:temMediacaoEad rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Mediação didático-pedagógica oferecida pela escola - Educação a Distância - EAD";
+  rdfs:domain pd:Escola;
+.
+pd:temClasseEspecialExclusiva rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola possui classe especial exclusiva (ao menos uma turma exclusiva de alunos com deficiência, transtorno global do desenvolvimento ou altas habilidades/superdotação - Classes Especiais)";
+  rdfs:domain pd:Escola;
+.
+pd:etapaRegular rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Modo, maneira ou metodologia de ensino correspondente às turmas com etapas de escolarização consecutivas, Creche ao Ensino Médio. Etapas consideradas (nas antigas modalidades 1 ou 2): TP_ETAPA_ENSINO igual a 1,2,4,5,6,7,8,9,10,11,14, 15,16,17,18,19,20,21,41,25,26,27,28,29,30,31, 32,33,34,35,36,37 ou 38.";
+  rdfs:domain pd:Escola;
+.
+pd:etapaEJA rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Modo, maneira ou metodologia de ensino correspondente às turmas destinadas a pessoas que não cursaram o ensino fundamental e/ou médio em idade própria. Etapas consideradas (nas antigas modalidades 2 ou 3): TP_ETAPA_ENSINO igual a 65,67,69,70,71,73 ou 74.";
+  rdfs:domain pd:Escola;
+.
+pd:etapaProfissionalizante rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Modo profissionalizante de ensino correspondente às turmas de cursos de formação inicial e continuada ou de qualificação profissional (Cursos FIC) articulados à EJA ou concomitantes; ou de cursos técnicos de nível médio nas formas articulada (integrada ou concomitante) ou subsequente ao ensino médio e de normal/magistério. Etapas consideradas (nas antigas modalidades 1, 2 ou 3): TP_ETAPA_ENSINO igual a 30,31,32,33,34, 35,36,37,38,39,40,65,67,68,73 ou 74.";
+  rdfs:domain pd:Escola;
+.
+pd:temCrecheComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Creche em classes comuns do ensino regular (TP_ETAPA_ENSINO=1 e IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:temPreComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Pré-escola em classes comuns do ensino regular (TP_ETAPA_ENSINO=2 e IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:temFundamentalAIComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Anos Iniciais do Ensino Fundamental (8 e 9 anos) em classes comuns do ensino regular (TP_ETAPA_ENSINO igual a 4,5,6,7,14,15,16,17 ou 18 e  IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:temFundamentalAFComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Anos Finais do Ensino Fundamental (8 e 9 anos) em classes comuns do ensino regular (TP_ETAPA_ENSINO igual a 8,9,10,11,19,20,21 ou 41 e IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:temMedioComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Ensino Médio - Médio Propedêutico em classes comuns do ensino regular (TP_ETAPA_ENSINO igual a 25,26,27,28 ou 29 e IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:temMedioIntegradoComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Curso Técnico Integrado ao Ensino Médio em classes comuns do ensino regular (TP_ETAPA_ENSINO igual a  30,31,32,33 ou 34 e IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:temMedioNormalComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Ensino Médio - Normal/ Magistério em classes comuns do ensino regular (TP_ETAPA_ENSINO igual a  35,36,37 ou 38 e IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:temCrecheEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Creche em classes especiais exclusivas do ensino regular (TP_ETAPA_ENSINO=1 e IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+pd:temPreEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Pré-escola em classes especiais exclusivas do ensino regular (TP_ETAPA_ENSINO=2 e IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+pd:temFundamentalAIEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Anos Iniciais do Ensino Fundamental (8 e 9 anos) em classes especiais exclusivas do ensino regular (TP_ETAPA_ENSINO igual a 4,5,6,7,14,15,16,17 ou 18 e  IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+pd:temFundamentalAFEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Anos Finais do Ensino Fundamental (8 e 9 anos) em classes especiais exclusivas do ensino regular (TP_ETAPA_ENSINO igual a 8,9,10,11,19,20,21 ou 41 e IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+pd:temMedioEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Ensino Médio - Médio Propedêutico em classes especiais exclusivas do ensino regular (TP_ETAPA_ENSINO igual a 25,26,27,28 ou 29 e IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+pd:temMedioIntegradoEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Curso Técnico Integrado ao Ensino Médio em classes especiais exclusivas do ensino regular (TP_ETAPA_ENSINO igual a  30,31,32,33 ou 34 e IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+pd:temMedioNormalEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Ensino Médio - Normal/ Magistério em classes especiais exclusivas do ensino regular (TP_ETAPA_ENSINO igual a  35,36,37 ou 38 e IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+pd:temEjaFundamentalComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Ensino Fundamental em classes comuns da EJA (TP_ETAPA_ENSINO igual a 65,69,70 ou 73 e IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:ItemEjaMedioComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Ensino Médio em classes comuns da EJA (TP_ETAPA_ENSINO igual a 67,71 ou 74 e IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:temEjaProfissionalComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece educação profissional integrada em classes comuns da EJA (TP_ETAPA_ENSINO igual a 65,67,73 ou 74 e IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:temEjaFundamentalEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Ensino Fundamental em classes especiais exclusivas da EJA(TP_ETAPA_ENSINO igual a 65,69,70 ou 73 e IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+pd:temEjaMedioEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece Ensino Médio em classes especiais exclusivas da EJA (TP_ETAPA_ENSINO igual a 67,71 ou 74 e IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+pd:temEjaProfissionalEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Escola oferece educação profissional integrada em classes especiais exclusivas da EJA (TP_ETAPA_ENSINO igual a 65,67,73 ou 74 e IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+pd:temTecnicoComum rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Educação Profissional - Curso Técnico Concomitante e/ou Subsequente e/ou Curso FIC Concomitante em classes comuns (TP_ETAPA_ENSINO igual a 39, 40 ou 68 e IN_ESPECIAL_EXCLUSIVA=0)";
+  rdfs:domain pd:Escola;
+.
+pd:temTecnicoEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean ;
+  rdfs:comment "Educação Profissional - Curso Técnico Concomitante e/ou Subsequente e/ou Curso FIC Concomitante em classes especiais exclusivas (TP_ETAPA_ENSINO igual a 39, 40 ou 68 e IN_ESPECIAL_EXCLUSIVA=1)";
+  rdfs:domain pd:Escola;
+.
+
+##########################
+## Docentes
+
+# Table dbo.ESCOLAS
+# 
+# schema:datePublished
+# time:day, month, year
+# schema:endDate
+# foaf:age, gender x
+# schema:nationality x
+
+# Table dbo.DOCENTES
+
+pd:codDocente rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Identificador do docente no INEP"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:idadeReferencia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Idade do docente no mês de referência do Censo Escolar (31 de maio)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:sexo rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Sexo (1 - Masculino; 2 - Feminino)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:raca rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Cor/raça (0 - Não declarada; 1 - Branca; 2 - Preta; 3 - Parda; 4 - Amarela; 5 - Indígena)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:nacionalidade rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código do país de origem do docente"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:codPaisOrigem rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código do país de origem do docente"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:codUFNascimento rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código do estado de nascimento do docente"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:codMunicipioNascimento rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código do município de nascimento do docente"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:codUFResidencia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código do estado de residência do docente"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:codMunicipioResidencia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código do município de residência do docente"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:zonaResidencial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Localização/Zona de Residência (1 - Urbana; 2 - Rural)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temDeficiencia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Docente com deficiência"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temCegueira rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Docente com deficiência - Cegueira"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temBaixaVisao rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Docente com deficiência - Baixa Visão"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temSurdez rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Docente com deficiência - Surdez"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temDeficienciaAuditiva rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Docente com deficiência - Deficiência Auditiva"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temSurdocegueira rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Docente com deficiência - Surdocegueira"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temDeficienciaFisica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Docente com deficiência - Deficiência Física"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temDeficienciaIntelectual rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Docente com deficiência - Deficiência Intelectual"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temDeficienciaMultipla rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Docente com deficiência - Deficiência Múltipla"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:escolaridade rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Escolaridade (1 - Fundamental incompleto; 2 - Fundamental completo; 3 - Ensino Médio completo; 4 - Superior completo)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:possuiMagisterio rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Docente possui ensino médio normal/magistério. (0 - Não; 1 - Sim; 2 - Sim - específico indígena; 3 - Não disponível (docente com superior em andamento ou concluído))"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:situacaoCurso1 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Situação do curso superior 1 (1 - Concluído; 2 - Em andamento)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:areaCurso1 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código da Área do curso superior 1"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:curso1 rdf:type owl:DatatypeProperty;
+  rdfs:comment "Código do curso 1 da escolaridade superior"@pt;	
+  rdfs:domain pd:Docente;
+  rdfs:range xsd:string
+.
+pd:licenciaturaCurso1 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Possui Licenciatura no curso 1"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:complementacaoCurso1 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Formação/complementação pedagógica do curso 1"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:inicioCurso1 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Ano de início do curso superior 1 em andamento"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:fimCurso1 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Ano de conclusão do curso superior 1"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:instituicaoCurso1 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Tipo de instituição do curso superior 1 (1 - Pública; 2 - Privada)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:codIESCurso1 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código da instituição do curso 1"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:situacaoCurso2 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Situação do curso superior 2 (1 - Concluído; 2 - Em andamento)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:areaCurso2 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código da Área do curso superior 2"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:curso2 rdf:type owl:DatatypeProperty;
+  rdfs:comment "Código do curso 2 da escolaridade superior"@pt;	
+  rdfs:domain pd:Docente;
+  rdfs:range xsd:string
+.
+pd:licenciaturaCurso2 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Possui Licenciatura no curso superior 2"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:complementacaoCurso2 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Formação/complementação pedagógica do curso superior 2"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:inicioCurso2 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Ano de início do curso superior 2 em andamento"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:fimCurso2 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Ano de conclusão do curso superior 2"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:instituicaoCurso2 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Tipo de instituição do curso superior 2 (1 - Pública; 2 - Privada)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:codIESCurso2 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código da Instituição do curso superior 2"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:situacaoCurso3 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Situação do curso superior 3 (1 - Concluído; 2 - Em andamento)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:areaCurso3 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código da Área do curso superior 3"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:curso3 rdf:type owl:DatatypeProperty;
+  rdfs:comment "Código do curso 3 da escolaridade superior"@pt;	
+  rdfs:domain pd:Docente;
+  rdfs:range xsd:string;
+.
+pd:licenciaturaCurso3 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Possui Licenciatura no curso superior 3"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:complementacaoCurso3 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Formação/complementação pedagógica do curso superior 3"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:inicioCurso3 rdf:type owl:DatatypeProperty;
+  rdfs:comment "Ano de início do curso superior 3 em andamento"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:fimCurso3 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Ano de conclusão do curso superior 3"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:instituicaoCurso3 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Tipo de instituição do curso superior 3 (1 - Pública, 2 - Privada)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:codIESCurso3 rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Código da Instituição do curso superior 3"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaQuimica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Química"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaFisica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Física"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaMatematica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Matemática"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaBiologia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Biologia"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaCiencias rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Ciências"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaLP rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Língua / Literatura Portuguesa"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaIngles rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Língua / Literatura estrangeira - Inglês"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaEspanhol rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Língua / Literatura estrangeira - Espanhol"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaFrances rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Língua / Literatura estrangeira - Francês"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaOutraLingua rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Língua / Literatura estrangeira - Outra"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaLinguaIndigena rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Língua Indígena"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaArtes rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Artes (Educação Artística, Teatro, Dança, Música, Artes Plásticas e outras)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaEducacaoFisica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Educação Física"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaHistoria rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - História"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaGeografia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Geografia"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaFilosofia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Filosofia"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaEnsinoReligioso rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Ensino Religioso"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaEstudosSociais rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Estudos Sociais"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaSociologia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Sociologia"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaEstudosSociaisSociologia rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Estudos Sociais ou Sociologia"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaInformatica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Informática / Computação"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaProfissionalizante rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Disciplinas profissionalizantes"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaAEE rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Disciplinas voltadas ao atendimento às necessidades educacionais específicas dos alunos que são público alvo da educação especial a às práticas educacionais inclusivas"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaDiversidadeSociocultural rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Disciplinas voltadas à diversidade sociocultural (Disciplinas pedagógicas)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaLibras rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Libras"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaPedagogica rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Disciplinas pedagógicas"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:turmaOutraDisciplina rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Disciplinas - Outras disciplinas"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temEspecializacao rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Pós-Graduação - Especialização"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temMestrado rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Pós-Graduação - Mestrado"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temDoutorado rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Pós-Graduação - Doutorado"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:naoTemPos rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Pós-Graduação - Nenhum"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoCreche rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para creche (0 a 3 anos)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoPre rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para pré-escola (4 e 5 anos)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoFundAI rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para anos iniciais do ensino fundamental"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoFundAF rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para anos finais do ensino fundamental"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoMedio rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para ensino médio"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoEja rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para educação de jovens e adultos"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoEspecial rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para educação especial"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoIndigena rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Específico para educação indígena"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoCampo rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Educação do Campo"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoAmbiental rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Educação Ambiental"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoDireitosHumanos rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Educação em direitos humanos"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoDiversidadeSexual rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Gênero e Diversidade Sexual"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoDireitosCriancas rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Direitos de criança e adolescente"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoCulturaAfricana rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Educação para as relações etnicorracias e história e cultura afro-brasileira e africana"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:temFormacaoOutra rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Outros"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:naoTemFormacaoContinuada rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:boolean;
+  rdfs:comment "Outros cursos - Formação Continuada com no mínimo 80 horas - Nenhum"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:tipoDocente rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Função que exerce na escola (1 - Docente; 2 - Auxiliar/Assistente Educacional; 3 - Profissional/Monitor de atividade complementar; 4 - Tradutor Intérprete de Libras; 5 - Docente Titular - coordenador de tutoria (de módulo ou disciplina) - EAD; 6 - Docente Tutor - Auxiliar (de módulo ou disciplina) - EAD)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:tipoContratacao rdf:type owl:DatatypeProperty;
+  rdfs:range xsd:nonNegativeInteger;
+  rdfs:comment "Situação Funcional/Regime de contratação/Tipo de Vínculo (Apenas para docente de escola pública) (1 - Concursado/efetivo/estável; 2 - Contrato temporário; 3 - Contrato terceirizado; 4 - Contrato CLT)"@pt;	
+  rdfs:domain pd:Docente;
+.
+pd:codTurma rdf:type owl:ObjectProperty;
+  rdfs:comment "Referência à turma à que o docente leciona."@pt;	
+  rdfs:range pd:Turma
+.
+
