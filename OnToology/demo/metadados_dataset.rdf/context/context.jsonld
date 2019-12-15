@@ -1,0 +1,118 @@
+{
+  "@context" : {
+    "spatial" : {
+      "@id" : "http://purl.org/dc/terms/spatial"
+    },
+    "coverage" : {
+      "@id" : "http://purl.org/dc/terms/coverage"
+    },
+    "sparqlEndpoint" : {
+      "@id" : "https://www.w3.org/TR/void/sparqlEndpoint"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "url" : {
+      "@id" : "http://schema.org/url"
+    },
+    "accrualPeriodicity" : {
+      "@id" : "http://purl.org/dc/terms/accrualPeriodicity"
+    },
+    "valueReference" : {
+      "@id" : "http://schema.org/valueReference"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "Distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#Distribution"
+    },
+    "dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#dataset"
+    },
+    "dateModified" : {
+      "@id" : "http://schema.org/dateModified"
+    },
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution"
+    },
+    "downloadURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#downloadURL"
+    },
+    "measurementTechnique" : {
+      "@id" : "http://schema.org/measurementTechnique"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "actedOnBehalfOf" : {
+      "@id" : "http://www.w3.org/ns/prov#actedOnBehalfOf"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "Agent" : {
+      "@id" : "http://www.w3.org/ns/prov#Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "givenName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/givenName"
+    },
+    "contentUrl" : {
+      "@id" : "http://schema.org/contentUrl"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "Catalog" : {
+      "@id" : "http://www.w3.org/ns/dcat#Catalog"
+    },
+    "keyword" : {
+      "@id" : "http://www.w3.org/ns/dcat#keyword"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "mediaType" : {
+      "@id" : "http://www.w3.org/ns/dcat#mediaType"
+    },
+    "datePublished" : {
+      "@id" : "http://schema.org/datePublished"
+    },
+    "version" : {
+      "@id" : "http://pav-ontology.github.io/pav/version"
+    },
+    "theme" : {
+      "@id" : "http://www.w3.org/ns/dcat#theme"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/terms/language"
+    },
+    "vocabulary" : {
+      "@id" : "https://www.w3.org/TR/void/vocabulary"
+    },
+    "description" : {
+      "@id" : "http://schema.org/description"
+    },
+    "temporal" : {
+      "@id" : "http://purl.org/dc/terms/temporal"
+    }
+  }
+}

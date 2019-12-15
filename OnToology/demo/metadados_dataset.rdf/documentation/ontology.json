@@ -1,0 +1,873 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Catalog" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://id.loc.gov/vocabulary/iso639-1/pt"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/usp"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Dados da educação básica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dados da educação básica"
+  } ],
+  "http://www.w3.org/ns/dcat#dataset" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/Docentes/"
+  }, {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/"
+  }, {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/SP/"
+  }, {
+    "@id" : "http://localhost:3030/educacao-basica/IDEB/SP/"
+  }, {
+    "@id" : "http://localhost:3030/geografia/Municipios/"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@value" : "IDEB"
+  }, {
+    "@value" : "censo"
+  }, {
+    "@value" : "docente"
+  }, {
+    "@value" : "educação básica"
+  }, {
+    "@value" : "escola"
+  }, {
+    "@value" : "professor"
+  }, {
+    "@value" : "rendimento escolar"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "http://localhost:3030"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/Docentes/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/code#freq-A"
+  } ],
+  "http://purl.org/dc/terms/coverage" : [ {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#governo-federal"
+  }, {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#poder-executivo"
+  }, {
+    "@value" : "country"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://id.loc.gov/vocabulary/iso639-1/pt"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/inep"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "http://www.geonames.org/3469034"
+  } ],
+  "http://purl.org/dc/terms/temporal" : [ {
+    "@id" : "http://reference.data.gov.uk/id/year/2016"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://inep.gov.br/web/guest/microdados#Censo%20Escolar"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "O Censo Escolar é um levantamento de dados estatístico-educacionais de âmbito nacional realizado todos os anos e coordenado pelo Inep. Ele é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país."
+  } ],
+  "http://schema.org/measurementTechnique" : [ {
+    "@value" : "census"
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Censo das escolas brasileiras"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/2016/"
+  }, {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/2017/"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@value" : "censo"
+  }, {
+    "@value" : "educação básica"
+  }, {
+    "@value" : "escola"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#educacao-basica"
+  }, {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/Docentes/2016/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://pav-ontology.github.io/pav/version" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/inep"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://download.inep.gov.br/microdados/micro_censo_escolar_2016.zip"
+  } ],
+  "http://schema.org/dateModified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-10-01"
+  } ],
+  "http://schema.org/datePublished" : [ {
+    "@value" : "2016"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "Registro de todos os docentes do país, levantados pelo Censo Escolar. O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país."
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Docentes do Brasil - 2016."
+  } ],
+  "http://schema.org/valueReference" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/municipios"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#mediaType" : [ {
+    "@value" : "application/rdf+xml"
+  } ],
+  "https://www.w3.org/TR/void/sparqlEndpoint" : [ {
+    "@id" : "http:localhost:3030/sparql"
+  } ],
+  "https://www.w3.org/TR/void/vocabulary" : [ {
+    "@id" : "http://localhost:3030/ontology/educacao-basica.owl"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/Docentes/2017/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://pav-ontology.github.io/pav/version" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/inep"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://download.inep.gov.br/microdados/micro_censo_escolar_2017.zip"
+  } ],
+  "http://schema.org/dateModified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-10-01"
+  } ],
+  "http://schema.org/datePublished" : [ {
+    "@value" : "2017"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "Registro de todos os docentes do país, levantados pelo Censo Escolar. O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país."
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Docentes do Brasil - 2017."
+  } ],
+  "http://schema.org/valueReference" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/municipios"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#mediaType" : [ {
+    "@value" : "application/rdf+xml"
+  } ],
+  "https://www.w3.org/TR/void/sparqlEndpoint" : [ {
+    "@id" : "http:localhost:3030/sparql"
+  } ],
+  "https://www.w3.org/TR/void/vocabulary" : [ {
+    "@id" : "http://localhost:3030/ontology/educacao-basica.owl"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/Escolas/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/code#freq-A"
+  } ],
+  "http://purl.org/dc/terms/coverage" : [ {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#governo-federal"
+  }, {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#poder-executivo"
+  }, {
+    "@value" : "country"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://id.loc.gov/vocabulary/iso639-1/pt"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/inep"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "http://www.geonames.org/3469034"
+  } ],
+  "http://purl.org/dc/terms/temporal" : [ {
+    "@id" : "http://reference.data.gov.uk/id/year/2016"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://inep.gov.br/web/guest/microdados#Censo%20Escolar"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "O Censo Escolar é um levantamento de dados estatístico-educacionais de âmbito nacional realizado todos os anos e coordenado pelo Inep. Ele é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país."
+  } ],
+  "http://schema.org/measurementTechnique" : [ {
+    "@value" : "census"
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Censo das escolas brasileiras"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/2016/"
+  }, {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/2017/"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@value" : "censo"
+  }, {
+    "@value" : "educação básica"
+  }, {
+    "@value" : "escola"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#educacao-basica"
+  }, {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/Escolas/2016/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://pav-ontology.github.io/pav/version" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/inep"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://download.inep.gov.br/microdados/micro_censo_escolar_2016.zip"
+  } ],
+  "http://schema.org/dateModified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-10-01"
+  } ],
+  "http://schema.org/datePublished" : [ {
+    "@value" : "2016"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país."
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Censo escolar 2016."
+  } ],
+  "http://schema.org/valueReference" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/municipios"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#mediaType" : [ {
+    "@value" : "application/rdf+xml"
+  } ],
+  "https://www.w3.org/TR/void/sparqlEndpoint" : [ {
+    "@id" : "http:localhost:3030/sparql"
+  } ],
+  "https://www.w3.org/TR/void/vocabulary" : [ {
+    "@id" : "http://localhost:3030/ontology/educacao-basica.owl"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/Escolas/2017/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://pav-ontology.github.io/pav/version" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/inep"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://download.inep.gov.br/microdados/micro_censo_escolar_2017.zip"
+  } ],
+  "http://schema.org/dateModified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-10-01"
+  } ],
+  "http://schema.org/datePublished" : [ {
+    "@value" : "2017"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país."
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Censo escolar 2017."
+  } ],
+  "http://schema.org/valueReference" : [ {
+    "@id" : "http://localhost:3030/geografia/Municipios/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#mediaType" : [ {
+    "@value" : "application/rdf+xml"
+  } ],
+  "https://www.w3.org/TR/void/sparqlEndpoint" : [ {
+    "@id" : "http:localhost:3030/sparql"
+  } ],
+  "https://www.w3.org/TR/void/vocabulary" : [ {
+    "@id" : "http://localhost:3030/ontology/educacao-basica.owl"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/Escolas/SP/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/code#freq-A"
+  } ],
+  "http://purl.org/dc/terms/coverage" : [ {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#governo-municipal"
+  }, {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#poder-executivo"
+  }, {
+    "@value" : "city"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://id.loc.gov/vocabulary/iso639-1/pt"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/smesp"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "http://www.geonames.org/6324358"
+  } ],
+  "http://purl.org/dc/terms/temporal" : [ {
+    "@id" : "http://reference.data.gov.uk/id/year/2018"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://dados.prefeitura.sp.gov.br/dataset/cadastro-de-escolas-municipais-conveniadas-e-privadas"
+  } ],
+  "http://schema.org/datePublished" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2018-12-30"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "Cadastro de escolas municipais, conveniadas e privadas, tanto ativas como extintas, com informações sobre a quantidade de turnos de funcionamento da escola e geolocalização. Dados do Sistema EOL."
+  } ],
+  "http://schema.org/measurementTechnique" : [ {
+    "@value" : "census"
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Cadastro de escolas municipais, conveniadas e privadas - SP"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/SP/2018/"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@value" : "educação"
+  }, {
+    "@value" : "escolas"
+  }, {
+    "@value" : "unidades educacionais"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#educacao-basica"
+  }, {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/Escolas/SP/2018/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://pav-ontology.github.io/pav/version" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/publicdomain/zero/1.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/smesp"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx"
+  } ],
+  "http://schema.org/dateModified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-10-01"
+  } ],
+  "http://schema.org/datePublished" : [ {
+    "@value" : "2018"
+  } ],
+  "http://schema.org/description" : [ {
+    "@language" : "pt",
+    "@value" : "Cadastro de escolas municipais, conveniadas e privadas, tanto ativas como extintas, com informações sobre a quantidade de turnos de funcionamento da escola e geolocalização. Dados do Sistema EOL."
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Cadastro de escolas municipais, conveniadas e privadas, até 2018."
+  } ],
+  "http://schema.org/valueReference" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/"
+  }, {
+    "@id" : "http://localhost:3030/geografia/Municipios/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#mediaType" : [ {
+    "@value" : "application/rdf+xml"
+  } ],
+  "https://www.w3.org/TR/void/sparqlEndpoint" : [ {
+    "@id" : "http:localhost:3030/sparql"
+  } ],
+  "https://www.w3.org/TR/void/vocabulary" : [ {
+    "@id" : "http://localhost:3030/ontology/educacao-basica.owl"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/IDEB/SP/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/code#freq-A"
+  } ],
+  "http://purl.org/dc/terms/coverage" : [ {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#governo-municipal"
+  }, {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#poder-executivo"
+  }, {
+    "@value" : "country"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://id.loc.gov/vocabulary/iso639-1/pt"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/smesp"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "http://www.geonames.org/3469034"
+  } ],
+  "http://purl.org/dc/terms/temporal" : [ {
+    "@id" : "http://reference.data.gov.uk/id/year/2018"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://dados.prefeitura.sp.gov.br/dataset/ideb-e-prova-brasil-na-rede-municipal-de-ensino"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação."
+  } ],
+  "http://schema.org/measurementTechnique" : [ {
+    "@value" : "assessment"
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Ideb e Prova Brasil na Rede Municipal de Ensino (2005-2015)"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/IDEB/SP/2015/AF/"
+  }, {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/IDEB/SP/2015/AI/"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@value" : "aprovação"
+  }, {
+    "@value" : "avaliação"
+  }, {
+    "@value" : "ensino fundamental"
+  }, {
+    "@value" : "escolas"
+  }, {
+    "@value" : "ideb"
+  }, {
+    "@value" : "qualidade da educação"
+  }, {
+    "@value" : "rendimento"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#educacao-basica"
+  }, {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://pav-ontology.github.io/pav/version" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/publicdomain/zero/1.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/smesp"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx"
+  } ],
+  "http://schema.org/dateModified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-10-01"
+  } ],
+  "http://schema.org/datePublished" : [ {
+    "@value" : "2015"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação.."
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "IDEB das escolas municipais de São Paulo até 2015 - Anos Finais."
+  } ],
+  "http://schema.org/valueReference" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/"
+  }, {
+    "@id" : "http://localhost:3030/geografia/Municipios/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#mediaType" : [ {
+    "@value" : "application/rdf+xml"
+  } ],
+  "https://www.w3.org/TR/void/sparqlEndpoint" : [ {
+    "@id" : "http:localhost:3030/sparql"
+  } ],
+  "https://www.w3.org/TR/void/vocabulary" : [ {
+    "@id" : "http://localhost:3030/ontology/educacao-basica.owl"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://pav-ontology.github.io/pav/version" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/publicdomain/zero/1.0/"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/smesp"
+  } ],
+  "http://schema.org/contentUrl" : [ {
+    "@id" : "http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx"
+  } ],
+  "http://schema.org/dateModified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-10-01"
+  } ],
+  "http://schema.org/datePublished" : [ {
+    "@value" : "2015"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação.."
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "IDEB das escolas municipais de São Paulo até 2015 - Anos Iniciais."
+  } ],
+  "http://schema.org/valueReference" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/Escolas/"
+  }, {
+    "@id" : "http://localhost:3030/geografia/Municipios/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#mediaType" : [ {
+    "@value" : "application/rdf+xml"
+  } ],
+  "https://www.w3.org/TR/void/sparqlEndpoint" : [ {
+    "@id" : "http:localhost:3030/sparql"
+  } ],
+  "https://www.w3.org/TR/void/vocabulary" : [ {
+    "@id" : "http://localhost:3030/ontology/educacao-basica.owl"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/Municipios/2018/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Distribution" ],
+  "http://pav-ontology.github.io/pav/version" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://opendatacommons.org/licenses/odbl"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/inep"
+  } ],
+  "http://schema.org/dateModified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-10-01"
+  } ],
+  "http://schema.org/datePublished" : [ {
+    "@value" : "2017"
+  } ],
+  "http://schema.org/description" : [ {
+    "@language" : "pt",
+    "@value" : "Levantamento do IBGE com dados geográficos de todas as cidades do país."
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Municípios brasileiros em 2018."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "http://www.w3.org/ns/dcat#downloadURL" : [ {
+    "@id" : "https://raw.githubusercontent.com/brunopenteado/OpenData/master/demo/metadados_datasets.ttl"
+  } ],
+  "http://www.w3.org/ns/dcat#mediaType" : [ {
+    "@value" : "application/rdf+xml"
+  } ],
+  "https://www.w3.org/TR/void/vocabulary" : [ {
+    "@id" : "http://localhost:3030/ontology/educacao-basica.owl"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/bruno",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Agent", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://www.w3.org/ns/prov#actedOnBehalfOf" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/usp"
+  } ],
+  "http://xmlns.com/foaf/0.1/givenName" : [ {
+    "@value" : "Bruno Elias Penteado"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "mailto:brunopenteado@usp.br"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/ibge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Agent", "http://xmlns.com/foaf/0.1/Organization" ],
+  "http://schema.org/url" : [ {
+    "@id" : "http://ibge.gov.br"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Instituto Brasileiro de Geografia e Estatística - IBGE"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/inep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Agent", "http://xmlns.com/foaf/0.1/Organization" ],
+  "http://schema.org/url" : [ {
+    "@id" : "http://inep.gov.br"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - INEP"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/smesp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Agent", "http://xmlns.com/foaf/0.1/Organization" ],
+  "http://schema.org/url" : [ {
+    "@id" : "http://portal.sme.prefeitura.sp.gov.br/"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Secretaria Municipal de Educação de São Paulo - SME-SP"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/educacao-basica/usp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Agent", "http://xmlns.com/foaf/0.1/Organization" ],
+  "http://schema.org/url" : [ {
+    "@id" : "http://www.usp.br"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Universidade de São Paulo - USP"
+  } ]
+}, {
+  "@id" : "http://localhost:3030/geografia/Municipios/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/dcat#Dataset" ],
+  "http://purl.org/dc/terms/accrualPeriodicity" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/code#freq-A"
+  } ],
+  "http://purl.org/dc/terms/coverage" : [ {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#governo-federal"
+  }, {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#poder-executivo"
+  }, {
+    "@value" : "city"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/bruno"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@id" : "http://id.loc.gov/vocabulary/iso639-1/pt"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/ibge"
+  } ],
+  "http://purl.org/dc/terms/spatial" : [ {
+    "@id" : "http://www.geonames.org/3469034"
+  } ],
+  "http://purl.org/dc/terms/temporal" : [ {
+    "@id" : "http://reference.data.gov.uk/id/year/2018"
+  } ],
+  "http://schema.org/description" : [ {
+    "@value" : "View do IBGE contendo dados sobre todos os municípios do Brasil em 2018."
+  } ],
+  "http://schema.org/measurementTechnique" : [ {
+    "@value" : "census"
+  } ],
+  "http://schema.org/name" : [ {
+    "@value" : "Dados dos municípios brasileiros"
+  } ],
+  "http://www.w3.org/ns/dcat#distribution" : [ {
+    "@id" : "http://localhost:3030/educacao-basica/Municipios/2018/"
+  } ],
+  "http://www.w3.org/ns/dcat#keyword" : [ {
+    "@value" : "censo"
+  }, {
+    "@value" : "estatística"
+  }, {
+    "@value" : "municipios"
+  }, {
+    "@value" : "regiões"
+  } ],
+  "http://www.w3.org/ns/dcat#theme" : [ {
+    "@id" : "http://vocab.e.gov.br/2011/03/vcge#informacoes-estatisticas"
+  } ]
+}, {
+  "@id" : "http://pav-ontology.github.io/pav/version",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/accrualPeriodicity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/coverage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/spatial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/temporal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/contentUrl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/dateModified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/datePublished",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/measurementTechnique",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/url",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/valueReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#Catalog",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#Distribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#distribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#downloadURL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#keyword",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#mediaType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#theme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#actedOnBehalfOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/givenName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/TR/void/sparqlEndpoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/TR/void/vocabulary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

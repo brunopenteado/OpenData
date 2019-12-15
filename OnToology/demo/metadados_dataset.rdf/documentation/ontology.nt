@@ -1,0 +1,477 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://pav-ontology.github.io/pav/version
+<http://pav-ontology.github.io/pav/version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/accrualPeriodicity
+<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/coverage
+<http://purl.org/dc/terms/coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/spatial
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/temporal
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/contentUrl
+<http://schema.org/contentUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/dateModified
+<http://schema.org/dateModified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/datePublished
+<http://schema.org/datePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/description
+<http://schema.org/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/measurementTechnique
+<http://schema.org/measurementTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/url
+<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/valueReference
+<http://schema.org/valueReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#dataset
+<http://www.w3.org/ns/dcat#dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#downloadURL
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#keyword
+<http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#mediaType
+<http://www.w3.org/ns/dcat#mediaType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#actedOnBehalfOf
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.w3.org/TR/void/sparqlEndpoint
+<https://www.w3.org/TR/void/sparqlEndpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.w3.org/TR/void/vocabulary
+<https://www.w3.org/TR/void/vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/dcat#Catalog
+<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://localhost:3030/educacao-basica/
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
+<http://localhost:3030/educacao-basica/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/pt> .
+<http://localhost:3030/educacao-basica/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/usp> .
+<http://localhost:3030/educacao-basica/> <http://purl.org/dc/terms/title> "Dados da educação básica" .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/2000/01/rdf-schema#label> "Dados da educação básica" .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#dataset> <http://localhost:3030/educacao-basica/Docentes/> .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#dataset> <http://localhost:3030/educacao-basica/Escolas/> .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#dataset> <http://localhost:3030/educacao-basica/Escolas/SP/> .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#dataset> <http://localhost:3030/educacao-basica/IDEB/SP/> .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#dataset> <http://localhost:3030/geografia/Municipios/> .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#keyword> "IDEB" .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#keyword> "censo" .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#keyword> "docente" .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#keyword> "educação básica" .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#keyword> "escola" .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#keyword> "professor" .
+<http://localhost:3030/educacao-basica/> <http://www.w3.org/ns/dcat#keyword> "rendimento escolar" .
+<http://localhost:3030/educacao-basica/> <http://xmlns.com/foaf/0.1/homepage> <http://localhost:3030> .
+# 
+# http://localhost:3030/educacao-basica/bruno
+<http://localhost:3030/educacao-basica/bruno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/bruno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:3030/educacao-basica/bruno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://localhost:3030/educacao-basica/bruno> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://localhost:3030/educacao-basica/usp> .
+<http://localhost:3030/educacao-basica/bruno> <http://xmlns.com/foaf/0.1/givenName> "Bruno Elias Penteado" .
+<http://localhost:3030/educacao-basica/bruno> <http://xmlns.com/foaf/0.1/mbox> "mailto:brunopenteado@usp.br" .
+# 
+# http://localhost:3030/educacao-basica/ibge
+<http://localhost:3030/educacao-basica/ibge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/ibge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:3030/educacao-basica/ibge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://localhost:3030/educacao-basica/ibge> <http://schema.org/url> <http://ibge.gov.br> .
+<http://localhost:3030/educacao-basica/ibge> <http://xmlns.com/foaf/0.1/name> "Instituto Brasileiro de Geografia e Estatística - IBGE" .
+# 
+# http://localhost:3030/educacao-basica/inep
+<http://localhost:3030/educacao-basica/inep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/inep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:3030/educacao-basica/inep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://localhost:3030/educacao-basica/inep> <http://schema.org/url> <http://inep.gov.br> .
+<http://localhost:3030/educacao-basica/inep> <http://xmlns.com/foaf/0.1/name> "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - INEP" .
+# 
+# http://localhost:3030/educacao-basica/smesp
+<http://localhost:3030/educacao-basica/smesp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/smesp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:3030/educacao-basica/smesp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://localhost:3030/educacao-basica/smesp> <http://schema.org/url> <http://portal.sme.prefeitura.sp.gov.br/> .
+<http://localhost:3030/educacao-basica/smesp> <http://xmlns.com/foaf/0.1/name> "Secretaria Municipal de Educação de São Paulo - SME-SP" .
+# 
+# http://localhost:3030/educacao-basica/usp
+<http://localhost:3030/educacao-basica/usp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/usp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:3030/educacao-basica/usp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://localhost:3030/educacao-basica/usp> <http://schema.org/url> <http://www.usp.br> .
+<http://localhost:3030/educacao-basica/usp> <http://xmlns.com/foaf/0.1/name> "Universidade de São Paulo - USP" .
+# 
+# http://localhost:3030/educacao-basica/Docentes/
+<http://localhost:3030/educacao-basica/Docentes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-A> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://purl.org/dc/terms/coverage> <http://vocab.e.gov.br/2011/03/vcge#governo-federal> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://purl.org/dc/terms/coverage> <http://vocab.e.gov.br/2011/03/vcge#poder-executivo> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://purl.org/dc/terms/coverage> "country" .
+<http://localhost:3030/educacao-basica/Docentes/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/pt> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/inep> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://purl.org/dc/terms/spatial> <http://www.geonames.org/3469034> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/year/2016> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://schema.org/contentUrl> <http://inep.gov.br/web/guest/microdados#Censo%20Escolar> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://schema.org/description> "O Censo Escolar é um levantamento de dados estatístico-educacionais de âmbito nacional realizado todos os anos e coordenado pelo Inep. Ele é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." .
+<http://localhost:3030/educacao-basica/Docentes/> <http://schema.org/measurementTechnique> "census" .
+<http://localhost:3030/educacao-basica/Docentes/> <http://schema.org/name> "Censo das escolas brasileiras" .
+<http://localhost:3030/educacao-basica/Docentes/> <http://www.w3.org/ns/dcat#distribution> <http://localhost:3030/educacao-basica/Escolas/2016/> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://www.w3.org/ns/dcat#distribution> <http://localhost:3030/educacao-basica/Escolas/2017/> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://www.w3.org/ns/dcat#keyword> "censo" .
+<http://localhost:3030/educacao-basica/Docentes/> <http://www.w3.org/ns/dcat#keyword> "educação básica" .
+<http://localhost:3030/educacao-basica/Docentes/> <http://www.w3.org/ns/dcat#keyword> "escola" .
+<http://localhost:3030/educacao-basica/Docentes/> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/2011/03/vcge#educacao-basica> .
+<http://localhost:3030/educacao-basica/Docentes/> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais> .
+# 
+# http://localhost:3030/educacao-basica/Docentes/2016/
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://pav-ontology.github.io/pav/version> "1.0" .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/inep> .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://schema.org/contentUrl> <http://download.inep.gov.br/microdados/micro_censo_escolar_2016.zip> .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://schema.org/dateModified> "2019-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://schema.org/datePublished> "2016" .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://schema.org/description> "Registro de todos os docentes do país, levantados pelo Censo Escolar. O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://schema.org/name> "Docentes do Brasil - 2016." .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://schema.org/valueReference> <http://localhost:3030/educacao-basica/municipios> .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <http://www.w3.org/ns/dcat#mediaType> "application/rdf+xml" .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <https://www.w3.org/TR/void/sparqlEndpoint> <http:localhost:3030/sparql> .
+<http://localhost:3030/educacao-basica/Docentes/2016/> <https://www.w3.org/TR/void/vocabulary> <http://localhost:3030/ontology/educacao-basica.owl> .
+# 
+# http://localhost:3030/educacao-basica/Docentes/2017/
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://pav-ontology.github.io/pav/version> "1.0" .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/inep> .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://schema.org/contentUrl> <http://download.inep.gov.br/microdados/micro_censo_escolar_2017.zip> .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://schema.org/dateModified> "2019-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://schema.org/datePublished> "2017" .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://schema.org/description> "Registro de todos os docentes do país, levantados pelo Censo Escolar. O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://schema.org/name> "Docentes do Brasil - 2017." .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://schema.org/valueReference> <http://localhost:3030/educacao-basica/municipios> .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <http://www.w3.org/ns/dcat#mediaType> "application/rdf+xml" .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <https://www.w3.org/TR/void/sparqlEndpoint> <http:localhost:3030/sparql> .
+<http://localhost:3030/educacao-basica/Docentes/2017/> <https://www.w3.org/TR/void/vocabulary> <http://localhost:3030/ontology/educacao-basica.owl> .
+# 
+# http://localhost:3030/educacao-basica/Escolas/
+<http://localhost:3030/educacao-basica/Escolas/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-A> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://purl.org/dc/terms/coverage> <http://vocab.e.gov.br/2011/03/vcge#governo-federal> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://purl.org/dc/terms/coverage> <http://vocab.e.gov.br/2011/03/vcge#poder-executivo> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://purl.org/dc/terms/coverage> "country" .
+<http://localhost:3030/educacao-basica/Escolas/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/pt> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/inep> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://purl.org/dc/terms/spatial> <http://www.geonames.org/3469034> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/year/2016> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://schema.org/contentUrl> <http://inep.gov.br/web/guest/microdados#Censo%20Escolar> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://schema.org/description> "O Censo Escolar é um levantamento de dados estatístico-educacionais de âmbito nacional realizado todos os anos e coordenado pelo Inep. Ele é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." .
+<http://localhost:3030/educacao-basica/Escolas/> <http://schema.org/measurementTechnique> "census" .
+<http://localhost:3030/educacao-basica/Escolas/> <http://schema.org/name> "Censo das escolas brasileiras" .
+<http://localhost:3030/educacao-basica/Escolas/> <http://www.w3.org/ns/dcat#distribution> <http://localhost:3030/educacao-basica/Escolas/2016/> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://www.w3.org/ns/dcat#distribution> <http://localhost:3030/educacao-basica/Escolas/2017/> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://www.w3.org/ns/dcat#keyword> "censo" .
+<http://localhost:3030/educacao-basica/Escolas/> <http://www.w3.org/ns/dcat#keyword> "educação básica" .
+<http://localhost:3030/educacao-basica/Escolas/> <http://www.w3.org/ns/dcat#keyword> "escola" .
+<http://localhost:3030/educacao-basica/Escolas/> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/2011/03/vcge#educacao-basica> .
+<http://localhost:3030/educacao-basica/Escolas/> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais> .
+# 
+# http://localhost:3030/educacao-basica/Escolas/2016/
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://pav-ontology.github.io/pav/version> "1.0" .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/inep> .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://schema.org/contentUrl> <http://download.inep.gov.br/microdados/micro_censo_escolar_2016.zip> .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://schema.org/dateModified> "2019-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://schema.org/datePublished> "2016" .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://schema.org/description> "O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://schema.org/name> "Censo escolar 2016." .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://schema.org/valueReference> <http://localhost:3030/educacao-basica/municipios> .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <http://www.w3.org/ns/dcat#mediaType> "application/rdf+xml" .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <https://www.w3.org/TR/void/sparqlEndpoint> <http:localhost:3030/sparql> .
+<http://localhost:3030/educacao-basica/Escolas/2016/> <https://www.w3.org/TR/void/vocabulary> <http://localhost:3030/ontology/educacao-basica.owl> .
+# 
+# http://localhost:3030/educacao-basica/Escolas/2017/
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://pav-ontology.github.io/pav/version> "1.0" .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/inep> .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://schema.org/contentUrl> <http://download.inep.gov.br/microdados/micro_censo_escolar_2017.zip> .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://schema.org/dateModified> "2019-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://schema.org/datePublished> "2017" .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://schema.org/description> "O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país." .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://schema.org/name> "Censo escolar 2017." .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://schema.org/valueReference> <http://localhost:3030/geografia/Municipios/> .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <http://www.w3.org/ns/dcat#mediaType> "application/rdf+xml" .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <https://www.w3.org/TR/void/sparqlEndpoint> <http:localhost:3030/sparql> .
+<http://localhost:3030/educacao-basica/Escolas/2017/> <https://www.w3.org/TR/void/vocabulary> <http://localhost:3030/ontology/educacao-basica.owl> .
+# 
+# http://localhost:3030/educacao-basica/Escolas/SP/
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-A> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://purl.org/dc/terms/coverage> <http://vocab.e.gov.br/2011/03/vcge#governo-municipal> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://purl.org/dc/terms/coverage> <http://vocab.e.gov.br/2011/03/vcge#poder-executivo> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://purl.org/dc/terms/coverage> "city" .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/pt> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/smesp> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://purl.org/dc/terms/spatial> <http://www.geonames.org/6324358> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/year/2018> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://schema.org/contentUrl> <http://dados.prefeitura.sp.gov.br/dataset/cadastro-de-escolas-municipais-conveniadas-e-privadas> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://schema.org/datePublished> "2018-12-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://schema.org/description> "Cadastro de escolas municipais, conveniadas e privadas, tanto ativas como extintas, com informações sobre a quantidade de turnos de funcionamento da escola e geolocalização. Dados do Sistema EOL." .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://schema.org/measurementTechnique> "census" .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://schema.org/name> "Cadastro de escolas municipais, conveniadas e privadas - SP" .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://www.w3.org/ns/dcat#distribution> <http://localhost:3030/educacao-basica/Escolas/SP/2018/> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://www.w3.org/ns/dcat#keyword> "educação" .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://www.w3.org/ns/dcat#keyword> "escolas" .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://www.w3.org/ns/dcat#keyword> "unidades educacionais" .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/2011/03/vcge#educacao-basica> .
+<http://localhost:3030/educacao-basica/Escolas/SP/> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais> .
+# 
+# http://localhost:3030/educacao-basica/Escolas/SP/2018/
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://pav-ontology.github.io/pav/version> "1.0" .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/smesp> .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://schema.org/contentUrl> <http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx> .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://schema.org/dateModified> "2019-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://schema.org/datePublished> "2018" .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://schema.org/description> "Cadastro de escolas municipais, conveniadas e privadas, tanto ativas como extintas, com informações sobre a quantidade de turnos de funcionamento da escola e geolocalização. Dados do Sistema EOL."@pt .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://schema.org/name> "Cadastro de escolas municipais, conveniadas e privadas, até 2018." .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://schema.org/valueReference> <http://localhost:3030/educacao-basica/Escolas/> .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://schema.org/valueReference> <http://localhost:3030/geografia/Municipios/> .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <http://www.w3.org/ns/dcat#mediaType> "application/rdf+xml" .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <https://www.w3.org/TR/void/sparqlEndpoint> <http:localhost:3030/sparql> .
+<http://localhost:3030/educacao-basica/Escolas/SP/2018/> <https://www.w3.org/TR/void/vocabulary> <http://localhost:3030/ontology/educacao-basica.owl> .
+# 
+# http://localhost:3030/educacao-basica/IDEB/SP/
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-A> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://purl.org/dc/terms/coverage> <http://vocab.e.gov.br/2011/03/vcge#governo-municipal> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://purl.org/dc/terms/coverage> <http://vocab.e.gov.br/2011/03/vcge#poder-executivo> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://purl.org/dc/terms/coverage> "country" .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/pt> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/smesp> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://purl.org/dc/terms/spatial> <http://www.geonames.org/3469034> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/year/2018> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://schema.org/contentUrl> <http://dados.prefeitura.sp.gov.br/dataset/ideb-e-prova-brasil-na-rede-municipal-de-ensino> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://schema.org/description> "Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação." .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://schema.org/measurementTechnique> "assessment" .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://schema.org/name> "Ideb e Prova Brasil na Rede Municipal de Ensino (2005-2015)" .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#distribution> <http://localhost:3030/educacao-basica/Escolas/IDEB/SP/2015/AF/> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#distribution> <http://localhost:3030/educacao-basica/Escolas/IDEB/SP/2015/AI/> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#keyword> "aprovação" .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#keyword> "avaliação" .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#keyword> "ensino fundamental" .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#keyword> "escolas" .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#keyword> "ideb" .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#keyword> "qualidade da educação" .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#keyword> "rendimento" .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/2011/03/vcge#educacao-basica> .
+<http://localhost:3030/educacao-basica/IDEB/SP/> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais> .
+# 
+# http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://pav-ontology.github.io/pav/version> "1.0" .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/smesp> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://schema.org/contentUrl> <http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://schema.org/dateModified> "2019-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://schema.org/datePublished> "2015" .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://schema.org/description> "Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação.." .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://schema.org/name> "IDEB das escolas municipais de São Paulo até 2015 - Anos Finais." .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://schema.org/valueReference> <http://localhost:3030/educacao-basica/Escolas/> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://schema.org/valueReference> <http://localhost:3030/geografia/Municipios/> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <http://www.w3.org/ns/dcat#mediaType> "application/rdf+xml" .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <https://www.w3.org/TR/void/sparqlEndpoint> <http:localhost:3030/sparql> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/> <https://www.w3.org/TR/void/vocabulary> <http://localhost:3030/ontology/educacao-basica.owl> .
+# 
+# http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://pav-ontology.github.io/pav/version> "1.0" .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/smesp> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://schema.org/contentUrl> <http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://schema.org/dateModified> "2019-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://schema.org/datePublished> "2015" .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://schema.org/description> "Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação.." .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://schema.org/name> "IDEB das escolas municipais de São Paulo até 2015 - Anos Iniciais." .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://schema.org/valueReference> <http://localhost:3030/educacao-basica/Escolas/> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://schema.org/valueReference> <http://localhost:3030/geografia/Municipios/> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <http://www.w3.org/ns/dcat#mediaType> "application/rdf+xml" .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <https://www.w3.org/TR/void/sparqlEndpoint> <http:localhost:3030/sparql> .
+<http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/> <https://www.w3.org/TR/void/vocabulary> <http://localhost:3030/ontology/educacao-basica.owl> .
+# 
+# http://localhost:3030/educacao-basica/Municipios/2018/
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://pav-ontology.github.io/pav/version> "1.0" .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl> .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/inep> .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://schema.org/dateModified> "2019-10-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://schema.org/datePublished> "2017" .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://schema.org/description> "Levantamento do IBGE com dados geográficos de todas as cidades do país."@pt .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://schema.org/name> "Municípios brasileiros em 2018." .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://www.w3.org/ns/dcat#downloadURL> <https://raw.githubusercontent.com/brunopenteado/OpenData/master/demo/metadados_datasets.ttl> .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <http://www.w3.org/ns/dcat#mediaType> "application/rdf+xml" .
+<http://localhost:3030/educacao-basica/Municipios/2018/> <https://www.w3.org/TR/void/vocabulary> <http://localhost:3030/ontology/educacao-basica.owl> .
+# 
+# http://localhost:3030/geografia/Municipios/
+<http://localhost:3030/geografia/Municipios/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:3030/geografia/Municipios/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://localhost:3030/geografia/Municipios/> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/linked-data/sdmx/2009/code#freq-A> .
+<http://localhost:3030/geografia/Municipios/> <http://purl.org/dc/terms/coverage> <http://vocab.e.gov.br/2011/03/vcge#governo-federal> .
+<http://localhost:3030/geografia/Municipios/> <http://purl.org/dc/terms/coverage> <http://vocab.e.gov.br/2011/03/vcge#poder-executivo> .
+<http://localhost:3030/geografia/Municipios/> <http://purl.org/dc/terms/coverage> "city" .
+<http://localhost:3030/geografia/Municipios/> <http://purl.org/dc/terms/creator> <http://localhost:3030/educacao-basica/bruno> .
+<http://localhost:3030/geografia/Municipios/> <http://purl.org/dc/terms/language> <http://id.loc.gov/vocabulary/iso639-1/pt> .
+<http://localhost:3030/geografia/Municipios/> <http://purl.org/dc/terms/publisher> <http://localhost:3030/educacao-basica/ibge> .
+<http://localhost:3030/geografia/Municipios/> <http://purl.org/dc/terms/spatial> <http://www.geonames.org/3469034> .
+<http://localhost:3030/geografia/Municipios/> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/year/2018> .
+<http://localhost:3030/geografia/Municipios/> <http://schema.org/description> "View do IBGE contendo dados sobre todos os municípios do Brasil em 2018." .
+<http://localhost:3030/geografia/Municipios/> <http://schema.org/measurementTechnique> "census" .
+<http://localhost:3030/geografia/Municipios/> <http://schema.org/name> "Dados dos municípios brasileiros" .
+<http://localhost:3030/geografia/Municipios/> <http://www.w3.org/ns/dcat#distribution> <http://localhost:3030/educacao-basica/Municipios/2018/> .
+<http://localhost:3030/geografia/Municipios/> <http://www.w3.org/ns/dcat#keyword> "censo" .
+<http://localhost:3030/geografia/Municipios/> <http://www.w3.org/ns/dcat#keyword> "estatística" .
+<http://localhost:3030/geografia/Municipios/> <http://www.w3.org/ns/dcat#keyword> "municipios" .
+<http://localhost:3030/geografia/Municipios/> <http://www.w3.org/ns/dcat#keyword> "regiões" .
+<http://localhost:3030/geografia/Municipios/> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/2011/03/vcge#informacoes-estatisticas> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

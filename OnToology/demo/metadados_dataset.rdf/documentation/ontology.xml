@@ -1,0 +1,757 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://pav-ontology.github.io/pav/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:void="https://www.w3.org/TR/void/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://pav-ontology.github.io/pav/version -->
+
+
+    <AnnotationProperty rdf:about="http://pav-ontology.github.io/pav/version"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/coverage -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/spatial"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/temporal"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://schema.org/contentUrl -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/contentUrl"/>
+    
+
+
+    <!-- http://schema.org/dateModified -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/dateModified"/>
+    
+
+
+    <!-- http://schema.org/datePublished -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/datePublished"/>
+    
+
+
+    <!-- http://schema.org/description -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/description"/>
+    
+
+
+    <!-- http://schema.org/measurementTechnique -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/measurementTechnique"/>
+    
+
+
+    <!-- http://schema.org/name -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/name"/>
+    
+
+
+    <!-- http://schema.org/url -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/url"/>
+    
+
+
+    <!-- http://schema.org/valueReference -->
+
+
+    <AnnotationProperty rdf:about="http://schema.org/valueReference"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#dataset -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#dataset"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#distribution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#mediaType -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#mediaType"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#actedOnBehalfOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/givenName -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/givenName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://www.w3.org/TR/void/sparqlEndpoint -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/TR/void/sparqlEndpoint"/>
+    
+
+
+    <!-- https://www.w3.org/TR/void/vocabulary -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/TR/void/vocabulary"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Catalog -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/dcat#Catalog"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/dcat#Dataset"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Distribution -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/dcat#Distribution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/pt"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/usp"/>
+        <terms:title>Dados da educação básica</terms:title>
+        <rdfs:label>Dados da educação básica</rdfs:label>
+        <dcat:dataset rdf:resource="http://localhost:3030/educacao-basica/Docentes/"/>
+        <dcat:dataset rdf:resource="http://localhost:3030/educacao-basica/Escolas/"/>
+        <dcat:dataset rdf:resource="http://localhost:3030/educacao-basica/Escolas/SP/"/>
+        <dcat:dataset rdf:resource="http://localhost:3030/educacao-basica/IDEB/SP/"/>
+        <dcat:dataset rdf:resource="http://localhost:3030/geografia/Municipios/"/>
+        <dcat:keyword>IDEB</dcat:keyword>
+        <dcat:keyword>censo</dcat:keyword>
+        <dcat:keyword>docente</dcat:keyword>
+        <dcat:keyword>educação básica</dcat:keyword>
+        <dcat:keyword>escola</dcat:keyword>
+        <dcat:keyword>professor</dcat:keyword>
+        <dcat:keyword>rendimento escolar</dcat:keyword>
+        <foaf:homepage rdf:resource="http://localhost:3030"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/bruno -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/bruno">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <prov:actedOnBehalfOf rdf:resource="http://localhost:3030/educacao-basica/usp"/>
+        <foaf:givenName>Bruno Elias Penteado</foaf:givenName>
+        <foaf:mbox>mailto:brunopenteado@usp.br</foaf:mbox>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/ibge -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/ibge">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <schema:url rdf:resource="http://ibge.gov.br"/>
+        <foaf:name>Instituto Brasileiro de Geografia e Estatística - IBGE</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/inep -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/inep">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <schema:url rdf:resource="http://inep.gov.br"/>
+        <foaf:name>Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira - INEP</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/smesp -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/smesp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <schema:url rdf:resource="http://portal.sme.prefeitura.sp.gov.br/"/>
+        <foaf:name>Secretaria Municipal de Educação de São Paulo - SME-SP</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/usp -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/usp">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <schema:url rdf:resource="http://www.usp.br"/>
+        <foaf:name>Universidade de São Paulo - USP</foaf:name>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/Docentes/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/Docentes/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <terms:accrualPeriodicity rdf:resource="http://purl.org/linked-data/sdmx/2009/code#freq-A"/>
+        <terms:coverage rdf:resource="http://vocab.e.gov.br/2011/03/vcge#governo-federal"/>
+        <terms:coverage rdf:resource="http://vocab.e.gov.br/2011/03/vcge#poder-executivo"/>
+        <terms:coverage>country</terms:coverage>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/pt"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/inep"/>
+        <terms:spatial rdf:resource="http://www.geonames.org/3469034"/>
+        <terms:temporal rdf:resource="http://reference.data.gov.uk/id/year/2016"/>
+        <schema:contentUrl rdf:resource="http://inep.gov.br/web/guest/microdados#Censo%20Escolar"/>
+        <schema:description>O Censo Escolar é um levantamento de dados estatístico-educacionais de âmbito nacional realizado todos os anos e coordenado pelo Inep. Ele é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país.</schema:description>
+        <schema:measurementTechnique>census</schema:measurementTechnique>
+        <schema:name>Censo das escolas brasileiras</schema:name>
+        <dcat:distribution rdf:resource="http://localhost:3030/educacao-basica/Escolas/2016/"/>
+        <dcat:distribution rdf:resource="http://localhost:3030/educacao-basica/Escolas/2017/"/>
+        <dcat:keyword>censo</dcat:keyword>
+        <dcat:keyword>educação básica</dcat:keyword>
+        <dcat:keyword>escola</dcat:keyword>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/2011/03/vcge#educacao-basica"/>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/Docentes/2016/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/Docentes/2016/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <pav:version>1.0</pav:version>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/inep"/>
+        <schema:contentUrl rdf:resource="http://download.inep.gov.br/microdados/micro_censo_escolar_2016.zip"/>
+        <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-01</schema:dateModified>
+        <schema:datePublished>2016</schema:datePublished>
+        <schema:description>Registro de todos os docentes do país, levantados pelo Censo Escolar. O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país.</schema:description>
+        <schema:name>Docentes do Brasil - 2016.</schema:name>
+        <schema:valueReference rdf:resource="http://localhost:3030/educacao-basica/municipios"/>
+        <versionInfo>1.0</versionInfo>
+        <dcat:mediaType>application/rdf+xml</dcat:mediaType>
+        <void:sparqlEndpoint rdf:resource="http:localhost:3030/sparql"/>
+        <void:vocabulary rdf:resource="http://localhost:3030/ontology/educacao-basica.owl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/Docentes/2017/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/Docentes/2017/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <pav:version>1.0</pav:version>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/inep"/>
+        <schema:contentUrl rdf:resource="http://download.inep.gov.br/microdados/micro_censo_escolar_2017.zip"/>
+        <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-01</schema:dateModified>
+        <schema:datePublished>2017</schema:datePublished>
+        <schema:description>Registro de todos os docentes do país, levantados pelo Censo Escolar. O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país.</schema:description>
+        <schema:name>Docentes do Brasil - 2017.</schema:name>
+        <schema:valueReference rdf:resource="http://localhost:3030/educacao-basica/municipios"/>
+        <versionInfo>1.0</versionInfo>
+        <dcat:mediaType>application/rdf+xml</dcat:mediaType>
+        <void:sparqlEndpoint rdf:resource="http:localhost:3030/sparql"/>
+        <void:vocabulary rdf:resource="http://localhost:3030/ontology/educacao-basica.owl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/Escolas/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/Escolas/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <terms:accrualPeriodicity rdf:resource="http://purl.org/linked-data/sdmx/2009/code#freq-A"/>
+        <terms:coverage rdf:resource="http://vocab.e.gov.br/2011/03/vcge#governo-federal"/>
+        <terms:coverage rdf:resource="http://vocab.e.gov.br/2011/03/vcge#poder-executivo"/>
+        <terms:coverage>country</terms:coverage>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/pt"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/inep"/>
+        <terms:spatial rdf:resource="http://www.geonames.org/3469034"/>
+        <terms:temporal rdf:resource="http://reference.data.gov.uk/id/year/2016"/>
+        <schema:contentUrl rdf:resource="http://inep.gov.br/web/guest/microdados#Censo%20Escolar"/>
+        <schema:description>O Censo Escolar é um levantamento de dados estatístico-educacionais de âmbito nacional realizado todos os anos e coordenado pelo Inep. Ele é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país.</schema:description>
+        <schema:measurementTechnique>census</schema:measurementTechnique>
+        <schema:name>Censo das escolas brasileiras</schema:name>
+        <dcat:distribution rdf:resource="http://localhost:3030/educacao-basica/Escolas/2016/"/>
+        <dcat:distribution rdf:resource="http://localhost:3030/educacao-basica/Escolas/2017/"/>
+        <dcat:keyword>censo</dcat:keyword>
+        <dcat:keyword>educação básica</dcat:keyword>
+        <dcat:keyword>escola</dcat:keyword>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/2011/03/vcge#educacao-basica"/>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/Escolas/2016/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/Escolas/2016/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <pav:version>1.0</pav:version>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/inep"/>
+        <schema:contentUrl rdf:resource="http://download.inep.gov.br/microdados/micro_censo_escolar_2016.zip"/>
+        <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-01</schema:dateModified>
+        <schema:datePublished>2016</schema:datePublished>
+        <schema:description>O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país.</schema:description>
+        <schema:name>Censo escolar 2016.</schema:name>
+        <schema:valueReference rdf:resource="http://localhost:3030/educacao-basica/municipios"/>
+        <versionInfo>1.0</versionInfo>
+        <dcat:mediaType>application/rdf+xml</dcat:mediaType>
+        <void:sparqlEndpoint rdf:resource="http:localhost:3030/sparql"/>
+        <void:vocabulary rdf:resource="http://localhost:3030/ontology/educacao-basica.owl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/Escolas/2017/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/Escolas/2017/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <pav:version>1.0</pav:version>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/inep"/>
+        <schema:contentUrl rdf:resource="http://download.inep.gov.br/microdados/micro_censo_escolar_2017.zip"/>
+        <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-01</schema:dateModified>
+        <schema:datePublished>2017</schema:datePublished>
+        <schema:description>O Censo Escolar levanta todas as escolas do páis e é feito com a colaboração das secretarias estaduais e municipais de Educação e com a participação de todas as escolas públicas e privadas do país.</schema:description>
+        <schema:name>Censo escolar 2017.</schema:name>
+        <schema:valueReference rdf:resource="http://localhost:3030/geografia/Municipios/"/>
+        <versionInfo>1.0</versionInfo>
+        <dcat:mediaType>application/rdf+xml</dcat:mediaType>
+        <void:sparqlEndpoint rdf:resource="http:localhost:3030/sparql"/>
+        <void:vocabulary rdf:resource="http://localhost:3030/ontology/educacao-basica.owl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/Escolas/SP/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/Escolas/SP/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <terms:accrualPeriodicity rdf:resource="http://purl.org/linked-data/sdmx/2009/code#freq-A"/>
+        <terms:coverage rdf:resource="http://vocab.e.gov.br/2011/03/vcge#governo-municipal"/>
+        <terms:coverage rdf:resource="http://vocab.e.gov.br/2011/03/vcge#poder-executivo"/>
+        <terms:coverage>city</terms:coverage>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/pt"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/smesp"/>
+        <terms:spatial rdf:resource="http://www.geonames.org/6324358"/>
+        <terms:temporal rdf:resource="http://reference.data.gov.uk/id/year/2018"/>
+        <schema:contentUrl rdf:resource="http://dados.prefeitura.sp.gov.br/dataset/cadastro-de-escolas-municipais-conveniadas-e-privadas"/>
+        <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-12-30</schema:datePublished>
+        <schema:description>Cadastro de escolas municipais, conveniadas e privadas, tanto ativas como extintas, com informações sobre a quantidade de turnos de funcionamento da escola e geolocalização. Dados do Sistema EOL.</schema:description>
+        <schema:measurementTechnique>census</schema:measurementTechnique>
+        <schema:name>Cadastro de escolas municipais, conveniadas e privadas - SP</schema:name>
+        <dcat:distribution rdf:resource="http://localhost:3030/educacao-basica/Escolas/SP/2018/"/>
+        <dcat:keyword>educação</dcat:keyword>
+        <dcat:keyword>escolas</dcat:keyword>
+        <dcat:keyword>unidades educacionais</dcat:keyword>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/2011/03/vcge#educacao-basica"/>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/Escolas/SP/2018/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/Escolas/SP/2018/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <pav:version>1.0</pav:version>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/smesp"/>
+        <schema:contentUrl rdf:resource="http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx"/>
+        <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-01</schema:dateModified>
+        <schema:datePublished>2018</schema:datePublished>
+        <schema:description xml:lang="pt">Cadastro de escolas municipais, conveniadas e privadas, tanto ativas como extintas, com informações sobre a quantidade de turnos de funcionamento da escola e geolocalização. Dados do Sistema EOL.</schema:description>
+        <schema:name>Cadastro de escolas municipais, conveniadas e privadas, até 2018.</schema:name>
+        <schema:valueReference rdf:resource="http://localhost:3030/educacao-basica/Escolas/"/>
+        <schema:valueReference rdf:resource="http://localhost:3030/geografia/Municipios/"/>
+        <versionInfo>1.0</versionInfo>
+        <dcat:mediaType>application/rdf+xml</dcat:mediaType>
+        <void:sparqlEndpoint rdf:resource="http:localhost:3030/sparql"/>
+        <void:vocabulary rdf:resource="http://localhost:3030/ontology/educacao-basica.owl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/IDEB/SP/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/IDEB/SP/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <terms:accrualPeriodicity rdf:resource="http://purl.org/linked-data/sdmx/2009/code#freq-A"/>
+        <terms:coverage rdf:resource="http://vocab.e.gov.br/2011/03/vcge#governo-municipal"/>
+        <terms:coverage rdf:resource="http://vocab.e.gov.br/2011/03/vcge#poder-executivo"/>
+        <terms:coverage>country</terms:coverage>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/pt"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/smesp"/>
+        <terms:spatial rdf:resource="http://www.geonames.org/3469034"/>
+        <terms:temporal rdf:resource="http://reference.data.gov.uk/id/year/2018"/>
+        <schema:contentUrl rdf:resource="http://dados.prefeitura.sp.gov.br/dataset/ideb-e-prova-brasil-na-rede-municipal-de-ensino"/>
+        <schema:description>Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação.</schema:description>
+        <schema:measurementTechnique>assessment</schema:measurementTechnique>
+        <schema:name>Ideb e Prova Brasil na Rede Municipal de Ensino (2005-2015)</schema:name>
+        <dcat:distribution rdf:resource="http://localhost:3030/educacao-basica/Escolas/IDEB/SP/2015/AF/"/>
+        <dcat:distribution rdf:resource="http://localhost:3030/educacao-basica/Escolas/IDEB/SP/2015/AI/"/>
+        <dcat:keyword>aprovação</dcat:keyword>
+        <dcat:keyword>avaliação</dcat:keyword>
+        <dcat:keyword>ensino fundamental</dcat:keyword>
+        <dcat:keyword>escolas</dcat:keyword>
+        <dcat:keyword>ideb</dcat:keyword>
+        <dcat:keyword>qualidade da educação</dcat:keyword>
+        <dcat:keyword>rendimento</dcat:keyword>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/2011/03/vcge#educacao-basica"/>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/2011/03/vcge#estatisticas-educacionais"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/IDEB/SP/2015/AF/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <pav:version>1.0</pav:version>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/smesp"/>
+        <schema:contentUrl rdf:resource="http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx"/>
+        <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-01</schema:dateModified>
+        <schema:datePublished>2015</schema:datePublished>
+        <schema:description>Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação..</schema:description>
+        <schema:name>IDEB das escolas municipais de São Paulo até 2015 - Anos Finais.</schema:name>
+        <schema:valueReference rdf:resource="http://localhost:3030/educacao-basica/Escolas/"/>
+        <schema:valueReference rdf:resource="http://localhost:3030/geografia/Municipios/"/>
+        <versionInfo>1.0</versionInfo>
+        <dcat:mediaType>application/rdf+xml</dcat:mediaType>
+        <void:sparqlEndpoint rdf:resource="http:localhost:3030/sparql"/>
+        <void:vocabulary rdf:resource="http://localhost:3030/ontology/educacao-basica.owl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/IDEB/SP/2015/AI/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <pav:version>1.0</pav:version>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/smesp"/>
+        <schema:contentUrl rdf:resource="http://dados.prefeitura.sp.gov.br/dataset/65503c0f-4564-4051-a311-84813fc76579/resource/52473b73-9743-464e-964e-739fcdf40df1/download/idebrmesao-paulo.xlsx"/>
+        <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-01</schema:dateModified>
+        <schema:datePublished>2015</schema:datePublished>
+        <schema:description>Resultados das unidades educacionais da Rede de Ensino Municipal relativos à Prova Brasil e ao Índice de Desenvolvimento da Educação Básica de 2005, 2007, 2009, 2011, 2013 e 2015, nos anos iniciais e finais do Ensino Fundamental. Adaptado de Inep/MEC pela SME-SP, com inclusão das Diretorias Regionais de Educação..</schema:description>
+        <schema:name>IDEB das escolas municipais de São Paulo até 2015 - Anos Iniciais.</schema:name>
+        <schema:valueReference rdf:resource="http://localhost:3030/educacao-basica/Escolas/"/>
+        <schema:valueReference rdf:resource="http://localhost:3030/geografia/Municipios/"/>
+        <versionInfo>1.0</versionInfo>
+        <dcat:mediaType>application/rdf+xml</dcat:mediaType>
+        <void:sparqlEndpoint rdf:resource="http:localhost:3030/sparql"/>
+        <void:vocabulary rdf:resource="http://localhost:3030/ontology/educacao-basica.owl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/educacao-basica/Municipios/2018/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/educacao-basica/Municipios/2018/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <pav:version>1.0</pav:version>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/inep"/>
+        <schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-01</schema:dateModified>
+        <schema:datePublished>2017</schema:datePublished>
+        <schema:description xml:lang="pt">Levantamento do IBGE com dados geográficos de todas as cidades do país.</schema:description>
+        <schema:name>Municípios brasileiros em 2018.</schema:name>
+        <versionInfo>1.0</versionInfo>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/brunopenteado/OpenData/master/demo/metadados_datasets.ttl"/>
+        <dcat:mediaType>application/rdf+xml</dcat:mediaType>
+        <void:vocabulary rdf:resource="http://localhost:3030/ontology/educacao-basica.owl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://localhost:3030/geografia/Municipios/ -->
+
+
+    <NamedIndividual rdf:about="http://localhost:3030/geografia/Municipios/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <terms:accrualPeriodicity rdf:resource="http://purl.org/linked-data/sdmx/2009/code#freq-A"/>
+        <terms:coverage rdf:resource="http://vocab.e.gov.br/2011/03/vcge#governo-federal"/>
+        <terms:coverage rdf:resource="http://vocab.e.gov.br/2011/03/vcge#poder-executivo"/>
+        <terms:coverage>city</terms:coverage>
+        <terms:creator rdf:resource="http://localhost:3030/educacao-basica/bruno"/>
+        <terms:language rdf:resource="http://id.loc.gov/vocabulary/iso639-1/pt"/>
+        <terms:publisher rdf:resource="http://localhost:3030/educacao-basica/ibge"/>
+        <terms:spatial rdf:resource="http://www.geonames.org/3469034"/>
+        <terms:temporal rdf:resource="http://reference.data.gov.uk/id/year/2018"/>
+        <schema:description>View do IBGE contendo dados sobre todos os municípios do Brasil em 2018.</schema:description>
+        <schema:measurementTechnique>census</schema:measurementTechnique>
+        <schema:name>Dados dos municípios brasileiros</schema:name>
+        <dcat:distribution rdf:resource="http://localhost:3030/educacao-basica/Municipios/2018/"/>
+        <dcat:keyword>censo</dcat:keyword>
+        <dcat:keyword>estatística</dcat:keyword>
+        <dcat:keyword>municipios</dcat:keyword>
+        <dcat:keyword>regiões</dcat:keyword>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/2011/03/vcge#informacoes-estatisticas"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
