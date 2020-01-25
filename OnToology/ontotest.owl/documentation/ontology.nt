@@ -1,0 +1,85 @@
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno> <http://www.w3.org/2002/07/owl#versionIRI> <urn:absolute:1.0> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#temIdeb
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#temIdeb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#temIdeb> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Estado> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#temIdeb> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Ideb> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#aprendizado
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#aprendizado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#aprendizado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#ciclo
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#ciclo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#ciclo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#fluxo
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#fluxo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#fluxo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#nota
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#nota> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#nota> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.w3.org/2002/07/owl#topDataProperty
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Estado
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Estado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Estado> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Ideb> .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Ideb
+<http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Ideb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#aprendizado> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#ciclo> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#fluxo> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#nota> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

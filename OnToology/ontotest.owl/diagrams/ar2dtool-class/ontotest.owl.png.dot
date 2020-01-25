@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Ideb" "base:Estado" ; /*classes style*/
+	"http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno" -> "urn:absolute:1.0" [ label = "owl:versionIRI" ];
+	"base:Estado" -> "base:Ideb" [ label = "owl:disjointWith" ];
+	"NULL" -> "3fa6e6a5:16fdd901358:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "base:fluxo" [ label = "rdf:first" ];
+	"NULL" -> "3fa6e6a5:16fdd901358:-7ffb" [ label = "rdf:rest" ];
+	"NULL" -> "base:aprendizado" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "base:nota" [ label = "rdf:first" ];
+	"NULL" -> "3fa6e6a5:16fdd901358:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "base:ciclo" [ label = "rdf:first" ];
+	"NULL" -> "3fa6e6a5:16fdd901358:-7ffc" [ label = "owl:members" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:ciclo" ];
+	"owl:Thing" -> "xsd:float" [ label = "base:nota" ];
+	"owl:Thing" -> "xsd:string" [ label = "owl:topDataProperty" ];
+	"owl:Thing" -> "xsd:float" [ label = "base:fluxo" ];
+	"owl:Thing" -> "xsd:float" [ label = "base:aprendizado" ];
+	"base:Estado" -> "base:Ideb" [ label = "base:temIdeb" ];
+
+}

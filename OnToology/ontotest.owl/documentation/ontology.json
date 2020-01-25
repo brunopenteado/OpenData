@@ -1,0 +1,68 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointProperties" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#aprendizado"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#ciclo"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#fluxo"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#nota"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "urn:absolute:1.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Estado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Ideb"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Ideb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#aprendizado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#ciclo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#fluxo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#nota",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#temIdeb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Estado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Ideb"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]

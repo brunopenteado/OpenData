@@ -1,0 +1,34 @@
+{
+  "@context" : {
+    "temIdeb" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#temIdeb",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ciclo" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#ciclo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "nota" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#nota",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "aprendizado" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#aprendizado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "fluxo" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#fluxo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Estado" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Estado"
+    },
+    "Ideb" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/experimento_Bruno#Ideb"
+    }
+  }
+}
