@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Ideb" "base:Estado" ; /*classes style*/
+	"base:fluxo" -> "base:notaIdeb" [ label = "owl:propertyDisjointWith" ];
+	"base:Estado" -> "base:Ideb" [ label = "owl:disjointWith" ];
+	"base:evolucao" -> "base:notaIdeb" [ label = "owl:propertyDisjointWith" ];
+	"base:evolucao" -> "base:fluxo" [ label = "owl:propertyDisjointWith" ];
+	"http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3" -> "http://creativecommons.org/licenses/by/3.0/" [ label = "dct:license" ];
+	"base:aprendizado" -> "base:notaIdeb" [ label = "owl:propertyDisjointWith" ];
+	"base:aprendizado" -> "base:fluxo" [ label = "owl:propertyDisjointWith" ];
+	"base:aprendizado" -> "base:evolucao" [ label = "owl:propertyDisjointWith" ];
+	"base:aprendizado" -> "base:ciclo" [ label = "owl:propertyDisjointWith" ];
+	"base:ciclo" -> "base:notaIdeb" [ label = "owl:propertyDisjointWith" ];
+	"base:ciclo" -> "base:fluxo" [ label = "owl:propertyDisjointWith" ];
+	"base:ciclo" -> "base:evolucao" [ label = "owl:propertyDisjointWith" ];
+	"base:Estado" -> "base:Ideb" [ label = "base:temIdeb" ];
+	"base:Ideb" -> "xsd:float" [ label = "base:evolucao" ];
+	"base:Ideb" -> "xsd:string" [ label = "base:ciclo" ];
+	"base:Ideb" -> "xsd:float" [ label = "base:fluxo" ];
+	"base:Ideb" -> "xsd:float" [ label = "base:notaIdeb" ];
+	"base:Ideb" -> "xsd:float" [ label = "base:aprendizado" ];
+
+}

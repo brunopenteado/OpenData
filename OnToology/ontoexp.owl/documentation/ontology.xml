@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3">
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#temIdeb -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#temIdeb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"/>
+        <rdfs:comment>Indica a mensuração do Ideb em um determinado estado.</rdfs:comment>
+        <rdfs:label>temIdeb</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb"/>
+        <rdfs:comment>Nota normalizada do estado no ciclo considerado.</rdfs:comment>
+        <rdfs:label>aprendizado</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb"/>
+        <rdfs:comment>Ciclo no qual o Ideb foi medido.</rdfs:comment>
+        <rdfs:label>ciclo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb"/>
+        <rdfs:comment>Evolução da nota Ideb entre dois anos consecutivos.</rdfs:comment>
+        <rdfs:label>evolucao</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb"/>
+        <rdfs:comment>% de aprovações no estado para o ciclo considerado.</rdfs:comment>
+        <rdfs:label>fluxo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Nota ideb medida em determinado ano.</rdfs:comment>
+        <rdfs:label>notaIdeb</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"/>
+        <rdfs:comment>Estado no qual o Ideb foi mensurado.</rdfs:comment>
+        <rdfs:label>Estado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb">
+        <rdfs:comment>Nota Ideb do estado.</rdfs:comment>
+        <rdfs:label>IDEB</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
