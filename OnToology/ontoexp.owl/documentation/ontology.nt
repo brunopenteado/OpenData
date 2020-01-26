@@ -1,0 +1,106 @@
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#temIdeb
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#temIdeb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#temIdeb> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#temIdeb> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#temIdeb> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica a mensuração do Ideb em um determinado estado." .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#temIdeb> <http://www.w3.org/2000/01/rdf-schema#label> "temIdeb" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado> <http://www.w3.org/2000/01/rdf-schema#comment> "Nota normalizada do estado no ciclo considerado." .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado> <http://www.w3.org/2000/01/rdf-schema#label> "aprendizado" .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo> <http://www.w3.org/2000/01/rdf-schema#comment> "Ciclo no qual o Ideb foi medido." .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo> <http://www.w3.org/2000/01/rdf-schema#label> "ciclo" .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao> <http://www.w3.org/2000/01/rdf-schema#comment> "Evolução da nota Ideb entre dois anos consecutivos." .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao> <http://www.w3.org/2000/01/rdf-schema#label> "evolucao" .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo> <http://www.w3.org/2000/01/rdf-schema#comment> "% de aprovações no estado para o ciclo considerado." .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo> <http://www.w3.org/2000/01/rdf-schema#label> "fluxo" .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb> <http://www.w3.org/2000/01/rdf-schema#comment> "Nota ideb medida em determinado ano." .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb> <http://www.w3.org/2000/01/rdf-schema#label> "notaIdeb" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado> <http://www.w3.org/2000/01/rdf-schema#comment> "Estado no qual o Ideb foi mensurado." .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado> <http://www.w3.org/2000/01/rdf-schema#label> "Estado" .
+# 
+# http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb> <http://www.w3.org/2000/01/rdf-schema#comment> "Nota Ideb do estado." .
+<http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb> <http://www.w3.org/2000/01/rdf-schema#label> "IDEB" .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

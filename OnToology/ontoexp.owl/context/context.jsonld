@@ -1,0 +1,46 @@
+{
+  "@context" : {
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Estado" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "fluxo" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "evolucao" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "aprendizado" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Ideb" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "notaIdeb" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ciclo" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "temIdeb" : {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#temIdeb",
+      "@type" : "@id"
+    }
+  }
+}

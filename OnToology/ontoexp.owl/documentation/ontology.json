@@ -1,0 +1,149 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/3.0/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Estado no qual o Ideb foi mensurado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Estado"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nota Ideb do estado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IDEB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#aprendizado",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nota normalizada do estado no ciclo considerado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "aprendizado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#ciclo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ciclo no qual o Ideb foi medido."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ciclo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#evolucao",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Evolução da nota Ideb entre dois anos consecutivos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "evolucao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#fluxo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "% de aprovações no estado para o ciclo considerado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fluxo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#notaIdeb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Nota ideb medida em determinado ano."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "notaIdeb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#temIdeb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indica a mensuração do Ideb em um determinado estado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Estado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "temIdeb"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2020/0/untitled-ontology-3#Ideb"
+  } ]
+} ]
