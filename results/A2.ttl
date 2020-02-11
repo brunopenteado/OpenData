@@ -1,0 +1,983 @@
+@prefix :      <http://localhost:8080/educacao-basica/> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix pav:   <http://pav-ontology.github.io/pav/> .
+@prefix adms:  <https://www.w3.org/TR/vocab-adms/#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix dqv:   <http://www.w3.org/ns/dqv#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix ideb:  <http://purl.org/caeda2/ontology#> .
+@prefix ent:   <http://www.w3.org/ns/entailment/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prof:  <http://www.w3.org/ns/owl-profile/> .
+@prefix sd:    <http://www.w3.org/ns/sparql-service-description#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://localhost:8089/educacao-basica/Acre>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Norte" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Acre> , <http://localhost:8089/educacao-basica/Ideb/2017/Acre> ;
+        ideb:temNome   "Acre" ;
+        ideb:temSigla  "AC" .
+
+ideb:Estado  a            owl:Class ;
+        rdfs:comment      "Representa estados do Brasil" ;
+        rdfs:label        "Estado" ;
+        owl:disjointWith  ideb:IDEB .
+
+ideb:temNome  a                   owl:DatatypeProperty ;
+        rdfs:comment              "Define o nome" ;
+        rdfs:label                "temNome" ;
+        owl:propertyDisjointWith  ideb:temSigla , ideb:temNota .
+
+ideb:temSigla  a      owl:DatatypeProperty ;
+        rdfs:comment  "Define a sigla de um Estado" ;
+        rdfs:label    "temSigla" .
+
+ideb:daRegiao  a                  owl:DatatypeProperty ;
+        rdfs:comment              "Define de qual regiÃ£o Ã© um Estado" ;
+        rdfs:label                "daRegiao" ;
+        owl:propertyDisjointWith  ideb:temNome , ideb:temSigla , ideb:temNota , ideb:temAno , ideb:temCiclo .
+
+ideb:temIdeb  a       owl:ObjectProperty ;
+        rdfs:comment  "Define relaÃ§Ã£o com IDEB" ;
+        rdfs:domain   ideb:Estado ;
+        rdfs:label    "temIdeb" ;
+        rdfs:range    ideb:IDEB .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Acre>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.9e0 ;
+        ideb:temFluxo        0.9e0 ;
+        ideb:temNota         4.41e0 ;
+        ideb:temSigla        "AC" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Acre>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.08e0 ;
+        ideb:temEvolucao     0.21279999999999966e0 ;
+        ideb:temFluxo        0.91e0 ;
+        ideb:temNota         4.6228e0 ;
+        ideb:temSigla        "AC" .
+
+<http://localhost:8089/educacao-basica/Alagoas>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Nordeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Alagoas> , <http://localhost:8089/educacao-basica/Ideb/2017/Alagoas> ;
+        ideb:temNome   "Alagoas" ;
+        ideb:temSigla  "AL" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Alagoas>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.36e0 ;
+        ideb:temFluxo        0.73e0 ;
+        ideb:temNota         3.1828000000000003e0 ;
+        ideb:temSigla        "AL" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Alagoas>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.7e0 ;
+        ideb:temEvolucao     0.7181999999999995e0 ;
+        ideb:temFluxo        0.83e0 ;
+        ideb:temNota         3.901e0 ;
+        ideb:temSigla        "AL" .
+
+<http://localhost:8089/educacao-basica/AmapÃƒÂ¡>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Norte" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Amap%C3%83%C2%A1> , <http://localhost:8089/educacao-basica/Ideb/2017/Amap%C3%83%C2%A1> ;
+        ideb:temNome   "AmapÃƒÂ¡" ;
+        ideb:temSigla  "AP" .
+
+<http://localhost:8089/educacao-basica/Amazonas>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Norte" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Amazonas> , <http://localhost:8089/educacao-basica/Ideb/2017/Amazonas> ;
+        ideb:temNome   "Amazonas" ;
+        ideb:temSigla  "AM" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Amazonas>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.88e0 ;
+        ideb:temFluxo        0.87e0 ;
+        ideb:temNota         4.2456e0 ;
+        ideb:temSigla        "AM" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Amazonas>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.02e0 ;
+        ideb:temEvolucao     0.1719999999999997e0 ;
+        ideb:temFluxo        0.88e0 ;
+        ideb:temNota         4.417599999999999e0 ;
+        ideb:temSigla        "AM" .
+
+<http://localhost:8089/educacao-basica/Bahia>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Nordeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Bahia> , <http://localhost:8089/educacao-basica/Ideb/2017/Bahia> ;
+        ideb:temNome   "Bahia" ;
+        ideb:temSigla  "BA" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Bahia>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.56e0 ;
+        ideb:temFluxo        0.74e0 ;
+        ideb:temNota         3.3743999999999996e0 ;
+        ideb:temSigla        "BA" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Bahia>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.58e0 ;
+        ideb:temEvolucao     0.06060000000000043e0 ;
+        ideb:temFluxo        0.75e0 ;
+        ideb:temNota         3.435e0 ;
+        ideb:temSigla        "BA" .
+
+<http://localhost:8089/educacao-basica/CearÃƒÂ¡>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Nordeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Cear%C3%83%C2%A1> , <http://localhost:8089/educacao-basica/Ideb/2017/Cear%C3%83%C2%A1> ;
+        ideb:temNome   "CearÃƒÂ¡" ;
+        ideb:temSigla  "CE" .
+
+<http://localhost:8089/educacao-basica/Distrito+Federal>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Centro-Oeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Distrito+Federal> , <http://localhost:8089/educacao-basica/Ideb/2017/Distrito+Federal> ;
+        ideb:temNome   "Distrito Federal" ;
+        ideb:temSigla  "DF" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Distrito+Federal>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.1e0 ;
+        ideb:temFluxo        0.79e0 ;
+        ideb:temNota         4.029e0 ;
+        ideb:temSigla        "DF" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Distrito+Federal>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.17e0 ;
+        ideb:temEvolucao     0.2621000000000002e0 ;
+        ideb:temFluxo        0.83e0 ;
+        ideb:temNota         4.2911e0 ;
+        ideb:temSigla        "DF" .
+
+<http://localhost:8089/educacao-basica/Esp%C3%83%C2%ADrito+Santo>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Sudeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Esp%C3%83%C2%ADrito+Santo> , <http://localhost:8089/educacao-basica/Ideb/2017/Esp%C3%83%C2%ADrito+Santo> ;
+        ideb:temNome   "EspÃƒÂ­rito Santo" ;
+        ideb:temSigla  "ES" .
+
+<http://localhost:8089/educacao-basica/Goias>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Centro-Oeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Goias> , <http://localhost:8089/educacao-basica/Ideb/2017/Goias> ;
+        ideb:temNome   "Goias" ;
+        ideb:temSigla  "GO" .
+
+<http://localhost:8089/educacao-basica/MaranhÃƒÂ£o>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Nordeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Maranh%C3%83%C2%A3o> , <http://localhost:8089/educacao-basica/Ideb/2017/Maranh%C3%83%C2%A3o> ;
+        ideb:temNome   "MaranhÃƒÂ£o" ;
+        ideb:temSigla  "MA" .
+
+<http://localhost:8089/educacao-basica/Mato+Grosso>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Centro-Oeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Mato+Grosso> , <http://localhost:8089/educacao-basica/Ideb/2017/Mato+Grosso> ;
+        ideb:temNome   "Mato Grosso" ;
+        ideb:temSigla  "MT" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Mato+Grosso>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.71e0 ;
+        ideb:temFluxo        0.95e0 ;
+        ideb:temNota         4.4745e0 ;
+        ideb:temSigla        "MT" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Mato+Grosso>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.89e0 ;
+        ideb:temEvolucao     0.17099999999999937e0 ;
+        ideb:temFluxo        0.95e0 ;
+        ideb:temNota         4.645499999999999e0 ;
+        ideb:temSigla        "MT" .
+
+<http://localhost:8089/educacao-basica/Mato+Grosso+do+Sul>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Centro-Oeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Mato+Grosso+do+Sul> , <http://localhost:8089/educacao-basica/Ideb/2017/Mato+Grosso+do+Sul> ;
+        ideb:temNome   "Mato Grosso do Sul" ;
+        ideb:temSigla  "MS" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Mato+Grosso+do+Sul>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.36e0 ;
+        ideb:temFluxo        0.81e0 ;
+        ideb:temNota         4.341600000000001e0 ;
+        ideb:temSigla        "MS" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Mato+Grosso+do+Sul>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.38e0 ;
+        ideb:temEvolucao     0.2851999999999997e0 ;
+        ideb:temFluxo        0.86e0 ;
+        ideb:temNota         4.6268e0 ;
+        ideb:temSigla        "MS" .
+
+<http://localhost:8089/educacao-basica/Minas+Gerais>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Sudeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Minas+Gerais> , <http://localhost:8089/educacao-basica/Ideb/2017/Minas+Gerais> ;
+        ideb:temNome   "Minas Gerais" ;
+        ideb:temSigla  "MG" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Minas+Gerais>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.25e0 ;
+        ideb:temFluxo        0.87e0 ;
+        ideb:temNota         4.5675e0 ;
+        ideb:temSigla        "MG" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Minas+Gerais>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.25e0 ;
+        ideb:temEvolucao     -0.10500000000000043e0 ;
+        ideb:temFluxo        0.85e0 ;
+        ideb:temNota         4.4624999999999995e0 ;
+        ideb:temSigla        "MG" .
+
+<http://localhost:8089/educacao-basica/ParÃƒÂ¡>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Norte" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Par%C3%83%C2%A1> , <http://localhost:8089/educacao-basica/Ideb/2017/Par%C3%83%C2%A1> ;
+        ideb:temNome   "ParÃƒÂ¡" ;
+        ideb:temSigla  "PA" .
+
+<http://localhost:8089/educacao-basica/ParaÃƒÂ­ba>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Nordeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Para%C3%83%C2%ADba> , <http://localhost:8089/educacao-basica/Ideb/2017/Para%C3%83%C2%ADba> ;
+        ideb:temNome   "ParaÃƒÂ­ba" ;
+        ideb:temSigla  "PB" .
+
+<http://localhost:8089/educacao-basica/ParanÃƒÂ¡>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Sul" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Paran%C3%83%C2%A1> , <http://localhost:8089/educacao-basica/Ideb/2017/Paran%C3%83%C2%A1> ;
+        ideb:temNome   "ParanÃƒÂ¡" ;
+        ideb:temSigla  "PR" .
+
+<http://localhost:8089/educacao-basica/Pernambuco>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Nordeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Pernambuco> , <http://localhost:8089/educacao-basica/Ideb/2017/Pernambuco> ;
+        ideb:temNome   "Pernambuco" ;
+        ideb:temSigla  "PE" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Pernambuco>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.68e0 ;
+        ideb:temFluxo        0.82e0 ;
+        ideb:temNota         3.8375999999999997e0 ;
+        ideb:temSigla        "PE" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Pernambuco>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.78e0 ;
+        ideb:temEvolucao     0.27320000000000055e0 ;
+        ideb:temFluxo        0.86e0 ;
+        ideb:temNota         4.1108e0 ;
+        ideb:temSigla        "PE" .
+
+<http://localhost:8089/educacao-basica/PiauÃƒÂ­>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Nordeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Piau%C3%83%C2%AD> , <http://localhost:8089/educacao-basica/Ideb/2017/Piau%C3%83%C2%AD> ;
+        ideb:temNome   "PiauÃƒÂ­" ;
+        ideb:temSigla  "PI" .
+
+<http://localhost:8089/educacao-basica/Rio+de+Janeiro>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Sudeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Rio+de+Janeiro> , <http://localhost:8089/educacao-basica/Ideb/2017/Rio+de+Janeiro> ;
+        ideb:temNome   "Rio de Janeiro" ;
+        ideb:temSigla  "RJ" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Rio+de+Janeiro>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.92e0 ;
+        ideb:temFluxo        0.81e0 ;
+        ideb:temNota         3.9852000000000003e0 ;
+        ideb:temSigla        "RJ" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Rio+de+Janeiro>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.09e0 ;
+        ideb:temEvolucao     0.18859999999999966e0 ;
+        ideb:temFluxo        0.82e0 ;
+        ideb:temNota         4.1738e0 ;
+        ideb:temSigla        "RJ" .
+
+<http://localhost:8089/educacao-basica/Rio+Grande+do+Norte>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Nordeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Rio+Grande+do+Norte> , <http://localhost:8089/educacao-basica/Ideb/2017/Rio+Grande+do+Norte> ;
+        ideb:temNome   "Rio Grande do Norte" ;
+        ideb:temSigla  "RN" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Rio+Grande+do+Norte>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.62e0 ;
+        ideb:temFluxo        0.73e0 ;
+        ideb:temNota         3.3726e0 ;
+        ideb:temSigla        "RN" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Rio+Grande+do+Norte>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.61e0 ;
+        ideb:temEvolucao     0.03880000000000017e0 ;
+        ideb:temFluxo        0.74e0 ;
+        ideb:temNota         3.4114e0 ;
+        ideb:temSigla        "RN" .
+
+<http://localhost:8089/educacao-basica/Rio+Grande+do+Sul>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Sul" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Rio+Grande+do+Sul> , <http://localhost:8089/educacao-basica/Ideb/2017/Rio+Grande+do+Sul> ;
+        ideb:temNome   "Rio Grande do Sul" ;
+        ideb:temSigla  "RS" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Rio+Grande+do+Sul>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.19e0 ;
+        ideb:temFluxo        0.8e0 ;
+        ideb:temNota         4.152e0 ;
+        ideb:temSigla        "RS" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Rio+Grande+do+Sul>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.4e0 ;
+        ideb:temEvolucao     0.22200000000000042e0 ;
+        ideb:temFluxo        0.81e0 ;
+        ideb:temNota         4.3740000000000006e0 ;
+        ideb:temSigla        "RS" .
+
+<http://localhost:8089/educacao-basica/RondÃƒÂ´nia>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Norte" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Rond%C3%83%C2%B4nia> , <http://localhost:8089/educacao-basica/Ideb/2017/Rond%C3%83%C2%B4nia> ;
+        ideb:temNome   "RondÃƒÂ´nia" ;
+        ideb:temSigla  "RO" .
+
+<http://localhost:8089/educacao-basica/Roraima>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Norte" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Roraima> , <http://localhost:8089/educacao-basica/Ideb/2017/Roraima> ;
+        ideb:temNome   "Roraima" ;
+        ideb:temSigla  "RR" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Roraima>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.49e0 ;
+        ideb:temFluxo        0.82e0 ;
+        ideb:temNota         3.6818e0 ;
+        ideb:temSigla        "RR" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Roraima>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.62e0 ;
+        ideb:temEvolucao     0.2913999999999999e0 ;
+        ideb:temFluxo        0.86e0 ;
+        ideb:temNota         3.9732e0 ;
+        ideb:temSigla        "RR" .
+
+<http://localhost:8089/educacao-basica/Santa+Catarina>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Sul" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Santa+Catarina> , <http://localhost:8089/educacao-basica/Ideb/2017/Santa+Catarina> ;
+        ideb:temNome   "Santa Catarina" ;
+        ideb:temSigla  "SC" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Santa+Catarina>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.53e0 ;
+        ideb:temFluxo        0.89e0 ;
+        ideb:temNota         4.9217e0 ;
+        ideb:temSigla        "SC" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Santa+Catarina>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.57e0 ;
+        ideb:temEvolucao     0.09130000000000038e0 ;
+        ideb:temFluxo        0.9e0 ;
+        ideb:temNota         5.013000000000001e0 ;
+        ideb:temSigla        "SC" .
+
+<http://localhost:8089/educacao-basica/S%C3%83%C2%A3o+Paulo>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Sudeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/S%C3%83%C2%A3o+Paulo> , <http://localhost:8089/educacao-basica/Ideb/2017/S%C3%83%C2%A3o+Paulo> ;
+        ideb:temNome   "SÃƒÂ£o Paulo" ;
+        ideb:temSigla  "SP" .
+
+<http://localhost:8089/educacao-basica/Sergipe>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Nordeste" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Sergipe> , <http://localhost:8089/educacao-basica/Ideb/2017/Sergipe> ;
+        ideb:temNome   "Sergipe" ;
+        ideb:temSigla  "SE" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Sergipe>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.64e0 ;
+        ideb:temFluxo        0.66e0 ;
+        ideb:temNota         3.0624e0 ;
+        ideb:temSigla        "SE" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Sergipe>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.76e0 ;
+        ideb:temEvolucao     0.3171999999999997e0 ;
+        ideb:temFluxo        0.71e0 ;
+        ideb:temNota         3.3795999999999995e0 ;
+        ideb:temSigla        "SE" .
+
+<http://localhost:8089/educacao-basica/Tocantins>
+        a              ideb:Estado ;
+        ideb:daRegiao  "Norte" ;
+        ideb:temIdeb   <http://localhost:8089/educacao-basica/Ideb/2015/Tocantins> , <http://localhost:8089/educacao-basica/Ideb/2017/Tocantins> ;
+        ideb:temNome   "Tocantins" ;
+        ideb:temSigla  "TO" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Tocantins>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.76e0 ;
+        ideb:temFluxo        0.84e0 ;
+        ideb:temNota         3.9983999999999997e0 ;
+        ideb:temSigla        "TO" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Tocantins>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.14e0 ;
+        ideb:temEvolucao     0.47340000000000027e0 ;
+        ideb:temFluxo        0.87e0 ;
+        ideb:temNota         4.4718e0 ;
+        ideb:temSigla        "TO" .
+
+ideb:IDEB  a          owl:Class ;
+        rdfs:comment  "O Ãndice de Desenvolvimento da EducaÃ§Ã£o BÃ¡sica Ã© um indicador criado pelo governo federal para medir a qualidade do ensino nas escolas pÃºblicas." ;
+        rdfs:label    "IDEB" .
+
+ideb:temAprendizado  a  owl:DatatypeProperty ;
+        rdfs:comment  "Define aprendizado" ;
+        rdfs:label    "temAprendizado" .
+
+ideb:temFluxo  a      owl:DatatypeProperty ;
+        rdfs:comment  "defineFluxo" ;
+        rdfs:label    "temFluxo" .
+
+ideb:temNota  a                   owl:DatatypeProperty ;
+        rdfs:comment              "Define a nota de um IDEB" ;
+        rdfs:label                "temNota" ;
+        owl:propertyDisjointWith  ideb:temSigla .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/AmapÃ¡>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.34e0 ;
+        ideb:temFluxo        0.8e0 ;
+        ideb:temNota         3.472e0 ;
+        ideb:temSigla        "AP" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/CearÃ¡>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.09e0 ;
+        ideb:temFluxo        0.89e0 ;
+        ideb:temNota         4.5301e0 ;
+        ideb:temSigla        "CE" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/Esp%C3%ADrito+Santo>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.09e0 ;
+        ideb:temFluxo        0.8e0 ;
+        ideb:temNota         4.072e0 ;
+        ideb:temSigla        "ES" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/GoiÃ¡s>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.17e0 ;
+        ideb:temFluxo        0.9e0 ;
+        ideb:temNota         4.6530000000000005e0 ;
+        ideb:temSigla        "GO" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/MaranhÃ£o>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.38e0 ;
+        ideb:temFluxo        0.84e0 ;
+        ideb:temNota         3.6792e0 ;
+        ideb:temSigla        "MA" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/ParÃ¡>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.56e0 ;
+        ideb:temFluxo        0.79e0 ;
+        ideb:temNota         3.6024e0 ;
+        ideb:temSigla        "PA" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/ParaÃ­ba>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.49e0 ;
+        ideb:temFluxo        0.77e0 ;
+        ideb:temNota         3.4573e0 ;
+        ideb:temSigla        "PB" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/ParanÃ¡>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.08e0 ;
+        ideb:temFluxo        0.85e0 ;
+        ideb:temNota         4.318e0 ;
+        ideb:temSigla        "PR" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/PiauÃ­>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.72e0 ;
+        ideb:temFluxo        0.82e0 ;
+        ideb:temNota         3.8703999999999996e0 ;
+        ideb:temSigla        "PI" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/RondÃ´nia>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.08e0 ;
+        ideb:temFluxo        0.8e0 ;
+        ideb:temNota         4.064e0 ;
+        ideb:temSigla        "RO" .
+
+<http://localhost:8089/educacao-basica/Ideb/2015/S%C3%A3o+Paulo>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.06e0 ;
+        ideb:temFluxo        0.93e0 ;
+        ideb:temNota         4.7058e0 ;
+        ideb:temSigla        "SP" .
+
+ideb:temEvolucao  a   owl:DatatypeProperty ;
+        rdfs:comment  "DefineEvolucao" ;
+        rdfs:label    "temEvolucao" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/AmapÃ¡>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.37e0 ;
+        ideb:temEvolucao     0.06770000000000032e0 ;
+        ideb:temFluxo        0.81e0 ;
+        ideb:temNota         3.5397000000000003e0 ;
+        ideb:temSigla        "AP" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/CearÃ¡>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.31e0 ;
+        ideb:temEvolucao     0.3551000000000002e0 ;
+        ideb:temFluxo        0.92e0 ;
+        ideb:temNota         4.8852e0 ;
+        ideb:temSigla        "CE" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/Esp%C3%ADrito+Santo>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.27e0 ;
+        ideb:temEvolucao     0.30209999999999937e0 ;
+        ideb:temFluxo        0.83e0 ;
+        ideb:temNota         4.374099999999999e0 ;
+        ideb:temSigla        "ES" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/GoiÃ¡s>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.43e0 ;
+        ideb:temEvolucao     0.3968999999999996e0 ;
+        ideb:temFluxo        0.93e0 ;
+        ideb:temNota         5.0499e0 ;
+        ideb:temSigla        "GO" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/MaranhÃ£o>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.39e0 ;
+        ideb:temEvolucao     0.05229999999999979e0 ;
+        ideb:temFluxo        0.85e0 ;
+        ideb:temNota         3.7314999999999996e0 ;
+        ideb:temSigla        "MA" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/ParÃ¡>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.51e0 ;
+        ideb:temEvolucao     0.005600000000000271e0 ;
+        ideb:temFluxo        0.8e0 ;
+        ideb:temNota         3.608e0 ;
+        ideb:temSigla        "PA" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/ParaÃ­ba>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.55e0 ;
+        ideb:temEvolucao     0.09169999999999989e0 ;
+        ideb:temFluxo        0.78e0 ;
+        ideb:temNota         3.549e0 ;
+        ideb:temSigla        "PB" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/ParanÃ¡>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.43e0 ;
+        ideb:temEvolucao     0.3517999999999999e0 ;
+        ideb:temFluxo        0.86e0 ;
+        ideb:temNota         4.6697999999999995e0 ;
+        ideb:temSigla        "PR" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/PiauÃ­>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  4.96e0 ;
+        ideb:temEvolucao     0.3456000000000006e0 ;
+        ideb:temFluxo        0.85e0 ;
+        ideb:temNota         4.216e0 ;
+        ideb:temSigla        "PI" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/RondÃ´nia>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.32e0 ;
+        ideb:temEvolucao     0.7240000000000002e0 ;
+        ideb:temFluxo        0.9e0 ;
+        ideb:temNota         4.788e0 ;
+        ideb:temSigla        "RO" .
+
+<http://localhost:8089/educacao-basica/Ideb/2017/S%C3%A3o+Paulo>
+        a                    ideb:IDEB ;
+        ideb:temAprendizado  5.23e0 ;
+        ideb:temEvolucao     0.15810000000000102e0 ;
+        ideb:temFluxo        0.93e0 ;
+        ideb:temNota         4.863900000000001e0 ;
+        ideb:temSigla        "SP" .
+
+<http://purl.org/caeda2/ontology>
+        a                owl:Ontology ;
+        dcterms:license  <http://creativecommons.org/licenses/by/3.0/> ;
+        owl:versionIRI   <http://purl.org/caeda2/ontology> ;
+        owl:versionInfo  "0.0.1" .
+
+dcterms:license  a  owl:AnnotationProperty .
+
+ideb:temEstado  a      owl:ObjectProperty ;
+        rdfs:comment   "Define estado de IDEB" ;
+        rdfs:domain    ideb:IDEB ;
+        rdfs:label     "temEstado" ;
+        rdfs:range     ideb:Estado ;
+        owl:inverseOf  ideb:temIdeb .
+
+ideb:temAno  a                    owl:DatatypeProperty ;
+        rdfs:comment              "Define o ano" ;
+        rdfs:label                "temAno" ;
+        owl:propertyDisjointWith  ideb:temNome , ideb:temSigla , ideb:temNota , ideb:temCiclo .
+
+ideb:temCiclo  a                  owl:DatatypeProperty ;
+        rdfs:comment              "Define o ciclo de um IDB" ;
+        rdfs:label                "temCiclo" ;
+        owl:propertyDisjointWith  ideb:temNome , ideb:temSigla , ideb:temNota .
+
+:sparqlServer  a                    sd:Service , dcat:DataService ;
+        dcat:endpointURL            <http://localhost:3030/> ;
+        sd:defaultDataset           [ a                sd:Dataset ;
+                                      sd:defaultGraph  [ a  sd:Graph ] ;
+                                      sd:namedGraph    [ a        sd:NamedGraph ;
+                                                         sd:name  <http://localhost:3030/educacao-basica/>
+                                                       ] ;
+                                      sd:namedGraph    [ a        sd:NamedGraph ;
+                                                         sd:name  <http://localhost:3030/educacao-basica/>
+                                                       ]
+                                    ] ;
+        sd:defaultEntailmentRegime  ent:RDFS ;
+        sd:endpoint                 <http://localhost:3030/> ;
+        sd:resultFormat             <http://www.w3.org/ns/formats/Turtle> , <http://www.w3.org/ns/formats/RDF_XML> , <http://www.w3.org/ns/formats/JSON-LD> , <http://www.w3.org/ns/formats/SPARQL_Results_CSV> , <http://www.w3.org/ns/formats/SPARQL_Results_JSON> ;
+        sd:supportedLanguage        :SPARQL11Update .
+
+:SPARQL11Update  a    sd:Language ;
+        rdfs:comment  "sd:SPARQLUpdate is an sd:Language representing the SPARQL 1.1 Update language."@en ;
+        rdfs:label    "SPARQL 1.1 Update"@pt .
+
+:catalogo  a                  dcat:Catalog ;
+        rdfs:label            "Experimento Usp"@pt ;
+        dcterms:creator       :criador ;
+        dcterms:description   "Portal de dados conectados"@pt ;
+        dcterms:keyword       ""@pt ;
+        dcterms:language      "pt-br"^^xsd:language ;
+        dcterms:publisher     :publicador ;
+        dcterms:spatial       :local ;
+        dcterms:title         "Experimento Usp"@pt ;
+        void:uriRegexPattern  "^http://http://localhost:8080/educacao-basica/{dominio}/" ;
+        dcat:dataset          :dataset1 , :dataset2 ;
+        foaf:homepage         <http://localhost:8080/> .
+
+:publicador  a      foaf:Organization , dcterms:Agent , prov:Agent ;
+        rdfs:label  "Universidade TecnolÃ³gica Federal do ParanÃ¡ - UTFPR"@pt ;
+        schema:url  <http://portal.utfpr.edu.br/> ;
+        foaf:name   "Universidade TecnolÃ³gica Federal do ParanÃ¡ - UTFPR"@pt .
+
+:criador  a                   dcterms:Agent , prov:Agent , foaf:Person ;
+        prov:actedOnBehalfOf  :publicador ;
+        foaf:givenName        "A2"@pt ;
+        foaf:mbox             <http://localhost:3030/experimento-usp/a2_utfpr@gmail.com> .
+
+:local  a           dcterms:Location ;
+        rdfs:label  "Brasil"@pt .
+
+:dataset1  a                         dcat:Dataset , void:Dataset , dcterms:Collection , void:Entity , prov:Entity ;
+        rdfs:comment                 "ODC Open Database License (ODbL) Summary\r\nThis is a human-readable summary of the ODbL 1.0 license. Please see the disclaimer below.\r\nYou are free:\r\nTo Share: To copy, distribute and use the database.\r\nTo Create: To produce works from the database.\r\nTo Adapt: To modify, transform and build upon the database.\r\nAs long as you:\r\nAttribute: You must attribute any public use of the database, or works produced from the database, in the manner specified in the ODbL. For any use or redistribution of the database, or works produced from it, you must make clear to others the license of the database and keep intact any notices on the original database.\r\nShare-Alike: If you publicly use any adapted version of this database, or works produced from an adapted database, you must also offer that adapted database under the ODbL.\r\nKeep open: If you redistribute the database, or an adapted version of it, then you may use technological measures that restrict the work (such as DRM) as long as you also redistribute a version without such measures.\r\nDisclaimer\r\nThis is not a license. It is simply a handy reference for understanding the ODbL 1.0 â€” it is a human-readable expression of some of its key terms. This document has no legal value, and its contents do not appear in the actual license. Read the full ODbL 1.0 license text for the exact terms that apply.\r\nComments are closed." ;
+        rdfs:label                   "Estados 2018"@pt ;
+        pav:previousVersion          "0.0.0" ;
+        dcterms:accrualPeriodicity   <http://purl.org/cld/freq/biennial> ;
+        dcterms:conformsTo           <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos> , <https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf> , <http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo> , <http://vocab.e.gov.br/id/governo#esquema> ;
+        dcterms:coverage             :esfera1 , :poder1 ;
+        dcterms:creator              :criadorDataset1 ;
+        dcterms:description          "Estados do Brasil"@pt ;
+        dcterms:language             "pt-br"^^xsd:language ;
+        dcterms:license              <http://opendefinition.org/licenses/odc-odbl/> ;
+        dcterms:publisher            :publicadorDataset1 ;
+        dcterms:source               <https://cidades.ibge.gov.br/brasil/> ;
+        dcterms:spatial              :localDS1 ;
+        dcterms:temporal             <http://reference.data.gov.uk/id/year/2020> ;
+        dcterms:title                "Estados 2018"@pt ;
+        void:dataDump                <http://localhost:3030/educacao-basica/> ;
+        void:sparqlEndpoint          <http://localhost:3030/> ;
+        void:uriSpace                : ;
+        schema:dateModified          "08/02/2020" ;
+        schema:datePublished         "08/02/2020" ;
+        schema:measurementTechnique  "DIvisÃ£o polÃ­tica" ;
+        owl:versionInfo              "0.0.1" ;
+        dcat:contactPoint            <https://demo.ckan.org/dataset/estados_a2> ;
+        dcat:distribution            :dist1 ;
+        dcat:keyword                 "Estados"@pt , "Brazil"@pt , "Sigla"@pt ;
+        dcat:theme                   <http://vocab.e.gov.br/id/governo#administracao> ;
+        foaf:homepage                <https://cidades.ibge.gov.br/brasil/> ;
+        adms:versionNotes            "VersÃ£o estÃ¡vel de estados do paÃ­s"@pt .
+
+:dataset2  a                         dcat:Dataset , void:Dataset , dcterms:Collection , void:Entity , prov:Entity ;
+        rdfs:label                   "IDEB 2015"@pt ;
+        pav:previousVersion          "0.0.0" ;
+        dcterms:accrualPeriodicity   <http://purl.org/cld/freq/biennial> ;
+        dcterms:conformsTo           <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos> , <https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf> , <http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo> , <http://vocab.e.gov.br/id/governo#esquema> ;
+        dcterms:coverage             :esfera1 , :poder1 ;
+        dcterms:creator              :criadorDataset1 ;
+        dcterms:description          "IDEB por estado em 2015"@pt ;
+        dcterms:language             "pt-br"^^xsd:language ;
+        dcterms:publisher            :publicadorDataset1 ;
+        dcterms:source               <http://dados.gov.br/dataset/ideb-por-estados> ;
+        dcterms:spatial              :localDS1 ;
+        dcterms:temporal             <http://reference.data.gov.uk/id/year/2017> ;
+        dcterms:title                "IDEB 2015"@pt ;
+        void:dataDump                <http://localhost:3030/educacao-basica/> ;
+        void:sparqlEndpoint          <http://localhost:3030/> ;
+        void:uriSpace                : ;
+        schema:dateModified          "08/02/2020" ;
+        schema:datePublished         "08/02/2020" ;
+        schema:measurementTechnique  "AvaliaÃ§Ã£o Educacional" ;
+        owl:versionInfo              "0.0.1" ;
+        dcat:contactPoint            <https://demo.ckan.org/dataset/ideb_a2> ;
+        dcat:distribution            :dist2 , :dist3 ;
+        dcat:keyword                 "EducaÃ§Ã£o"@pt , "Nota"@pt , "Estado"@pt ;
+        dcat:theme                   <http://vocab.e.gov.br/id/governo#educacao> ;
+        foaf:homepage                <http://dados.gov.br/dataset/ideb-por-estados> ;
+        adms:versionNotes            "VersÃ£o estÃ¡vel de notas do IDEB por estado"@pt .
+
+:publicadorDataset1  a  foaf:Agent ;
+        rdfs:label  "Universidade TecnolÃ³gica Federal do ParanÃ¡ - UTFPR"@pt ;
+        schema:url  <http://portal.utfpr.edu.br/> ;
+        foaf:name   "Universidade TecnolÃ³gica Federal do ParanÃ¡ - UTFPR"@pt .
+
+:criadorDataset1  a           dcterms:Agent , prov:Agent , foaf:Person ;
+        prov:actedOnBehalfOf  :publicador ;
+        foaf:givenName        "A2"@pt ;
+        foaf:mbox             <http://localhost:3030/experimento-usp/a2_utfpr@gmail.com> .
+
+:localDS1  a        dcterms:Location ;
+        rdfs:label  "Brasil"@pt .
+
+:esfera1  a         dcterms:LocationPeriodJurisdication ;
+        rdfs:label  "Federal"@pt .
+
+:poder1  a          dcterms:LocationPeriodJurisdication ;
+        rdfs:label  "Executivo"@pt .
+
+<http://vocab.e.gov.br/id/governo#educacao>
+        a              skos:Concept ;
+        dcterms:title  "<>" .
+
+:v1     rdf:    rdf: .
+
+:v2     rdfs:   rdfs: .
+
+:v3     owl:    owl: .
+
+:v4     sd:     sd: .
+
+:v5     dcat:   dcat: .
+
+:v6     dcterms:  dcterms: .
+
+:v7     foaf:   foaf: .
+
+:v8     prov:   prov: .
+
+:v9     cc:     cc: .
+
+:v10    void:   void: .
+
+:v11    xsd:    xsd: .
+
+:v12    schema:  schema: .
+
+:v13    dqv:    dqv: .
+
+:v14    adms:   adms: .
+
+:v15    pav:    pav: .
+
+:v16    skos:   skos: .
+
+:v17    ent:    ent: .
+
+:v18    prof:   prof: .
+
+:dist1  a                          dcat:Distribution ;
+        rdfs:comment               "Estados"@pt ;
+        dcterms:description        "Estados"@pt ;
+        dcterms:license            <http://opendefinition.org/licenses/odc-odbl/> ;
+        dcterms:title              "Estados"@pt ;
+        void:feature               <http://www.w3.org/ns/formats/Turtle> , <http://www.w3.org/ns/formats/RDF_XML> , <http://www.w3.org/ns/formats/N-Triples> ;
+        owl:versionInfo            "2020" ;
+        dcat:accessURL             <http://localhost:3030/educacao-basica/> ;
+        dcat:downloadURL           <https://demo.ckan.org/dataset/estados_a2> ;
+        dqv:hasQualityMeasurement  :medida1 , :medida2 , :medida3 , :medida4 , :medida5 .
+
+:dist2  a                          dcat:Distribution ;
+        rdfs:comment               "IDEB"@pt ;
+        dcterms:description        "Notas do IDEB"@pt ;
+        dcterms:license            <http://opendefinition.org/licenses/odc-odbl/> ;
+        dcterms:title              "IDEB"@pt ;
+        void:feature               <http://www.w3.org/ns/formats/Turtle> , <http://www.w3.org/ns/formats/RDF_XML> , <http://www.w3.org/ns/formats/N-Triples> ;
+        owl:versionInfo            "2017" ;
+        dcat:accessURL             <http://localhost:3030/educacao-basica/> ;
+        dcat:downloadURL           <https://demo.ckan.org/dataset/ideb_a2> ;
+        dqv:hasQualityMeasurement  :medida1 , :medida2 , :medida3 , :medida4 , :medida5 .
+
+:dist3  a                          dcat:Distribution ;
+        rdfs:comment               "IDEB"@pt ;
+        dcterms:description        "Notas do IDEB"@pt ;
+        dcterms:license            <http://opendefinition.org/licenses/odc-odbl/> ;
+        dcterms:title              "IDEB"@pt ;
+        void:feature               <http://www.w3.org/ns/formats/Turtle> , <http://www.w3.org/ns/formats/RDF_XML> , <http://www.w3.org/ns/formats/N-Triples> ;
+        owl:versionInfo            "2015" ;
+        dcat:accessURL             <http://localhost:3030/educacao-basica/> ;
+        dcat:downloadURL           <https://demo.ckan.org/dataset/ideb_a2> ;
+        dqv:hasQualityMeasurement  :medida1 , :medida2 , :medida3 , :medida4 , :medida5 .
+
+:medida1  a                  dqv:QualityMeasurement ;
+        dqv:isMeasurementOf  :RC1 ;
+        dqv:value            "1" .
+
+:medida2  a                  dqv:QualityMeasurement ;
+        dqv:isMeasurementOf  :p1 ;
+        dqv:value            "1" .
+
+:medida3  a                  dqv:QualityMeasurement ;
+        dqv:isMeasurementOf  :CS1 ;
+        dqv:value            "1" .
+
+:medida4  a                  dqv:QualityMeasurement ;
+        dqv:isMeasurementOf  :l1 ;
+        dqv:value            "true" .
+
+:p1     a                dqv:Metric ;
+        skos:definition  "P1 â€“ InformaÃ§Ãµes bÃ¡sicas de proveniÃªncia"@pt ;
+        dqv:inDimension  :proveniencia .
+
+:l1     a                dqv:Metric ;
+        skos:definition  "L1 - LicenÃ§a legÃ­vel por mÃ¡quina"@pt ;
+        dqv:inDimension  :licenciamento .
+
+:accessibility  a       dqv:Category ;
+        skos:prefLabel  "Acessibilidade"@pt .
+
+:intrinsic  a           dqv:Category ;
+        skos:prefLabel  "IntrÃ­nsecos"@pt .
+
+:contextual  a          dqv:Category ;
+        skos:prefLabel  "Contextual"@pt .
+
+:representational  a    dqv:Category ;
+        skos:prefLabel  "Representacional"@pt .
+
+:concisaoRepresentacional
+        a               dqv:Dimension ;
+        skos:prefLabel  "ConcisÃ£o representacional"@pt ;
+        dqv:inCategory  :representational .
+
+:interoperabilidade  a  dqv:Dimension ;
+        skos:prefLabel  "Interoperabilidade"@pt ;
+        dqv:inCategory  :representational .
+
+:interpretabilidade  a  dqv:Dimension ;
+        skos:prefLabel  "Interpretabilidade"@pt ;
+        dqv:inCategory  :representational .
+
+:versatilidade  a       dqv:Dimension ;
+        skos:prefLabel  "Versatilidade"@pt ;
+        dqv:inCategory  :representational .
+
+:proveniencia  a        dqv:Dimension ;
+        skos:prefLabel  "ProveniÃªncia"@pt ;
+        dqv:inCategory  :contextual .
+
+:compreensibilidade  a  dqv:Dimension ;
+        skos:prefLabel  "Compreensibilidade"@pt ;
+        dqv:inCategory  :contextual .
+
+:concisao  a            dqv:Dimension ;
+        skos:prefLabel  "ConcisÃ£o"@pt ;
+        dqv:inCategory  :intrinsic .
+
+:consistencia  a        dqv:Dimension ;
+        skos:prefLabel  "ConsistÃªncia"@pt ;
+        dqv:inCategory  :intrinsic .
+
+:validadeSintatica  a   dqv:Dimension ;
+        skos:prefLabel  "Validade sintÃ¡tica"@pt ;
+        dqv:inCategory  :intrinsic .
+
+:disponibilidade  a     dqv:Dimension ;
+        skos:prefLabel  "Disponibilidade"@pt ;
+        dqv:inCategory  :accessibility .
+
+:licenciamento  a       dqv:Dimension ;
+        skos:prefLabel  "Licenciamento"@pt ;
+        dqv:inCategory  :accessibility .
+
+:interligacao  a        dqv:Dimension ;
+        skos:prefLabel  "InterligaÃ§Ã£o"@pt ;
+        dqv:inCategory  :accessibility .
+
+:desempenho  a          dqv:Dimension ;
+        skos:prefLabel  "Desempenho"@pt ;
+        dqv:inCategory  :accessibility .
+
+:in3    a                dqv:Metric ;
+        skos:definition  "IN3 - Uso de classes e propriedades indefinidas"@pt ;
+        dqv:inDimension  :interpretabilidade .
+
+:cs9    a                dqv:Metric ;
+        skos:definition  "CS9- Uso de tipos de dados incorretos em Domain ou Range"@pt ;
+        dqv:inDimension  :consistencia .
+
+:a3     a                dqv:Metric ;
+        skos:definition  "A3 â€“ ResoluÃ§Ã£o de URIs"@pt ;
+        dqv:inDimension  :disponibilidade .
