@@ -1,0 +1,1412 @@
+<http://purl.org/caedA1/ontologia/ex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/caedA1/ontologia/ex> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/%20> .
+<http://purl.org/caedA1/ontologia/ex> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/region
+<http://dbpedia.org/ontology/region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://pav-ontology.github.io/pav/previousVersion
+<http://pav-ontology.github.io/pav/previousVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/caed_A1/exhasSigla
+<http://purl.org/caed_A1/exhasSigla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/caed_A1/ex#hasAprendizado2015
+<http://purl.org/caed_A1/ex#hasAprendizado2015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/caed_A1/ex#hasAprendizado2017
+<http://purl.org/caed_A1/ex#hasAprendizado2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/caed_A1/ex#hasEvolucao2017
+<http://purl.org/caed_A1/ex#hasEvolucao2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/caed_A1/ex#hasFluxo2015
+<http://purl.org/caed_A1/ex#hasFluxo2015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/caed_A1/ex#hasFluxo2017
+<http://purl.org/caed_A1/ex#hasFluxo2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/caed_A1/ex#hasIdeb
+<http://purl.org/caed_A1/ex#hasIdeb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/caed_A1/ex#hasNotaIDEB2015
+<http://purl.org/caed_A1/ex#hasNotaIDEB2015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/caed_A1/ex#hasNotaIDEB2017
+<http://purl.org/caed_A1/ex#hasNotaIDEB2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/accrualPeriodicity
+<http://purl.org/dc/terms/accrualPeriodicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/conformsTo
+<http://purl.org/dc/terms/conformsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/coverage
+<http://purl.org/dc/terms/coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/keyword
+<http://purl.org/dc/terms/keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/spatial
+<http://purl.org/dc/terms/spatial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/temporal
+<http://purl.org/dc/terms/temporal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://rdfs.org/ns/void#dataDump
+<http://rdfs.org/ns/void#dataDump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://rdfs.org/ns/void#feature
+<http://rdfs.org/ns/void#feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://rdfs.org/ns/void#sparqlEndpoint
+<http://rdfs.org/ns/void#sparqlEndpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://rdfs.org/ns/void#uriRegexPattern
+<http://rdfs.org/ns/void#uriRegexPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://rdfs.org/ns/void#uriSpace
+<http://rdfs.org/ns/void#uriSpace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://rdfs.org/ns/void#vocabulary
+<http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/dateModified
+<http://schema.org/dateModified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/datePublished
+<http://schema.org/datePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/measurementTechnique
+<http://schema.org/measurementTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/url
+<http://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#contactPoint
+<http://www.w3.org/ns/dcat#contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#dataset
+<http://www.w3.org/ns/dcat#dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#distribution
+<http://www.w3.org/ns/dcat#distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#downloadURL
+<http://www.w3.org/ns/dcat#downloadURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#endpointURL
+<http://www.w3.org/ns/dcat#endpointURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#keyword
+<http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dcat#theme
+<http://www.w3.org/ns/dcat#theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dqv#hasQualityMeasurement
+<http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dqv#inCategory
+<http://www.w3.org/ns/dqv#inCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dqv#inDimension
+<http://www.w3.org/ns/dqv#inDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dqv#isMeasurementOf
+<http://www.w3.org/ns/dqv#isMeasurementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/dqv#value
+<http://www.w3.org/ns/dqv#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#actedOnBehalfOf
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/sparql-service-description#defaultDataset
+<http://www.w3.org/ns/sparql-service-description#defaultDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/sparql-service-description#defaultEntailmentRegime
+<http://www.w3.org/ns/sparql-service-description#defaultEntailmentRegime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/sparql-service-description#defaultGraph
+<http://www.w3.org/ns/sparql-service-description#defaultGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/sparql-service-description#endpoint
+<http://www.w3.org/ns/sparql-service-description#endpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/sparql-service-description#name
+<http://www.w3.org/ns/sparql-service-description#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/sparql-service-description#namedGraph
+<http://www.w3.org/ns/sparql-service-description#namedGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/sparql-service-description#resultFormat
+<http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/sparql-service-description#supportedLanguage
+<http://www.w3.org/ns/sparql-service-description#supportedLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.w3.org/TR/vocab-adms/#versionNotes
+<https://www.w3.org/TR/vocab-adms/#versionNotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/caedA1/ontologia/ex#hasIdeb
+<http://purl.org/caedA1/ontologia/ex#hasIdeb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/caedA1/ontologia/ex#hasIdeb> <http://www.w3.org/2000/01/rdf-schema#comment> "Conecta um estado à uma nota do IDEB" .
+<http://purl.org/caedA1/ontologia/ex#hasIdeb> <http://www.w3.org/2000/01/rdf-schema#label> "hasIdeb" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/caedA1/ontologia/ex#hasAprendizado2015
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2015> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caedA1/ontologia/ex#IDEB_2015_-_Anos_Finais> .
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2015> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2015> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caedA1/ontologia/ex#hasAprendizado2017> .
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2015> <http://www.w3.org/2000/01/rdf-schema#comment> "Aprendizado do IDEB de 2015" .
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2015> <http://www.w3.org/2000/01/rdf-schema#label> "hasAprendizado2015" .
+# 
+# http://purl.org/caedA1/ontologia/ex#hasAprendizado2017
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2017> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caedA1/ontologia/ex#IDEB_2017_-_Anos_Finais> .
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2017> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2017> <http://www.w3.org/2000/01/rdf-schema#comment> "Aprendizado do IDEB de 2017" .
+<http://purl.org/caedA1/ontologia/ex#hasAprendizado2017> <http://www.w3.org/2000/01/rdf-schema#label> "hasAprendizado2017" .
+# 
+# http://purl.org/caedA1/ontologia/ex#hasEvolucao2017
+<http://purl.org/caedA1/ontologia/ex#hasEvolucao2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caedA1/ontologia/ex#hasEvolucao2017> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caedA1/ontologia/ex#IDEB_2017_-_Anos_Finais> .
+<http://purl.org/caedA1/ontologia/ex#hasEvolucao2017> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caedA1/ontologia/ex#hasEvolucao2017> <http://www.w3.org/2000/01/rdf-schema#comment> "Evolucao do IDEB de 2015 para 2017" .
+<http://purl.org/caedA1/ontologia/ex#hasEvolucao2017> <http://www.w3.org/2000/01/rdf-schema#label> "hasEvolucao2017" .
+# 
+# http://purl.org/caedA1/ontologia/ex#hasFluxo2015
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2015> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caedA1/ontologia/ex#IDEB_2015_-_Anos_Finais> .
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2015> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2015> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caedA1/ontologia/ex#hasFluxo2017> .
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2015> <http://www.w3.org/2000/01/rdf-schema#comment> "Fluxo do IDEB de 2015" .
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2015> <http://www.w3.org/2000/01/rdf-schema#label> "hasFluxo2015" .
+# 
+# http://purl.org/caedA1/ontologia/ex#hasFluxo2017
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2017> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caedA1/ontologia/ex#IDEB_2017_-_Anos_Finais> .
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2017> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2017> <http://www.w3.org/2000/01/rdf-schema#comment> "Fluxo do IDEB de 2017" .
+<http://purl.org/caedA1/ontologia/ex#hasFluxo2017> <http://www.w3.org/2000/01/rdf-schema#label> "hasFluxo2017" .
+# 
+# http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2015
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2015> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caedA1/ontologia/ex#IDEB_2015_-_Anos_Finais> .
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2015> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2015> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2017> .
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2015> <http://www.w3.org/2000/01/rdf-schema#comment> "Nota do IDEB 2015" .
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2015> <http://www.w3.org/2000/01/rdf-schema#label> "hasNotaIDEB2015" .
+# 
+# http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2017
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2017> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caedA1/ontologia/ex#IDEB_2017_-_Anos_Finais> .
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2017> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2017> <http://www.w3.org/2000/01/rdf-schema#comment> "Nota do IDEB 2017" .
+<http://purl.org/caedA1/ontologia/ex#hasNotaIDEB2017> <http://www.w3.org/2000/01/rdf-schema#label> "hasNotaIDEB2017" .
+# 
+# http://purl.org/caedA1/ontologia/ex#hasSigla
+<http://purl.org/caedA1/ontologia/ex#hasSigla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caedA1/ontologia/ex#hasSigla> <http://www.w3.org/2000/01/rdf-schema#comment> "Sigla do estado" .
+<http://purl.org/caedA1/ontologia/ex#hasSigla> <http://www.w3.org/2000/01/rdf-schema#label> "hasSigla" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/caedA1/ontologia/ex#Estados_do_Brasil
+<http://purl.org/caedA1/ontologia/ex#Estados_do_Brasil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/caedA1/ontologia/ex#Estados_do_Brasil> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/caedA1/ontologia/ex#IDEB_2015_-_Anos_Finais> .
+<http://purl.org/caedA1/ontologia/ex#Estados_do_Brasil> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/caedA1/ontologia/ex#IDEB_2017_-_Anos_Finais> .
+<http://purl.org/caedA1/ontologia/ex#Estados_do_Brasil> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataset contendo os estados do Brasil" .
+# 
+# http://purl.org/caedA1/ontologia/ex#IDEB_2015_-_Anos_Finais
+<http://purl.org/caedA1/ontologia/ex#IDEB_2015_-_Anos_Finais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/caedA1/ontologia/ex#IDEB_2015_-_Anos_Finais> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/caedA1/ontologia/ex#IDEB_2017_-_Anos_Finais> .
+<http://purl.org/caedA1/ontologia/ex#IDEB_2015_-_Anos_Finais> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataset contendo as notas do IDEB por estado do ano de 2015" .
+<http://purl.org/caedA1/ontologia/ex#IDEB_2015_-_Anos_Finais> <http://www.w3.org/2000/01/rdf-schema#label> "IDEB 2015 - Anos Finais" .
+# 
+# http://purl.org/caedA1/ontologia/ex#IDEB_2017_-_Anos_Finais
+<http://purl.org/caedA1/ontologia/ex#IDEB_2017_-_Anos_Finais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/caedA1/ontologia/ex#IDEB_2017_-_Anos_Finais> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataset contendo as notas do IDEB por estado do ano de 2017" .
+<http://purl.org/caedA1/ontologia/ex#IDEB_2017_-_Anos_Finais> <http://www.w3.org/2000/01/rdf-schema#label> "IDEB 2017 - Anos Finais" .
+# 
+# http://purl.org/caed_A1/ex#Estados_do_Brasil
+<http://purl.org/caed_A1/ex#Estados_do_Brasil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais
+<http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais
+<http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/dc/terms/Agent
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/dc/terms/Collection
+<http://purl.org/dc/terms/Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/dc/terms/Location
+<http://purl.org/dc/terms/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/dc/terms/LocationPeriodJurisdication
+<http://purl.org/dc/terms/LocationPeriodJurisdication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://rdfs.org/ns/void#Dataset
+<http://rdfs.org/ns/void#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://rdfs.org/ns/void#Entity
+<http://rdfs.org/ns/void#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Catalog
+<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#DataService
+<http://www.w3.org/ns/dcat#DataService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Distribution
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dqv#Category
+<http://www.w3.org/ns/dqv#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dqv#Dimension
+<http://www.w3.org/ns/dqv#Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dqv#Metric
+<http://www.w3.org/ns/dqv#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dqv#QualityMeasurement
+<http://www.w3.org/ns/dqv#QualityMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sparql-service-description#Dataset
+<http://www.w3.org/ns/sparql-service-description#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sparql-service-description#Graph
+<http://www.w3.org/ns/sparql-service-description#Graph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sparql-service-description#Language
+<http://www.w3.org/ns/sparql-service-description#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sparql-service-description#NamedGraph
+<http://www.w3.org/ns/sparql-service-description#NamedGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sparql-service-description#Service
+<http://www.w3.org/ns/sparql-service-description#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://localhost:8080/educacao-basica/Acre
+<http://localhost:8080/educacao-basica/Acre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Acre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Acre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Acre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Acre> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Acre> .
+<http://pt.dbpedia.org/resource/Acre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Acre> <http://dbpedia.org/ontology/region> "Norte" .
+<http://localhost:8080/educacao-basica/Acre> <http://purl.org/caed_A1/exhasSigla> "AC" .
+<http://localhost:8080/educacao-basica/Acre> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.9" .
+<http://localhost:8080/educacao-basica/Acre> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.08" .
+<http://localhost:8080/educacao-basica/Acre> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.21279999999999966" .
+<http://localhost:8080/educacao-basica/Acre> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.9" .
+<http://localhost:8080/educacao-basica/Acre> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.91" .
+<http://localhost:8080/educacao-basica/Acre> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Acre> .
+<http://localhost:8080/educacao-basica/Acre> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.41" .
+<http://localhost:8080/educacao-basica/Acre> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.6228" .
+<http://localhost:8080/educacao-basica/Acre> <http://xmlns.com/foaf/0.1/name> "Acre" .
+# 
+# http://localhost:8080/educacao-basica/Alagoas
+<http://localhost:8080/educacao-basica/Alagoas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Alagoas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Alagoas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Alagoas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Alagoas> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Alagoas> .
+<http://pt.dbpedia.org/resource/Alagoas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Alagoas> <http://dbpedia.org/ontology/region> "Nordeste" .
+<http://localhost:8080/educacao-basica/Alagoas> <http://purl.org/caed_A1/exhasSigla> "AL" .
+<http://localhost:8080/educacao-basica/Alagoas> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.36" .
+<http://localhost:8080/educacao-basica/Alagoas> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.7" .
+<http://localhost:8080/educacao-basica/Alagoas> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.7181999999999995" .
+<http://localhost:8080/educacao-basica/Alagoas> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.73" .
+<http://localhost:8080/educacao-basica/Alagoas> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.83" .
+<http://localhost:8080/educacao-basica/Alagoas> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Alagoas> .
+<http://localhost:8080/educacao-basica/Alagoas> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.1828000000000003" .
+<http://localhost:8080/educacao-basica/Alagoas> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "3.901" .
+<http://localhost:8080/educacao-basica/Alagoas> <http://xmlns.com/foaf/0.1/name> "Alagoas" .
+# 
+# http://localhost:8080/educacao-basica/Amapá
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Amap\u00E1> .
+<http://pt.dbpedia.org/resource/Amap\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://dbpedia.org/ontology/region> "Norte" .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://purl.org/caed_A1/exhasSigla> "AP" .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.34" .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.37" .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.06770000000000032" .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.8" .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.81" .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Amap\u00E1> .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.472" .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "3.5397000000000003" .
+<http://localhost:8080/educacao-basica/Amap\u00E1> <http://xmlns.com/foaf/0.1/name> "Amapá" .
+# 
+# http://localhost:8080/educacao-basica/Amazonas
+<http://localhost:8080/educacao-basica/Amazonas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Amazonas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Amazonas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Amazonas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Amazonas> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Amazonas> .
+<http://pt.dbpedia.org/resource/Amazonas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Amazonas> <http://dbpedia.org/ontology/region> "Norte" .
+<http://localhost:8080/educacao-basica/Amazonas> <http://purl.org/caed_A1/exhasSigla> "AM" .
+<http://localhost:8080/educacao-basica/Amazonas> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.88" .
+<http://localhost:8080/educacao-basica/Amazonas> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.02" .
+<http://localhost:8080/educacao-basica/Amazonas> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.1719999999999997" .
+<http://localhost:8080/educacao-basica/Amazonas> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.87" .
+<http://localhost:8080/educacao-basica/Amazonas> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.88" .
+<http://localhost:8080/educacao-basica/Amazonas> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Amazonas> .
+<http://localhost:8080/educacao-basica/Amazonas> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.2456" .
+<http://localhost:8080/educacao-basica/Amazonas> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.417599999999999" .
+<http://localhost:8080/educacao-basica/Amazonas> <http://xmlns.com/foaf/0.1/name> "Amazonas" .
+# 
+# http://localhost:8080/educacao-basica/Bahia
+<http://localhost:8080/educacao-basica/Bahia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Bahia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Bahia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Bahia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Bahia> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Bahia> .
+<http://pt.dbpedia.org/resource/Bahia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Bahia> <http://dbpedia.org/ontology/region> "Nordeste" .
+<http://localhost:8080/educacao-basica/Bahia> <http://purl.org/caed_A1/exhasSigla> "BA" .
+<http://localhost:8080/educacao-basica/Bahia> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.56" .
+<http://localhost:8080/educacao-basica/Bahia> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.58" .
+<http://localhost:8080/educacao-basica/Bahia> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.06060000000000043" .
+<http://localhost:8080/educacao-basica/Bahia> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.74" .
+<http://localhost:8080/educacao-basica/Bahia> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.75" .
+<http://localhost:8080/educacao-basica/Bahia> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Bahia> .
+<http://localhost:8080/educacao-basica/Bahia> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.3743999999999996" .
+<http://localhost:8080/educacao-basica/Bahia> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "3.435" .
+<http://localhost:8080/educacao-basica/Bahia> <http://xmlns.com/foaf/0.1/name> "Bahia" .
+# 
+# http://localhost:8080/educacao-basica/Ceará
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Cear\u00E1> .
+<http://pt.dbpedia.org/resource/Cear\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://dbpedia.org/ontology/region> "Nordeste" .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://purl.org/caed_A1/exhasSigla> "CE" .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.09" .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.31" .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.3551000000000002" .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.89" .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.92" .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Cear\u00E1> .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.5301" .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.8852" .
+<http://localhost:8080/educacao-basica/Cear\u00E1> <http://xmlns.com/foaf/0.1/name> "Ceará" .
+# 
+# http://localhost:8080/educacao-basica/Goiás
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Goi\u00E1s> .
+<http://pt.dbpedia.org/resource/Goi\u00E1s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://dbpedia.org/ontology/region> "Centro-Oeste" .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://purl.org/caed_A1/exhasSigla> "GO" .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.17" .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.43" .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.3968999999999996" .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.9" .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.93" .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Goi\u00E1s> .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.6530000000000005" .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "5.0499" .
+<http://localhost:8080/educacao-basica/Goi\u00E1s> <http://xmlns.com/foaf/0.1/name> "Goiás" .
+# 
+# http://localhost:8080/educacao-basica/Maranhão
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Categoria:Maranh\u00E3o> .
+<http://pt.dbpedia.org/resource/Categoria:Maranh\u00E3o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://dbpedia.org/ontology/region> "Nordeste" .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://purl.org/caed_A1/exhasSigla> "MA" .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.38" .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.39" .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.05229999999999979" .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.84" .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.85" .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Maranh\u00E3o> .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.6792" .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "3.7314999999999996" .
+<http://localhost:8080/educacao-basica/Maranh\u00E3o> <http://xmlns.com/foaf/0.1/name> "Maranhão" .
+# 
+# http://localhost:8080/educacao-basica/Paraná
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Paran\u00E1> .
+<http://pt.dbpedia.org/resource/Paran\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://dbpedia.org/ontology/region> "Sul" .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://purl.org/caed_A1/exhasSigla> "PR" .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.08" .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.43" .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.3517999999999999" .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.85" .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.86" .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Paran\u00E1> .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.318" .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.6697999999999995" .
+<http://localhost:8080/educacao-basica/Paran\u00E1> <http://xmlns.com/foaf/0.1/name> "Paraná" .
+# 
+# http://localhost:8080/educacao-basica/Paraíba
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Para\u00EDba> .
+<http://pt.dbpedia.org/resource/Para\u00EDba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://dbpedia.org/ontology/region> "Nordeste" .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://purl.org/caed_A1/exhasSigla> "PB" .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.49" .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.55" .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.09169999999999989" .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.77" .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.78" .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Para\u00EDba> .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.4573" .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "3.549" .
+<http://localhost:8080/educacao-basica/Para\u00EDba> <http://xmlns.com/foaf/0.1/name> "Paraíba" .
+# 
+# http://localhost:8080/educacao-basica/Pará
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Par\u00E1> .
+<http://pt.dbpedia.org/resource/Par\u00E1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://dbpedia.org/ontology/region> "Norte" .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://purl.org/caed_A1/exhasSigla> "PA" .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.56" .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.51" .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.005600000000000271" .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.79" .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.8" .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Par\u00E1> .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.6024" .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "3.608" .
+<http://localhost:8080/educacao-basica/Par\u00E1> <http://xmlns.com/foaf/0.1/name> "Pará" .
+# 
+# http://localhost:8080/educacao-basica/Pernambuco
+<http://localhost:8080/educacao-basica/Pernambuco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Pernambuco> .
+<http://pt.dbpedia.org/resource/Pernambuco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://dbpedia.org/ontology/region> "Nordeste" .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://purl.org/caed_A1/exhasSigla> "PE" .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.68" .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.78" .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.27320000000000055" .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.82" .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.86" .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Pernambuco> .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.8375999999999997" .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.1108" .
+<http://localhost:8080/educacao-basica/Pernambuco> <http://xmlns.com/foaf/0.1/name> "Pernambuco" .
+# 
+# http://localhost:8080/educacao-basica/Piauí
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Piau\u00ED> .
+<http://pt.dbpedia.org/resource/Piau\u00ED> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://dbpedia.org/ontology/region> "Nordeste" .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://purl.org/caed_A1/exhasSigla> "PI" .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.72" .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.96" .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.3456000000000006" .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.82" .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.85" .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Piau\u00ED> .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.8703999999999996" .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.216" .
+<http://localhost:8080/educacao-basica/Piau\u00ED> <http://xmlns.com/foaf/0.1/name> "Piauí" .
+# 
+# http://localhost:8080/educacao-basica/Rondônia
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Rond\u00F4nia> .
+<http://pt.dbpedia.org/resource/Rond\u00F4nia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://dbpedia.org/ontology/region> "Norte" .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://purl.org/caed_A1/exhasSigla> "RO" .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.08" .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.32" .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.7240000000000002" .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.8" .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.9" .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Rond\u00F4nia> .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.064" .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.788" .
+<http://localhost:8080/educacao-basica/Rond\u00F4nia> <http://xmlns.com/foaf/0.1/name> "Rondônia" .
+# 
+# http://localhost:8080/educacao-basica/Roraima
+<http://localhost:8080/educacao-basica/Roraima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Roraima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Roraima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Roraima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Roraima> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Roraima> .
+<http://pt.dbpedia.org/resource/Roraima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Roraima> <http://dbpedia.org/ontology/region> "Norte" .
+<http://localhost:8080/educacao-basica/Roraima> <http://purl.org/caed_A1/exhasSigla> "RR" .
+<http://localhost:8080/educacao-basica/Roraima> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.49" .
+<http://localhost:8080/educacao-basica/Roraima> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.62" .
+<http://localhost:8080/educacao-basica/Roraima> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.2913999999999999" .
+<http://localhost:8080/educacao-basica/Roraima> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.82" .
+<http://localhost:8080/educacao-basica/Roraima> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.86" .
+<http://localhost:8080/educacao-basica/Roraima> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Roraima> .
+<http://localhost:8080/educacao-basica/Roraima> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.6818" .
+<http://localhost:8080/educacao-basica/Roraima> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "3.9732" .
+<http://localhost:8080/educacao-basica/Roraima> <http://xmlns.com/foaf/0.1/name> "Roraima" .
+# 
+# http://localhost:8080/educacao-basica/SPARQL11Update
+<http://localhost:8080/educacao-basica/SPARQL11Update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/SPARQL11Update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Language> .
+<http://localhost:8080/educacao-basica/SPARQL11Update> <http://www.w3.org/2000/01/rdf-schema#comment> "sd:SPARQLUpdate is an sd:Language representing the SPARQL 1.1 Update language." .
+<http://localhost:8080/educacao-basica/SPARQL11Update> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL 1.1 Update" .
+# 
+# http://localhost:8080/educacao-basica/Sergipe
+<http://localhost:8080/educacao-basica/Sergipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Sergipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Sergipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Sergipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Sergipe> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Sergipe> .
+<http://pt.dbpedia.org/resource/Sergipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Sergipe> <http://dbpedia.org/ontology/region> "Nordeste" .
+<http://localhost:8080/educacao-basica/Sergipe> <http://purl.org/caed_A1/exhasSigla> "SE" .
+<http://localhost:8080/educacao-basica/Sergipe> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.64" .
+<http://localhost:8080/educacao-basica/Sergipe> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.76" .
+<http://localhost:8080/educacao-basica/Sergipe> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.3171999999999997" .
+<http://localhost:8080/educacao-basica/Sergipe> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.66" .
+<http://localhost:8080/educacao-basica/Sergipe> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.71" .
+<http://localhost:8080/educacao-basica/Sergipe> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Sergipe> .
+<http://localhost:8080/educacao-basica/Sergipe> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.0624" .
+<http://localhost:8080/educacao-basica/Sergipe> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "3.3795999999999995" .
+<http://localhost:8080/educacao-basica/Sergipe> <http://xmlns.com/foaf/0.1/name> "Sergipe" .
+# 
+# http://localhost:8080/educacao-basica/Tocantins
+<http://localhost:8080/educacao-basica/Tocantins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Tocantins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Tocantins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Tocantins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Tocantins> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Tocantins> .
+<http://pt.dbpedia.org/resource/Tocantins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Tocantins> <http://dbpedia.org/ontology/region> "Norte" .
+<http://localhost:8080/educacao-basica/Tocantins> <http://purl.org/caed_A1/exhasSigla> "TO" .
+<http://localhost:8080/educacao-basica/Tocantins> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.76" .
+<http://localhost:8080/educacao-basica/Tocantins> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.14" .
+<http://localhost:8080/educacao-basica/Tocantins> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.47340000000000027" .
+<http://localhost:8080/educacao-basica/Tocantins> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.84" .
+<http://localhost:8080/educacao-basica/Tocantins> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.87" .
+<http://localhost:8080/educacao-basica/Tocantins> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Tocantins> .
+<http://localhost:8080/educacao-basica/Tocantins> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.9983999999999997" .
+<http://localhost:8080/educacao-basica/Tocantins> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.4718" .
+<http://localhost:8080/educacao-basica/Tocantins> <http://xmlns.com/foaf/0.1/name> "Tocantins" .
+# 
+# http://localhost:8080/educacao-basica/a3
+<http://localhost:8080/educacao-basica/a3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/a3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
+<http://localhost:8080/educacao-basica/a3> <http://www.w3.org/2004/02/skos/core#definition> "A3 – Resolução de URIs" .
+<http://localhost:8080/educacao-basica/a3> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basica/disponibilidade> .
+# 
+# http://localhost:8080/educacao-basica/accessibility
+<http://localhost:8080/educacao-basica/accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
+<http://localhost:8080/educacao-basica/accessibility> <http://www.w3.org/2004/02/skos/core#prefLabel> "Acessibilidade" .
+# 
+# http://localhost:8080/educacao-basica/catalogo
+<http://localhost:8080/educacao-basica/catalogo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/catalogo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/creator> <http://localhost:8080/educacao-basica/criador> .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/description> "Portal de dados conectados" .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/keyword> "" .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/language> "pt-br" .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/publisher> <http://localhost:8080/educacao-basica/publicador> .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/spatial> <http://localhost:8080/educacao-basica/local> .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/title> "Experimento USP" .
+<http://localhost:8080/educacao-basica/catalogo> <http://rdfs.org/ns/void#uriRegexPattern> <http://localhost:8080/educacao-basica/> .
+<http://localhost:8080/educacao-basica/catalogo> <http://www.w3.org/2000/01/rdf-schema#label> "Experimento USP" .
+<http://localhost:8080/educacao-basica/catalogo> <http://www.w3.org/ns/dcat#dataset> <http://localhost:8080/educacao-basica/dataset1> .
+<http://localhost:8080/educacao-basica/catalogo> <http://xmlns.com/foaf/0.1/homepage> <http://localhost:8080/> .
+# 
+# http://localhost:8080/educacao-basica/compreensibilidade
+<http://localhost:8080/educacao-basica/compreensibilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/compreensibilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/compreensibilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Compreensibilidade" .
+<http://localhost:8080/educacao-basica/compreensibilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/contextual> .
+# 
+# http://localhost:8080/educacao-basica/concisao
+<http://localhost:8080/educacao-basica/concisao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/concisao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/concisao> <http://www.w3.org/2004/02/skos/core#prefLabel> "Concisão" .
+<http://localhost:8080/educacao-basica/concisao> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/intrinsic> .
+# 
+# http://localhost:8080/educacao-basica/concisaoRepresentacional
+<http://localhost:8080/educacao-basica/concisaoRepresentacional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/concisaoRepresentacional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/concisaoRepresentacional> <http://www.w3.org/2004/02/skos/core#prefLabel> "Concisão representacional" .
+<http://localhost:8080/educacao-basica/concisaoRepresentacional> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/representational> .
+# 
+# http://localhost:8080/educacao-basica/consistencia
+<http://localhost:8080/educacao-basica/consistencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/consistencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/consistencia> <http://www.w3.org/2004/02/skos/core#prefLabel> "Consistência" .
+<http://localhost:8080/educacao-basica/consistencia> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/intrinsic> .
+# 
+# http://localhost:8080/educacao-basica/contextual
+<http://localhost:8080/educacao-basica/contextual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/contextual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
+<http://localhost:8080/educacao-basica/contextual> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contextual" .
+# 
+# http://localhost:8080/educacao-basica/criador
+<http://localhost:8080/educacao-basica/criador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/criador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<http://localhost:8080/educacao-basica/criador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:8080/educacao-basica/criador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://localhost:8080/educacao-basica/criador> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://localhost:8080/educacao-basica/publicador> .
+<http://localhost:8080/educacao-basica/criador> <http://xmlns.com/foaf/0.1/givenName> "A1" .
+<http://localhost:8080/educacao-basica/criador> <http://xmlns.com/foaf/0.1/mbox> <http://localhost:3030/educacao_basica/A1@gmail.com> .
+# 
+# http://localhost:8080/educacao-basica/criadorDataset1
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://localhost:8080/educacao-basica/publicador> .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://xmlns.com/foaf/0.1/givenName> "A1" .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://xmlns.com/foaf/0.1/mbox> <http://localhost:3030/educacao_basica/A1@gmail.com> .
+# 
+# http://localhost:8080/educacao-basica/criadorDataset2
+<http://localhost:8080/educacao-basica/criadorDataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/criadorDataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<http://localhost:8080/educacao-basica/criadorDataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:8080/educacao-basica/criadorDataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://localhost:8080/educacao-basica/criadorDataset2> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://localhost:8080/educacao-basica/publicador> .
+<http://localhost:8080/educacao-basica/criadorDataset2> <http://xmlns.com/foaf/0.1/givenName> "A1" .
+<http://localhost:8080/educacao-basica/criadorDataset2> <http://xmlns.com/foaf/0.1/mbox> <http://localhost:3030/educacao_basica/A1@gmail.com> .
+# 
+# http://localhost:8080/educacao-basica/cs9
+<http://localhost:8080/educacao-basica/cs9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/cs9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
+<http://localhost:8080/educacao-basica/cs9> <http://www.w3.org/2004/02/skos/core#definition> "CS9- Uso de tipos de dados incorretos em Domain ou Range" .
+<http://localhost:8080/educacao-basica/cs9> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basica/consistencia> .
+# 
+# http://localhost:8080/educacao-basica/dataset1
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Collection> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Entity> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<http://localhost:8080/educacao-basica/dataset1> <http://pav-ontology.github.io/pav/previousVersion> "" .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/cld/freq/biennial> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/conformsTo> <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/conformsTo> <http://vocab.e.gov.br/id/governo#esquema> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/conformsTo> <http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/conformsTo> <https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basica/esfera1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basica/poder1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/creator> <http://localhost:8080/educacao-basica/criadorDataset1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/description> "Estados do Brasil por regiao" .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/language> "pt-br" .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/license> <http://opendefinition.org/licenses/odc-odbl/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/publisher> <http://localhost:8080/educacao-basica/publicadorDataset1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/source> <https://drive.google.com/file/d/1MkPYfbQgTpus6ElBBnn90dfAUtyc0wgl/view?usp=sharing> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/spatial> <http://localhost:8080/educacao-basica/localDS1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/temporal> <http://localhost:3030/educacao_basica/2018> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/title> "Estados do Brasil" .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#dataDump> <https://drive.google.com/file/d/1MkPYfbQgTpus6ElBBnn90dfAUtyc0wgl/view?usp=sharing> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#sparqlEndpoint> <http://localhost:3030/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#uriSpace> <http://localhost:8080/educacao-basica/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://dbpedia.org/ontology/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://purl.org/caed_A1/ex> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://xmlns.com/foaf/0.1/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://schema.org/dateModified> "2020/02/07" .
+<http://localhost:8080/educacao-basica/dataset1> <http://schema.org/datePublished> "2020/02/07" .
+<http://localhost:8080/educacao-basica/dataset1> <http://schema.org/measurementTechnique> "divisao politica" .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution Share-Alike for Databases" .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/2000/01/rdf-schema#label> "Estados do Brasil" .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/dcat#contactPoint> <http://localhost:3030/educacao_basica/@@_URL_FORMULARIO_CONTATO_@@> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/dcat#distribution> <http://localhost:8080/educacao-basica/dist3> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/dcat#keyword> "" .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/id/governo#administracao> .
+<http://localhost:8080/educacao-basica/dataset1> <http://xmlns.com/foaf/0.1/homepage> "https://cidades.ibge.gov.br/brasil/" .
+<http://localhost:8080/educacao-basica/dataset1> <https://www.w3.org/TR/vocab-adms/#versionNotes> "Inseridos os estados do Brasil" .
+# 
+# http://localhost:8080/educacao-basica/dataset2
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Collection> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Entity> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<http://localhost:8080/educacao-basica/dataset2> <http://pav-ontology.github.io/pav/previousVersion> "" .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/cld/freq/biennial> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/conformsTo> <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/conformsTo> <http://vocab.e.gov.br/id/governo#esquema> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/conformsTo> <http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/conformsTo> <https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basica/esfera1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basica/poder1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/creator> <http://localhost:8080/educacao-basica/criadorDataset2> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/description> "Dados do IDEB por estado" .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/language> "pt-br" .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/license> <http://opendefinition.org/licenses/odc-odbl/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/publisher> <http://localhost:8080/educacao-basica/publicadorDataset2> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/source> <https://drive.google.com/file/d/1KjmEdZwW6yuevHZuor6zGd6do1sezaJm/view?usp=sharing> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/spatial> <http://localhost:8080/educacao-basica/localDS1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/temporal> <http://localhost:3030/educacao_basica/2017> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/title> "IDEB - Anos Finais" .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#dataDump> <https://drive.google.com/file/d/1KjmEdZwW6yuevHZuor6zGd6do1sezaJm/view?usp=sharing> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#sparqlEndpoint> <http://localhost:3030/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#uriSpace> <http://localhost:8080/educacao-basica/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://dbpedia.org/ontology/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://purl.org/caed_A1/ex> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://xmlns.com/foaf/0.1/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://schema.org/dateModified> "2020/02/07" .
+<http://localhost:8080/educacao-basica/dataset2> <http://schema.org/datePublished> "2020/02/07" .
+<http://localhost:8080/educacao-basica/dataset2> <http://schema.org/measurementTechnique> "avaliacao educacional" .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution Share-Alike for Databases" .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/2000/01/rdf-schema#label> "IDEB - Anos Finais" .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#contactPoint> <http://localhost:3030/educacao_basica/@@_URL_FORMULARIO_CONTATO_@@> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#distribution> <http://localhost:8080/educacao-basica/dist1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#distribution> <http://localhost:8080/educacao-basica/dist2> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#keyword> "" .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/id/governo#educacao-basica> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/prov#wasDerivedFrom> "https://cidades.ibge.gov.br/brasil/" .
+<http://localhost:8080/educacao-basica/dataset2> <http://xmlns.com/foaf/0.1/homepage> <http://dados.gov.br/dataset/ideb-por-estados> .
+<http://localhost:8080/educacao-basica/dataset2> <https://www.w3.org/TR/vocab-adms/#versionNotes> "Inseridos valores do ideb por estado" .
+# 
+# http://localhost:8080/educacao-basica/desempenho
+<http://localhost:8080/educacao-basica/desempenho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/desempenho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/desempenho> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desempenho" .
+<http://localhost:8080/educacao-basica/desempenho> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/accessibility> .
+# 
+# http://localhost:8080/educacao-basica/disponibilidade
+<http://localhost:8080/educacao-basica/disponibilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/disponibilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/disponibilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Disponibilidade" .
+<http://localhost:8080/educacao-basica/disponibilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/accessibility> .
+# 
+# http://localhost:8080/educacao-basica/dist1
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:8080/educacao-basica/dist1> <http://purl.org/dc/terms/description> "Dados disponiveis no formato excel " .
+<http://localhost:8080/educacao-basica/dist1> <http://purl.org/dc/terms/license> <http://opendefinition.org/licenses/odc-odbl/> .
+<http://localhost:8080/educacao-basica/dist1> <http://purl.org/dc/terms/title> "IDEB 2015 - Anos Finais" .
+<http://localhost:8080/educacao-basica/dist1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
+<http://localhost:8080/educacao-basica/dist1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
+<http://localhost:8080/educacao-basica/dist1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/2000/01/rdf-schema#comment> "IDEB 2015 - Anos Finais" .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/2002/07/owl#versionInfo> "2015" .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dcat#accessURL> <http://localhost:3030/educacao-basica/> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dcat#downloadURL> <https://demo.ckan.org/dataset/fb9ce376-2dae-4255-ad78-3c102286ecdc/resource/00df29b1-9c89-4f14-9570-5b19848a9238/download/ideb-2015-por-estado.xlsx> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida1> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida2> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida3> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida4> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida5> .
+# 
+# http://localhost:8080/educacao-basica/dist2
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:8080/educacao-basica/dist2> <http://purl.org/dc/terms/description> "Dados disponiveis no formato excel " .
+<http://localhost:8080/educacao-basica/dist2> <http://purl.org/dc/terms/license> <http://opendefinition.org/licenses/odc-odbl/> .
+<http://localhost:8080/educacao-basica/dist2> <http://purl.org/dc/terms/title> "IDEB 2017 - Anos Finais" .
+<http://localhost:8080/educacao-basica/dist2> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
+<http://localhost:8080/educacao-basica/dist2> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
+<http://localhost:8080/educacao-basica/dist2> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/2000/01/rdf-schema#comment> "IDEB 2017 - Anos Finais" .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/2002/07/owl#versionInfo> "2017" .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/ns/dcat#accessURL> <http://localhost:3030/educacao-basica/> .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/ns/dcat#downloadURL> <https://demo.ckan.org/dataset/fb9ce376-2dae-4255-ad78-3c102286ecdc/resource/14b34425-48c7-43d5-961f-acdebaeb86ef/download/ideb-2017-por-estado.xlsx> .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida1> .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida2> .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida3> .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida4> .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida5> .
+# 
+# http://localhost:8080/educacao-basica/dist3
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:8080/educacao-basica/dist3> <http://purl.org/dc/terms/description> "Dados disponiveis no formato csv " .
+<http://localhost:8080/educacao-basica/dist3> <http://purl.org/dc/terms/license> <http://opendefinition.org/licenses/odc-odbl/> .
+<http://localhost:8080/educacao-basica/dist3> <http://purl.org/dc/terms/title> "Estados do Brasil" .
+<http://localhost:8080/educacao-basica/dist3> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
+<http://localhost:8080/educacao-basica/dist3> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
+<http://localhost:8080/educacao-basica/dist3> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/2000/01/rdf-schema#comment> "Estados do Brasil" .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/2002/07/owl#versionInfo> "2018" .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/ns/dcat#accessURL> <http://localhost:3030/educacao-basica/> .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/ns/dcat#downloadURL> <https://demo.ckan.org/dataset/9c38bf19-a8b4-4069-a365-927974120daa/resource/c120ff2e-e66d-4992-a102-c54407edd7a3/download/estados.csv> .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida1> .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida2> .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida3> .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida4> .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida5> .
+# 
+# http://localhost:8080/educacao-basica/esfera1
+<http://localhost:8080/educacao-basica/esfera1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/esfera1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/LocationPeriodJurisdication> .
+<http://localhost:8080/educacao-basica/esfera1> <http://www.w3.org/2000/01/rdf-schema#label> "Federal" .
+# 
+# http://localhost:8080/educacao-basica/esfera2
+<http://localhost:8080/educacao-basica/esfera2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/esfera2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/LocationPeriodJurisdication> .
+<http://localhost:8080/educacao-basica/esfera2> <http://www.w3.org/2000/01/rdf-schema#label> "Federal" .
+# 
+# http://localhost:8080/educacao-basica/in3
+<http://localhost:8080/educacao-basica/in3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/in3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
+<http://localhost:8080/educacao-basica/in3> <http://www.w3.org/2004/02/skos/core#definition> "IN3 - Uso de classes e propriedades indefinidas" .
+<http://localhost:8080/educacao-basica/in3> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basica/interpretabilidade> .
+# 
+# http://localhost:8080/educacao-basica/interligacao
+<http://localhost:8080/educacao-basica/interligacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/interligacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/interligacao> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interligação" .
+<http://localhost:8080/educacao-basica/interligacao> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/accessibility> .
+# 
+# http://localhost:8080/educacao-basica/interoperabilidade
+<http://localhost:8080/educacao-basica/interoperabilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/interoperabilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/interoperabilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interoperabilidade" .
+<http://localhost:8080/educacao-basica/interoperabilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/representational> .
+# 
+# http://localhost:8080/educacao-basica/interpretabilidade
+<http://localhost:8080/educacao-basica/interpretabilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/interpretabilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/interpretabilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interpretabilidade" .
+<http://localhost:8080/educacao-basica/interpretabilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/representational> .
+# 
+# http://localhost:8080/educacao-basica/intrinsic
+<http://localhost:8080/educacao-basica/intrinsic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/intrinsic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
+<http://localhost:8080/educacao-basica/intrinsic> <http://www.w3.org/2004/02/skos/core#prefLabel> "Intrínsecos" .
+# 
+# http://localhost:8080/educacao-basica/l1
+<http://localhost:8080/educacao-basica/l1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/l1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
+<http://localhost:8080/educacao-basica/l1> <http://www.w3.org/2004/02/skos/core#definition> "L1 - Licença legível por máquina" .
+<http://localhost:8080/educacao-basica/l1> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basica/licenciamento> .
+# 
+# http://localhost:8080/educacao-basica/licenciamento
+<http://localhost:8080/educacao-basica/licenciamento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/licenciamento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/licenciamento> <http://www.w3.org/2004/02/skos/core#prefLabel> "Licenciamento" .
+<http://localhost:8080/educacao-basica/licenciamento> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/accessibility> .
+# 
+# http://localhost:8080/educacao-basica/local
+<http://localhost:8080/educacao-basica/local> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/local> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<http://localhost:8080/educacao-basica/local> <http://www.w3.org/2000/01/rdf-schema#label> "Brasil" .
+# 
+# http://localhost:8080/educacao-basica/localDS1
+<http://localhost:8080/educacao-basica/localDS1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/localDS1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<http://localhost:8080/educacao-basica/localDS1> <http://www.w3.org/2000/01/rdf-schema#label> "Brasil" .
+# 
+# http://localhost:8080/educacao-basica/localDS2
+<http://localhost:8080/educacao-basica/localDS2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/localDS2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<http://localhost:8080/educacao-basica/localDS2> <http://www.w3.org/2000/01/rdf-schema#label> "Brasil" .
+# 
+# http://localhost:8080/educacao-basica/medida1
+<http://localhost:8080/educacao-basica/medida1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/medida1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#QualityMeasurement> .
+<http://localhost:8080/educacao-basica/medida1> <http://www.w3.org/ns/dqv#isMeasurementOf> <http://localhost:8080/educacao-basica/RC1> .
+<http://localhost:8080/educacao-basica/medida1> <http://www.w3.org/ns/dqv#value> "1" .
+# 
+# http://localhost:8080/educacao-basica/medida2
+<http://localhost:8080/educacao-basica/medida2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/medida2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#QualityMeasurement> .
+<http://localhost:8080/educacao-basica/medida2> <http://www.w3.org/ns/dqv#isMeasurementOf> <http://localhost:8080/educacao-basica/p1> .
+<http://localhost:8080/educacao-basica/medida2> <http://www.w3.org/ns/dqv#value> "1" .
+# 
+# http://localhost:8080/educacao-basica/medida3
+<http://localhost:8080/educacao-basica/medida3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/medida3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#QualityMeasurement> .
+<http://localhost:8080/educacao-basica/medida3> <http://www.w3.org/ns/dqv#isMeasurementOf> <http://localhost:8080/educacao-basica/CS1> .
+<http://localhost:8080/educacao-basica/medida3> <http://www.w3.org/ns/dqv#value> "1" .
+# 
+# http://localhost:8080/educacao-basica/medida4
+<http://localhost:8080/educacao-basica/medida4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/medida4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#QualityMeasurement> .
+<http://localhost:8080/educacao-basica/medida4> <http://www.w3.org/ns/dqv#isMeasurementOf> <http://localhost:8080/educacao-basica/l1> .
+<http://localhost:8080/educacao-basica/medida4> <http://www.w3.org/ns/dqv#value> "True" .
+# 
+# http://localhost:8080/educacao-basica/p1
+<http://localhost:8080/educacao-basica/p1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/p1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
+<http://localhost:8080/educacao-basica/p1> <http://www.w3.org/2004/02/skos/core#definition> "P1 – Informações básicas de proveniência" .
+<http://localhost:8080/educacao-basica/p1> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basica/proveniencia> .
+# 
+# http://localhost:8080/educacao-basica/poder1
+<http://localhost:8080/educacao-basica/poder1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/poder1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/LocationPeriodJurisdication> .
+<http://localhost:8080/educacao-basica/poder1> <http://www.w3.org/2000/01/rdf-schema#label> "Executivo" .
+# 
+# http://localhost:8080/educacao-basica/poder2
+<http://localhost:8080/educacao-basica/poder2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/poder2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/LocationPeriodJurisdication> .
+<http://localhost:8080/educacao-basica/poder2> <http://www.w3.org/2000/01/rdf-schema#label> "Executivo" .
+# 
+# http://localhost:8080/educacao-basica/proveniencia
+<http://localhost:8080/educacao-basica/proveniencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/proveniencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/proveniencia> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proveniência" .
+<http://localhost:8080/educacao-basica/proveniencia> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/contextual> .
+# 
+# http://localhost:8080/educacao-basica/publicador
+<http://localhost:8080/educacao-basica/publicador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/publicador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<http://localhost:8080/educacao-basica/publicador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:8080/educacao-basica/publicador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://localhost:8080/educacao-basica/publicador> <http://schema.org/url> <http://portal.utfpr.edu.br/> .
+<http://localhost:8080/educacao-basica/publicador> <http://www.w3.org/2000/01/rdf-schema#label> "Universidade Tecnológica Federal do Paraná- UTFPR" .
+<http://localhost:8080/educacao-basica/publicador> <http://xmlns.com/foaf/0.1/name> "Universidade Tecnológica Federal do Paraná- UTFPR" .
+# 
+# http://localhost:8080/educacao-basica/publicadorDataset1
+<http://localhost:8080/educacao-basica/publicadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/publicadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<http://localhost:8080/educacao-basica/publicadorDataset1> <http://schema.org/url> <http://portal.utfpr.edu.br/> .
+<http://localhost:8080/educacao-basica/publicadorDataset1> <http://www.w3.org/2000/01/rdf-schema#label> "Universidade Tecnológica Federal do Paraná- UTFPR" .
+<http://localhost:8080/educacao-basica/publicadorDataset1> <http://xmlns.com/foaf/0.1/name> "Universidade Tecnológica Federal do Paraná- UTFPR" .
+# 
+# http://localhost:8080/educacao-basica/publicadorDataset2
+<http://localhost:8080/educacao-basica/publicadorDataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/publicadorDataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<http://localhost:8080/educacao-basica/publicadorDataset2> <http://schema.org/url> <http://portal.utfpr.edu.br/> .
+<http://localhost:8080/educacao-basica/publicadorDataset2> <http://www.w3.org/2000/01/rdf-schema#label> "Universidade Tecnológica Federal do Paraná- UTFPR" .
+<http://localhost:8080/educacao-basica/publicadorDataset2> <http://xmlns.com/foaf/0.1/name> "Universidade Tecnológica Federal do Paraná- UTFPR" .
+# 
+# http://localhost:8080/educacao-basica/representational
+<http://localhost:8080/educacao-basica/representational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/representational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
+<http://localhost:8080/educacao-basica/representational> <http://www.w3.org/2004/02/skos/core#prefLabel> "Representacional" .
+# 
+# http://localhost:8080/educacao-basica/sparqlServer
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DataService> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Service> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/dcat#endpointURL> <http://localhost:3030/> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#defaultDataset> "b0" .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#defaultEntailmentRegime> <http://www.w3.org/ns/entailment/RDFS> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#endpoint> <http://localhost:3030/> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/JSON-LD> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/RDF_XML> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/SPARQL_Results_CSV> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/SPARQL_Results_JSON> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/Turtle> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#supportedLanguage> <http://localhost:8080/educacao-basica/SPARQL11Update> .
+# 
+# http://localhost:8080/educacao-basica/validadeSintatica
+<http://localhost:8080/educacao-basica/validadeSintatica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/validadeSintatica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/validadeSintatica> <http://www.w3.org/2004/02/skos/core#prefLabel> "Validade sintática" .
+<http://localhost:8080/educacao-basica/validadeSintatica> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/intrinsic> .
+# 
+# http://localhost:8080/educacao-basica/versatilidade
+<http://localhost:8080/educacao-basica/versatilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/versatilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/versatilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Versatilidade" .
+<http://localhost:8080/educacao-basica/versatilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/representational> .
+# 
+# http://localhost:8080/educacao-basica/Distrito+Federal
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Distrito_Federal_(Brasil)> .
+<http://pt.dbpedia.org/resource/Distrito_Federal_(Brasil)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://dbpedia.org/ontology/region> "Centro-Oeste" .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://purl.org/caed_A1/exhasSigla> "DF" .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.1" .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.17" .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.2621000000000002" .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.79" .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.83" .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Distrito+Federal> .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.029" .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.2911" .
+<http://localhost:8080/educacao-basica/Distrito+Federal> <http://xmlns.com/foaf/0.1/name> "Distrito Federal" .
+# 
+# http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Categoria:Esp\u00EDrito_Santo_(estado)> .
+<http://pt.dbpedia.org/resource/Categoria:Esp\u00EDrito_Santo_(estado)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://dbpedia.org/ontology/region> "Sudeste" .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://purl.org/caed_A1/exhasSigla> "ES" .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.09" .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.27" .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.30209999999999937" .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.8" .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.83" .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.072" .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.374099999999999" .
+<http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo> <http://xmlns.com/foaf/0.1/name> "Espírito Santo" .
+# 
+# http://localhost:8080/educacao-basica/Mato+Grosso
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Mato_Grosso> .
+<http://pt.dbpedia.org/resource/Mato_Grosso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://dbpedia.org/ontology/region> "Centro-Oeste" .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://purl.org/caed_A1/exhasSigla> "MT" .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.71" .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.89" .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.17099999999999937" .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.95" .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.95" .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Mato+Grosso> .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.4745" .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.645499999999999" .
+<http://localhost:8080/educacao-basica/Mato+Grosso> <http://xmlns.com/foaf/0.1/name> "Mato Grosso" .
+# 
+# http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Mato_Grosso_do_Sul> .
+<http://pt.dbpedia.org/resource/Mato_Grosso_do_Sul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://dbpedia.org/ontology/region> "Centro-Oeste" .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://purl.org/caed_A1/exhasSigla> "MS" .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.36" .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.38" .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.2851999999999997" .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.81" .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.86" .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.341600000000001" .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.6268" .
+<http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul> <http://xmlns.com/foaf/0.1/name> "Mato Grosso do Sul" .
+# 
+# http://localhost:8080/educacao-basica/Minas+Gerais
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Minas_Gerais> .
+<http://pt.dbpedia.org/resource/Minas_Gerais> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://dbpedia.org/ontology/region> "Sudeste" .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://purl.org/caed_A1/exhasSigla> "MG" .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.25" .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.25" .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://purl.org/caed_A1/ex#hasEvolucao2017> "-0.10500000000000043" .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.87" .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.85" .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Minas+Gerais> .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.5675" .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.4624999999999995" .
+<http://localhost:8080/educacao-basica/Minas+Gerais> <http://xmlns.com/foaf/0.1/name> "Minas Gerais" .
+# 
+# http://localhost:8080/educacao-basica/Rio+Grande+do+Norte
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Rio_Grande_do_Norte> .
+<http://pt.dbpedia.org/resource/Rio_Grande_do_Norte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://dbpedia.org/ontology/region> "Nordeste" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://purl.org/caed_A1/exhasSigla> "RN" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.62" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://purl.org/caed_A1/ex#hasAprendizado2017> "4.61" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.03880000000000017" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.73" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.74" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.3726" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "3.4114" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Norte> <http://xmlns.com/foaf/0.1/name> "Rio Grande do Norte" .
+# 
+# http://localhost:8080/educacao-basica/Rio+Grande+do+Sul
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Rio_Grande_do_Sul> .
+<http://pt.dbpedia.org/resource/Rio_Grande_do_Sul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://dbpedia.org/ontology/region> "Sul" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://purl.org/caed_A1/exhasSigla> "RS" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.19" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.4" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.22200000000000042" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.8" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.81" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.152" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.3740000000000006" .
+<http://localhost:8080/educacao-basica/Rio+Grande+do+Sul> <http://xmlns.com/foaf/0.1/name> "Rio Grande do Sul" .
+# 
+# http://localhost:8080/educacao-basica/Rio+de+Janeiro
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Rio_de_Janeiro,_Rio_de_Janeiro> .
+<http://pt.dbpedia.org/resource/Rio_de_Janeiro,_Rio_de_Janeiro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://dbpedia.org/ontology/region> "Sudeste" .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://purl.org/caed_A1/exhasSigla> "RJ" .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://purl.org/caed_A1/ex#hasAprendizado2015> "4.92" .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.09" .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.18859999999999966" .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.81" .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.82" .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Rio+de+Janeiro> .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "3.9852000000000003" .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.1738" .
+<http://localhost:8080/educacao-basica/Rio+de+Janeiro> <http://xmlns.com/foaf/0.1/name> "Rio de Janeiro" .
+# 
+# http://localhost:8080/educacao-basica/S%C3%A3o+Paulo
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/S\u00E3o_Paulo> .
+<http://pt.dbpedia.org/resource/S\u00E3o_Paulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://dbpedia.org/ontology/region> "Sudeste" .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://purl.org/caed_A1/exhasSigla> "SP" .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.06" .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.23" .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.15810000000000102" .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.93" .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.93" .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.7058" .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "4.863900000000001" .
+<http://localhost:8080/educacao-basica/S%C3%A3o+Paulo> <http://xmlns.com/foaf/0.1/name> "São Paulo" .
+# 
+# http://localhost:8080/educacao-basica/Santa+Catarina
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#Estados_do_Brasil> .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2015_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caed_A1/ex#IDEB_2017_-_Anos_Finais> .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://www.w3.org/2002/07/owl#sameAs> <http://pt.dbpedia.org/resource/Santa_Catarina> .
+<http://pt.dbpedia.org/resource/Santa_Catarina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://dbpedia.org/ontology/region> "Sul" .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://purl.org/caed_A1/exhasSigla> "SC" .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://purl.org/caed_A1/ex#hasAprendizado2015> "5.53" .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://purl.org/caed_A1/ex#hasAprendizado2017> "5.57" .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://purl.org/caed_A1/ex#hasEvolucao2017> "0.09130000000000038" .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://purl.org/caed_A1/ex#hasFluxo2015> "0.89" .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://purl.org/caed_A1/ex#hasFluxo2017> "0.9" .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://purl.org/caed_A1/ex#hasIdeb> <http://localhost:8080/educacao-basica/Santa+Catarina> .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://purl.org/caed_A1/ex#hasNotaIDEB2015> "4.9217" .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://purl.org/caed_A1/ex#hasNotaIDEB2017> "5.013000000000001" .
+<http://localhost:8080/educacao-basica/Santa+Catarina> <http://xmlns.com/foaf/0.1/name> "Santa Catarina" .
+# 
+# http://pt.dbpedia.org/resource/Acre
+# 
+# http://pt.dbpedia.org/resource/Alagoas
+# 
+# http://pt.dbpedia.org/resource/Amapá
+# 
+# http://pt.dbpedia.org/resource/Amazonas
+# 
+# http://pt.dbpedia.org/resource/Bahia
+# 
+# http://pt.dbpedia.org/resource/Ceará
+# 
+# http://pt.dbpedia.org/resource/Goiás
+# 
+# http://pt.dbpedia.org/resource/Mato_Grosso
+# 
+# http://pt.dbpedia.org/resource/Mato_Grosso_do_Sul
+# 
+# http://pt.dbpedia.org/resource/Minas_Gerais
+# 
+# http://pt.dbpedia.org/resource/Paraná
+# 
+# http://pt.dbpedia.org/resource/Paraíba
+# 
+# http://pt.dbpedia.org/resource/Pará
+# 
+# http://pt.dbpedia.org/resource/Pernambuco
+# 
+# http://pt.dbpedia.org/resource/Piauí
+# 
+# http://pt.dbpedia.org/resource/Rio_Grande_do_Norte
+# 
+# http://pt.dbpedia.org/resource/Rio_Grande_do_Sul
+# 
+# http://pt.dbpedia.org/resource/Rondônia
+# 
+# http://pt.dbpedia.org/resource/Roraima
+# 
+# http://pt.dbpedia.org/resource/Santa_Catarina
+# 
+# http://pt.dbpedia.org/resource/Sergipe
+# 
+# http://pt.dbpedia.org/resource/São_Paulo
+# 
+# http://pt.dbpedia.org/resource/Tocantins
+# 
+# http://pt.dbpedia.org/resource/Categoria:Maranhão
+# 
+# http://pt.dbpedia.org/resource/Categoria:Espírito_Santo_(estado)
+# 
+# http://pt.dbpedia.org/resource/Distrito_Federal_(Brasil)
+# 
+# http://pt.dbpedia.org/resource/Rio_de_Janeiro,_Rio_de_Janeiro
+# 
+# http://vocab.e.gov.br/id/governo#administracao
+<http://vocab.e.gov.br/id/governo#administracao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.e.gov.br/id/governo#administracao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.e.gov.br/id/governo#administracao> <http://purl.org/dc/terms/title> <http://vocab.e.gov.br/id/governo#administracao> .
+# 
+# http://vocab.e.gov.br/id/governo#educacao-basica
+<http://vocab.e.gov.br/id/governo#educacao-basica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.e.gov.br/id/governo#educacao-basica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.e.gov.br/id/governo#educacao-basica> <http://purl.org/dc/terms/title> "<http://vocab.e.gov.br/id/governo#educacao-basica>" .
+# 
+# https://cidades.ibge.gov.br/brasil/
+<https://cidades.ibge.gov.br/brasil/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://cidades.ibge.gov.br/brasil/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Dataset> .
+_:genid1 <http://www.w3.org/ns/sparql-service-description#defaultGraph> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Graph> .
+_:genid1 <http://www.w3.org/ns/sparql-service-description#namedGraph> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#NamedGraph> .
+_:genid3 <http://www.w3.org/ns/sparql-service-description#name> <http://localhost:3030/educacao-basica/> .
+_:genid1 <http://www.w3.org/ns/sparql-service-description#namedGraph> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#NamedGraph> .
+_:genid4 <http://www.w3.org/ns/sparql-service-description#name> <http://localhost:3030/educacao-basica/> .
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
