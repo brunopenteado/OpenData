@@ -111,97 +111,97 @@ _:B5430664fX2D6518X2D4d57X2Da0e9X2D2eff89b9d8e6 <http://www.w3.org/1999/02/22-rd
 _:B5430664fX2D6518X2D4d57X2Da0e9X2D2eff89b9d8e6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:B245f0444X2D8912X2D4224X2D8b6aX2D13a1e001ca0d .
 _:B245f0444X2D8912X2D4224X2D8b6aX2D13a1e001ca0d <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/caedA5/ontology/#Sigla> .
 _:B245f0444X2D8912X2D4224X2D8b6aX2D13a1e001ca0d <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Service> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DataService> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa um servidor SPARQL" .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/ns/dcat#endpointURL> <http://localhost:3030/> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/ns/sparql-service-description#endpoint> <http://localhost:3030/> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/ns/sparql-service-description#defaultEntailmentRegime> <http://www.w3.org/ns/entailment/RDFS> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/Turtle> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/RDF_XML> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/JSON-LD> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/SPARQL_Results_CSV> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/SPARQL_Results_JSON> .
-<http://localhost:8080/educacao-basicasparqlServer> <http://www.w3.org/ns/sparql-service-description#supportedLanguage> <http://localhost:8080/educacao-basicaSPARQL11Update> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Service> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#DataService> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/2000/01/rdf-schema#comment> "Representa um servidor SPARQL" .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/dcat#endpointURL> <http://localhost:3030/> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#endpoint> <http://localhost:3030/> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#defaultEntailmentRegime> <http://www.w3.org/ns/entailment/RDFS> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/Turtle> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/RDF_XML> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/JSON-LD> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/SPARQL_Results_CSV> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#resultFormat> <http://www.w3.org/ns/formats/SPARQL_Results_JSON> .
+<http://localhost:8080/educacao-basica/sparqlServer> <http://www.w3.org/ns/sparql-service-description#supportedLanguage> <http://localhost:8080/educacao-basica/SPARQL11Update> .
 <http://www.w3.org/ns/sparql-service-description#Service> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/dcat#DataService> .
-<http://localhost:8080/educacao-basicaSPARQL11Update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Language> .
-<http://localhost:8080/educacao-basicaSPARQL11Update> <http://www.w3.org/2000/01/rdf-schema#comment> "sd:SPARQLUpdate is an sd:Language representing the SPARQL 1.1 Update language."@en .
-<http://localhost:8080/educacao-basicaSPARQL11Update> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL 1.1 Update"@pt .
-<http://localhost:8080/educacao-basicacatalogo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
-<http://localhost:8080/educacao-basicacatalogo> <http://www.w3.org/2000/01/rdf-schema#label> "Experimento USP"@pt .
-<http://localhost:8080/educacao-basicacatalogo> <http://purl.org/dc/terms/title> "Experimento USP"@pt .
-<http://localhost:8080/educacao-basicacatalogo> <http://purl.org/dc/terms/description> "Portal de dados conectados"@pt .
-<http://localhost:8080/educacao-basicacatalogo> <http://xmlns.com/foaf/0.1/homepage> <http://localhost:8080/> .
-<http://localhost:8080/educacao-basicacatalogo> <http://purl.org/dc/terms/publisher> <http://localhost:8080/educacao-basicapublicador> .
-<http://localhost:8080/educacao-basicacatalogo> <http://purl.org/dc/terms/creator> <http://localhost:8080/educacao-basicacriador> .
-<http://localhost:8080/educacao-basicacatalogo> <http://purl.org/dc/terms/language> "pt-br"^^<http://www.w3.org/2001/XMLSchema#language> .
-<http://localhost:8080/educacao-basicacatalogo> <http://purl.org/dc/terms/keyword> ""@pt .
-<http://localhost:8080/educacao-basicacatalogo> <http://rdfs.org/ns/void#uriRegexPattern> "http://localhost:8080/educacao-basica" .
-<http://localhost:8080/educacao-basicacatalogo> <http://purl.org/dc/terms/spatial> <http://localhost:8080/educacao-basicalocal> .
-<http://localhost:8080/educacao-basicacatalogo> <http://www.w3.org/ns/dcat#dataset> <http://localhost:8080/educacao-basicadataset1> .
-<http://localhost:8080/educacao-basicapublicador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
-<http://localhost:8080/educacao-basicapublicador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
-<http://localhost:8080/educacao-basicapublicador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<http://localhost:8080/educacao-basicapublicador> <http://www.w3.org/2000/01/rdf-schema#label> "USP"@pt .
-<http://localhost:8080/educacao-basicapublicador> <http://xmlns.com/foaf/0.1/name> "USP"@pt .
-<http://localhost:8080/educacao-basicapublicador> <http://schema.org/url> <http://usp.br> .
-<http://localhost:8080/educacao-basicacriador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
-<http://localhost:8080/educacao-basicacriador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<http://localhost:8080/educacao-basicacriador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://localhost:8080/educacao-basicacriador> <http://xmlns.com/foaf/0.1/name> "A5"@pt .
-<http://localhost:8080/educacao-basicacriador> <http://xmlns.com/foaf/0.1/mbox> <http://localhost:3030/edu_bas/armando.toda@usp.br> .
-<http://localhost:8080/educacao-basicacriador> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://localhost:8080/educacao-basicapublicador> .
-<http://localhost:8080/educacao-basicalocal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
-<http://localhost:8080/educacao-basicalocal> <http://www.w3.org/2000/01/rdf-schema#label> "Brasil"@pt .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Collection> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution Share-Alike for Databases" .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/license> <http://opendefinition.org/licenses/odc-odbl/> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/2000/01/rdf-schema#label> "Estado"@pt .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/title> "Estado"@pt .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/description> "Lista de estados"@pt .
-<http://localhost:8080/educacao-basicadataset1> <http://xmlns.com/foaf/0.1/homepage> <https://cidades.ibge.gov.br/brasil/> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/publisher> <http://localhost:8080/educacao-basicapublicadorDataset1> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/creator> <http://localhost:8080/educacao-basicacriadorDataset1> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/language> "pt-br"^^<http://www.w3.org/2001/XMLSchema#language> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/spatial> <http://localhost:8080/educacao-basicalocalDS1> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/ns/dcat#keyword> "nomes"@pt .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/ns/dcat#keyword> "de"@pt .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/ns/dcat#keyword> "estados"@pt .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/source> <https://cidades.ibge.gov.br/brasil/> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/id/governo#administracao> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/ns/adms#versionNotes> "Nomes de estados"@pt .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/pav/previousVersion> "" .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/ns/dcat#contactPoint> <https://demo.ckan.org/dataset/7185bf3d-d2dd-4eb0-97ca-bd495b8684e1/resource/cab11efb-52de-4f92-8727-50e61839b290/download/estados.csv> .
-<http://localhost:8080/educacao-basicadataset1> <http://schema.org/datePublished> "2020-02-12" .
-<http://localhost:8080/educacao-basicadataset1> <http://schema.org/dateModified> "2020-02-12" .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#dataDump> <https://demo.ckan.org/dataset/7185bf3d-d2dd-4eb0-97ca-bd495b8684e1/resource/fc8df0dc-9ff1-4624-93db-920d980d262b/download/datapackage.json> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#sparqlEndpoint> <http://localhost:3030/> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/year/2015> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/cld/freq/biennial> .
-<http://localhost:8080/educacao-basicadataset1> <http://schema.org/measurementTechnique> "divisão política" .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basicaesfera1> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basicapoder1> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#uriSpace> <http://localhost:8080/educacao-basica> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/ns/prov#wasGeneratedBy> <http://localhost:8080/educacao-basicaatividade1> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/ns/prov#wasAttributedTo> <http://localhost:8080/educacao-basicacriadorDataset1> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#vocabulary> <http://purl.org/caedA5/ontology/> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#vocabulary> <http://xmlns.com/foaf/0.1/> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#vocabulary> <http://dbpedia.org/ontology/> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#vocabulary> <http://dbpedia.org/property/> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2002/07/owl#> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2001/XMLSchema#> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2000/01/rdf-schema#> .
-<http://localhost:8080/educacao-basicadataset1> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2006/time#> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/conformsTo> <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/conformsTo> <https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/conformsTo> <http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo> .
-<http://localhost:8080/educacao-basicadataset1> <http://purl.org/dc/terms/conformsTo> <http://vocab.e.gov.br/id/governo#esquema> .
-<http://localhost:8080/educacao-basicadataset1> <http://www.w3.org/ns/dcat#distribution> <http://localhost:8080/educacao-basicadist1> .
+<http://localhost:8080/educacao-basica/SPARQL11Update> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/sparql-service-description#Language> .
+<http://localhost:8080/educacao-basica/SPARQL11Update> <http://www.w3.org/2000/01/rdf-schema#comment> "sd:SPARQLUpdate is an sd:Language representing the SPARQL 1.1 Update language."@en .
+<http://localhost:8080/educacao-basica/SPARQL11Update> <http://www.w3.org/2000/01/rdf-schema#label> "SPARQL 1.1 Update"@pt .
+<http://localhost:8080/educacao-basica/catalogo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Catalog> .
+<http://localhost:8080/educacao-basica/catalogo> <http://www.w3.org/2000/01/rdf-schema#label> "Experimento USP"@pt .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/title> "Experimento USP"@pt .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/description> "Portal de dados conectados"@pt .
+<http://localhost:8080/educacao-basica/catalogo> <http://xmlns.com/foaf/0.1/homepage> <http://localhost:8080/> .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/publisher> <http://localhost:8080/educacao-basica/publicador> .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/creator> <http://localhost:8080/educacao-basica/criador> .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/language> "pt-br"^^<http://www.w3.org/2001/XMLSchema#language> .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/keyword> ""@pt .
+<http://localhost:8080/educacao-basica/catalogo> <http://rdfs.org/ns/void#uriRegexPattern> "http://localhost:8080/educacao-basica" .
+<http://localhost:8080/educacao-basica/catalogo> <http://purl.org/dc/terms/spatial> <http://localhost:8080/educacao-basica/local> .
+<http://localhost:8080/educacao-basica/catalogo> <http://www.w3.org/ns/dcat#dataset> <http://localhost:8080/educacao-basica/dataset1> .
+<http://localhost:8080/educacao-basica/publicador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Organization> .
+<http://localhost:8080/educacao-basica/publicador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<http://localhost:8080/educacao-basica/publicador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:8080/educacao-basica/publicador> <http://www.w3.org/2000/01/rdf-schema#label> "USP"@pt .
+<http://localhost:8080/educacao-basica/publicador> <http://xmlns.com/foaf/0.1/name> "USP"@pt .
+<http://localhost:8080/educacao-basica/publicador> <http://schema.org/url> <http://usp.br> .
+<http://localhost:8080/educacao-basica/criador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<http://localhost:8080/educacao-basica/criador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:8080/educacao-basica/criador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://localhost:8080/educacao-basica/criador> <http://xmlns.com/foaf/0.1/name> "A5"@pt .
+<http://localhost:8080/educacao-basica/criador> <http://xmlns.com/foaf/0.1/mbox> <http://localhost:3030/edu_bas/armando.toda@usp.br> .
+<http://localhost:8080/educacao-basica/criador> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://localhost:8080/educacao-basica/publicador> .
+<http://localhost:8080/educacao-basica/local> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<http://localhost:8080/educacao-basica/local> <http://www.w3.org/2000/01/rdf-schema#label> "Brasil"@pt .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Collection> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution Share-Alike for Databases" .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/license> <http://opendefinition.org/licenses/odc-odbl/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/2000/01/rdf-schema#label> "Estado"@pt .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/title> "Estado"@pt .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/description> "Lista de estados"@pt .
+<http://localhost:8080/educacao-basica/dataset1> <http://xmlns.com/foaf/0.1/homepage> <https://cidades.ibge.gov.br/brasil/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/publisher> <http://localhost:8080/educacao-basica/publicadorDataset1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/creator> <http://localhost:8080/educacao-basica/criadorDataset1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/language> "pt-br"^^<http://www.w3.org/2001/XMLSchema#language> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/spatial> <http://localhost:8080/educacao-basica/localDS1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/dcat#keyword> "nomes"@pt .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/dcat#keyword> "de"@pt .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/dcat#keyword> "estados"@pt .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/source> <https://cidades.ibge.gov.br/brasil/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/id/governo#administracao> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/adms#versionNotes> "Nomes de estados"@pt .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/pav/previousVersion> "" .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/dcat#contactPoint> <https://demo.ckan.org/dataset/7185bf3d-d2dd-4eb0-97ca-bd495b8684e1/resource/cab11efb-52de-4f92-8727-50e61839b290/download/estados.csv> .
+<http://localhost:8080/educacao-basica/dataset1> <http://schema.org/datePublished> "2020-02-12" .
+<http://localhost:8080/educacao-basica/dataset1> <http://schema.org/dateModified> "2020-02-12" .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#dataDump> <https://demo.ckan.org/dataset/7185bf3d-d2dd-4eb0-97ca-bd495b8684e1/resource/fc8df0dc-9ff1-4624-93db-920d980d262b/download/datapackage.json> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#sparqlEndpoint> <http://localhost:3030/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/year/2015> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/cld/freq/biennial> .
+<http://localhost:8080/educacao-basica/dataset1> <http://schema.org/measurementTechnique> "divisão política" .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basica/esfera1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basica/poder1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#uriSpace> <http://localhost:8080/educacao-basica> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/prov#wasGeneratedBy> <http://localhost:8080/educacao-basica/atividade1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/prov#wasAttributedTo> <http://localhost:8080/educacao-basica/criadorDataset1> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://purl.org/caedA5/ontology/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://xmlns.com/foaf/0.1/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://dbpedia.org/ontology/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://dbpedia.org/property/> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2002/07/owl#> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2001/XMLSchema#> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://localhost:8080/educacao-basica/dataset1> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2006/time#> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/conformsTo> <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/conformsTo> <https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/conformsTo> <http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo> .
+<http://localhost:8080/educacao-basica/dataset1> <http://purl.org/dc/terms/conformsTo> <http://vocab.e.gov.br/id/governo#esquema> .
+<http://localhost:8080/educacao-basica/dataset1> <http://www.w3.org/ns/dcat#distribution> <http://localhost:8080/educacao-basica/dist1> .
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/dc/terms/Agent> .
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/prov#Agent> .
 <http://purl.org/dc/terms/Agent> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/prov#Agent> .
@@ -213,182 +213,182 @@ _:B245f0444X2D8912X2D4224X2D8b6aX2D13a1e001ca0d <http://www.w3.org/1999/02/22-rd
 <http://rdfs.org/ns/void#Dataset> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/dc/terms/Collection> .
 <http://rdfs.org/ns/void#Dataset> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/prov#Entity> .
 <http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/dc/terms/Collection> .
-<http://localhost:8080/educacao-basicapublicadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
-<http://localhost:8080/educacao-basicapublicadorDataset1> <http://www.w3.org/2000/01/rdf-schema#label> "Universidade De São Paulo"@pt .
-<http://localhost:8080/educacao-basicapublicadorDataset1> <http://xmlns.com/foaf/0.1/name> "USP"@pt .
-<http://localhost:8080/educacao-basicapublicadorDataset1> <http://schema.org/url> <http://localhost:3030/edu_bas/www.usp.br> .
-<http://localhost:8080/educacao-basicacriadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
-<http://localhost:8080/educacao-basicacriadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
-<http://localhost:8080/educacao-basicacriadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://localhost:8080/educacao-basicacriadorDataset1> <http://xmlns.com/foaf/0.1/name> "A5"@pt .
-<http://localhost:8080/educacao-basicacriadorDataset1> <http://xmlns.com/foaf/0.1/mbox> <http://localhost:3030/edu_bas/armando.toda@usp.br> .
-<http://localhost:8080/educacao-basicacriadorDataset1> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://localhost:8080/educacao-basicapublicador> .
+<http://localhost:8080/educacao-basica/publicadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Agent> .
+<http://localhost:8080/educacao-basica/publicadorDataset1> <http://www.w3.org/2000/01/rdf-schema#label> "Universidade De São Paulo"@pt .
+<http://localhost:8080/educacao-basica/publicadorDataset1> <http://xmlns.com/foaf/0.1/name> "USP"@pt .
+<http://localhost:8080/educacao-basica/publicadorDataset1> <http://schema.org/url> <http://localhost:3030/edu_bas/www.usp.br> .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://xmlns.com/foaf/0.1/name> "A5"@pt .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://xmlns.com/foaf/0.1/mbox> <http://localhost:3030/edu_bas/armando.toda@usp.br> .
+<http://localhost:8080/educacao-basica/criadorDataset1> <http://www.w3.org/ns/prov#actedOnBehalfOf> <http://localhost:8080/educacao-basica/publicador> .
 <http://vocab.e.gov.br/id/governo#administracao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://vocab.e.gov.br/id/governo#administracao> <http://purl.org/dc/terms/title> "<Administracao>" .
-<http://localhost:8080/educacao-basicalocalDS1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
-<http://localhost:8080/educacao-basicalocalDS1> <http://www.w3.org/2000/01/rdf-schema#label> "Brasil"@pt .
-<http://localhost:8080/educacao-basicaesfera1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/LocationPeriodJurisdication> .
-<http://localhost:8080/educacao-basicaesfera1> <http://www.w3.org/2000/01/rdf-schema#label> "Federal"@pt .
-<http://localhost:8080/educacao-basicapoder1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/LocationPeriodJurisdication> .
-<http://localhost:8080/educacao-basicapoder1> <http://www.w3.org/2000/01/rdf-schema#label> "Executivo"@pt .
-<http://localhost:8080/educacao-basicaatividade1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
-<http://localhost:8080/educacao-basicaatividade1> <http://www.w3.org/2000/01/rdf-schema#label> "Criação do dataset"@pt .
-<http://localhost:8080/educacao-basicaatividade1> <http://www.w3.org/ns/prov#wasAssociatedWith> <http://localhost:8080/educacao-basicacriadorDataset1> .
-<http://localhost:8080/educacao-basicaatividade1> <http://www.w3.org/ns/prov#startedAtTime> "2020-02-12T14:09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://localhost:8080/educacao-basicaatividade1> <http://www.w3.org/ns/prov#endedAtTime> "2020-02-12T21:08:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Collection> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution Share-Alike for Databases" .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/license> <http://opendefinition.org/licenses/odc-odbl/> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/2000/01/rdf-schema#label> "IDEB"@pt .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/title> "IDEB"@pt .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/description> "Ideb"@pt .
-<http://localhost:8080/educacao-basicadataset2> <http://xmlns.com/foaf/0.1/homepage> <http://dados.gov.br/dataset/ideb-por-estados> .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/publisher> <http://localhost:8080/educacao-basicapublicadorDataset1> .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/creator> <http://localhost:8080/educacao-basicacriadorDataset1> .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/language> "pt-br"^^<http://www.w3.org/2001/XMLSchema#language> .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/spatial> <http://localhost:8080/educacao-basicalocalDS1> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/dcat#keyword> "indice"@pt .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/dcat#keyword> "desenvolvimento"@pt .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/dcat#keyword> "educacao basica"@pt .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/source> <http://dados.gov.br/dataset/ideb-por-estados> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/id/governo#educacao> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/adms#versionNotes> "Ideb de 2015 e 2017"@pt .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/pav/previousVersion> "" .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/dcat#contactPoint> <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/45aec780-095e-4dc1-bc90-d0e712268c24/download/ideb-2017-por-estado.xlsx> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/dcat#contactPoint> <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/7e7067d5-401c-49cf-908b-1269d8d8ccdb/download/ideb-2015-por-estado.xlsx> .
-<http://localhost:8080/educacao-basicadataset2> <http://schema.org/datePublished> "2020-02-12" .
-<http://localhost:8080/educacao-basicadataset2> <http://schema.org/dateModified> "2020-02-12" .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#dataDump> <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/2ef9bdec-0f2c-4be6-ade4-fdb303ef254c/download/datapackage-1.json> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#sparqlEndpoint> <http://localhost:3030/> .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/year/2015> .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/cld/freq/biennial> .
-<http://localhost:8080/educacao-basicadataset2> <http://schema.org/measurementTechnique> "avaliação educacional" .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basicaesfera1> .
-<http://localhost:8080/educacao-basicadataset2> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basicapoder1> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#uriSpace> <http://localhost:8080/educacao-basica> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/prov#wasGeneratedBy> <http://localhost:8080/educacao-basicaatividade1> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/prov#wasAttributedTo> <http://localhost:8080/educacao-basicacriadorDataset1> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#vocabulary> <http://purl.org/caedA5/ontology/> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#vocabulary> <http://xmlns.com/foaf/0.1/> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#vocabulary> <http://dbpedia.org/ontology/> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#vocabulary> <http://dbpedia.org/property/> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2002/07/owl#> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2001/XMLSchema#> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2000/01/rdf-schema#> .
-<http://localhost:8080/educacao-basicadataset2> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2006/time#> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://localhost:8080/educacao-basicadataset1> .
-<http://localhost:8080/educacao-basicadataset2> <http://www.w3.org/ns/dcat#distribution> <http://localhost:8080/educacao-basicadist2> .
-<http://localhost:8080/educacao-basicadist1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<http://localhost:8080/educacao-basicadist1> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
-<http://localhost:8080/educacao-basicadist1> <http://www.w3.org/2000/01/rdf-schema#comment> "Estados"@pt .
-<http://localhost:8080/educacao-basicadist1> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
-<http://localhost:8080/educacao-basicadist1> <http://purl.org/dc/terms/title> "Estados"@pt .
-<http://localhost:8080/educacao-basicadist1> <http://purl.org/dc/terms/description> "Estados"@pt .
-<http://localhost:8080/educacao-basicadist1> <http://www.w3.org/ns/dcat#downloadURL> <https://demo.ckan.org/dataset/7185bf3d-d2dd-4eb0-97ca-bd495b8684e1/resource/cab11efb-52de-4f92-8727-50e61839b290/download/estados.csv> .
-<http://localhost:8080/educacao-basicadist1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
-<http://localhost:8080/educacao-basicadist1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
-<http://localhost:8080/educacao-basicadist1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
-<http://localhost:8080/educacao-basicadist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basicamedida1> .
-<http://localhost:8080/educacao-basicadist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basicamedida2> .
-<http://localhost:8080/educacao-basicadist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basicamedida3> .
-<http://localhost:8080/educacao-basicadist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basicamedida4> .
-<http://localhost:8080/educacao-basicadist2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<http://localhost:8080/educacao-basicadist2> <http://www.w3.org/2002/07/owl#versionInfo> "2017" .
-<http://localhost:8080/educacao-basicadist2> <http://www.w3.org/2000/01/rdf-schema#comment> "Ideb"@pt .
-<http://localhost:8080/educacao-basicadist2> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
-<http://localhost:8080/educacao-basicadist2> <http://purl.org/dc/terms/title> "Ideb 2017"@pt .
-<http://localhost:8080/educacao-basicadist2> <http://purl.org/dc/terms/description> "Ideb"@pt .
-<http://localhost:8080/educacao-basicadist2> <http://www.w3.org/ns/dcat#downloadURL> <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/45aec780-095e-4dc1-bc90-d0e712268c24/download/ideb-2017-por-estado.xlsx> .
-<http://localhost:8080/educacao-basicadist2> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
-<http://localhost:8080/educacao-basicadist2> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
-<http://localhost:8080/educacao-basicadist2> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
+<http://localhost:8080/educacao-basica/localDS1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .
+<http://localhost:8080/educacao-basica/localDS1> <http://www.w3.org/2000/01/rdf-schema#label> "Brasil"@pt .
+<http://localhost:8080/educacao-basica/esfera1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/LocationPeriodJurisdication> .
+<http://localhost:8080/educacao-basica/esfera1> <http://www.w3.org/2000/01/rdf-schema#label> "Federal"@pt .
+<http://localhost:8080/educacao-basica/poder1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/LocationPeriodJurisdication> .
+<http://localhost:8080/educacao-basica/poder1> <http://www.w3.org/2000/01/rdf-schema#label> "Executivo"@pt .
+<http://localhost:8080/educacao-basica/atividade1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<http://localhost:8080/educacao-basica/atividade1> <http://www.w3.org/2000/01/rdf-schema#label> "Criação do dataset"@pt .
+<http://localhost:8080/educacao-basica/atividade1> <http://www.w3.org/ns/prov#wasAssociatedWith> <http://localhost:8080/educacao-basica/criadorDataset1> .
+<http://localhost:8080/educacao-basica/atividade1> <http://www.w3.org/ns/prov#startedAtTime> "2020-02-12T14:09:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://localhost:8080/educacao-basica/atividade1> <http://www.w3.org/ns/prov#endedAtTime> "2020-02-12T21:08:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Dataset> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Collection> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution Share-Alike for Databases" .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/license> <http://opendefinition.org/licenses/odc-odbl/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/2000/01/rdf-schema#label> "IDEB"@pt .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/title> "IDEB"@pt .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/description> "Ideb"@pt .
+<http://localhost:8080/educacao-basica/dataset2> <http://xmlns.com/foaf/0.1/homepage> <http://dados.gov.br/dataset/ideb-por-estados> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/publisher> <http://localhost:8080/educacao-basica/publicadorDataset1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/creator> <http://localhost:8080/educacao-basica/criadorDataset1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/language> "pt-br"^^<http://www.w3.org/2001/XMLSchema#language> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/spatial> <http://localhost:8080/educacao-basica/localDS1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#keyword> "indice"@pt .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#keyword> "desenvolvimento"@pt .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#keyword> "educacao basica"@pt .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/source> <http://dados.gov.br/dataset/ideb-por-estados> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#theme> <http://vocab.e.gov.br/id/governo#educacao> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/adms#versionNotes> "Ideb de 2015 e 2017"@pt .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/pav/previousVersion> "" .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#contactPoint> <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/45aec780-095e-4dc1-bc90-d0e712268c24/download/ideb-2017-por-estado.xlsx> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#contactPoint> <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/7e7067d5-401c-49cf-908b-1269d8d8ccdb/download/ideb-2015-por-estado.xlsx> .
+<http://localhost:8080/educacao-basica/dataset2> <http://schema.org/datePublished> "2020-02-12" .
+<http://localhost:8080/educacao-basica/dataset2> <http://schema.org/dateModified> "2020-02-12" .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#dataDump> <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/2ef9bdec-0f2c-4be6-ade4-fdb303ef254c/download/datapackage-1.json> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#sparqlEndpoint> <http://localhost:3030/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/temporal> <http://reference.data.gov.uk/id/year/2015> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/accrualPeriodicity> <http://purl.org/cld/freq/biennial> .
+<http://localhost:8080/educacao-basica/dataset2> <http://schema.org/measurementTechnique> "avaliação educacional" .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basica/esfera1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://purl.org/dc/terms/coverage> <http://localhost:8080/educacao-basica/poder1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#uriSpace> <http://localhost:8080/educacao-basica> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/prov#wasGeneratedBy> <http://localhost:8080/educacao-basica/atividade1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/prov#wasAttributedTo> <http://localhost:8080/educacao-basica/criadorDataset1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://purl.org/caedA5/ontology/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://xmlns.com/foaf/0.1/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://dbpedia.org/ontology/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://dbpedia.org/property/> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2002/07/owl#> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2001/XMLSchema#> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2000/01/rdf-schema#> .
+<http://localhost:8080/educacao-basica/dataset2> <http://rdfs.org/ns/void#vocabulary> <http://www.w3.org/2006/time#> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/prov#wasDerivedFrom> <http://localhost:8080/educacao-basica/dataset1> .
+<http://localhost:8080/educacao-basica/dataset2> <http://www.w3.org/ns/dcat#distribution> <http://localhost:8080/educacao-basica/dist2> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/2000/01/rdf-schema#comment> "Estados"@pt .
+<http://localhost:8080/educacao-basica/dist1> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
+<http://localhost:8080/educacao-basica/dist1> <http://purl.org/dc/terms/title> "Estados"@pt .
+<http://localhost:8080/educacao-basica/dist1> <http://purl.org/dc/terms/description> "Estados"@pt .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dcat#downloadURL> <https://demo.ckan.org/dataset/7185bf3d-d2dd-4eb0-97ca-bd495b8684e1/resource/cab11efb-52de-4f92-8727-50e61839b290/download/estados.csv> .
+<http://localhost:8080/educacao-basica/dist1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
+<http://localhost:8080/educacao-basica/dist1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
+<http://localhost:8080/educacao-basica/dist1> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida1> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida2> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida3> .
+<http://localhost:8080/educacao-basica/dist1> <http://www.w3.org/ns/dqv#hasQualityMeasurement> <http://localhost:8080/educacao-basica/medida4> .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/2002/07/owl#versionInfo> "2017" .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/2000/01/rdf-schema#comment> "Ideb"@pt .
+<http://localhost:8080/educacao-basica/dist2> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
+<http://localhost:8080/educacao-basica/dist2> <http://purl.org/dc/terms/title> "Ideb 2017"@pt .
+<http://localhost:8080/educacao-basica/dist2> <http://purl.org/dc/terms/description> "Ideb"@pt .
+<http://localhost:8080/educacao-basica/dist2> <http://www.w3.org/ns/dcat#downloadURL> <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/45aec780-095e-4dc1-bc90-d0e712268c24/download/ideb-2017-por-estado.xlsx> .
+<http://localhost:8080/educacao-basica/dist2> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
+<http://localhost:8080/educacao-basica/dist2> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
+<http://localhost:8080/educacao-basica/dist2> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
 <http://localhost:3030/edu_bas/@@_URL_DADOS_REUTILIZADOS_@@> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
-<http://localhost:8080/educacao-basicadist3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
-<http://localhost:8080/educacao-basicadist3> <http://www.w3.org/2002/07/owl#versionInfo> "2015" .
-<http://localhost:8080/educacao-basicadist3> <http://www.w3.org/2000/01/rdf-schema#comment> "Ideb"@pt .
-<http://localhost:8080/educacao-basicadist3> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
-<http://localhost:8080/educacao-basicadist3> <http://purl.org/dc/terms/title> "Ideb 2015"@pt .
-<http://localhost:8080/educacao-basicadist3> <http://purl.org/dc/terms/description> "Ideb"@pt .
-<http://localhost:8080/educacao-basicadist3> <http://www.w3.org/ns/dcat#downloadURL> <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/7e7067d5-401c-49cf-908b-1269d8d8ccdb/download/ideb-2015-por-estado.xlsx> .
-<http://localhost:8080/educacao-basicadist3> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
-<http://localhost:8080/educacao-basicadist3> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
-<http://localhost:8080/educacao-basicadist3> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
-<http://localhost:8080/educacao-basicamedida1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#QualityMeasurement> .
-<http://localhost:8080/educacao-basicamedida1> <http://www.w3.org/2000/01/rdf-schema#comment> "Medida de qualidade RC1" .
-<http://localhost:8080/educacao-basicamedida1> <http://www.w3.org/ns/dqv#isMeasurementOf> <http://localhost:8080/educacao-basicaRC1> .
-<http://localhost:8080/educacao-basicamedida1> <http://www.w3.org/ns/dqv#value> "@@_VALOR_METRICA_QUALIDADE_RC1_@@" .
-<http://localhost:8080/educacao-basicamedida2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#QualityMeasurement> .
-<http://localhost:8080/educacao-basicamedida2> <http://www.w3.org/2000/01/rdf-schema#comment> "Medida de qualidade P1" .
-<http://localhost:8080/educacao-basicamedida2> <http://www.w3.org/ns/dqv#isMeasurementOf> <http://localhost:8080/educacao-basicap1> .
-<http://localhost:8080/educacao-basicamedida2> <http://www.w3.org/ns/dqv#value> "@@_VALOR_METRICA_QUALIDADE_P1_@@" .
-<http://localhost:8080/educacao-basicamedida4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#QualityMeasurement> .
-<http://localhost:8080/educacao-basicamedida4> <http://www.w3.org/2000/01/rdf-schema#comment> "Medida de qualidade L1" .
-<http://localhost:8080/educacao-basicamedida4> <http://www.w3.org/ns/dqv#isMeasurementOf> <http://localhost:8080/educacao-basical1> .
-<http://localhost:8080/educacao-basicamedida4> <http://www.w3.org/ns/dqv#value> "@@_VALOR_METRICA_QUALIDADE_L1_@@" .
-<http://localhost:8080/educacao-basicap1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
-<http://localhost:8080/educacao-basicap1> <http://www.w3.org/2000/01/rdf-schema#comment> "P1 – Informações básicas de proveniência"@pt .
-<http://localhost:8080/educacao-basicap1> <http://www.w3.org/2004/02/skos/core#definition> "P1 – Informações básicas de proveniência"@pt .
-<http://localhost:8080/educacao-basicap1> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basicaproveniencia> .
-<http://localhost:8080/educacao-basical1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
-<http://localhost:8080/educacao-basical1> <http://www.w3.org/2000/01/rdf-schema#comment> "L1 - Licença legível por máquina"@pt .
-<http://localhost:8080/educacao-basical1> <http://www.w3.org/2004/02/skos/core#definition> "L1 - Licença legível por máquina"@pt .
-<http://localhost:8080/educacao-basical1> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basicalicenciamento> .
-<http://localhost:8080/educacao-basicaaccessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
-<http://localhost:8080/educacao-basicaaccessibility> <http://www.w3.org/2004/02/skos/core#prefLabel> "Acessibilidade"@pt .
-<http://localhost:8080/educacao-basicaintrinsic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
-<http://localhost:8080/educacao-basicaintrinsic> <http://www.w3.org/2004/02/skos/core#prefLabel> "Intrínsecos"@pt .
-<http://localhost:8080/educacao-basicacontextual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
-<http://localhost:8080/educacao-basicacontextual> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contextual"@pt .
-<http://localhost:8080/educacao-basicarepresentational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
-<http://localhost:8080/educacao-basicarepresentational> <http://www.w3.org/2004/02/skos/core#prefLabel> "Representacional"@pt .
-<http://localhost:8080/educacao-basicaconcisaoRepresentacional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicaconcisaoRepresentacional> <http://www.w3.org/2004/02/skos/core#prefLabel> "Concisão representacional"@pt .
-<http://localhost:8080/educacao-basicaconcisaoRepresentacional> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicarepresentational> .
-<http://localhost:8080/educacao-basicainteroperabilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicainteroperabilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interoperabilidade"@pt .
-<http://localhost:8080/educacao-basicainteroperabilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicarepresentational> .
-<http://localhost:8080/educacao-basicainterpretabilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicainterpretabilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interpretabilidade"@pt .
-<http://localhost:8080/educacao-basicainterpretabilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicarepresentational> .
-<http://localhost:8080/educacao-basicaversatilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicaversatilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Versatilidade"@pt .
-<http://localhost:8080/educacao-basicaversatilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicarepresentational> .
-<http://localhost:8080/educacao-basicaproveniencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicaproveniencia> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proveniência"@pt .
-<http://localhost:8080/educacao-basicaproveniencia> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicacontextual> .
-<http://localhost:8080/educacao-basicacompreensibilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicacompreensibilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Compreensibilidade"@pt .
-<http://localhost:8080/educacao-basicacompreensibilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicacontextual> .
-<http://localhost:8080/educacao-basicaconcisao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicaconcisao> <http://www.w3.org/2004/02/skos/core#prefLabel> "Concisão"@pt .
-<http://localhost:8080/educacao-basicaconcisao> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicaintrinsic> .
-<http://localhost:8080/educacao-basicaconsistencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicaconsistencia> <http://www.w3.org/2004/02/skos/core#prefLabel> "Consistência"@pt .
-<http://localhost:8080/educacao-basicaconsistencia> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicaintrinsic> .
-<http://localhost:8080/educacao-basicavalidadeSintatica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicavalidadeSintatica> <http://www.w3.org/2004/02/skos/core#prefLabel> "Validade sintática"@pt .
-<http://localhost:8080/educacao-basicavalidadeSintatica> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicaintrinsic> .
-<http://localhost:8080/educacao-basicadisponibilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicadisponibilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Disponibilidade"@pt .
-<http://localhost:8080/educacao-basicadisponibilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicaaccessibility> .
-<http://localhost:8080/educacao-basicalicenciamento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicalicenciamento> <http://www.w3.org/2004/02/skos/core#prefLabel> "Licenciamento"@pt .
-<http://localhost:8080/educacao-basicalicenciamento> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicaaccessibility> .
-<http://localhost:8080/educacao-basicainterligacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicainterligacao> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interligação"@pt .
-<http://localhost:8080/educacao-basicainterligacao> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicaaccessibility> .
-<http://localhost:8080/educacao-basicadesempenho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
-<http://localhost:8080/educacao-basicadesempenho> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desempenho"@pt .
-<http://localhost:8080/educacao-basicadesempenho> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basicaaccessibility> .
-<http://localhost:8080/educacao-basicarc1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
-<http://localhost:8080/educacao-basicarc1> <http://www.w3.org/2000/01/rdf-schema#comment> "IN3 - Uso de classes e propriedades indefinidas"@pt .
-<http://localhost:8080/educacao-basicarc1> <http://www.w3.org/2004/02/skos/core#definition> "IN3 - Uso de classes e propriedades indefinidas"@pt .
-<http://localhost:8080/educacao-basicarc1> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basicainterpretabilidade> .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dcat#Distribution> .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/2002/07/owl#versionInfo> "2015" .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/2000/01/rdf-schema#comment> "Ideb"@pt .
+<http://localhost:8080/educacao-basica/dist3> <http://purl.org/dc/terms/license> <https://opendatacommons.org/licenses/odbl/> .
+<http://localhost:8080/educacao-basica/dist3> <http://purl.org/dc/terms/title> "Ideb 2015"@pt .
+<http://localhost:8080/educacao-basica/dist3> <http://purl.org/dc/terms/description> "Ideb"@pt .
+<http://localhost:8080/educacao-basica/dist3> <http://www.w3.org/ns/dcat#downloadURL> <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/7e7067d5-401c-49cf-908b-1269d8d8ccdb/download/ideb-2015-por-estado.xlsx> .
+<http://localhost:8080/educacao-basica/dist3> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/Turtle> .
+<http://localhost:8080/educacao-basica/dist3> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/RDF_XML> .
+<http://localhost:8080/educacao-basica/dist3> <http://rdfs.org/ns/void#feature> <http://www.w3.org/ns/formats/N-Triples> .
+<http://localhost:8080/educacao-basica/medida1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#QualityMeasurement> .
+<http://localhost:8080/educacao-basica/medida1> <http://www.w3.org/2000/01/rdf-schema#comment> "Medida de qualidade RC1" .
+<http://localhost:8080/educacao-basica/medida1> <http://www.w3.org/ns/dqv#isMeasurementOf> <http://localhost:8080/educacao-basica/RC1> .
+<http://localhost:8080/educacao-basica/medida1> <http://www.w3.org/ns/dqv#value> "@@_VALOR_METRICA_QUALIDADE_RC1_@@" .
+<http://localhost:8080/educacao-basica/medida2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#QualityMeasurement> .
+<http://localhost:8080/educacao-basica/medida2> <http://www.w3.org/2000/01/rdf-schema#comment> "Medida de qualidade P1" .
+<http://localhost:8080/educacao-basica/medida2> <http://www.w3.org/ns/dqv#isMeasurementOf> <http://localhost:8080/educacao-basica/p1> .
+<http://localhost:8080/educacao-basica/medida2> <http://www.w3.org/ns/dqv#value> "@@_VALOR_METRICA_QUALIDADE_P1_@@" .
+<http://localhost:8080/educacao-basica/medida4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#QualityMeasurement> .
+<http://localhost:8080/educacao-basica/medida4> <http://www.w3.org/2000/01/rdf-schema#comment> "Medida de qualidade L1" .
+<http://localhost:8080/educacao-basica/medida4> <http://www.w3.org/ns/dqv#isMeasurementOf> <http://localhost:8080/educacao-basica/l1> .
+<http://localhost:8080/educacao-basica/medida4> <http://www.w3.org/ns/dqv#value> "@@_VALOR_METRICA_QUALIDADE_L1_@@" .
+<http://localhost:8080/educacao-basica/p1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
+<http://localhost:8080/educacao-basica/p1> <http://www.w3.org/2000/01/rdf-schema#comment> "P1 – Informações básicas de proveniência"@pt .
+<http://localhost:8080/educacao-basica/p1> <http://www.w3.org/2004/02/skos/core#definition> "P1 – Informações básicas de proveniência"@pt .
+<http://localhost:8080/educacao-basica/p1> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basica/proveniencia> .
+<http://localhost:8080/educacao-basica/l1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
+<http://localhost:8080/educacao-basica/l1> <http://www.w3.org/2000/01/rdf-schema#comment> "L1 - Licença legível por máquina"@pt .
+<http://localhost:8080/educacao-basica/l1> <http://www.w3.org/2004/02/skos/core#definition> "L1 - Licença legível por máquina"@pt .
+<http://localhost:8080/educacao-basica/l1> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basica/licenciamento> .
+<http://localhost:8080/educacao-basica/accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
+<http://localhost:8080/educacao-basica/accessibility> <http://www.w3.org/2004/02/skos/core#prefLabel> "Acessibilidade"@pt .
+<http://localhost:8080/educacao-basica/intrinsic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
+<http://localhost:8080/educacao-basica/intrinsic> <http://www.w3.org/2004/02/skos/core#prefLabel> "Intrínsecos"@pt .
+<http://localhost:8080/educacao-basica/contextual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
+<http://localhost:8080/educacao-basica/contextual> <http://www.w3.org/2004/02/skos/core#prefLabel> "Contextual"@pt .
+<http://localhost:8080/educacao-basica/representational> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Category> .
+<http://localhost:8080/educacao-basica/representational> <http://www.w3.org/2004/02/skos/core#prefLabel> "Representacional"@pt .
+<http://localhost:8080/educacao-basica/concisaoRepresentacional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/concisaoRepresentacional> <http://www.w3.org/2004/02/skos/core#prefLabel> "Concisão representacional"@pt .
+<http://localhost:8080/educacao-basica/concisaoRepresentacional> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/representational> .
+<http://localhost:8080/educacao-basica/interoperabilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/interoperabilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interoperabilidade"@pt .
+<http://localhost:8080/educacao-basica/interoperabilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/representational> .
+<http://localhost:8080/educacao-basica/interpretabilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/interpretabilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interpretabilidade"@pt .
+<http://localhost:8080/educacao-basica/interpretabilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/representational> .
+<http://localhost:8080/educacao-basica/versatilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/versatilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Versatilidade"@pt .
+<http://localhost:8080/educacao-basica/versatilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/representational> .
+<http://localhost:8080/educacao-basica/proveniencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/proveniencia> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proveniência"@pt .
+<http://localhost:8080/educacao-basica/proveniencia> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/contextual> .
+<http://localhost:8080/educacao-basica/compreensibilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/compreensibilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Compreensibilidade"@pt .
+<http://localhost:8080/educacao-basica/compreensibilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/contextual> .
+<http://localhost:8080/educacao-basica/concisao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/concisao> <http://www.w3.org/2004/02/skos/core#prefLabel> "Concisão"@pt .
+<http://localhost:8080/educacao-basica/concisao> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/intrinsic> .
+<http://localhost:8080/educacao-basica/consistencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/consistencia> <http://www.w3.org/2004/02/skos/core#prefLabel> "Consistência"@pt .
+<http://localhost:8080/educacao-basica/consistencia> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/intrinsic> .
+<http://localhost:8080/educacao-basica/validadeSintatica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/validadeSintatica> <http://www.w3.org/2004/02/skos/core#prefLabel> "Validade sintática"@pt .
+<http://localhost:8080/educacao-basica/validadeSintatica> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/intrinsic> .
+<http://localhost:8080/educacao-basica/disponibilidade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/disponibilidade> <http://www.w3.org/2004/02/skos/core#prefLabel> "Disponibilidade"@pt .
+<http://localhost:8080/educacao-basica/disponibilidade> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/accessibility> .
+<http://localhost:8080/educacao-basica/licenciamento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/licenciamento> <http://www.w3.org/2004/02/skos/core#prefLabel> "Licenciamento"@pt .
+<http://localhost:8080/educacao-basica/licenciamento> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/accessibility> .
+<http://localhost:8080/educacao-basica/interligacao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/interligacao> <http://www.w3.org/2004/02/skos/core#prefLabel> "Interligação"@pt .
+<http://localhost:8080/educacao-basica/interligacao> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/accessibility> .
+<http://localhost:8080/educacao-basica/desempenho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Dimension> .
+<http://localhost:8080/educacao-basica/desempenho> <http://www.w3.org/2004/02/skos/core#prefLabel> "Desempenho"@pt .
+<http://localhost:8080/educacao-basica/desempenho> <http://www.w3.org/ns/dqv#inCategory> <http://localhost:8080/educacao-basica/accessibility> .
+<http://localhost:8080/educacao-basica/rc1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/dqv#Metric> .
+<http://localhost:8080/educacao-basica/rc1> <http://www.w3.org/2000/01/rdf-schema#comment> "IN3 - Uso de classes e propriedades indefinidas"@pt .
+<http://localhost:8080/educacao-basica/rc1> <http://www.w3.org/2004/02/skos/core#definition> "IN3 - Uso de classes e propriedades indefinidas"@pt .
+<http://localhost:8080/educacao-basica/rc1> <http://www.w3.org/ns/dqv#inDimension> <http://localhost:8080/educacao-basica/interpretabilidade> .
 <http://localhost:8080/educacao-basica/Ideb/2017/Acre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/caedA5/ontology/Ideb> .
 <http://localhost:8080/educacao-basica/Ideb/2017/Acre> <http://purl.org/caedA5/ontology/Evolucao> "0.21e0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://localhost:8080/educacao-basica/Ideb/2017/Acre> <http://dbpedia.org/ontology/sigla> "AC" .
