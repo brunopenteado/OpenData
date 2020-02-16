@@ -1,0 +1,280 @@
+{
+  "@context" : {
+    "spatial" : {
+      "@id" : "http://purl.org/dc/terms/spatial"
+    },
+    "QualityMeasurement" : {
+      "@id" : "http://www.w3.org/ns/dqv#QualityMeasurement"
+    },
+    "coverage" : {
+      "@id" : "http://purl.org/dc/terms/coverage"
+    },
+    "sparqlEndpoint" : {
+      "@id" : "http://rdfs.org/ns/void#sparqlEndpoint"
+    },
+    "wasGeneratedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Evolucao" : {
+      "@id" : "http://purl.org/caedA5/ontology/Evolucao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "endedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#endedAtTime"
+    },
+    "Dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "dataDump" : {
+      "@id" : "http://rdfs.org/ns/void#dataDump"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "url" : {
+      "@id" : "http://schema.org/url"
+    },
+    "accrualPeriodicity" : {
+      "@id" : "http://purl.org/dc/terms/accrualPeriodicity"
+    },
+    "Estado" : {
+      "@id" : "http://purl.org/caedA5/ontology/#Estado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "Category" : {
+      "@id" : "http://www.w3.org/ns/dqv#Category"
+    },
+    "Distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#Distribution"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#dataset"
+    },
+    "dateModified" : {
+      "@id" : "http://schema.org/dateModified"
+    },
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution"
+    },
+    "downloadURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#downloadURL"
+    },
+    "nota" : {
+      "@id" : "http://purl.org/caedA5/ontology/#nota",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "wasAttributedTo" : {
+      "@id" : "http://www.w3.org/ns/prov#wasAttributedTo"
+    },
+    "measurementTechnique" : {
+      "@id" : "http://schema.org/measurementTechnique"
+    },
+    "Sigla" : {
+      "@id" : "http://purl.org/caedA5/ontology/#Sigla",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "versionNotes" : {
+      "@id" : "http://www.w3.org/ns/adms#versionNotes"
+    },
+    "sigla" : {
+      "@id" : "http://dbpedia.org/ontology/sigla"
+    },
+    "supportedLanguage" : {
+      "@id" : "http://www.w3.org/ns/sparql-service-description#supportedLanguage"
+    },
+    "startedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#startedAtTime"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "mbox" : {
+      "@id" : "http://xmlns.com/foaf/0.1/mbox"
+    },
+    "Dimension" : {
+      "@id" : "http://www.w3.org/ns/dqv#Dimension"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "uriRegexPattern" : {
+      "@id" : "http://rdfs.org/ns/void#uriRegexPattern"
+    },
+    "Location" : {
+      "@id" : "http://purl.org/dc/terms/Location"
+    },
+    "Activity" : {
+      "@id" : "http://www.w3.org/ns/prov#Activity"
+    },
+    "previousVersion" : {
+      "@id" : "http://purl.org/pav/previousVersion"
+    },
+    "actedOnBehalfOf" : {
+      "@id" : "http://www.w3.org/ns/prov#actedOnBehalfOf"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage"
+    },
+    "hasQualityMeasurement" : {
+      "@id" : "http://www.w3.org/ns/dqv#hasQualityMeasurement"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "feature" : {
+      "@id" : "http://rdfs.org/ns/void#feature"
+    },
+    "Agent" : {
+      "@id" : "http://purl.org/dc/terms/Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "DataService" : {
+      "@id" : "http://www.w3.org/ns/dcat#DataService"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "value" : {
+      "@id" : "http://www.w3.org/ns/dqv#value"
+    },
+    "Fluxo" : {
+      "@id" : "http://purl.org/caedA5/ontology/#Fluxo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+    },
+    "Catalog" : {
+      "@id" : "http://www.w3.org/ns/dcat#Catalog"
+    },
+    "inCategory" : {
+      "@id" : "http://www.w3.org/ns/dqv#inCategory"
+    },
+    "Aprendizado" : {
+      "@id" : "http://purl.org/caedA5/ontology/Aprendizado"
+    },
+    "region" : {
+      "@id" : "http://dbpedia.org/property/region"
+    },
+    "keyword" : {
+      "@id" : "http://www.w3.org/ns/dcat#keyword"
+    },
+    "Aprendizagem" : {
+      "@id" : "http://purl.org/caedA5/ontology/#Aprendizagem",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "isMeasurementOf" : {
+      "@id" : "http://www.w3.org/ns/dqv#isMeasurementOf"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "defaultEntailmentRegime" : {
+      "@id" : "http://www.w3.org/ns/sparql-service-description#defaultEntailmentRegime"
+    },
+    "Metric" : {
+      "@id" : "http://www.w3.org/ns/dqv#Metric"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "wasAssociatedWith" : {
+      "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+    },
+    "year" : {
+      "@id" : "http://www.w3.org/2006/time#year"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "datePublished" : {
+      "@id" : "http://schema.org/datePublished"
+    },
+    "Ideb" : {
+      "@id" : "http://purl.org/caedA5/ontology/Ideb"
+    },
+    "endpointURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#endpointURL"
+    },
+    "Entity" : {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    },
+    "endpoint" : {
+      "@id" : "http://www.w3.org/ns/sparql-service-description#endpoint"
+    },
+    "Language" : {
+      "@id" : "http://www.w3.org/ns/sparql-service-description#Language"
+    },
+    "contactPoint" : {
+      "@id" : "http://www.w3.org/ns/dcat#contactPoint"
+    },
+    "theme" : {
+      "@id" : "http://www.w3.org/ns/dcat#theme"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Região" : {
+      "@id" : "http://purl.org/caedA5/ontology/#Região",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Service" : {
+      "@id" : "http://www.w3.org/ns/sparql-service-description#Service"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/terms/language"
+    },
+    "LocationPeriodJurisdication" : {
+      "@id" : "http://purl.org/dc/terms/LocationPeriodJurisdication"
+    },
+    "uriSpace" : {
+      "@id" : "http://rdfs.org/ns/void#uriSpace"
+    },
+    "inDimension" : {
+      "@id" : "http://www.w3.org/ns/dqv#inDimension"
+    },
+    "conformsTo" : {
+      "@id" : "http://purl.org/dc/terms/conformsTo"
+    },
+    "vocabulary" : {
+      "@id" : "http://rdfs.org/ns/void#vocabulary"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "resultFormat" : {
+      "@id" : "http://www.w3.org/ns/sparql-service-description#resultFormat"
+    },
+    "temporal" : {
+      "@id" : "http://purl.org/dc/terms/temporal"
+    },
+    "Collection" : {
+      "@id" : "http://purl.org/dc/terms/Collection"
+    },
+    "temIdeb" : {
+      "@id" : "http://purl.org/caedA5/ontology/temIdeb",
+      "@type" : "@id"
+    }
+  }
+}

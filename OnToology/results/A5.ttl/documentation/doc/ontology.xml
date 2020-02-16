@@ -1,0 +1,3494 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/caedA5/ontology/"
+     xml:base="http://purl.org/caedA5/ontology/"
+     xmlns:dqv="http://www.w3.org/ns/dqv#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:ontology="http://purl.org/caedA5/ontology/"
+     xmlns:property="http://dbpedia.org/property/"
+     xmlns:ontology1="http://dbpedia.org/ontology/"
+     xmlns:sparql-service-description="http://www.w3.org/ns/sparql-service-description#">
+    <owl:Ontology rdf:about="http://purl.org/caedA5/ontology/">
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <rdfs:comment>Ontologia para descrição do IDEB por estados brasileiros</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/sigla -->
+
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sigla"/>
+    
+
+
+    <!-- http://dbpedia.org/property/region -->
+
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/property/region"/>
+    
+
+
+    <!-- http://dbpedia.org/property/sigla -->
+
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/property/sigla"/>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/Aprendizado -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/caedA5/ontology/Aprendizado"/>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/Fluxo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/caedA5/ontology/Fluxo"/>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/nota -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/caedA5/ontology/nota"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/conformsTo"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/coverage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/keyword -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/keyword"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/spatial"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/temporal"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/pav/previousVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/pav/previousVersion"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#dataDump -->
+
+
+    <owl:AnnotationProperty rdf:about="http://rdfs.org/ns/void#dataDump"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#feature -->
+
+
+    <owl:AnnotationProperty rdf:about="http://rdfs.org/ns/void#feature"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#sparqlEndpoint -->
+
+
+    <owl:AnnotationProperty rdf:about="http://rdfs.org/ns/void#sparqlEndpoint"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#uriRegexPattern -->
+
+
+    <owl:AnnotationProperty rdf:about="http://rdfs.org/ns/void#uriRegexPattern"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#uriSpace -->
+
+
+    <owl:AnnotationProperty rdf:about="http://rdfs.org/ns/void#uriSpace"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#vocabulary -->
+
+
+    <owl:AnnotationProperty rdf:about="http://rdfs.org/ns/void#vocabulary"/>
+    
+
+
+    <!-- http://schema.org/dateModified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/dateModified"/>
+    
+
+
+    <!-- http://schema.org/datePublished -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/datePublished"/>
+    
+
+
+    <!-- http://schema.org/measurementTechnique -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/measurementTechnique"/>
+    
+
+
+    <!-- http://schema.org/url -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/url"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2006/time#year -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/time#year"/>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#versionNotes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/adms#versionNotes"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#dataset -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#dataset"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#distribution -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#distribution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#endpointURL -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#endpointURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#hasQualityMeasurement -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dqv#hasQualityMeasurement"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#inCategory -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dqv#inCategory"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#inDimension -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dqv#inDimension"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#isMeasurementOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dqv#isMeasurementOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#value -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dqv#value"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#actedOnBehalfOf -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#actedOnBehalfOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#endedAtTime -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#endedAtTime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#startedAtTime -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#startedAtTime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sparql-service-description#defaultEntailmentRegime -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/sparql-service-description#defaultEntailmentRegime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sparql-service-description#endpoint -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/sparql-service-description#endpoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sparql-service-description#resultFormat -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/sparql-service-description#resultFormat"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sparql-service-description#supportedLanguage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/sparql-service-description#supportedLanguage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- dbo:region -->
+
+
+    <rdfs:Datatype rdf:about="dbo:region"/>
+    
+
+
+    <!-- dbp:sigla -->
+
+
+    <rdfs:Datatype rdf:about="dbp:sigla"/>
+    
+
+
+    <!-- foaf:name -->
+
+
+    <rdfs:Datatype rdf:about="foaf:name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/temIdeb -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/caedA5/ontology/temIdeb">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/caedA5/ontology/temIdeb"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Estado"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/caedA5/ontology/temIdeb"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Ideb"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/Evolucao -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caedA5/ontology/Evolucao">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Ideb"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Evolucao</rdfs:comment>
+        <rdfs:label>Evolucao</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/#Aprendizagem -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caedA5/ontology/#Aprendizagem">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Ideb"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Aprendizagem</rdfs:comment>
+        <rdfs:label>Aprendizagem</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/#Estado -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caedA5/ontology/#Estado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Estado"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Ideb"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/#Fluxo -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caedA5/ontology/#Fluxo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Ideb"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Fluxo</rdfs:comment>
+        <rdfs:label>Fluxo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/#Região -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caedA5/ontology/#Região">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Estado"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Região</rdfs:comment>
+        <rdfs:label>Região</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/#Sigla -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caedA5/ontology/#Sigla">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Estado"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Ideb"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Sigla do Estado</rdfs:comment>
+        <rdfs:label>Sigla</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/#nota -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caedA5/ontology/#nota">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/caedA5/ontology/#Ideb"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Nota</rdfs:comment>
+        <rdfs:label>nota</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/Estado -->
+
+
+    <owl:Class rdf:about="http://purl.org/caedA5/ontology/Estado"/>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/Ideb -->
+
+
+    <owl:Class rdf:about="http://purl.org/caedA5/ontology/Ideb"/>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/#Estado -->
+
+
+    <owl:Class rdf:about="http://purl.org/caedA5/ontology/#Estado">
+        <owl:disjointWith rdf:resource="http://purl.org/caedA5/ontology/#Ideb"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/caedA5/ontology/#Ideb -->
+
+
+    <owl:Class rdf:about="http://purl.org/caedA5/ontology/#Ideb">
+        <rdfs:comment>Ideb</rdfs:comment>
+        <rdfs:label>Ideb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Collection -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Collection">
+        <owl:disjointWith rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Location"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/LocationPeriodJurisdication -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/LocationPeriodJurisdication"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#Dataset -->
+
+
+    <owl:Class rdf:about="http://rdfs.org/ns/void#Dataset">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Catalog -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Catalog"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#DataService -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#DataService">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Dataset -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#Distribution -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dcat#Distribution"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#Category -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#Category"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#Dimension -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#Dimension"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#Metric -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#Metric"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dqv#QualityMeasurement -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sparql-service-description#Language -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sparql-service-description#Language"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sparql-service-description#Service -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sparql-service-description#Service"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://localhost:3030/edu_bas/@@_URL_DADOS_REUTILIZADOS_@@ -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:3030/edu_bas/@@_URL_DADOS_REUTILIZADOS_@@">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Acre -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Acre">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Acre"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Acre"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Acre"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Acre"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Acre"/>
+        <property:region rdf:datatype="dbo:region">Norte</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">AC</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Acre</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Alagoas -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Alagoas">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Alagoas"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Alagoas"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Alagoas"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Alagoas"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Alagoas"/>
+        <property:region rdf:datatype="dbo:region">Nordeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">AL</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Alagoas</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Amapá -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Amapá">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Amapá"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Amap%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Amap%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Amap%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Amap%C3%A1"/>
+        <property:region rdf:datatype="dbo:region">Norte</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">AP</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Amapá</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Amazonas -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Amazonas">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Amazonas"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Amazonas"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Amazonas"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Amazonas"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Amazonas"/>
+        <property:region rdf:datatype="dbo:region">Norte</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">AM</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Amazonas</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Bahia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Bahia">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Bahia"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Bahia"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Bahia"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Bahia"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Bahia"/>
+        <property:region rdf:datatype="dbo:region">Nordeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">BA</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Bahia</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ceará -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ceará">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Ceará"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Cear%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Cear%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Cear%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Cear%C3%A1"/>
+        <property:region rdf:datatype="dbo:region">Nordeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">CE</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Ceará</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Goiás -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Goiás">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Goiás"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Goi%C3%A1s"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Goi%C3%A1s"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Goi%C3%A1s"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Goi%C3%A1s"/>
+        <property:region rdf:datatype="dbo:region">Centro-Oeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">GO</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Goiás</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Maranhão -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Maranhão">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Maranhão"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Maranh%C3%A3o"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Maranh%C3%A3o"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Maranh%C3%A3o"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Maranh%C3%A3o"/>
+        <property:region rdf:datatype="dbo:region">Nordeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">MA</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Maranhão</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Paraná -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Paraná">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Paraná"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Paran%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Paran%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Paran%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Paran%C3%A1"/>
+        <property:region rdf:datatype="dbo:region">Sul</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">PR</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Paraná</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Paraíba -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Paraíba">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Paraíba"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Para%C3%ADba"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Para%C3%ADba"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Para%C3%ADba"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Para%C3%ADba"/>
+        <property:region rdf:datatype="dbo:region">Nordeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">PB</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Paraíba</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Pará -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Pará">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Pará"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Par%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Par%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Par%C3%A1"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Par%C3%A1"/>
+        <property:region rdf:datatype="dbo:region">Norte</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">PA</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Pará</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Pernambuco -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Pernambuco">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Pernambuco"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Pernambuco"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Pernambuco"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Pernambuco"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Pernambuco"/>
+        <property:region rdf:datatype="dbo:region">Nordeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">PE</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Pernambuco</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Piauí -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Piauí">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Piauí"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Piau%C3%AD"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Piau%C3%AD"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Piau%C3%AD"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Piau%C3%AD"/>
+        <property:region rdf:datatype="dbo:region">Nordeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">PI</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Piauí</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Rondônia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Rondônia">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Rondônia"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Rond%C3%B4nia"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Rond%C3%B4nia"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Rond%C3%B4nia"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Rond%C3%B4nia"/>
+        <property:region rdf:datatype="dbo:region">Norte</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">RO</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Rondônia</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Roraima -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Roraima">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Roraima"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Roraima"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Roraima"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Roraima"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Roraima"/>
+        <property:region rdf:datatype="dbo:region">Norte</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">RR</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Roraima</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/SPARQL11Update -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/SPARQL11Update">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Language"/>
+        <rdfs:comment xml:lang="en">sd:SPARQLUpdate is an sd:Language representing the SPARQL 1.1 Update language.</rdfs:comment>
+        <rdfs:label xml:lang="pt">SPARQL 1.1 Update</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Sergipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Sergipe">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Sergipe"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Sergipe"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Sergipe"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Sergipe"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Sergipe"/>
+        <property:region rdf:datatype="dbo:region">Nordeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">SE</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Sergipe</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Tocantins -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Tocantins">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Tocantins"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Tocantins"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Tocantins"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Tocantins"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Tocantins"/>
+        <property:region rdf:datatype="dbo:region">Norte</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">TO</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Tocantins</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/accessibility -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/accessibility">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Category"/>
+        <skos:prefLabel xml:lang="pt">Acessibilidade</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/atividade1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/atividade1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdfs:label xml:lang="pt">Criação do dataset</rdfs:label>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-12T21:08:00</prov:endedAtTime>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-12T14:09:00</prov:startedAtTime>
+        <prov:wasAssociatedWith rdf:resource="http://localhost:8080/educacao-basica/criadorDataset1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/catalogo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/catalogo">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+        <terms:creator rdf:resource="http://localhost:8080/educacao-basica/criador"/>
+        <terms:description xml:lang="pt">Portal de dados conectados</terms:description>
+        <terms:keyword xml:lang="pt"></terms:keyword>
+        <terms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pt-br</terms:language>
+        <terms:publisher rdf:resource="http://localhost:8080/educacao-basica/publicador"/>
+        <terms:spatial rdf:resource="http://localhost:8080/educacao-basica/local"/>
+        <terms:title xml:lang="pt">Experimento USP</terms:title>
+        <void:uriRegexPattern>http://localhost:8080/educacao-basica</void:uriRegexPattern>
+        <rdfs:label xml:lang="pt">Experimento USP</rdfs:label>
+        <dcat:dataset rdf:resource="http://localhost:8080/educacao-basica/dataset1"/>
+        <foaf:homepage rdf:resource="http://localhost:8080/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/compreensibilidade -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/compreensibilidade">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Compreensibilidade</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/contextual"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/concisao -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/concisao">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Concisão</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/intrinsic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/concisaoRepresentacional -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/concisaoRepresentacional">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Concisão representacional</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/representational"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/consistencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/consistencia">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Consistência</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/intrinsic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/contextual -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/contextual">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Category"/>
+        <skos:prefLabel xml:lang="pt">Contextual</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/criador -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/criador">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <prov:actedOnBehalfOf rdf:resource="http://localhost:8080/educacao-basica/publicador"/>
+        <foaf:mbox rdf:resource="http://localhost:3030/edu_bas/armando.toda@usp.br"/>
+        <foaf:name xml:lang="pt">A5</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/criadorDataset1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/criadorDataset1">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <prov:actedOnBehalfOf rdf:resource="http://localhost:8080/educacao-basica/publicador"/>
+        <foaf:mbox rdf:resource="http://localhost:3030/edu_bas/armando.toda@usp.br"/>
+        <foaf:name xml:lang="pt">A5</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/dataset1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/dataset1">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Collection"/>
+        <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <terms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/biennial"/>
+        <terms:conformsTo rdf:resource="http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos"/>
+        <terms:conformsTo rdf:resource="http://vocab.e.gov.br/id/governo#esquema"/>
+        <terms:conformsTo rdf:resource="http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo"/>
+        <terms:conformsTo rdf:resource="https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf"/>
+        <terms:coverage rdf:resource="http://localhost:8080/educacao-basica/esfera1"/>
+        <terms:coverage rdf:resource="http://localhost:8080/educacao-basica/poder1"/>
+        <terms:creator rdf:resource="http://localhost:8080/educacao-basica/criadorDataset1"/>
+        <terms:description xml:lang="pt">Lista de estados</terms:description>
+        <terms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pt-br</terms:language>
+        <terms:license rdf:resource="http://opendefinition.org/licenses/odc-odbl/"/>
+        <terms:publisher rdf:resource="http://localhost:8080/educacao-basica/publicadorDataset1"/>
+        <terms:source rdf:resource="https://cidades.ibge.gov.br/brasil/"/>
+        <terms:spatial rdf:resource="http://localhost:8080/educacao-basica/localDS1"/>
+        <terms:temporal rdf:resource="http://reference.data.gov.uk/id/year/2015"/>
+        <terms:title xml:lang="pt">Estado</terms:title>
+        <pav:previousVersion></pav:previousVersion>
+        <void:dataDump rdf:resource="https://demo.ckan.org/dataset/7185bf3d-d2dd-4eb0-97ca-bd495b8684e1/resource/fc8df0dc-9ff1-4624-93db-920d980d262b/download/datapackage.json"/>
+        <void:sparqlEndpoint rdf:resource="http://localhost:3030/"/>
+        <void:uriSpace rdf:resource="http://localhost:8080/educacao-basica"/>
+        <void:vocabulary rdf:resource="http://dbpedia.org/ontology/"/>
+        <void:vocabulary rdf:resource="http://dbpedia.org/property/"/>
+        <void:vocabulary rdf:resource="http://purl.org/caedA5/ontology/"/>
+        <void:vocabulary rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <void:vocabulary rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+        <void:vocabulary rdf:resource="http://www.w3.org/2001/XMLSchema#"/>
+        <void:vocabulary rdf:resource="http://www.w3.org/2002/07/owl#"/>
+        <void:vocabulary rdf:resource="http://www.w3.org/2006/time#"/>
+        <void:vocabulary rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <schema:dateModified>2020-02-12</schema:dateModified>
+        <schema:datePublished>2020-02-12</schema:datePublished>
+        <schema:measurementTechnique>divisão política</schema:measurementTechnique>
+        <rdfs:comment>Attribution Share-Alike for Databases</rdfs:comment>
+        <rdfs:label xml:lang="pt">Estado</rdfs:label>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <adms:versionNotes xml:lang="pt">Nomes de estados</adms:versionNotes>
+        <dcat:contactPoint rdf:resource="https://demo.ckan.org/dataset/7185bf3d-d2dd-4eb0-97ca-bd495b8684e1/resource/cab11efb-52de-4f92-8727-50e61839b290/download/estados.csv"/>
+        <dcat:distribution rdf:resource="http://localhost:8080/educacao-basica/dist1"/>
+        <dcat:keyword xml:lang="pt">de</dcat:keyword>
+        <dcat:keyword xml:lang="pt">estados</dcat:keyword>
+        <dcat:keyword xml:lang="pt">nomes</dcat:keyword>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/id/governo#administracao"/>
+        <prov:wasAttributedTo rdf:resource="http://localhost:8080/educacao-basica/criadorDataset1"/>
+        <prov:wasGeneratedBy rdf:resource="http://localhost:8080/educacao-basica/atividade1"/>
+        <foaf:homepage rdf:resource="https://cidades.ibge.gov.br/brasil/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/dataset2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/dataset2">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Collection"/>
+        <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <terms:accrualPeriodicity rdf:resource="http://purl.org/cld/freq/biennial"/>
+        <terms:coverage rdf:resource="http://localhost:8080/educacao-basica/esfera1"/>
+        <terms:coverage rdf:resource="http://localhost:8080/educacao-basica/poder1"/>
+        <terms:creator rdf:resource="http://localhost:8080/educacao-basica/criadorDataset1"/>
+        <terms:description xml:lang="pt">Ideb</terms:description>
+        <terms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">pt-br</terms:language>
+        <terms:license rdf:resource="http://opendefinition.org/licenses/odc-odbl/"/>
+        <terms:publisher rdf:resource="http://localhost:8080/educacao-basica/publicadorDataset1"/>
+        <terms:source rdf:resource="http://dados.gov.br/dataset/ideb-por-estados"/>
+        <terms:spatial rdf:resource="http://localhost:8080/educacao-basica/localDS1"/>
+        <terms:temporal rdf:resource="http://reference.data.gov.uk/id/year/2015"/>
+        <terms:title xml:lang="pt">IDEB</terms:title>
+        <pav:previousVersion></pav:previousVersion>
+        <void:dataDump rdf:resource="https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/2ef9bdec-0f2c-4be6-ade4-fdb303ef254c/download/datapackage-1.json"/>
+        <void:sparqlEndpoint rdf:resource="http://localhost:3030/"/>
+        <void:uriSpace rdf:resource="http://localhost:8080/educacao-basica"/>
+        <void:vocabulary rdf:resource="http://dbpedia.org/ontology/"/>
+        <void:vocabulary rdf:resource="http://dbpedia.org/property/"/>
+        <void:vocabulary rdf:resource="http://purl.org/caedA5/ontology/"/>
+        <void:vocabulary rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+        <void:vocabulary rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+        <void:vocabulary rdf:resource="http://www.w3.org/2001/XMLSchema#"/>
+        <void:vocabulary rdf:resource="http://www.w3.org/2002/07/owl#"/>
+        <void:vocabulary rdf:resource="http://www.w3.org/2006/time#"/>
+        <void:vocabulary rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <schema:dateModified>2020-02-12</schema:dateModified>
+        <schema:datePublished>2020-02-12</schema:datePublished>
+        <schema:measurementTechnique>avaliação educacional</schema:measurementTechnique>
+        <rdfs:comment>Attribution Share-Alike for Databases</rdfs:comment>
+        <rdfs:label xml:lang="pt">IDEB</rdfs:label>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <adms:versionNotes xml:lang="pt">Ideb de 2015 e 2017</adms:versionNotes>
+        <dcat:contactPoint rdf:resource="https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/45aec780-095e-4dc1-bc90-d0e712268c24/download/ideb-2017-por-estado.xlsx"/>
+        <dcat:contactPoint rdf:resource="https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/7e7067d5-401c-49cf-908b-1269d8d8ccdb/download/ideb-2015-por-estado.xlsx"/>
+        <dcat:distribution rdf:resource="http://localhost:8080/educacao-basica/dist2"/>
+        <dcat:keyword xml:lang="pt">desenvolvimento</dcat:keyword>
+        <dcat:keyword xml:lang="pt">educacao basica</dcat:keyword>
+        <dcat:keyword xml:lang="pt">indice</dcat:keyword>
+        <dcat:theme rdf:resource="http://vocab.e.gov.br/id/governo#educacao"/>
+        <prov:wasAttributedTo rdf:resource="http://localhost:8080/educacao-basica/criadorDataset1"/>
+        <prov:wasDerivedFrom rdf:resource="http://localhost:8080/educacao-basica/dataset1"/>
+        <prov:wasGeneratedBy rdf:resource="http://localhost:8080/educacao-basica/atividade1"/>
+        <foaf:homepage rdf:resource="http://dados.gov.br/dataset/ideb-por-estados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/desempenho -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/desempenho">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Desempenho</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/accessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/disponibilidade -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/disponibilidade">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Disponibilidade</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/accessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/dist1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/dist1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <terms:description xml:lang="pt">Estados</terms:description>
+        <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
+        <terms:title xml:lang="pt">Estados</terms:title>
+        <void:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples"/>
+        <void:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML"/>
+        <void:feature rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+        <rdfs:comment xml:lang="pt">Estados</rdfs:comment>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <dcat:downloadURL rdf:resource="https://demo.ckan.org/dataset/7185bf3d-d2dd-4eb0-97ca-bd495b8684e1/resource/cab11efb-52de-4f92-8727-50e61839b290/download/estados.csv"/>
+        <dqv:hasQualityMeasurement rdf:resource="http://localhost:8080/educacao-basica/medida1"/>
+        <dqv:hasQualityMeasurement rdf:resource="http://localhost:8080/educacao-basica/medida2"/>
+        <dqv:hasQualityMeasurement rdf:resource="http://localhost:8080/educacao-basica/medida3"/>
+        <dqv:hasQualityMeasurement rdf:resource="http://localhost:8080/educacao-basica/medida4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/dist2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/dist2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <terms:description xml:lang="pt">Ideb</terms:description>
+        <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
+        <terms:title xml:lang="pt">Ideb 2017</terms:title>
+        <void:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples"/>
+        <void:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML"/>
+        <void:feature rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+        <rdfs:comment xml:lang="pt">Ideb</rdfs:comment>
+        <owl:versionInfo>2017</owl:versionInfo>
+        <dcat:downloadURL rdf:resource="https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/45aec780-095e-4dc1-bc90-d0e712268c24/download/ideb-2017-por-estado.xlsx"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/dist3 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/dist3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
+        <terms:description xml:lang="pt">Ideb</terms:description>
+        <terms:license rdf:resource="https://opendatacommons.org/licenses/odbl/"/>
+        <terms:title xml:lang="pt">Ideb 2015</terms:title>
+        <void:feature rdf:resource="http://www.w3.org/ns/formats/N-Triples"/>
+        <void:feature rdf:resource="http://www.w3.org/ns/formats/RDF_XML"/>
+        <void:feature rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+        <rdfs:comment xml:lang="pt">Ideb</rdfs:comment>
+        <owl:versionInfo>2015</owl:versionInfo>
+        <dcat:downloadURL rdf:resource="https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/7e7067d5-401c-49cf-908b-1269d8d8ccdb/download/ideb-2015-por-estado.xlsx"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/esfera1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/esfera1">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/LocationPeriodJurisdication"/>
+        <rdfs:label xml:lang="pt">Federal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/interligacao -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/interligacao">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Interligação</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/accessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/interoperabilidade -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/interoperabilidade">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Interoperabilidade</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/representational"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/interpretabilidade -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/interpretabilidade">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Interpretabilidade</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/representational"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/intrinsic -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/intrinsic">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Category"/>
+        <skos:prefLabel xml:lang="pt">Intrínsecos</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/l1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/l1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="pt">L1 - Licença legível por máquina</rdfs:comment>
+        <skos:definition xml:lang="pt">L1 - Licença legível por máquina</skos:definition>
+        <dqv:inDimension rdf:resource="http://localhost:8080/educacao-basica/licenciamento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/licenciamento -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/licenciamento">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Licenciamento</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/accessibility"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/local -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/local">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:label xml:lang="pt">Brasil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/localDS1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/localDS1">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:label xml:lang="pt">Brasil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/medida1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/medida1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+        <rdfs:comment>Medida de qualidade RC1</rdfs:comment>
+        <dqv:isMeasurementOf rdf:resource="http://localhost:8080/educacao-basica/RC1"/>
+        <dqv:value>@@_VALOR_METRICA_QUALIDADE_RC1_@@</dqv:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/medida2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/medida2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+        <rdfs:comment>Medida de qualidade P1</rdfs:comment>
+        <dqv:isMeasurementOf rdf:resource="http://localhost:8080/educacao-basica/p1"/>
+        <dqv:value>@@_VALOR_METRICA_QUALIDADE_P1_@@</dqv:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/medida4 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/medida4">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#QualityMeasurement"/>
+        <rdfs:comment>Medida de qualidade L1</rdfs:comment>
+        <dqv:isMeasurementOf rdf:resource="http://localhost:8080/educacao-basica/l1"/>
+        <dqv:value>@@_VALOR_METRICA_QUALIDADE_L1_@@</dqv:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/p1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/p1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="pt">P1 – Informações básicas de proveniência</rdfs:comment>
+        <skos:definition xml:lang="pt">P1 – Informações básicas de proveniência</skos:definition>
+        <dqv:inDimension rdf:resource="http://localhost:8080/educacao-basica/proveniencia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/poder1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/poder1">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/LocationPeriodJurisdication"/>
+        <rdfs:label xml:lang="pt">Executivo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/proveniencia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/proveniencia">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Proveniência</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/contextual"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/publicador -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/publicador">
+        <rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <schema:url rdf:resource="http://usp.br"/>
+        <rdfs:label xml:lang="pt">USP</rdfs:label>
+        <foaf:name xml:lang="pt">USP</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/publicadorDataset1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/publicadorDataset1">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <schema:url rdf:resource="http://localhost:3030/edu_bas/www.usp.br"/>
+        <rdfs:label xml:lang="pt">Universidade De São Paulo</rdfs:label>
+        <foaf:name xml:lang="pt">USP</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/rc1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/rc1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Metric"/>
+        <rdfs:comment xml:lang="pt">IN3 - Uso de classes e propriedades indefinidas</rdfs:comment>
+        <skos:definition xml:lang="pt">IN3 - Uso de classes e propriedades indefinidas</skos:definition>
+        <dqv:inDimension rdf:resource="http://localhost:8080/educacao-basica/interpretabilidade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/representational -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/representational">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Category"/>
+        <skos:prefLabel xml:lang="pt">Representacional</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/sparqlServer -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/sparqlServer">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/sparql-service-description#Service"/>
+        <rdfs:comment>Representa um servidor SPARQL</rdfs:comment>
+        <dcat:endpointURL rdf:resource="http://localhost:3030/"/>
+        <sparql-service-description:defaultEntailmentRegime rdf:resource="http://www.w3.org/ns/entailment/RDFS"/>
+        <sparql-service-description:endpoint rdf:resource="http://localhost:3030/"/>
+        <sparql-service-description:resultFormat rdf:resource="http://www.w3.org/ns/formats/JSON-LD"/>
+        <sparql-service-description:resultFormat rdf:resource="http://www.w3.org/ns/formats/RDF_XML"/>
+        <sparql-service-description:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_CSV"/>
+        <sparql-service-description:resultFormat rdf:resource="http://www.w3.org/ns/formats/SPARQL_Results_JSON"/>
+        <sparql-service-description:resultFormat rdf:resource="http://www.w3.org/ns/formats/Turtle"/>
+        <sparql-service-description:supportedLanguage rdf:resource="http://localhost:8080/educacao-basica/SPARQL11Update"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/validadeSintatica -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/validadeSintatica">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Validade sintática</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/intrinsic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/versatilidade -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/versatilidade">
+        <rdf:type rdf:resource="http://www.w3.org/ns/dqv#Dimension"/>
+        <skos:prefLabel xml:lang="pt">Versatilidade</skos:prefLabel>
+        <dqv:inCategory rdf:resource="http://localhost:8080/educacao-basica/representational"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Distrito+Federal -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Distrito+Federal">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Distrito_Federal_(Brasil)"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Distrito+Federal"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Distrito+Federal"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Distrito+Federal"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Distrito+Federal"/>
+        <property:region rdf:datatype="dbo:region">Centro-Oeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">DF</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Distrito Federal</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Esp%C3%ADrito+Santo">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Espírito_Santo_(estado)"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Esp%C3%ADrito+Santo"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Esp%C3%ADrito+Santo"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Esp%C3%ADrito+Santo"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Esp%C3%ADrito+Santo"/>
+        <property:region rdf:datatype="dbo:region">Sudeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">ES</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Espírito Santo</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Acre -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Acre">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>AC</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.9</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</Fluxo>
+        <nota>4.41</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Alagoas -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Alagoas">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>AL</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.36</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.73</Fluxo>
+        <nota>3.1828000000000003</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Amapá -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Amapá">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>AP</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.34</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</Fluxo>
+        <nota>3.472</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Amazonas -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Amazonas">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>AM</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.88</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.87</Fluxo>
+        <nota>4.2456</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Bahia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Bahia">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>BA</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.56</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.74</Fluxo>
+        <nota>3.3743999999999996</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Ceará -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Ceará">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>CE</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.09</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.89</Fluxo>
+        <nota>4.5301</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Goiás -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Goiás">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>GO</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.17</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</Fluxo>
+        <nota>4.6530000000000005</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Maranhão -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Maranhão">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>MA</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.38</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.84</Fluxo>
+        <nota>3.6792</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Paraná -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Paraná">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>PR</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.08</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.85</Fluxo>
+        <nota>4.318</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Paraíba -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Paraíba">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>PB</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.49</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.77</Fluxo>
+        <nota>3.4573</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Pará -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Pará">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>PA</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.56</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.79</Fluxo>
+        <nota>3.6024</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Pernambuco -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Pernambuco">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>PE</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.68</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.82</Fluxo>
+        <nota>3.8375999999999997</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Piauí -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Piauí">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>PI</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.72</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.82</Fluxo>
+        <nota>3.8703999999999996</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Rondônia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Rondônia">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>RO</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.08</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</Fluxo>
+        <nota>4.064</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Roraima -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Roraima">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>RR</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.49</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.82</Fluxo>
+        <nota>3.6818</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Sergipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Sergipe">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>SE</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.64</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.66</Fluxo>
+        <nota>3.0624</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Tocantins -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Tocantins">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>TO</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.76</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.84</Fluxo>
+        <nota>3.9983999999999997</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Amap%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Amap%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Cear%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Cear%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Distrito+Federal -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Distrito+Federal">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>DF</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.1</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.79</Fluxo>
+        <nota>4.029</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Esp%C3%ADrito+Santo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Esp%C3%ADrito+Santo">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>ES</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.09</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</Fluxo>
+        <nota>4.072</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Goi%C3%A1s -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Goi%C3%A1s"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Maranh%C3%A3o -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Maranh%C3%A3o"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Mato+Grosso -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Mato+Grosso">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>MT</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.71</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.95</Fluxo>
+        <nota>4.4745</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Mato+Grosso+do+Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Mato+Grosso+do+Sul">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>MS</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.36</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.81</Fluxo>
+        <nota>4.341600000000001</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Minas+Gerais -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Minas+Gerais">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>MG</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.25</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.87</Fluxo>
+        <nota>4.5675</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Par%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Par%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Para%C3%ADba -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Para%C3%ADba"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Paran%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Paran%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Piau%C3%AD -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Piau%C3%AD"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Rio+Grande+do+Norte -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Rio+Grande+do+Norte">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>RN</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.62</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.73</Fluxo>
+        <nota>3.3726</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Rio+Grande+do+Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Rio+Grande+do+Sul">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>RS</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.19</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</Fluxo>
+        <nota>4.152</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Rio+de+Janeiro -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Rio+de+Janeiro">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>RJ</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.92</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.81</Fluxo>
+        <nota>3.9852000000000003</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Rond%C3%B4nia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Rond%C3%B4nia"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/S%C3%A3o+Paulo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/S%C3%A3o+Paulo">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>SP</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.06</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.93</Fluxo>
+        <nota>4.7058</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2015/Santa+Catarina -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2015/Santa+Catarina">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <ontology1:sigla>SC</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.53</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.89</Fluxo>
+        <nota>4.9217</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2015</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Acre -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Acre">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.21</Evolucao>
+        <ontology1:sigla>AC</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.08</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.91</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.6228</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Alagoas -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Alagoas">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.72</Evolucao>
+        <ontology1:sigla>AL</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.7</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.83</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.901</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Amapá -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Amapá">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.07</Evolucao>
+        <ontology1:sigla>AP</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.37</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.81</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.5397000000000003</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Amazonas -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Amazonas">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17</Evolucao>
+        <ontology1:sigla>AM</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.02</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.88</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.417599999999999</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Bahia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Bahia">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.06</Evolucao>
+        <ontology1:sigla>BA</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.58</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.75</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.435</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Ceará -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Ceará">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.36</Evolucao>
+        <ontology1:sigla>CE</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.31</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.92</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.8852</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Goiás -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Goiás">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4</Evolucao>
+        <ontology1:sigla>GO</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.43</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.93</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0499</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Maranhão -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Maranhão">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</Evolucao>
+        <ontology1:sigla>MA</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.39</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.85</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.7314999999999996</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Paraná -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Paraná">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.35</Evolucao>
+        <ontology1:sigla>PR</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.43</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.86</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.6697999999999995</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Paraíba -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Paraíba">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.09</Evolucao>
+        <ontology1:sigla>PB</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.55</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.78</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.549</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Pará -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Pará">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.01</Evolucao>
+        <ontology1:sigla>PA</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.51</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.608</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Pernambuco -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Pernambuco">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.27</Evolucao>
+        <ontology1:sigla>PE</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.78</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.86</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.1108</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Piauí -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Piauí">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.35</Evolucao>
+        <ontology1:sigla>PI</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.96</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.85</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.216</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Rondônia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Rondônia">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.72</Evolucao>
+        <ontology1:sigla>RO</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.32</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.788</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Roraima -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Roraima">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</Evolucao>
+        <ontology1:sigla>RR</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.62</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.86</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.9732</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Sergipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Sergipe">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.32</Evolucao>
+        <ontology1:sigla>SE</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.76</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.71</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.3795999999999995</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Tocantins -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Tocantins">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.47</Evolucao>
+        <ontology1:sigla>TO</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.14</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.87</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.4718</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Amap%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Amap%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Cear%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Cear%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Distrito+Federal -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Distrito+Federal">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.26</Evolucao>
+        <ontology1:sigla>DF</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.17</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.83</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.2911</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Esp%C3%ADrito+Santo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Esp%C3%ADrito+Santo">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3</Evolucao>
+        <ontology1:sigla>ES</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.27</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.83</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.374099999999999</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Goi%C3%A1s -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Goi%C3%A1s"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Maranh%C3%A3o -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Maranh%C3%A3o"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Mato+Grosso -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Mato+Grosso">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.17</Evolucao>
+        <ontology1:sigla>MT</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.89</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.95</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.645499999999999</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Mato+Grosso+do+Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Mato+Grosso+do+Sul">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.29</Evolucao>
+        <ontology1:sigla>MS</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.38</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.86</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.6268</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Minas+Gerais -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Minas+Gerais">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.11</Evolucao>
+        <ontology1:sigla>MG</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.25</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.85</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.4624999999999995</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Par%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Par%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Para%C3%ADba -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Para%C3%ADba"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Paran%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Paran%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Piau%C3%AD -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Piau%C3%AD"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Rio+Grande+do+Norte -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Rio+Grande+do+Norte">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.04</Evolucao>
+        <ontology1:sigla>RN</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.61</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.74</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.4114</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Rio+Grande+do+Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Rio+Grande+do+Sul">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.22</Evolucao>
+        <ontology1:sigla>RS</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.4</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.81</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.3740000000000006</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Rio+de+Janeiro -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Rio+de+Janeiro">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.19</Evolucao>
+        <ontology1:sigla>RJ</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.09</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.82</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.1738</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Rond%C3%B4nia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Rond%C3%B4nia"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/S%C3%A3o+Paulo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/S%C3%A3o+Paulo">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.16</Evolucao>
+        <ontology1:sigla>SP</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.23</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.93</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">4.863900000000001</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Ideb/2017/Santa+Catarina -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Ideb/2017/Santa+Catarina">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Ideb"/>
+        <Evolucao rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.09</Evolucao>
+        <ontology1:sigla>SC</ontology1:sigla>
+        <Aprendizado rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.57</Aprendizado>
+        <Fluxo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</Fluxo>
+        <nota rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.013000000000001</nota>
+        <time:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</time:year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Mato+Grosso -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Mato+Grosso">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Mato_Grosso"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Mato+Grosso"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Mato+Grosso"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Mato+Grosso"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Mato+Grosso"/>
+        <property:region rdf:datatype="dbo:region">Centro-Oeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">MT</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Mato Grosso</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Mato+Grosso+do+Sul">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Mato_Grosso_do_Sul"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Mato+Grosso+do+Sul"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Mato+Grosso+do+Sul"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Mato+Grosso+do+Sul"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Mato+Grosso+do+Sul"/>
+        <property:region rdf:datatype="dbo:region">Centro-Oeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">MS</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Mato Grosso do Sul</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Minas+Gerais -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Minas+Gerais">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Minas_Gerais"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Minas+Gerais"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Minas+Gerais"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Minas+Gerais"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Minas+Gerais"/>
+        <property:region rdf:datatype="dbo:region">Sudeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">MG</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Minas Gerais</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Rio+Grande+do+Norte -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Rio+Grande+do+Norte">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Rio_Grande_do_Norte"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Rio+Grande+do+Norte"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Rio+Grande+do+Norte"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Rio+Grande+do+Norte"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Rio+Grande+do+Norte"/>
+        <property:region rdf:datatype="dbo:region">Nordeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">RN</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Rio Grande do Norte</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Rio+Grande+do+Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Rio+Grande+do+Sul">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Rio_Grande_do_Sul"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Rio+Grande+do+Sul"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Rio+Grande+do+Sul"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Rio+Grande+do+Sul"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Rio+Grande+do+Sul"/>
+        <property:region rdf:datatype="dbo:region">Sul</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">RS</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Rio Grande do Sul</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Rio+de+Janeiro -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Rio+de+Janeiro">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Rio_de_Janeiro"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Rio+de+Janeiro"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Rio+de+Janeiro"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Rio+de+Janeiro"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Rio+de+Janeiro"/>
+        <property:region rdf:datatype="dbo:region">Sudeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">RJ</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Rio de Janeiro</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/S%C3%A3o+Paulo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/S%C3%A3o+Paulo">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/São_Paulo"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/S%C3%A3o+Paulo"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/S%C3%A3o+Paulo"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/S%C3%A3o+Paulo"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/S%C3%A3o+Paulo"/>
+        <property:region rdf:datatype="dbo:region">Sudeste</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">SP</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">São Paulo</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/Santa+Catarina -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/Santa+Catarina">
+        <rdf:type rdf:resource="http://purl.org/caedA5/ontology/Estado"/>
+        <owl:sameAs rdf:resource="http://pt.dbpedia.org/resource/Santa_Catarina"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2015/Santa+Catarina"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/Ideb/2017/Santa+Catarina"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2015/Santa+Catarina"/>
+        <temIdeb rdf:resource="http://localhost:8080/educacao-basica/ideb/2017/Santa+Catarina"/>
+        <property:region rdf:datatype="dbo:region">Sul</property:region>
+        <property:sigla rdf:datatype="dbp:sigla">SC</property:sigla>
+        <foaf:name rdf:datatype="foaf:name">Santa Catarina</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Acre -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Acre"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Alagoas -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Alagoas"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Amazonas -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Amazonas"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Bahia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Bahia"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Pernambuco -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Pernambuco"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Roraima -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Roraima"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Sergipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Sergipe"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Tocantins -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Tocantins"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Amap%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Amap%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Cear%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Cear%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Distrito+Federal -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Distrito+Federal"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Esp%C3%ADrito+Santo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Esp%C3%ADrito+Santo"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Goi%C3%A1s -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Goi%C3%A1s"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Maranh%C3%A3o -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Maranh%C3%A3o"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Mato+Grosso -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Mato+Grosso"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Mato+Grosso+do+Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Mato+Grosso+do+Sul"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Minas+Gerais -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Minas+Gerais"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Par%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Par%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Para%C3%ADba -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Para%C3%ADba"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Paran%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Paran%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Piau%C3%AD -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Piau%C3%AD"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Rio+Grande+do+Norte -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Rio+Grande+do+Norte"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Rio+Grande+do+Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Rio+Grande+do+Sul"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Rio+de+Janeiro -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Rio+de+Janeiro"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Rond%C3%B4nia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Rond%C3%B4nia"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/S%C3%A3o+Paulo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/S%C3%A3o+Paulo"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2015/Santa+Catarina -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2015/Santa+Catarina"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Acre -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Acre"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Alagoas -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Alagoas"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Amazonas -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Amazonas"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Bahia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Bahia"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Pernambuco -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Pernambuco"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Roraima -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Roraima"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Sergipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Sergipe"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Tocantins -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Tocantins"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Amap%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Amap%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Cear%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Cear%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Distrito+Federal -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Distrito+Federal"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Esp%C3%ADrito+Santo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Esp%C3%ADrito+Santo"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Goi%C3%A1s -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Goi%C3%A1s"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Maranh%C3%A3o -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Maranh%C3%A3o"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Mato+Grosso -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Mato+Grosso"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Mato+Grosso+do+Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Mato+Grosso+do+Sul"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Minas+Gerais -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Minas+Gerais"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Par%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Par%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Para%C3%ADba -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Para%C3%ADba"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Paran%C3%A1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Paran%C3%A1"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Piau%C3%AD -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Piau%C3%AD"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Rio+Grande+do+Norte -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Rio+Grande+do+Norte"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Rio+Grande+do+Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Rio+Grande+do+Sul"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Rio+de+Janeiro -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Rio+de+Janeiro"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Rond%C3%B4nia -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Rond%C3%B4nia"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/S%C3%A3o+Paulo -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/S%C3%A3o+Paulo"/>
+    
+
+
+    <!-- http://localhost:8080/educacao-basica/ideb/2017/Santa+Catarina -->
+
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/educacao-basica/ideb/2017/Santa+Catarina"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Acre -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Acre"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Alagoas -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Alagoas"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Amapá -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Amapá"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Amazonas -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Amazonas"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Bahia -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Bahia"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Ceará -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Ceará"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Goiás -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Goiás"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Maranhão -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Maranhão"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Mato_Grosso -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Mato_Grosso"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Mato_Grosso_do_Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Mato_Grosso_do_Sul"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Minas_Gerais -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Minas_Gerais"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Paraná -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Paraná"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Paraíba -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Paraíba"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Pará -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Pará"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Pernambuco -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Pernambuco"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Piauí -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Piauí"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Rio_Grande_do_Norte -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Rio_Grande_do_Norte"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Rio_Grande_do_Sul -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Rio_Grande_do_Sul"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Rio_de_Janeiro -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Rio_de_Janeiro"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Rondônia -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Rondônia"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Roraima -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Roraima"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Santa_Catarina -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Santa_Catarina"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Sergipe -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Sergipe"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/São_Paulo -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/São_Paulo"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Tocantins -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Tocantins"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Distrito_Federal_(Brasil) -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Distrito_Federal_(Brasil)"/>
+    
+
+
+    <!-- http://pt.dbpedia.org/resource/Espírito_Santo_(estado) -->
+
+
+    <owl:NamedIndividual rdf:about="http://pt.dbpedia.org/resource/Espírito_Santo_(estado)"/>
+    
+
+
+    <!-- http://vocab.e.gov.br/id/governo#administracao -->
+
+
+    <owl:NamedIndividual rdf:about="http://vocab.e.gov.br/id/governo#administracao">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <terms:title>&lt;Administracao&gt;</terms:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/caedA5/ontology/#Estado">
+        <rdfs:comment>Nome do Estado</rdfs:comment>
+        <rdfs:label>Estado</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/caedA5/ontology/Evolucao"/>
+            <rdf:Description rdf:about="http://purl.org/caedA5/ontology/#Aprendizagem"/>
+            <rdf:Description rdf:about="http://purl.org/caedA5/ontology/#Estado"/>
+            <rdf:Description rdf:about="http://purl.org/caedA5/ontology/#Fluxo"/>
+            <rdf:Description rdf:about="http://purl.org/caedA5/ontology/#Sigla"/>
+            <rdf:Description rdf:about="http://purl.org/caedA5/ontology/#nota"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/caedA5/ontology/#Estado"/>
+            <rdf:Description rdf:about="http://purl.org/caedA5/ontology/#Região"/>
+            <rdf:Description rdf:about="http://purl.org/caedA5/ontology/#Sigla"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
