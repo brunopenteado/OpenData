@@ -858,7 +858,7 @@ ex:Evolucao
   void:uriSpace <http://localhost:8086/educacao-basica/> ;
   prov:wasGeneratedBy <http://localhost:8086/educacao-basica/atividade1> ;
   prov:wasAttributedTo <http://localhost:8086/educacao-basica/criadorDataset1> ;
-  void:vocabulary dbo:, dbp:, ex:, rdf:, owl:, rdfs:, time:, foaf:, xsd:, sd:, dcat:, dc:, void:, prov:, schema:, adms:, pac:, skos:, dqv: ;
+  void:vocabulary dbo:, dbp:, ex:, rdf:, owl:, rdfs:, time:, foaf:, xsd:, sd:, dcat:, dc:, void:, prov:, schema:, adms:, pav:, skos:, dqv: ;
   dc:conformsTo <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos>, 
 	<https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf>, 
 	<http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo>, 
@@ -894,7 +894,7 @@ ex:Evolucao
   void:uriSpace <http://localhost:8086/educacao-basica/> ;
   prov:wasGeneratedBy <http://localhost:8086/educacao-basica/atividade2> ;
   prov:wasAttributedTo <http://localhost:8086/educacao-basica/criadorDataset2> ;
-  void:vocabulary dbo:, dbp:, ex:, rdf:, owl:, rdfs:, time:, foaf:, xsd:, sd:, dcat:, dc:, void:, prov:, schema:, adms:, pac:, skos:, dqv: ;
+  void:vocabulary dbo:, dbp:, ex:, rdf:, owl:, rdfs:, time:, foaf:, xsd:, sd:, dcat:, dc:, void:, prov:, schema:, adms:, pav:, skos:, dqv: ;
   dc:conformsTo <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos>, 
 	<https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf>, 
 	<http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo>, 
