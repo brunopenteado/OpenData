@@ -859,7 +859,10 @@ ex:Evolucao
   prov:wasGeneratedBy <http://localhost:8086/educacao-basica/atividade1> ;
   prov:wasAttributedTo <http://localhost:8086/educacao-basica/criadorDataset1> ;
   void:vocabulary dbo:, dbp:, ex:, rdf:, owl:, rdfs:, time:, foaf: ;
-  dc:conformsTo <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos>, <https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf >, <http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo >, <http://vocab.e.gov.br/id/governo#esquema> ;
+  dc:conformsTo <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos>, 
+	<https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf>, 
+	<http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo>, 
+	<http://vocab.e.gov.br/id/governo#esquema> ;
   dcat:distribution <http://localhost:8086/educacao-basica/dist1> .
 
 <http://localhost:8086/educacao-basica/dataset2>
@@ -892,7 +895,10 @@ ex:Evolucao
   prov:wasGeneratedBy <http://localhost:8086/educacao-basica/atividade2> ;
   prov:wasAttributedTo <http://localhost:8086/educacao-basica/criadorDataset2> ;
   void:vocabulary dbo:, dbp:, ex:, rdf:, owl:, rdfs:, time:, foaf: ;
-  dc:conformsTo <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos>, <https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf >, <http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo >, <http://vocab.e.gov.br/id/governo#esquema> ;
+  dc:conformsTo <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos>, 
+	<https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf>, 
+	<http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo>, 
+	<http://vocab.e.gov.br/id/governo#esquema> ;
   dcat:distribution <http://localhost:8086/educacao-basica/dist2>, <http://localhost:8086/educacao-basica/dist3> ;
   prov:wasDerivedFrom <http://localhost:8086/educacao-basica/dataset1> .
 
