@@ -27,38 +27,19 @@
   dc:license <http://creativecommons.org/licenses/by/3.0/> .
 
 dc:license a owl:AnnotationProperty .
-<http://purl.org/caedA5/ontology/temIdeb>
+<http://purl.org/caedA5/ontology#temIdeb>
   a owl:ObjectProperty ;
   rdfs:subPropertyOf owl:topObjectProperty ;
-  rdfs:domain [
-    a owl:Restriction ;
-    owl:onProperty <http://purl.org/caedA5/ontology/temIdeb> ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Estado>
-  ] ;
-  rdfs:range [
-    a owl:Restriction ;
-    owl:onProperty <http://purl.org/caedA5/ontology/temIdeb> ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Ideb>
-  ] .
+  rdfs:domain <http://purl.org/caedA5/ontology#Estado>  ;
+  rdfs:range <http://purl.org/caedA5/ontology#Ideb> .
 
-<http://purl.org/caedA5/ontology/#Estado>
-  a owl:DatatypeProperty, owl:Class ;
+<http://purl.org/caedA5/ontology#Estado>
+  a owl:Class ;
   rdfs:comment "Nome do Estado" ;
-  rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain [
-    a owl:Restriction ;
-    owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Estado>
-  ], [
-    a owl:Restriction ;
-    owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Ideb>
-  ] ;
-  rdfs:range xsd:string ;
   rdfs:label "Estado" ;
-  owl:disjointWith <http://purl.org/caedA5/ontology/#Ideb> .
+  owl:disjointWith <http://purl.org/caedA5/ontology#Ideb> .
 
-<http://purl.org/caedA5/ontology/#Ideb>
+<http://purl.org/caedA5/ontology#Ideb>
   a owl:Class ;
   rdfs:comment "Ideb" ;
   rdfs:label "Ideb" .
@@ -70,7 +51,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:domain [
     a owl:Restriction ;
     owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Ideb>
+    owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
   ] ;
   rdfs:range xsd:double ;
   rdfs:label "Evolucao" .
@@ -82,7 +63,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:domain [
     a owl:Restriction ;
     owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Ideb>
+    owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
   ] ;
   rdfs:range xsd:float ;
   rdfs:label "Aprendizagem" .
@@ -94,7 +75,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:domain [
     a owl:Restriction ;
     owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Ideb>
+    owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
   ] ;
   rdfs:range xsd:float ;
   rdfs:label "Fluxo" .
@@ -106,7 +87,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:domain [
     a owl:Restriction ;
     owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Estado>
+    owl:someValuesFrom <http://purl.org/caedA5/ontology#Estado>
   ] ;
   rdfs:range xsd:string ;
   rdfs:label "Região" .
@@ -118,11 +99,11 @@ dc:license a owl:AnnotationProperty .
   rdfs:domain [
     a owl:Restriction ;
     owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Estado>
+    owl:someValuesFrom <http://purl.org/caedA5/ontology#Estado>
   ], [
     a owl:Restriction ;
     owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Ideb>
+    owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
   ] ;
   rdfs:range xsd:string ;
   rdfs:label "Sigla" .
@@ -134,7 +115,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:domain [
     a owl:Restriction ;
     owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology/#Ideb>
+    owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
   ] ;
   rdfs:range xsd:float ;
   rdfs:label "nota" .
@@ -214,7 +195,7 @@ sd:Service owl:disjointWith dcat:DataService .
   void:uriSpace <http://localhost:8080/educacao-basica> ;
   prov:wasGeneratedBy <http://localhost:8085/educacao-basica/atividade1> ;
   prov:wasAttributedTo <http://localhost:8085/educacao-basica/criadorDataset1> ;
-  void:vocabulary <http://purl.org/caedA5/ontology/>, foaf:, <http://dbpedia.org/ontology/>, <http://dbpedia.org/property/>, rdf:, owl:, xsd:, rdfs:, <http://www.w3.org/2006/time#> ;
+  void:vocabulary ex:, foaf:, dbo:, dbp:, rdf:, owl:, xsd:, rdfs:, time:, dc:, sd:, dcat:, void:, prov:, schema:, adms:, pav:, skos:, dqv: ;
   dc:conformsTo <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos>, <https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf>, <http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo>, <http://vocab.e.gov.br/id/governo#esquema> ;
   dcat:distribution <http://localhost:8085/educacao-basica/dist1> .
 
@@ -254,9 +235,18 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/atividade1>
   a prov:Activity ;
-  rdfs:label "Criação do dataset"@pt ;
+  rdfs:label "Criação do dataset 1"@pt ;
+  prov:wasAssociatedWith <http://localhost:8085/educacao-basica/criadorDataset1> ;
+  prov:used <https://cidades.ibge.gov.br/brasil>;
+  prov:startedAtTime "2020-02-12T14:09:00"^^xsd:dateTime ;
+  prov:endedAtTime "2020-02-12T21:08:00"^^xsd:dateTime .
+
+<http://localhost:8085/educacao-basica/atividade2>
+  a prov:Activity ;
+  rdfs:label "Criação do dataset 2"@pt ;
   prov:wasAssociatedWith <http://localhost:8085/educacao-basica/criadorDataset1> ;
   prov:startedAtTime "2020-02-12T14:09:00"^^xsd:dateTime ;
+  prov:used <http://dados.gov.br/dataset/ideb-por-estados>;
   prov:endedAtTime "2020-02-12T21:08:00"^^xsd:dateTime .
 
 <http://localhost:8085/educacao-basica/dataset2>
@@ -287,11 +277,14 @@ prov:Entity owl:disjointWith dc:Collection .
   schema:measurementTechnique "avaliação educacional" ;
   dc:coverage <http://localhost:8085/educacao-basica/esfera1>, <http://localhost:8085/educacao-basica/poder1> ;
   void:uriSpace <http://localhost:8080/educacao-basica> ;
-  prov:wasGeneratedBy <http://localhost:8085/educacao-basica/atividade1> ;
+  prov:wasGeneratedBy <http://localhost:8085/educacao-basica/atividade2> ;
   prov:wasAttributedTo <http://localhost:8085/educacao-basica/criadorDataset1> ;
-  void:vocabulary <http://purl.org/caedA5/ontology/>, foaf:, <http://dbpedia.org/ontology/>, <http://dbpedia.org/property/>, rdf:, owl:, xsd:, rdfs:, <http://www.w3.org/2006/time#> ;
+  void:vocabulary ex:, foaf:, dbo:, dbp:, rdf:, owl:, xsd:, rdfs:, time:, dc:, sd:, dcat:, void:, prov:, schema:, adms:, pav:, skos:, dqv: ;
   prov:wasDerivedFrom <http://localhost:8085/educacao-basica/dataset1> ;
   dcat:distribution <http://localhost:8085/educacao-basica/dist2> .
+  
+<https://cidades.ibge.gov.br/brasil> a prov:Entity .
+<http://dados.gov.br/dataset/ideb-por-estados> a prov:Entity .
 
 <http://localhost:8085/educacao-basica/dist1>
   a dcat:Distribution ;
@@ -314,7 +307,6 @@ prov:Entity owl:disjointWith dc:Collection .
   dcat:downloadURL <https://demo.ckan.org/dataset/47104a79-2eeb-4f6e-8839-fbc1c20a7cc6/resource/45aec780-095e-4dc1-bc90-d0e712268c24/download/ideb-2017-por-estado.xlsx> ;
   void:feature <http://www.w3.org/ns/formats/Turtle>, <http://www.w3.org/ns/formats/RDF_XML>, <http://www.w3.org/ns/formats/N-Triples> .
 
-<http://localhost:3030/edu_bas/@@_URL_DADOS_REUTILIZADOS_@@> a prov:Entity .
 <http://localhost:8085/educacao-basica/dist3>
   a dcat:Distribution ;
   owl:versionInfo "2015" ;

@@ -2,7 +2,7 @@
 @prefix dbp: <http://dbpedia.org/property/> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix ex: <http://purl.org/caeda6/ontology#> .
+@prefix ex: <https://raw.githubusercontent.com/AndrezaFerreira/Ontology/master/Ontology.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -858,7 +858,7 @@ ex:Evolucao
   void:uriSpace <http://localhost:8086/educacao-basica/> ;
   prov:wasGeneratedBy <http://localhost:8086/educacao-basica/atividade1> ;
   prov:wasAttributedTo <http://localhost:8086/educacao-basica/criadorDataset1> ;
-  void:vocabulary dbo:, dbp:, ex:, rdf:, owl:, rdfs:, time:, foaf: ;
+  void:vocabulary dbo:, dbp:, ex:, rdf:, owl:, rdfs:, time:, foaf:, xsd:, sd:, dcat:, dc:, void:, prov:, schema:, adms:, pac:, skos:, dqv: ;
   dc:conformsTo <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos>, 
 	<https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf>, 
 	<http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo>, 
@@ -894,7 +894,7 @@ ex:Evolucao
   void:uriSpace <http://localhost:8086/educacao-basica/> ;
   prov:wasGeneratedBy <http://localhost:8086/educacao-basica/atividade2> ;
   prov:wasAttributedTo <http://localhost:8086/educacao-basica/criadorDataset2> ;
-  void:vocabulary dbo:, dbp:, ex:, rdf:, owl:, rdfs:, time:, foaf: ;
+  void:vocabulary dbo:, dbp:, ex:, rdf:, owl:, rdfs:, time:, foaf:, xsd:, sd:, dcat:, dc:, void:, prov:, schema:, adms:, pac:, skos:, dqv: ;
   dc:conformsTo <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos>, 
 	<https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf>, 
 	<http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo>, 
@@ -961,9 +961,18 @@ Comments are closed.""" .
   a prov:Activity ;
   rdfs:label "Criação do dataset"@pt ;
   prov:wasAssociatedWith <http://localhost:8086/educacao-basica/criadorDataset1> ;
+  prov:used <https://cidades.ibge.gov.br/brasil> ;
   prov:startedAtTime "2020-02-18T00:11:00@@"^^xsd:dateTime ;
   prov:endedAtTime "2020-02-18T22:34:00"^^xsd:dateTime .
 
+<http://localhost:8086/educacao-basica/atividade2>
+  a prov:Activity ;
+  rdfs:label "Criação do dataset"@pt ;
+  prov:wasAssociatedWith <http://localhost:8086/educacao-basica/criadorDataset1> ;
+  prov:used <http://dados.gov.br/dataset/ideb-por-estados> ;
+  prov:startedAtTime "2020-02-18T00:11:00@@"^^xsd:dateTime ;
+  prov:endedAtTime "2020-02-18T22:34:00"^^xsd:dateTime .
+  
 <http://localhost:8086/educacao-basica/dist1>
   a dcat:Distribution ;
   rdfs:comment "Estados do Brasil"@pt ;
@@ -975,7 +984,9 @@ Comments are closed.""" .
   void:feature <http://www.w3.org/ns/formats/Turtle>, <http://www.w3.org/ns/formats/RDF_XML>, <http://www.w3.org/ns/formats/N-Triples> ;
   dqv:hasQualityMeasurement <http://localhost:8086/educacao-basica/medida1>, <http://localhost:8086/educacao-basica/medida2> .
 
-<http://localhost:3030/educacao-basica2/@@_URL_DADOS_REUTILIZADOS_@@> a prov:Entity .
+<https://cidades.ibge.gov.br/brasil> a prov:Entity .
+<http://dados.gov.br/dataset/ideb-por-estados> a prov:Entity .
+
 <http://localhost:8086/educacao-basica/atividade2>
   a prov:Activity ;
   rdfs:label "Criação do dataset"@pt ;
