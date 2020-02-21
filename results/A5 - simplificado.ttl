@@ -695,7 +695,7 @@ prov:Entity owl:disjointWith dc:Collection .
   time:year "2015"^^xsd:int ;
   ex:Fluxo 7.900000e-1 ;
   ex:Aprendizado 5.100000e+0 ;
-  ex:nota "4.029"^^xsd:float^^xsd:float .
+  ex:nota "4.029"^^xsd:float .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Esp%C3%ADrito+Santo>
   a ex:Ideb ;
