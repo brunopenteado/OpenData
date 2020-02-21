@@ -17,8 +17,7 @@
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix dbp: <http://dbpedia.org/property/> .
-@prefix ns7: <dbp:> .
-@prefix ns8: <dbo:> .
+
 
 <http://purl.org/caedA5/ontology#>
   a owl:Ontology ;
@@ -1089,13 +1088,6 @@ prov:Entity owl:disjointWith dc:Collection .
    ex:Estado
    ex:Fluxo
    ex:Sigla
-   ex:nota
- ) .
-
-[]
-  a owl:AllDisjointProperties ;
-  owl:members (
-   ex:Estado
    ex:Região
-   ex:Sigla
+   ex:nota
  ) .
