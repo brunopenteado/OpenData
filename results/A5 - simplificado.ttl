@@ -48,11 +48,7 @@ dc:license a owl:AnnotationProperty .
   a owl:DatatypeProperty ;
   rdfs:comment "Evolucao" ;
   rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain [
-    a owl:Restriction ;
-    owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
-  ] ;
+  rdfs:domain  <http://purl.org/caedA5/ontology#Ideb>;
   rdfs:range xsd:double ;
   rdfs:label "Evolucao" .
 
@@ -60,11 +56,7 @@ dc:license a owl:AnnotationProperty .
   a owl:DatatypeProperty ;
   rdfs:comment "Aprendizado" ;
   rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain [
-    a owl:Restriction ;
-    owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
-  ] ;
+  rdfs:domain <http://purl.org/caedA5/ontology#Ideb>;
   rdfs:range xsd:float ;
   rdfs:label "Aprendizado" .
 
@@ -72,11 +64,7 @@ dc:license a owl:AnnotationProperty .
   a owl:DatatypeProperty ;
   rdfs:comment "Fluxo" ;
   rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain [
-    a owl:Restriction ;
-    owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
-  ] ;
+  rdfs:domain <http://purl.org/caedA5/ontology#Ideb> ;
   rdfs:range xsd:float ;
   rdfs:label "Fluxo" .
 
@@ -84,11 +72,7 @@ dc:license a owl:AnnotationProperty .
   a owl:DatatypeProperty ;
   rdfs:comment "Região" ;
   rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain [
-    a owl:Restriction ;
-    owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology#Estado>
-  ] ;
+  rdfs:domain <http://purl.org/caedA5/ontology#Estado>;
   rdfs:range xsd:string ;
   rdfs:label "Região" .
 
@@ -96,15 +80,7 @@ dc:license a owl:AnnotationProperty .
   a owl:DatatypeProperty ;
   rdfs:comment "Sigla do Estado" ;
   rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain [
-    a owl:Restriction ;
-    owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology#Estado>
-  ], [
-    a owl:Restriction ;
-    owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
-  ] ;
+  rdfs:domain <http://purl.org/caedA5/ontology#Estado>, <http://purl.org/caedA5/ontology#Ideb>;
   rdfs:range xsd:string ;
   rdfs:label "Sigla" .
 
@@ -112,11 +88,7 @@ dc:license a owl:AnnotationProperty .
   a owl:DatatypeProperty ;
   rdfs:comment "Nota" ;
   rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain [
-    a owl:Restriction ;
-    owl:onProperty owl:topObjectProperty ;
-    owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
-  ] ;
+  rdfs:domain <http://purl.org/caedA5/ontology#Ideb>;
   rdfs:range xsd:float ;
   rdfs:label "nota" .
 
