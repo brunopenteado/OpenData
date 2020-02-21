@@ -26,24 +26,24 @@
   dc:license <http://creativecommons.org/licenses/by/3.0/> .
 
 dc:license a owl:AnnotationProperty .
-<http://purl.org/caedA5/ontology#temIdeb>
+ex:temIdeb
   a owl:ObjectProperty ;
   rdfs:subPropertyOf owl:topObjectProperty ;
   rdfs:domain <http://purl.org/caedA5/ontology#Estado>  ;
   rdfs:range <http://purl.org/caedA5/ontology#Ideb> .
 
-<http://purl.org/caedA5/ontology#Estado>
+ex:Estado
   a owl:Class ;
   rdfs:comment "Nome do Estado" ;
   rdfs:label "Estado" ;
   owl:disjointWith <http://purl.org/caedA5/ontology#Ideb> .
 
-<http://purl.org/caedA5/ontology#Ideb>
+ex:Ideb
   a owl:Class ;
   rdfs:comment "Ideb" ;
   rdfs:label "Ideb" .
 
-<http://purl.org/caedA5/ontology#Evolucao>
+ex:Evolucao
   a owl:DatatypeProperty ;
   rdfs:comment "Evolucao" ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -51,7 +51,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:range xsd:double ;
   rdfs:label "Evolucao" .
 
-<http://purl.org/caedA5/ontology#Aprendizado>
+ex:Aprendizado
   a owl:DatatypeProperty ;
   rdfs:comment "Aprendizado" ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -59,7 +59,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:range xsd:float ;
   rdfs:label "Aprendizado" .
 
-<http://purl.org/caedA5/ontology#Fluxo>
+ex:Fluxo
   a owl:DatatypeProperty ;
   rdfs:comment "Fluxo" ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -67,7 +67,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:range xsd:float ;
   rdfs:label "Fluxo" .
 
-<http://purl.org/caedA5/ontology#Região>
+ex:Região
   a owl:DatatypeProperty ;
   rdfs:comment "Região" ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -75,7 +75,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:range xsd:string ;
   rdfs:label "Região" .
 
-<http://purl.org/caedA5/ontology#Sigla>
+ex:Sigla
   a owl:DatatypeProperty ;
   rdfs:comment "Sigla do Estado" ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -83,7 +83,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:range xsd:string ;
   rdfs:label "Sigla" .
 
-<http://purl.org/caedA5/ontology#nota>
+ex:nota
   a owl:DatatypeProperty ;
   rdfs:comment "Nota" ;
   rdfs:subPropertyOf owl:topDataProperty ;
