@@ -28,8 +28,8 @@
 dc:license a owl:AnnotationProperty .
 ex:temIdeb
   a owl:ObjectProperty ;
-  rdfs:domain ex:Estado>  ;
-  rdfs:range ex:Ideb> .
+  rdfs:domain ex:Estado  ;
+  rdfs:range ex:Ideb .
 
 ex:Estado
   a owl:Class ;
