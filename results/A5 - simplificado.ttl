@@ -21,11 +21,12 @@
 
 <http://purl.org/caedA5/ontology#>
   a owl:Ontology ;
-  owl:versionInfo 1.0 ;
+  owl:versionInfo "1.0" ;
   rdfs:comment "Ontologia para descrição do IDEB por estados brasileiros" ;
   dc:license <http://creativecommons.org/licenses/by/3.0/> .
+  
+  <http://creativecommons.org/licenses/by/3.0/> a dc:LicenseDocument.
 
-dc:license a owl:AnnotationProperty .
 ex:temIdeb
   a owl:ObjectProperty ;
   rdfs:domain ex:Estado  ;
