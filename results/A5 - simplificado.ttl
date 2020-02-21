@@ -28,15 +28,14 @@
 dc:license a owl:AnnotationProperty .
 ex:temIdeb
   a owl:ObjectProperty ;
-  rdfs:subPropertyOf owl:topObjectProperty ;
-  rdfs:domain <http://purl.org/caedA5/ontology#Estado>  ;
-  rdfs:range <http://purl.org/caedA5/ontology#Ideb> .
+  rdfs:domain ex:Estado>  ;
+  rdfs:range ex:Ideb> .
 
 ex:Estado
   a owl:Class ;
   rdfs:comment "Nome do Estado" ;
   rdfs:label "Estado" ;
-  owl:disjointWith <http://purl.org/caedA5/ontology#Ideb> .
+  owl:disjointWith ex:Ideb .
 
 ex:Ideb
   a owl:Class ;
@@ -46,48 +45,42 @@ ex:Ideb
 ex:Evolucao
   a owl:DatatypeProperty ;
   rdfs:comment "Evolucao" ;
-  rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain  <http://purl.org/caedA5/ontology#Ideb>;
+  rdfs:domain  ex:Ideb;
   rdfs:range xsd:double ;
   rdfs:label "Evolucao" .
 
 ex:Aprendizado
   a owl:DatatypeProperty ;
   rdfs:comment "Aprendizado" ;
-  rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain <http://purl.org/caedA5/ontology#Ideb>;
+  rdfs:domain ex:Ideb;
   rdfs:range xsd:float ;
   rdfs:label "Aprendizado" .
 
 ex:Fluxo
   a owl:DatatypeProperty ;
   rdfs:comment "Fluxo" ;
-  rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain <http://purl.org/caedA5/ontology#Ideb> ;
+  rdfs:domain ex:Ideb ;
   rdfs:range xsd:float ;
   rdfs:label "Fluxo" .
 
 ex:Região
   a owl:DatatypeProperty ;
   rdfs:comment "Região" ;
-  rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain <http://purl.org/caedA5/ontology#Estado>;
+  rdfs:domain ex:Estado;
   rdfs:range xsd:string ;
   rdfs:label "Região" .
 
 ex:Sigla
   a owl:DatatypeProperty ;
   rdfs:comment "Sigla do Estado" ;
-  rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain <http://purl.org/caedA5/ontology#Estado>, <http://purl.org/caedA5/ontology#Ideb>;
+  rdfs:domain ex:Estado, ex:Ideb;
   rdfs:range xsd:string ;
   rdfs:label "Sigla" .
 
 ex:nota
   a owl:DatatypeProperty ;
   rdfs:comment "Nota" ;
-  rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain <http://purl.org/caedA5/ontology#Ideb>;
+  rdfs:domain ex:Ideb;
   rdfs:range xsd:float ;
   rdfs:label "nota" .
 
