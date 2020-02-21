@@ -13,14 +13,14 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dqv: <http://www.w3.org/ns/dqv#> .
-@prefix ex: <http://purl.org/caedA5/ontology/> .
+@prefix ex: <http://purl.org/caedA5/ontology#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix dbp: <http://dbpedia.org/property/> .
 @prefix ns7: <dbp:> .
 @prefix ns8: <dbo:> .
 
-<http://purl.org/caedA5/ontology/>
+<http://purl.org/caedA5/ontology#>
   a owl:Ontology ;
   owl:versionInfo 1.0 ;
   rdfs:comment "Ontologia para descrição do IDEB por estados brasileiros" ;
@@ -44,7 +44,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:comment "Ideb" ;
   rdfs:label "Ideb" .
 
-<http://purl.org/caedA5/ontology/Evolucao>
+<http://purl.org/caedA5/ontology#Evolucao>
   a owl:DatatypeProperty ;
   rdfs:comment "Evolucao" ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -56,9 +56,9 @@ dc:license a owl:AnnotationProperty .
   rdfs:range xsd:double ;
   rdfs:label "Evolucao" .
 
-<http://purl.org/caedA5/ontology/#Aprendizagem>
+<http://purl.org/caedA5/ontology#Aprendizado>
   a owl:DatatypeProperty ;
-  rdfs:comment "Aprendizagem" ;
+  rdfs:comment "Aprendizado" ;
   rdfs:subPropertyOf owl:topDataProperty ;
   rdfs:domain [
     a owl:Restriction ;
@@ -66,9 +66,9 @@ dc:license a owl:AnnotationProperty .
     owl:someValuesFrom <http://purl.org/caedA5/ontology#Ideb>
   ] ;
   rdfs:range xsd:float ;
-  rdfs:label "Aprendizagem" .
+  rdfs:label "Aprendizado" .
 
-<http://purl.org/caedA5/ontology/#Fluxo>
+<http://purl.org/caedA5/ontology#Fluxo>
   a owl:DatatypeProperty ;
   rdfs:comment "Fluxo" ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -80,7 +80,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:range xsd:float ;
   rdfs:label "Fluxo" .
 
-<http://purl.org/caedA5/ontology/#Região>
+<http://purl.org/caedA5/ontology#Região>
   a owl:DatatypeProperty ;
   rdfs:comment "Região" ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -92,7 +92,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:range xsd:string ;
   rdfs:label "Região" .
 
-<http://purl.org/caedA5/ontology/#Sigla>
+<http://purl.org/caedA5/ontology#Sigla>
   a owl:DatatypeProperty ;
   rdfs:comment "Sigla do Estado" ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -108,7 +108,7 @@ dc:license a owl:AnnotationProperty .
   rdfs:range xsd:string ;
   rdfs:label "Sigla" .
 
-<http://purl.org/caedA5/ontology/#nota>
+<http://purl.org/caedA5/ontology#nota>
   a owl:DatatypeProperty ;
   rdfs:comment "Nota" ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -435,7 +435,7 @@ prov:Entity owl:disjointWith dc:Collection .
   dqv:inDimension <http://localhost:8085/educacao-basica/interpretabilidade> .
 
 <http://localhost:8085/educacao-basica/Ideb/2017/Acre>
-  a <http://purl.org/caedA5/ontology/Ideb> ;
+  a <http://purl.org/caedA5/ontology#Ideb> ;
   ex:Evolucao 2.100000e-1 ;
   dbo:sigla "AC" ;
   time:year "2017"^^xsd:int ;
@@ -1113,7 +1113,7 @@ prov:Entity owl:disjointWith dc:Collection .
   a owl:AllDisjointProperties ;
   owl:members (
    ex:Evolucao
-   ex:#Aprendizagem
+   ex:#Aprendizado
    ex:#Estado
    ex:#Fluxo
    ex:#Sigla
