@@ -23,7 +23,7 @@
   a <http://purl.org/caeda6/ontology#Estado> ;
   foaf:name "Acre" ;
   dbp:sigla "AC" ;
-  dbo:region "Norte" ;
+  dbp:região "Norte" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Acre" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Acre>, <http://localhost:8086/educacao-basica/Ideb/2017/Acre> .
 
@@ -60,7 +60,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Alagoas" ;
   dbp:sigla "AL" ;
-  dbo:region "Nordeste" ;
+  dbp:região "Nordeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Alagoas" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Alagoas>, <http://localhost:8086/educacao-basica/Ideb/2017/Alagoas> .
 
@@ -87,7 +87,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Amapá" ;
   dbp:sigla "AP" ;
-  dbo:region "Norte" ;
+  dbp:região "Norte" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Amapá" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Amapá>, <http://localhost:8086/educacao-basica/Ideb/2017/Amapá> .
 
@@ -114,7 +114,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Amazonas" ;
   dbp:sigla "AM" ;
-  dbo:region "Norte" ;
+  dbp:região "Norte" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Amazonas" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Amazonas>, <http://localhost:8086/educacao-basica/Ideb/2017/Amazonas> .
 
@@ -141,7 +141,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Bahia" ;
   dbp:sigla "BA" ;
-  dbo:region "Nordeste" ;
+  dbp:região "Nordeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Bahia" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Bahia>, <http://localhost:8086/educacao-basica/Ideb/2017/Bahia> .
 
@@ -168,7 +168,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Ceará" ;
   dbp:sigla "CE" ;
-  dbo:region "Nordeste" ;
+  dbp:região "Nordeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Ceará" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Ceará>, <http://localhost:8086/educacao-basica/Ideb/2017/Ceará> .
 
@@ -195,7 +195,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Distrito Federal" ;
   dbp:sigla "DF" ;
-  dbo:region "Centro-Oeste" ;
+  dbp:região "Centro-Oeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Distrito_Federal_(Brasil)" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Distrito+Federal>, <http://localhost:8086/educacao-basica/Ideb/2017/Distrito+Federal> .
 
@@ -222,7 +222,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Espírito Santo" ;
   dbp:sigla "ES" ;
-  dbo:region "Sudeste" ;
+  dbp:região "Sudeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Espírito_Santo_(estado)" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Espírito+Santo>, <http://localhost:8086/educacao-basica/Ideb/2017/Espírito+Santo> .
 
@@ -230,7 +230,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Goiás" ;
   dbp:sigla "GO" ;
-  dbo:region "Centro-Oeste" ;
+  dbp:região "Centro-Oeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Goiás" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Goiás>, <http://localhost:8086/educacao-basica/Ideb/2017/Goiás> .
 
@@ -257,7 +257,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Maranhão" ;
   dbp:sigla "MA" ;
-  dbo:region "Nordeste" ;
+  dbp:região "Nordeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Maranhão" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Maranhão>, <http://localhost:8086/educacao-basica/Ideb/2017/Maranhão> .
 
@@ -284,7 +284,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Mato Grosso" ;
   dbp:sigla "MT" ;
-  dbo:region "Centro-Oeste" ;
+  dbp:região "Centro-Oeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Mato_Grosso" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Mato+Grosso>, <http://localhost:8086/educacao-basica/Ideb/2017/Mato+Grosso> .
 
@@ -311,7 +311,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Mato Grosso do Sul" ;
   dbp:sigla "MS" ;
-  dbo:region "Centro-Oeste" ;
+  dbp:região "Centro-Oeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Mato_Grosso_do_Sul" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Mato+Grosso+do+Sul>, <http://localhost:8086/educacao-basica/Ideb/2017/Mato+Grosso+do+Sul> .
 
@@ -338,7 +338,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Minas Gerais" ;
   dbp:sigla "MG" ;
-  dbo:region "Sudeste" ;
+  dbp:região "Sudeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Minas_Gerais" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Minas+Gerais>, <http://localhost:8086/educacao-basica/Ideb/2017/Minas+Gerais> .
 
@@ -365,7 +365,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Pará" ;
   dbp:sigla "PA" ;
-  dbo:region "Norte" ;
+  dbp:região "Norte" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Pará" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Pará>, <http://localhost:8086/educacao-basica/Ideb/2017/Pará> .
 
@@ -392,7 +392,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Paraíba" ;
   dbp:sigla "PB" ;
-  dbo:region "Nordeste" ;
+  dbp:região "Nordeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Paraíba" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Paraíba>, <http://localhost:8086/educacao-basica/Ideb/2017/Paraíba> .
 
@@ -419,7 +419,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Paraná" ;
   dbp:sigla "PR" ;
-  dbo:region "Sul" ;
+  dbp:região "Sul" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Paraná" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Paraná>, <http://localhost:8086/educacao-basica/Ideb/2017/Paraná> .
 
@@ -446,7 +446,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Pernambuco" ;
   dbp:sigla "PE" ;
-  dbo:region "Nordeste" ;
+  dbp:região "Nordeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Pernambuco" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Pernambuco>, <http://localhost:8086/educacao-basica/Ideb/2017/Pernambuco> .
 
@@ -473,7 +473,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Piauí" ;
   dbp:sigla "PI" ;
-  dbo:region "Nordeste" ;
+  dbp:região "Nordeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Piauí" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Piauí>, <http://localhost:8086/educacao-basica/Ideb/2017/Piauí> .
 
@@ -500,7 +500,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Rio de Janeiro" ;
   dbp:sigla "RJ" ;
-  dbo:region "Sudeste" ;
+  dbp:região "Sudeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Rio_de_Janeiro" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Rio+de+Janeiro>, <http://localhost:8086/educacao-basica/Ideb/2017/Rio+de+Janeiro> .
 
@@ -527,7 +527,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Rio Grande do Norte" ;
   dbp:sigla "RN" ;
-  dbo:region "Nordeste" ;
+  dbp:região "Nordeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Rio_Grande_do_Norte" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Rio+Grande+do+Norte>, <http://localhost:8086/educacao-basica/Ideb/2017/Rio+Grande+do+Norte> .
 
@@ -554,7 +554,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Rio Grande do Sul" ;
   dbp:sigla "RS" ;
-  dbo:region "Sul" ;
+  dbp:região "Sul" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Rio_Grande_do_Sul" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Rio+Grande+do+Sul>, <http://localhost:8086/educacao-basica/Ideb/2017/Rio+Grande+do+Sul> .
 
@@ -581,7 +581,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Rondônia" ;
   dbp:sigla "RO" ;
-  dbo:region "Norte" ;
+  dbp:região "Norte" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Rondônia" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Rondônia>, <http://localhost:8086/educacao-basica/Ideb/2017/Rondônia> .
 
@@ -608,7 +608,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Roraima" ;
   dbp:sigla "RR" ;
-  dbo:region "Norte" ;
+  dbp:região "Norte" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Roraima" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Roraima>, <http://localhost:8086/educacao-basica/Ideb/2017/Roraima> .
 
@@ -635,7 +635,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Santa Catarina" ;
   dbp:sigla "SC" ;
-  dbo:region "Sul" ;
+  dbp:região "Sul" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Santa_Catarina" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Santa+Catarina>, <http://localhost:8086/educacao-basica/Ideb/2017/Santa+Catarina> .
 
@@ -662,7 +662,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "São Paulo" ;
   dbp:sigla "SP" ;
-  dbo:region "Sudeste" ;
+  dbp:região "Sudeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/São_Paulo" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/São+Paulo>, <http://localhost:8086/educacao-basica/Ideb/2017/São+Paulo> .
 
@@ -670,7 +670,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Sergipe" ;
   dbp:sigla "SE" ;
-  dbo:region "Nordeste" ;
+  dbp:região "Nordeste" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Sergipe" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Sergipe>, <http://localhost:8086/educacao-basica/Ideb/2017/Sergipe> .
 
@@ -697,7 +697,7 @@ ex:temIdeb
   a ex:Estado ;
   foaf:name "Tocantins" ;
   dbp:sigla "TO" ;
-  dbo:region "Norte" ;
+  dbp:região "Norte" ;
   owl:sameAs "http://pt.dbpedia.org/resource/Tocantins" ;
   ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Tocantins>, <http://localhost:8086/educacao-basica/Ideb/2017/Tocantins> .
 
