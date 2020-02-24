@@ -24,8 +24,7 @@
   foaf:name "Acre" ;
   dbp:sigla "AC" ;
   dbp:região "Norte" ;
-  owl:sameAs "http://pt.dbpedia.org/resource/Acre" ;
-  ex:temIdeb <http://localhost:8086/educacao-basica/Ideb/2015/Acre>, <http://localhost:8086/educacao-basica/Ideb/2017/Acre> .
+
 
 ex:Estado
   a owl:Class ;
