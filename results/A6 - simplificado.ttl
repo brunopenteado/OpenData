@@ -37,21 +37,3 @@ ex:temIdeb
   rdfs:domain ex:Estado ;
   rdfs:range ex:Ideb .
 
-<http://localhost:8086/educacao-basica/Ideb/2015/Acre>
-  a ex:Ideb ;
-  foaf:name "Acre" ;
-  dbp:sigla "AC" ;
-  ex:Aprendizado "4.9"^^xsd:double ;
-  ex:Fluxo "0.9"^^xsd:double ;
-  ex:Nota "4.41"^^xsd:double ;
-  time:year "2015"^^xsd:int .
-
-<http://localhost:8086/educacao-basica/Ideb/2017/Acre>
-  a ex:Ideb ;
-  foaf:name "Acre" ;
-  dbp:sigla "AC" ;
-  ex:Aprendizado "5.08"^^xsd:double ;
-  ex:Fluxo "0.91"^^xsd:double ;
-  ex:Nota "4.62"^^xsd:double ;
-  time:year "2017"^^xsd:int ;
-  ex:Evolucao "4.41"^^xsd:double .
