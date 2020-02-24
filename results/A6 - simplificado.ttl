@@ -31,8 +31,5 @@ ex:Estado
   rdfs:comment "Estado" ;
   owl:disjointWith ex:Ideb .
 
-ex:temIdeb
-  a owl:ObjectProperty ;
-  rdfs:domain ex:Estado ;
-  rdfs:range ex:Ideb .
+
 
