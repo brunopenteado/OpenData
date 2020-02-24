@@ -23,7 +23,7 @@
   a <http://purl.org/caeda6/ontology#Estado> ;
   foaf:name "Acre" ;
   dbp:sigla "AC" ;
-  dbp:região "Norte" ;
+  dbp:região "Norte" .
 
 
 ex:Estado
