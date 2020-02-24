@@ -21,7 +21,6 @@
 
 <http://localhost:8086/educacao-basica/Acre>
   a ex:Estado ;
-  foaf:name "Acre" .
 
 
 ex:Estado
