@@ -29,8 +29,8 @@ dc:license a owl:AnnotationProperty .
 ex:temIdeb
   a owl:ObjectProperty ;
   rdfs:subPropertyOf owl:topObjectProperty ;
-  rdfs:domain ex:Estado>  ;
-  rdfs:range ex:Ideb> .
+  rdfs:domain ex:Estado ;
+  rdfs:range ex:Ideb .
 
 ex:Estado
   a owl:Class ;
@@ -87,7 +87,7 @@ ex:nota
   a owl:DatatypeProperty ;
   rdfs:comment "Nota" ;
   rdfs:subPropertyOf owl:topDataProperty ;
-  rdfs:domain ex:Ideb>;
+  rdfs:domain ex:Ideb;
   rdfs:range xsd:float ;
   rdfs:label "nota" .
 
