@@ -21,14 +21,14 @@
 
 <http://localhost:8086/educacao-basica/Acre>
   a owl:Class ;
-  foaf:name "Acre" ;
-  dbp:sigla "AC" ;
-  dbp:região "Norte" .
+  foaf:name "Acre"@pt ;
+  dbp:sigla "AC"@pt ;
+  dbp:região "Norte"@pt .
 
 
 ex:Estado
   a owl:Class ;
-  rdfs:comment "Estado" ;
+  rdfs:comment "Estado"@pt ;
   owl:disjointWith ex:Ideb .
 
 
