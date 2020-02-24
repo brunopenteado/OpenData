@@ -20,7 +20,7 @@
 
 
 <http://localhost:8086/educacao-basica/Acre>
-  a <http://purl.org/caeda6/ontology#Estado> ;
+  a ex:Estado ;
   foaf:name "Acre" ;
   dbp:sigla "AC" ;
   dbp:região "Norte" .
