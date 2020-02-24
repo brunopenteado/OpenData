@@ -20,16 +20,11 @@
 
 
 <http://localhost:8086/educacao-basica/Acre>
-  a ex:Estado ;
-  foaf:name "Acre" ;
-  dbp:sigla "AC" ;
-  dbp:região "Norte" .
+  a ex:Estado  .
 
 
 ex:Estado
-  a owl:Class ;
-  rdfs:comment "Estado" ;
-  owl:disjointWith ex:Ideb .
+  a owl:Class  .
 
 
 
