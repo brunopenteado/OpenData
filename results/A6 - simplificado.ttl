@@ -21,9 +21,7 @@
 
 <http://localhost:8086/educacao-basica/Acre>
   a owl:Class ;
-  foaf:name "Acre" #;
-  #dbp:sigla "AC" ;
- # dbp:região "Norte" 
+  foaf:name "Acre"  
  .
 
 
