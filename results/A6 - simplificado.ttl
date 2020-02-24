@@ -20,7 +20,8 @@
 
 
 <http://localhost:8086/educacao-basica/Acre>
-  a ex:Estado .
+  a owl:Class ;
+  foaf:name "Acre" .
 
 
 ex:Estado
