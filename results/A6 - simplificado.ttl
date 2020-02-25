@@ -22,7 +22,7 @@
 <http://pt.dbpedia.org/resource/Regi%C3%A3o_Nordeste_do_Brasil> a dbo:Place .
 <http://pt.dbpedia.org/resource/Regi%C3%A3o_Sul_do_Brasil> a dbo:Place .
 <http://pt.dbpedia.org/resource/Regi%C3%A3o_Sudeste_do_Brasil> a dbo:Place .
-<http://pt.dbpedia.org/resource/Regi%C3%A3o_<http://pt.dbpedia.org/resource/Regi%C3%A3o_Centro-Oeste_do_Brasil>_do_Brasil> a dbo:Place .
+<http://pt.dbpedia.org/resource/Regi%C3%A3o_Centro-Oeste_do_Brasil> a dbo:Place .
 
 <http://localhost:8086/educacao-basica/Acre>
   a <http://purl.org/caeda6/ontology#Estado> ;
