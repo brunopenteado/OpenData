@@ -23,6 +23,7 @@
   #dbp:sigla "AC" 
   dbo:region <http://pt.dbpedia.org/resource/Regi%C3%A3o_Norte_do_Brasil> .
 
+<http://pt.dbpedia.org/resource/Regi%C3%A3o_Norte_do_Brasil> a dbo:Place.
 
 
 
