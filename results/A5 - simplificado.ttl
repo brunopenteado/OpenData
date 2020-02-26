@@ -16,7 +16,7 @@
 @prefix ex: <http://purl.org/caedA5/ontology#> .
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix time: <http://www.w3.org/2006/time#> .
-@prefix dbp: <http://dbpedia.org/property/> .
+@prefix dbp: <http://pt.dbpedia.org/property/> .
 
 
 <http://purl.org/caedA5/ontology#>
@@ -140,13 +140,13 @@ sd:Service owl:disjointWith dcat:DataService .
   a dcat:Dataset, void:Dataset, dc:Collection, prov:Entity ;
   owl:versionInfo "1.0" ;
   rdfs:comment "Attribution Share-Alike for Databases" ;
-  dc:license <http://opendefinition.org/licenses/odc-odbl/> ;
+  dc:license <https://opendatacommons.org/licenses/odbl/> ;
   rdfs:label "Estado"@pt ;
   dc:title "Estado"@pt ;
   dc:description "Lista de estados"@pt ;
   foaf:homepage <https://cidades.ibge.gov.br/brasil/> ;
   dc:publisher <http://localhost:8085/educacao-basica/publicadorDataset1> ;
-  dc:creator <http://localhost:8085/educacao-basica/criadorDataset1> ;
+  dc:creator <http://localhost:8088/educacao-basica/criador> ;
   dc:language "pt-br"^^xsd:language ;
   dc:spatial <http://localhost:8085/educacao-basica/localDS1> ;
   dcat:keyword "nomes"@pt, "de"@pt, "estados"@pt ;
@@ -165,7 +165,7 @@ sd:Service owl:disjointWith dcat:DataService .
   dc:coverage <http://localhost:8085/educacao-basica/esfera1>, <http://localhost:8085/educacao-basica/poder1> ;
   void:uriSpace <http://localhost:8080/educacao-basica> ;
   prov:wasGeneratedBy <http://localhost:8085/educacao-basica/atividade1> ;
-  prov:wasAttributedTo <http://localhost:8085/educacao-basica/criadorDataset1> ;
+  prov:wasAttributedTo <http://localhost:8088/educacao-basica/criador> ;
   void:vocabulary ex:, foaf:, dbo:, dbp:, rdf:, owl:, xsd:, rdfs:, time:, dc:, sd:, dcat:, void:, prov:, schema:, adms:, pav:, skos:, dqv: ;
   dc:conformsTo <http://dados.gov.br/pagina/cartilha-publicacao-dados-abertos>, <https://www.gov.br/governodigital/pt-br/governanca-de-dados/ePING_v2018_20171205.pdf/@@download/file/ePING_v2018_20171205.pdf>, <http://www.governoeletronico.gov.br/biblioteca/arquivos/Politica-URIs-Publicacao-Dados-Governo>, <http://vocab.e.gov.br/id/governo#esquema> ;
   dcat:distribution <http://localhost:8085/educacao-basica/dist1> .
@@ -182,7 +182,7 @@ prov:Entity owl:disjointWith dc:Collection .
   foaf:name "USP"@pt ;
   schema:url <http://localhost:3030/edu_bas/www.usp.br> .
 
-<http://localhost:8085/educacao-basica/criadorDataset1>
+<http://localhost:8088/educacao-basica/criador>
   a dc:Agent, prov:Agent, foaf:Person ;
   foaf:name "A5"@pt ;
   foaf:mbox <mailto:armando.toda@usp.br> ;
@@ -207,7 +207,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/atividade1>
   a prov:Activity ;
   rdfs:label "Criação do dataset 1"@pt ;
-  prov:wasAssociatedWith <http://localhost:8085/educacao-basica/criadorDataset1> ;
+  prov:wasAssociatedWith <http://localhost:8088/educacao-basica/criador> ;
   prov:used <https://cidades.ibge.gov.br/brasil>;
   prov:startedAtTime "2020-02-12T14:09:00"^^xsd:dateTime ;
   prov:endedAtTime "2020-02-12T21:08:00"^^xsd:dateTime .
@@ -215,7 +215,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/atividade2>
   a prov:Activity ;
   rdfs:label "Criação do dataset 2"@pt ;
-  prov:wasAssociatedWith <http://localhost:8085/educacao-basica/criadorDataset1> ;
+  prov:wasAssociatedWith <http://localhost:8088/educacao-basica/criador> ;
   prov:startedAtTime "2020-02-12T14:09:00"^^xsd:dateTime ;
   prov:used <http://dados.gov.br/dataset/ideb-por-estados>;
   prov:endedAtTime "2020-02-12T21:08:00"^^xsd:dateTime .
@@ -224,13 +224,13 @@ prov:Entity owl:disjointWith dc:Collection .
   a dcat:Dataset, void:Dataset, dc:Collection, prov:Entity ;
   owl:versionInfo "1.0" ;
   rdfs:comment "Attribution Share-Alike for Databases" ;
-  dc:license <http://opendefinition.org/licenses/odc-odbl/> ;
+  dc:license <https://opendatacommons.org/licenses/odbl/> ;
   rdfs:label "IDEB"@pt ;
   dc:title "IDEB"@pt ;
   dc:description "Ideb"@pt ;
   foaf:homepage <http://dados.gov.br/dataset/ideb-por-estados> ;
   dc:publisher <http://localhost:8085/educacao-basica/publicadorDataset1> ;
-  dc:creator <http://localhost:8085/educacao-basica/criadorDataset1> ;
+  dc:creator <http://localhost:8088/educacao-basica/criador> ;
   dc:language "pt-br"^^xsd:language ;
   dc:spatial <http://localhost:8085/educacao-basica/localDS1> ;
   dcat:keyword "indice"@pt, "desenvolvimento"@pt, "educacao basica"@pt ;
@@ -249,7 +249,7 @@ prov:Entity owl:disjointWith dc:Collection .
   dc:coverage <http://localhost:8085/educacao-basica/esfera1>, <http://localhost:8085/educacao-basica/poder1> ;
   void:uriSpace <http://localhost:8080/educacao-basica> ;
   prov:wasGeneratedBy <http://localhost:8085/educacao-basica/atividade2> ;
-  prov:wasAttributedTo <http://localhost:8085/educacao-basica/criadorDataset1> ;
+  prov:wasAttributedTo <http://localhost:8088/educacao-basica/criador> ;
   void:vocabulary ex:, foaf:, dbo:, dbp:, rdf:, owl:, xsd:, rdfs:, time:, dc:, sd:, dcat:, void:, prov:, schema:, adms:, pav:, skos:, dqv: ;
   prov:wasDerivedFrom <http://localhost:8085/educacao-basica/dataset1> ;
   dcat:distribution <http://localhost:8085/educacao-basica/dist2> .
@@ -411,7 +411,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Acre>
   a <http://purl.org/caedA5/ontology#Ideb> ;
   ex:Evolucao 2.100000e-1 ;
-  dbo:sigla "AC" ;
+  dbp:sigla "AC" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 9.100000e-1 ;
   ex:Aprendizado 5.080000e+0 ;
@@ -420,7 +420,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Alagoas>
   a ex:Ideb ;
   ex:Evolucao 7.200000e-1 ;
-  dbo:sigla "AL" ;
+  dbp:sigla "AL" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.300000e-1 ;
   ex:Aprendizado 4.700000e+0 ;
@@ -429,7 +429,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Amapá>
   a ex:Ideb ;
   ex:Evolucao 7.000000e-2 ;
-  dbo:sigla "AP" ;
+  dbp:sigla "AP" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.100000e-1 ;
   ex:Aprendizado 4.370000e+0 ;
@@ -438,7 +438,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Amazonas>
   a ex:Ideb ;
   ex:Evolucao 1.700000e-1 ;
-  dbo:sigla "AM" ;
+  dbp:sigla "AM" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.800000e-1 ;
   ex:Aprendizado 5.020000e+0 ;
@@ -447,7 +447,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Bahia>
   a ex:Ideb ;
   ex:Evolucao 6.000000e-2 ;
-  dbo:sigla "BA" ;
+  dbp:sigla "BA" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 7.500000e-1 ;
   ex:Aprendizado 4.580000e+0 ;
@@ -456,7 +456,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Ceará>
   a ex:Ideb ;
   ex:Evolucao 3.600000e-1 ;
-  dbo:sigla "CE" ;
+  dbp:sigla "CE" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 9.200000e-1 ;
   ex:Aprendizado 5.310000e+0 ;
@@ -465,7 +465,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Distrito+Federal>
   a ex:Ideb ;
   ex:Evolucao 2.600000e-1 ;
-  dbo:sigla "DF" ;
+  dbp:sigla "DF" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.300000e-1 ;
   ex:Aprendizado 5.170000e+0 ;
@@ -474,7 +474,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Esp%C3%ADrito+Santo>
   a ex:Ideb ;
   ex:Evolucao 3.000000e-1 ;
-  dbo:sigla "ES" ;
+  dbp:sigla "ES" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.300000e-1 ;
   ex:Aprendizado 5.270000e+0 ;
@@ -483,7 +483,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Goiás>
   a ex:Ideb ;
   ex:Evolucao 4.000000e-1 ;
-  dbo:sigla "GO" ;
+  dbp:sigla "GO" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 9.300000e-1 ;
   ex:Aprendizado 5.430000e+0 ;
@@ -492,7 +492,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Maranhão>
   a ex:Ideb ;
   ex:Evolucao 5.000000e-2 ;
-  dbo:sigla "MA" ;
+  dbp:sigla "MA" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.500000e-1 ;
   ex:Aprendizado 4.390000e+0 ;
@@ -501,7 +501,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Mato+Grosso>
   a ex:Ideb ;
   ex:Evolucao 1.700000e-1 ;
-  dbo:sigla "MT" ;
+  dbp:sigla "MT" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 9.500000e-1 ;
   ex:Aprendizado 4.890000e+0 ;
@@ -510,7 +510,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Mato+Grosso+do+Sul>
   a ex:Ideb ;
   ex:Evolucao 2.900000e-1 ;
-  dbo:sigla "MS" ;
+  dbp:sigla "MS" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.600000e-1 ;
   ex:Aprendizado 5.380000e+0 ;
@@ -519,7 +519,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Minas+Gerais>
   a ex:Ideb ;
   ex:Evolucao -1.100000e-1 ;
-  dbo:sigla "MG" ;
+  dbp:sigla "MG" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.500000e-1 ;
   ex:Aprendizado 5.250000e+0 ;
@@ -528,7 +528,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Pará>
   a ex:Ideb ;
   ex:Evolucao 1.000000e-2 ;
-  dbo:sigla "PA" ;
+  dbp:sigla "PA" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.000000e-1 ;
   ex:Aprendizado 4.510000e+0 ;
@@ -537,7 +537,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Paraíba>
   a ex:Ideb ;
   ex:Evolucao 9.000000e-2 ;
-  dbo:sigla "PB" ;
+  dbp:sigla "PB" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 7.800000e-1 ;
   ex:Aprendizado 4.550000e+0 ;
@@ -546,7 +546,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Paraná>
   a ex:Ideb ;
   ex:Evolucao 3.500000e-1 ;
-  dbo:sigla "PR" ;
+  dbp:sigla "PR" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.600000e-1 ;
   ex:Aprendizado 5.430000e+0 ;
@@ -555,7 +555,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Pernambuco>
   a ex:Ideb ;
   ex:Evolucao 2.700000e-1 ;
-  dbo:sigla "PE" ;
+  dbp:sigla "PE" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.600000e-1 ;
   ex:Aprendizado 4.780000e+0 ;
@@ -564,7 +564,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Piauí>
   a ex:Ideb ;
   ex:Evolucao 3.500000e-1 ;
-  dbo:sigla "PI" ;
+  dbp:sigla "PI" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.500000e-1 ;
   ex:Aprendizado 4.960000e+0 ;
@@ -573,7 +573,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Rio+de+Janeiro>
   a ex:Ideb ;
   ex:Evolucao 1.900000e-1 ;
-  dbo:sigla "RJ" ;
+  dbp:sigla "RJ" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.200000e-1 ;
   ex:Aprendizado 5.090000e+0 ;
@@ -582,7 +582,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Rio+Grande+do+Norte>
   a ex:Ideb ;
   ex:Evolucao 4.000000e-2 ;
-  dbo:sigla "RN" ;
+  dbp:sigla "RN" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 7.400000e-1 ;
   ex:Aprendizado 4.610000e+0 ;
@@ -591,7 +591,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Rio+Grande+do+Sul>
   a ex:Ideb ;
   ex:Evolucao 2.200000e-1 ;
-  dbo:sigla "RS" ;
+  dbp:sigla "RS" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.100000e-1 ;
   ex:Aprendizado 5.400000e+0 ;
@@ -600,7 +600,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Rondônia>
   a ex:Ideb ;
   ex:Evolucao 7.200000e-1 ;
-  dbo:sigla "RO" ;
+  dbp:sigla "RO" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 9.000000e-1 ;
   ex:Aprendizado 5.320000e+0 ;
@@ -609,7 +609,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Roraima>
   a ex:Ideb ;
   ex:Evolucao 2.900000e-1 ;
-  dbo:sigla "RR" ;
+  dbp:sigla "RR" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.600000e-1 ;
   ex:Aprendizado 4.620000e+0 ;
@@ -618,7 +618,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Santa+Catarina>
   a ex:Ideb ;
   ex:Evolucao 9.000000e-2 ;
-  dbo:sigla "SC" ;
+  dbp:sigla "SC" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 9.000000e-1 ;
   ex:Aprendizado 5.570000e+0 ;
@@ -627,7 +627,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/S%C3%A3o+Paulo>
   a ex:Ideb ;
   ex:Evolucao 1.600000e-1 ;
-  dbo:sigla "SP" ;
+  dbp:sigla "SP" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 9.300000e-1 ;
   ex:Aprendizado 5.230000e+0 ;
@@ -636,7 +636,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Sergipe>
   a ex:Ideb ;
   ex:Evolucao 3.200000e-1 ;
-  dbo:sigla "SE" ;
+  dbp:sigla "SE" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 7.100000e-1 ;
   ex:Aprendizado 4.760000e+0 ;
@@ -645,7 +645,7 @@ prov:Entity owl:disjointWith dc:Collection .
 <http://localhost:8085/educacao-basica/Ideb/2017/Tocantins>
   a ex:Ideb ;
   ex:Evolucao 4.700000e-1 ;
-  dbo:sigla "TO" ;
+  dbp:sigla "TO" ;
   time:year "2017"^^xsd:int ;
   ex:Fluxo 8.700000e-1 ;
   ex:Aprendizado 5.140000e+0 ;
@@ -653,7 +653,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Acre>
   a ex:Ideb ;
-  dbo:sigla "AC" ;
+  dbp:sigla "AC" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 9.000000e-1 ;
   ex:Aprendizado 4.900000e+0 ;
@@ -661,7 +661,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Alagoas>
   a ex:Ideb ;
-  dbo:sigla "AL" ;
+  dbp:sigla "AL" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 7.300000e-1 ;
   ex:Aprendizado 4.360000e+0 ;
@@ -669,7 +669,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Amapá>
   a ex:Ideb ;
-  dbo:sigla "AP" ;
+  dbp:sigla "AP" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.000000e-1 ;
   ex:Aprendizado 4.340000e+0 ;
@@ -677,7 +677,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Amazonas>
   a ex:Ideb ;
-  dbo:sigla "AM" ;
+  dbp:sigla "AM" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.700000e-1 ;
   ex:Aprendizado 4.880000e+0 ;
@@ -685,7 +685,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Bahia>
   a ex:Ideb ;
-  dbo:sigla "BA" ;
+  dbp:sigla "BA" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 7.400000e-1 ;
   ex:Aprendizado 4.560000e+0 ;
@@ -693,7 +693,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Ceará>
   a ex:Ideb ;
-  dbo:sigla "CE" ;
+  dbp:sigla "CE" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.900000e-1 ;
   ex:Aprendizado 5.090000e+0 ;
@@ -701,7 +701,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Distrito+Federal>
   a ex:Ideb ;
-  dbo:sigla "DF" ;
+  dbp:sigla "DF" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 7.900000e-1 ;
   ex:Aprendizado 5.100000e+0 ;
@@ -709,7 +709,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Esp%C3%ADrito+Santo>
   a ex:Ideb ;
-  dbo:sigla "ES" ;
+  dbp:sigla "ES" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.000000e-1 ;
   ex:Aprendizado 5.090000e+0 ;
@@ -717,7 +717,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Goiás>
   a ex:Ideb ;
-  dbo:sigla "GO" ;
+  dbp:sigla "GO" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 9.000000e-1 ;
   ex:Aprendizado 5.170000e+0 ;
@@ -725,7 +725,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Maranhão>
   a ex:Ideb ;
-  dbo:sigla "MA" ;
+  dbp:sigla "MA" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.400000e-1 ;
   ex:Aprendizado 4.380000e+0 ;
@@ -733,7 +733,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Mato+Grosso>
   a ex:Ideb ;
-  dbo:sigla "MT" ;
+  dbp:sigla "MT" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 9.500000e-1 ;
   ex:Aprendizado 4.710000e+0 ;
@@ -741,7 +741,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Mato+Grosso+do+Sul>
   a ex:Ideb ;
-  dbo:sigla "MS" ;
+  dbp:sigla "MS" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.100000e-1 ;
   ex:Aprendizado 5.360000e+0 ;
@@ -749,7 +749,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Minas+Gerais>
   a ex:Ideb ;
-  dbo:sigla "MG" ;
+  dbp:sigla "MG" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.700000e-1 ;
   ex:Aprendizado 5.250000e+0 ;
@@ -757,7 +757,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Pará>
   a ex:Ideb ;
-  dbo:sigla "PA" ;
+  dbp:sigla "PA" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 7.900000e-1 ;
   ex:Aprendizado 4.560000e+0 ;
@@ -765,7 +765,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Paraíba>
   a ex:Ideb ;
-  dbo:sigla "PB" ;
+  dbp:sigla "PB" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 7.700000e-1 ;
   ex:Aprendizado 4.490000e+0 ;
@@ -773,7 +773,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Paraná>
   a ex:Ideb ;
-  dbo:sigla "PR" ;
+  dbp:sigla "PR" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.500000e-1 ;
   ex:Aprendizado 5.080000e+0 ;
@@ -781,7 +781,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Pernambuco>
   a ex:Ideb ;
-  dbo:sigla "PE" ;
+  dbp:sigla "PE" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.200000e-1 ;
   ex:Aprendizado 4.680000e+0 ;
@@ -789,7 +789,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Piauí>
   a ex:Ideb ;
-  dbo:sigla "PI" ;
+  dbp:sigla "PI" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.200000e-1 ;
   ex:Aprendizado 4.720000e+0 ;
@@ -797,7 +797,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Rio+de+Janeiro>
   a ex:Ideb ;
-  dbo:sigla "RJ" ;
+  dbp:sigla "RJ" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.100000e-1 ;
   ex:Aprendizado 4.920000e+0 ;
@@ -805,7 +805,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Rio+Grande+do+Norte>
   a ex:Ideb ;
-  dbo:sigla "RN" ;
+  dbp:sigla "RN" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 7.300000e-1 ;
   ex:Aprendizado 4.620000e+0 ;
@@ -813,7 +813,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Rio+Grande+do+Sul>
   a ex:Ideb ;
-  dbo:sigla "RS" ;
+  dbp:sigla "RS" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.000000e-1 ;
   ex:Aprendizado 5.190000e+0 ;
@@ -821,7 +821,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Rondônia>
   a ex:Ideb ;
-  dbo:sigla "RO" ;
+  dbp:sigla "RO" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.000000e-1 ;
   ex:Aprendizado 5.080000e+0 ;
@@ -829,7 +829,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Roraima>
   a ex:Ideb ;
-  dbo:sigla "RR" ;
+  dbp:sigla "RR" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.200000e-1 ;
   ex:Aprendizado 4.490000e+0 ;
@@ -837,7 +837,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Santa+Catarina>
   a ex:Ideb ;
-  dbo:sigla "SC" ;
+  dbp:sigla "SC" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.900000e-1 ;
   ex:Aprendizado 5.530000e+0 ;
@@ -845,7 +845,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/S%C3%A3o+Paulo>
   a ex:Ideb ;
-  dbo:sigla "SP" ;
+  dbp:sigla "SP" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 9.300000e-1 ;
   ex:Aprendizado 5.060000e+0 ;
@@ -853,7 +853,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Sergipe>
   a ex:Ideb ;
-  dbo:sigla "SE" ;
+  dbp:sigla "SE" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 6.600000e-1 ;
   ex:Aprendizado 4.640000e+0 ;
@@ -861,7 +861,7 @@ prov:Entity owl:disjointWith dc:Collection .
 
 <http://localhost:8085/educacao-basica/Ideb/2015/Tocantins>
   a ex:Ideb ;
-  dbo:sigla "TO" ;
+  dbp:sigla "TO" ;
   time:year "2015"^^xsd:int ;
   ex:Fluxo 8.400000e-1 ;
   ex:Aprendizado 4.760000e+0 ;
