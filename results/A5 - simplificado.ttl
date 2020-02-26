@@ -136,7 +136,7 @@ sd:Service owl:disjointWith dcat:DataService .
   a dc:Location ;
   rdfs:label "Brasil"@pt .
   
-<http://opendatacommons.org/licenses/odbl/> owl:sameAs  <http://purl.org/NET/rdflicense/odbl1.0>
+<http://opendatacommons.org/licenses/odbl/> owl:sameAs  <http://purl.org/NET/rdflicense/odbl1.0> .
 
 <http://localhost:8085/educacao-basica/dataset1>
   a dcat:Dataset, void:Dataset, dc:Collection, prov:Entity ;
