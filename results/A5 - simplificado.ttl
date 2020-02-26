@@ -140,7 +140,7 @@ sd:Service owl:disjointWith dcat:DataService .
   a dcat:Dataset, void:Dataset, dc:Collection, prov:Entity ;
   owl:versionInfo "1.0" ;
   rdfs:comment "Attribution Share-Alike for Databases" ;
-  dc:license <https://opendatacommons.org/licenses/odbl/> ;
+  dc:license <http://opendatacommons.org/licenses/odbl/> ;
   rdfs:label "Estado"@pt ;
   dc:title "Estado"@pt ;
   dc:description "Lista de estados"@pt ;
@@ -224,7 +224,7 @@ prov:Entity owl:disjointWith dc:Collection .
   a dcat:Dataset, void:Dataset, dc:Collection, prov:Entity ;
   owl:versionInfo "1.0" ;
   rdfs:comment "Attribution Share-Alike for Databases" ;
-  dc:license <https://opendatacommons.org/licenses/odbl/> ;
+  dc:license <http://opendatacommons.org/licenses/odbl/> ;
   rdfs:label "IDEB"@pt ;
   dc:title "IDEB"@pt ;
   dc:description "Ideb"@pt ;
@@ -261,7 +261,7 @@ prov:Entity owl:disjointWith dc:Collection .
   a dcat:Distribution ;
   owl:versionInfo "1.0" ;
   rdfs:comment "Estados"@pt ;
-  dc:license <https://opendatacommons.org/licenses/odbl/> ;
+  dc:license <http://opendatacommons.org/licenses/odbl/> ;
   dc:title "Estados"@pt ;
   dc:description "Estados"@pt ;
   dcat:accessURL <http://localhost:3030/educacao-basica/> ;
@@ -273,7 +273,7 @@ prov:Entity owl:disjointWith dc:Collection .
   a dcat:Distribution ;
   owl:versionInfo "2017" ;
   rdfs:comment "Ideb"@pt ;
-  dc:license <https://opendatacommons.org/licenses/odbl/> ;
+  dc:license <http://opendatacommons.org/licenses/odbl/> ;
   dc:title "Ideb 2017"@pt ;
   dc:description "Ideb"@pt ;
   dcat:accessURL <http://localhost:3030/educacao-basica/> ;
@@ -284,7 +284,7 @@ prov:Entity owl:disjointWith dc:Collection .
   a dcat:Distribution ;
   owl:versionInfo "2015" ;
   rdfs:comment "Ideb"@pt ;
-  dc:license <https://opendatacommons.org/licenses/odbl/> ;
+  dc:license <http://opendatacommons.org/licenses/odbl/> ;
   dc:title "Ideb 2015"@pt ;
   dc:description "Ideb"@pt ;
   dcat:accessURL <http://localhost:3030/educacao-basica/> ;
