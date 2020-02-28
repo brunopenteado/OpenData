@@ -1,0 +1,58 @@
+{
+  "@context" : {
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Evolucao" : {
+      "@id" : "http://purl.org/caed_a5/ontology#Evolucao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Estado" : {
+      "@id" : "http://purl.org/caed_a5/ontology#Estado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "nota" : {
+      "@id" : "http://purl.org/caed_a5/ontology#nota",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Sigla" : {
+      "@id" : "http://purl.org/caed_a5/ontology#Sigla",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Fluxo" : {
+      "@id" : "http://purl.org/caed_a5/ontology#Fluxo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "DataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DataProperty"
+    },
+    "Aprendizagem" : {
+      "@id" : "http://purl.org/caed_a5/ontology#Aprendizagem",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "@type" : "@id"
+    },
+    "Ideb" : {
+      "@id" : "http://purl.org/caed_a5/ontology#Ideb"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Região" : {
+      "@id" : "http://purl.org/caed_a5/ontology#Região",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "temIdeb" : {
+      "@id" : "http://purl.org/caed_a5/ontology#temIdeb",
+      "@type" : "@id"
+    }
+  }
+}

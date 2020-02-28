@@ -1,0 +1,44 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://purl.org/caed_a5/ontology#Ideb" "http://purl.org/caed_a5/ontology#Estado" ; /*classes style*/
+	"http://purl.org/caed_a5/ontology#Evolucao" -> "owl:DataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://purl.org/caed_a5/ontology#Aprendizagem" -> "owl:DataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://purl.org/caed_a5/ontology#Regi?o" -> "owl:DataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://purl.org/caed_a5/ontology#temIdeb" -> "owl:ObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://purl.org/caed_a5/ontology#Fluxo" -> "owl:DataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://purl.org/caed_a5/ontology#Sigla" -> "owl:DataProperty" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "http://purl.org/caed_a5/ontology#Evolucao" [ label = "rdf:first" ];
+	"NULL" -> "http://purl.org/caed_a5/ontology#nota" [ label = "rdf:first" ];
+	"NULL" -> "4d8c4787:1708d8c34f9:-7fec" [ label = "rdf:rest" ];
+	"NULL" -> "4d8c4787:1708d8c34f9:-7fef" [ label = "rdf:rest" ];
+	"NULL" -> "http://purl.org/caed_a5/ontology#temIdeb" [ label = "owl:onProperty" ];
+	"NULL" -> "http://purl.org/caed_a5/ontology#Fluxo" [ label = "rdf:first" ];
+	"NULL" -> "4d8c4787:1708d8c34f9:-7fe8" [ label = "rdf:rest" ];
+	"NULL" -> "http://purl.org/caed_a5/ontology#Aprendizagem" [ label = "rdf:first" ];
+	"NULL" -> "4d8c4787:1708d8c34f9:-7ff0" [ label = "owl:members" ];
+	"NULL" -> "4d8c4787:1708d8c34f9:-7feb" [ label = "rdf:rest" ];
+	"NULL" -> "4d8c4787:1708d8c34f9:-7fee" [ label = "rdf:rest" ];
+	"NULL" -> "http://purl.org/caed_a5/ontology#Estado" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "http://purl.org/caed_a5/ontology#Sigla" [ label = "rdf:first" ];
+	"NULL" -> "4d8c4787:1708d8c34f9:-7fe9" [ label = "owl:members" ];
+	"NULL" -> "4d8c4787:1708d8c34f9:-7fe7" [ label = "rdf:rest" ];
+	"NULL" -> "http://purl.org/caed_a5/ontology#Regi?o" [ label = "rdf:first" ];
+	"NULL" -> "4d8c4787:1708d8c34f9:-7fed" [ label = "rdf:rest" ];
+	"NULL" -> "owl:ObjectProperty" [ label = "owl:onProperty" ];
+	"NULL" -> "http://purl.org/caed_a5/ontology#Ideb" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "http://purl.org/caed_a5/ontology#Estado" [ label = "rdf:first" ];
+	"http://purl.org/caed_a5/ontology#nota" -> "owl:DataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://purl.org/caed_a5/ontology#Estado" -> "http://purl.org/caed_a5/ontology#Ideb" [ label = "owl:disjointWith" ];
+	"http://purl.org/caed_a5/ontology#Estado" -> "owl:DataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://purl.org/caed_a5/ontology" -> "http://creativecommons.org/licenses/by/3.0/" [ label = "dct:license" ];
+	"owl:Thing" -> "xsd:float" [ label = "http://purl.org/caed_a5/ontology#Aprendizagem" ];
+	"owl:Thing" -> "xsd:double" [ label = "http://purl.org/caed_a5/ontology#Evolucao" ];
+	"owl:Thing" -> "xsd:string" [ label = "http://purl.org/caed_a5/ontology#Regi?o" ];
+	"owl:Thing" -> "xsd:float" [ label = "http://purl.org/caed_a5/ontology#Fluxo" ];
+	"owl:Thing" -> "xsd:string" [ label = "http://purl.org/caed_a5/ontology#Sigla" ];
+	"owl:Thing" -> "xsd:string" [ label = "http://purl.org/caed_a5/ontology#Estado" ];
+	"owl:Thing" -> "xsd:float" [ label = "http://purl.org/caed_a5/ontology#nota" ];
+
+}
