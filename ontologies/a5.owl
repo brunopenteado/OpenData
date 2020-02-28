@@ -46,7 +46,7 @@
     <!-- http://purl.org/caed_a5/ontology#temIdeb -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/caed_a5/ontology#temIdeb">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/caed_a5/ontology#temIdeb"/>
@@ -80,7 +80,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/caed_a5/ontology#Ideb"/>
             </owl:Restriction>
         </rdfs:domain>
@@ -97,7 +97,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/caed_a5/ontology#Ideb"/>
             </owl:Restriction>
         </rdfs:domain>
@@ -114,13 +114,13 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/caed_a5/ontology#Estado"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/caed_a5/ontology#Ideb"/>
             </owl:Restriction>
         </rdfs:domain>
@@ -135,7 +135,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/caed_a5/ontology#Ideb"/>
             </owl:Restriction>
         </rdfs:domain>
@@ -152,7 +152,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/caed_a5/ontology#Estado"/>
             </owl:Restriction>
         </rdfs:domain>
@@ -169,13 +169,13 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/caed_a5/ontology#Estado"/>
             </owl:Restriction>
         </rdfs:domain>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/caed_a5/ontology#Ideb"/>
             </owl:Restriction>
         </rdfs:domain>
@@ -192,7 +192,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://purl.org/caed_a5/ontology#Ideb"/>
             </owl:Restriction>
         </rdfs:domain>
