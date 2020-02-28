@@ -1,0 +1,179 @@
+@prefix : <http://purl.org/caed_a5/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/caed_a5/ontology> .
+
+<http://purl.org/caed_a5/ontology> rdf:type owl:Ontology ;
+                                    <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/> ;
+                                    rdfs:comment "Ontologia para descrição do IDEB por estados brasileiros" ;
+                                    owl:versionInfo 1.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/caed_a5/ontology#temIdeb
+:temIdeb rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain [ rdf:type owl:Restriction ;
+                       owl:onProperty :temIdeb ;
+                       owl:someValuesFrom :Estado
+                     ] ;
+         rdfs:range [ rdf:type owl:Restriction ;
+                      owl:onProperty :temIdeb ;
+                      owl:someValuesFrom :Ideb
+                    ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/caed_a5/ontology#Aprendizagem
+:Aprendizagem rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain [ rdf:type owl:Restriction ;
+                            owl:onProperty owl:topObjectProperty ;
+                            owl:someValuesFrom :Ideb
+                          ] ;
+              rdfs:range xsd:float ;
+              rdfs:comment "Aprendizagem" ;
+              rdfs:label "Aprendizagem" .
+
+
+###  http://purl.org/caed_a5/ontology#Estado
+:Estado rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain [ rdf:type owl:Restriction ;
+                      owl:onProperty owl:topObjectProperty ;
+                      owl:someValuesFrom :Estado
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty owl:topObjectProperty ;
+                      owl:someValuesFrom :Ideb
+                    ] ;
+        rdfs:range xsd:string .
+
+
+###  http://purl.org/caed_a5/ontology#Evolucao
+:Evolucao rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain [ rdf:type owl:Restriction ;
+                        owl:onProperty owl:topObjectProperty ;
+                        owl:someValuesFrom :Ideb
+                      ] ;
+          rdfs:range xsd:double ;
+          rdfs:comment "Evolucao" ;
+          rdfs:label "Evolucao" .
+
+
+###  http://purl.org/caed_a5/ontology#Fluxo
+:Fluxo rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain [ rdf:type owl:Restriction ;
+                     owl:onProperty owl:topObjectProperty ;
+                     owl:someValuesFrom :Ideb
+                   ] ;
+       rdfs:range xsd:float ;
+       rdfs:comment "Fluxo" ;
+       rdfs:label "Fluxo" .
+
+
+###  http://purl.org/caed_a5/ontology#Região
+:Região rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain [ rdf:type owl:Restriction ;
+                      owl:onProperty owl:topObjectProperty ;
+                      owl:someValuesFrom :Estado
+                    ] ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Região" ;
+        rdfs:label "Região" .
+
+
+###  http://purl.org/caed_a5/ontology#Sigla
+:Sigla rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain [ rdf:type owl:Restriction ;
+                     owl:onProperty owl:topObjectProperty ;
+                     owl:someValuesFrom :Estado
+                   ] ,
+                   [ rdf:type owl:Restriction ;
+                     owl:onProperty owl:topObjectProperty ;
+                     owl:someValuesFrom :Ideb
+                   ] ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Sigla do Estado" ;
+       rdfs:label "Sigla" .
+
+
+###  http://purl.org/caed_a5/ontology#nota
+:nota rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain [ rdf:type owl:Restriction ;
+                    owl:onProperty owl:topObjectProperty ;
+                    owl:someValuesFrom :Ideb
+                  ] ;
+      rdfs:range xsd:float ;
+      rdfs:comment "Nota" ;
+      rdfs:label "nota" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/caed_a5/ontology#Estado
+:Estado rdf:type owl:Class ;
+        owl:disjointWith :Ideb .
+
+
+###  http://purl.org/caed_a5/ontology#Ideb
+:Ideb rdf:type owl:Class ;
+      rdfs:comment "Ideb" ;
+      rdfs:label "Ideb" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Estado rdfs:comment "Nome do Estado" ;
+        rdfs:label "Estado" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :Aprendizagem
+                :Estado
+                :Evolucao
+                :Fluxo
+                :Sigla
+                :nota
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :Estado
+                :Região
+                :Sigla
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
