@@ -77,7 +77,7 @@
     <!-- http://purl.org/caed_a5/ontology#Evolucao -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/caed_a5/ontology#Evolucao">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -94,7 +94,7 @@
     <!-- http://purl.org/caed_a5/ontology#Aprendizagem -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/caed_a5/ontology#Aprendizagem">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -111,7 +111,7 @@
     <!-- http://purl.org/caed_a5/ontology#Estado -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/caed_a5/ontology#Estado">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -132,7 +132,7 @@
     <!-- http://purl.org/caed_a5/ontology#Fluxo -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/caed_a5/ontology#Fluxo">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -149,7 +149,7 @@
     <!-- http://purl.org/caed_a5/ontology#Região -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/caed_a5/ontology#Região">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -166,7 +166,7 @@
     <!-- http://purl.org/caed_a5/ontology#Sigla -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/caed_a5/ontology#Sigla">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -189,7 +189,7 @@
     <!-- http://purl.org/caed_a5/ontology#nota -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/caed_a5/ontology#nota">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
