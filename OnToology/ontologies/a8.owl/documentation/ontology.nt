@@ -1,0 +1,107 @@
+<http://purl.org/caed_a8/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/caed_a8/ontology> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/> .
+<http://purl.org/caed_a8/ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologia para descrição do IDEB por estados brasileiros." .
+<http://purl.org/caed_a8/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/caed_a8/ontology#temIdeb
+<http://purl.org/caed_a8/ontology#temIdeb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/caed_a8/ontology#temIdeb> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a8/ontology#Estado> .
+<http://purl.org/caed_a8/ontology#temIdeb> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/caed_a8/ontology#Ideb> .
+<http://purl.org/caed_a8/ontology#temIdeb> <http://www.w3.org/2000/01/rdf-schema#comment> "Tem IDEB" .
+<http://purl.org/caed_a8/ontology#temIdeb> <http://www.w3.org/2000/01/rdf-schema#label> "temIdeb" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/caed_a8/ontology#aprendizado
+<http://purl.org/caed_a8/ontology#aprendizado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a8/ontology#aprendizado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a8/ontology#Ideb> .
+<http://purl.org/caed_a8/ontology#aprendizado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caed_a8/ontology#aprendizado> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a8/ontology#ciclo> .
+<http://purl.org/caed_a8/ontology#aprendizado> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a8/ontology#evolucao> .
+<http://purl.org/caed_a8/ontology#aprendizado> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a8/ontology#fluxo> .
+<http://purl.org/caed_a8/ontology#aprendizado> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a8/ontology#nota> .
+<http://purl.org/caed_a8/ontology#aprendizado> <http://www.w3.org/2000/01/rdf-schema#comment> "Aprendizado" .
+<http://purl.org/caed_a8/ontology#aprendizado> <http://www.w3.org/2000/01/rdf-schema#label> "aprendizado" .
+# 
+# http://purl.org/caed_a8/ontology#ciclo
+<http://purl.org/caed_a8/ontology#ciclo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a8/ontology#ciclo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a8/ontology#Ideb> .
+<http://purl.org/caed_a8/ontology#ciclo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/caed_a8/ontology#ciclo> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a8/ontology#evolucao> .
+<http://purl.org/caed_a8/ontology#ciclo> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a8/ontology#fluxo> .
+<http://purl.org/caed_a8/ontology#ciclo> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a8/ontology#nota> .
+<http://purl.org/caed_a8/ontology#ciclo> <http://www.w3.org/2000/01/rdf-schema#comment> "Ciclo" .
+<http://purl.org/caed_a8/ontology#ciclo> <http://www.w3.org/2000/01/rdf-schema#label> "ciclo" .
+# 
+# http://purl.org/caed_a8/ontology#evolucao
+<http://purl.org/caed_a8/ontology#evolucao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a8/ontology#evolucao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a8/ontology#Ideb> .
+<http://purl.org/caed_a8/ontology#evolucao> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caed_a8/ontology#evolucao> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a8/ontology#fluxo> .
+<http://purl.org/caed_a8/ontology#evolucao> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a8/ontology#nota> .
+<http://purl.org/caed_a8/ontology#evolucao> <http://www.w3.org/2000/01/rdf-schema#comment> "Evolução" .
+<http://purl.org/caed_a8/ontology#evolucao> <http://www.w3.org/2000/01/rdf-schema#label> "evolucao" .
+# 
+# http://purl.org/caed_a8/ontology#fluxo
+<http://purl.org/caed_a8/ontology#fluxo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a8/ontology#fluxo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a8/ontology#Ideb> .
+<http://purl.org/caed_a8/ontology#fluxo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caed_a8/ontology#fluxo> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a8/ontology#nota> .
+<http://purl.org/caed_a8/ontology#fluxo> <http://www.w3.org/2000/01/rdf-schema#comment> "Fluxo" .
+<http://purl.org/caed_a8/ontology#fluxo> <http://www.w3.org/2000/01/rdf-schema#label> "fluxo" .
+# 
+# http://purl.org/caed_a8/ontology#nota
+<http://purl.org/caed_a8/ontology#nota> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a8/ontology#nota> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a8/ontology#Ideb> .
+<http://purl.org/caed_a8/ontology#nota> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caed_a8/ontology#nota> <http://www.w3.org/2000/01/rdf-schema#comment> "Nota" .
+<http://purl.org/caed_a8/ontology#nota> <http://www.w3.org/2000/01/rdf-schema#label> "nota" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/caed_a8/ontology#Estado
+<http://purl.org/caed_a8/ontology#Estado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/caed_a8/ontology#Estado> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/caed_a8/ontology#Ideb> .
+<http://purl.org/caed_a8/ontology#Estado> <http://www.w3.org/2000/01/rdf-schema#comment> "Estado do Brasil." .
+<http://purl.org/caed_a8/ontology#Estado> <http://www.w3.org/2000/01/rdf-schema#label> "Estado" .
+# 
+# http://purl.org/caed_a8/ontology#Ideb
+<http://purl.org/caed_a8/ontology#Ideb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/caed_a8/ontology#Ideb> <http://www.w3.org/2000/01/rdf-schema#comment> "Ideb do estado" .
+<http://purl.org/caed_a8/ontology#Ideb> <http://www.w3.org/2000/01/rdf-schema#label> "Ideb" .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
