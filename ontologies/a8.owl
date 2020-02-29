@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/caeda8/ontology#"
+     xml:base="http://purl.org/caeda8/ontology"
+     xmlns:dbo="http://dbpedia.org/ontology/"
+     xmlns:dbp="http://dbpedia.org/property/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:time="http://www.w3.org/2006/time#">
+    <owl:Ontology rdf:about="http://purl.org/caeda8/ontology">
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontologia para descrição do IDEB por estados brasileiros.</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/caeda8/ontology#temIdeb -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/caeda8/ontology#temIdeb">
+        <rdfs:domain rdf:resource="http://purl.org/caeda8/ontology#Estado"/>
+        <rdfs:range rdf:resource="http://purl.org/caeda8/ontology#Ideb"/>
+        <rdfs:comment>Tem IDEB</rdfs:comment>
+        <rdfs:label>temIdeb</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/caeda8/ontology#aprendizado -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caeda8/ontology#aprendizado">
+        <rdfs:domain rdf:resource="http://purl.org/caeda8/ontology#Ideb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caeda8/ontology#ciclo"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caeda8/ontology#evolucao"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caeda8/ontology#fluxo"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caeda8/ontology#nota"/>
+        <rdfs:comment>Aprendizado</rdfs:comment>
+        <rdfs:label>aprendizado</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caeda8/ontology#ciclo -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caeda8/ontology#ciclo">
+        <rdfs:domain rdf:resource="http://purl.org/caeda8/ontology#Ideb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caeda8/ontology#evolucao"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caeda8/ontology#fluxo"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caeda8/ontology#nota"/>
+        <rdfs:comment>Ciclo</rdfs:comment>
+        <rdfs:label>ciclo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caeda8/ontology#evolucao -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caeda8/ontology#evolucao">
+        <rdfs:domain rdf:resource="http://purl.org/caeda8/ontology#Ideb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caeda8/ontology#fluxo"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caeda8/ontology#nota"/>
+        <rdfs:comment>Evolução</rdfs:comment>
+        <rdfs:label>evolucao</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caeda8/ontology#fluxo -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caeda8/ontology#fluxo">
+        <rdfs:domain rdf:resource="http://purl.org/caeda8/ontology#Ideb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/caeda8/ontology#nota"/>
+        <rdfs:comment>Fluxo</rdfs:comment>
+        <rdfs:label>fluxo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/caeda8/ontology#nota -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/caeda8/ontology#nota">
+        <rdfs:domain rdf:resource="http://purl.org/caeda8/ontology#Ideb"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Nota</rdfs:comment>
+        <rdfs:label>nota</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/caeda8/ontology#Estado -->
+
+    <owl:Class rdf:about="http://purl.org/caeda8/ontology#Estado">
+        <owl:disjointWith rdf:resource="http://purl.org/caeda8/ontology#Ideb"/>
+        <rdfs:comment>Estado do Brasil.</rdfs:comment>
+        <rdfs:label>Estado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/caeda8/ontology#Ideb -->
+
+    <owl:Class rdf:about="http://purl.org/caeda8/ontology#Ideb">
+        <rdfs:comment>Ideb do estado</rdfs:comment>
+        <rdfs:label>Ideb</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
