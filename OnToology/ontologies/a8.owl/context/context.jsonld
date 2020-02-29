@@ -1,0 +1,46 @@
+{
+  "@context" : {
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Estado" : {
+      "@id" : "http://purl.org/caeda8/ontology#Estado"
+    },
+    "nota" : {
+      "@id" : "http://purl.org/caeda8/ontology#nota",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "fluxo" : {
+      "@id" : "http://purl.org/caeda8/ontology#fluxo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "evolucao" : {
+      "@id" : "http://purl.org/caeda8/ontology#evolucao",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "aprendizado" : {
+      "@id" : "http://purl.org/caeda8/ontology#aprendizado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Ideb" : {
+      "@id" : "http://purl.org/caeda8/ontology#Ideb"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "ciclo" : {
+      "@id" : "http://purl.org/caeda8/ontology#ciclo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "temIdeb" : {
+      "@id" : "http://purl.org/caeda8/ontology#temIdeb",
+      "@type" : "@id"
+    }
+  }
+}

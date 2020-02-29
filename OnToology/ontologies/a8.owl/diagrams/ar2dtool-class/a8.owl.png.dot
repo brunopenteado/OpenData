@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Ideb" "base:Estado" ; /*classes style*/
+	"base:evolucao" -> "base:nota" [ label = "owl:propertyDisjointWith" ];
+	"base:evolucao" -> "base:fluxo" [ label = "owl:propertyDisjointWith" ];
+	"base:Estado" -> "base:Ideb" [ label = "owl:disjointWith" ];
+	"base:ciclo" -> "base:nota" [ label = "owl:propertyDisjointWith" ];
+	"base:ciclo" -> "base:fluxo" [ label = "owl:propertyDisjointWith" ];
+	"base:ciclo" -> "base:evolucao" [ label = "owl:propertyDisjointWith" ];
+	"base:fluxo" -> "base:nota" [ label = "owl:propertyDisjointWith" ];
+	"http://purl.org/caeda8/ontology" -> "http://creativecommons.org/licenses/by/3.0/" [ label = "dct:license" ];
+	"base:aprendizado" -> "base:nota" [ label = "owl:propertyDisjointWith" ];
+	"base:aprendizado" -> "base:fluxo" [ label = "owl:propertyDisjointWith" ];
+	"base:aprendizado" -> "base:evolucao" [ label = "owl:propertyDisjointWith" ];
+	"base:aprendizado" -> "base:ciclo" [ label = "owl:propertyDisjointWith" ];
+	"base:Ideb" -> "xsd:double" [ label = "base:aprendizado" ];
+	"base:Estado" -> "base:Ideb" [ label = "base:temIdeb" ];
+	"base:Ideb" -> "xsd:string" [ label = "base:ciclo" ];
+	"base:Ideb" -> "xsd:double" [ label = "base:nota" ];
+	"base:Ideb" -> "xsd:double" [ label = "base:evolucao" ];
+	"base:Ideb" -> "xsd:double" [ label = "base:fluxo" ];
+
+}
