@@ -1,0 +1,160 @@
+<http://purl.org/caed_a5/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/caed_a5/ontology> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/> .
+<http://purl.org/caed_a5/ontology> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontologia para descrição do IDEB por estados brasileiros" .
+<http://purl.org/caed_a5/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/caed_a5/ontology#temIdeb
+<http://purl.org/caed_a5/ontology#temIdeb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2002/07/owl#ObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/caed_a5/ontology#temIdeb> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/caed_a5/ontology#temIdeb> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a5/ontology#Estado> .
+<http://purl.org/caed_a5/ontology#temIdeb> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/caed_a5/ontology#Ideb> .
+# 
+# http://www.w3.org/2002/07/owl#ObjectProperty
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/caed_a5/ontology#Aprendizagem
+<http://purl.org/caed_a5/ontology#Aprendizagem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a5/ontology#Aprendizagem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#DataProperty> .
+<http://www.w3.org/2002/07/owl#DataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a5/ontology#Aprendizagem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a5/ontology#Ideb> .
+<http://purl.org/caed_a5/ontology#Aprendizagem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://purl.org/caed_a5/ontology#Aprendizagem> <http://www.w3.org/2000/01/rdf-schema#comment> "Aprendizagem" .
+<http://purl.org/caed_a5/ontology#Aprendizagem> <http://www.w3.org/2000/01/rdf-schema#label> "Aprendizagem" .
+# 
+# http://purl.org/caed_a5/ontology#Estado
+<http://purl.org/caed_a5/ontology#Estado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/caed_a5/ontology#Evolucao
+<http://purl.org/caed_a5/ontology#Evolucao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a5/ontology#Evolucao> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#DataProperty> .
+<http://purl.org/caed_a5/ontology#Evolucao> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a5/ontology#Ideb> .
+<http://purl.org/caed_a5/ontology#Evolucao> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://purl.org/caed_a5/ontology#Evolucao> <http://www.w3.org/2000/01/rdf-schema#comment> "Evolucao" .
+<http://purl.org/caed_a5/ontology#Evolucao> <http://www.w3.org/2000/01/rdf-schema#label> "Evolucao" .
+# 
+# http://purl.org/caed_a5/ontology#Fluxo
+<http://purl.org/caed_a5/ontology#Fluxo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a5/ontology#Fluxo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#DataProperty> .
+<http://purl.org/caed_a5/ontology#Fluxo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a5/ontology#Ideb> .
+<http://purl.org/caed_a5/ontology#Fluxo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://purl.org/caed_a5/ontology#Fluxo> <http://www.w3.org/2000/01/rdf-schema#comment> "Fluxo" .
+<http://purl.org/caed_a5/ontology#Fluxo> <http://www.w3.org/2000/01/rdf-schema#label> "Fluxo" .
+# 
+# http://purl.org/caed_a5/ontology#Região
+<http://purl.org/caed_a5/ontology#Regi\u00E3o> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a5/ontology#Regi\u00E3o> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#DataProperty> .
+<http://purl.org/caed_a5/ontology#Regi\u00E3o> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a5/ontology#Estado> .
+<http://purl.org/caed_a5/ontology#Regi\u00E3o> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/caed_a5/ontology#Regi\u00E3o> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <http://purl.org/caed_a5/ontology#Sigla> .
+<http://purl.org/caed_a5/ontology#Regi\u00E3o> <http://www.w3.org/2000/01/rdf-schema#comment> "Região" .
+<http://purl.org/caed_a5/ontology#Regi\u00E3o> <http://www.w3.org/2000/01/rdf-schema#label> "Região" .
+# 
+# http://purl.org/caed_a5/ontology#Sigla
+<http://purl.org/caed_a5/ontology#Sigla> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a5/ontology#Sigla> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#DataProperty> .
+<http://purl.org/caed_a5/ontology#Sigla> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a5/ontology#Estado> .
+<http://purl.org/caed_a5/ontology#Sigla> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a5/ontology#Ideb> .
+<http://purl.org/caed_a5/ontology#Sigla> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/caed_a5/ontology#Sigla> <http://www.w3.org/2000/01/rdf-schema#comment> "Sigla do Estado" .
+<http://purl.org/caed_a5/ontology#Sigla> <http://www.w3.org/2000/01/rdf-schema#label> "Sigla" .
+# 
+# http://purl.org/caed_a5/ontology#nota
+<http://purl.org/caed_a5/ontology#nota> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/caed_a5/ontology#nota> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#DataProperty> .
+<http://purl.org/caed_a5/ontology#nota> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/caed_a5/ontology#Ideb> .
+<http://purl.org/caed_a5/ontology#nota> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://purl.org/caed_a5/ontology#nota> <http://www.w3.org/2000/01/rdf-schema#comment> "Nota" .
+<http://purl.org/caed_a5/ontology#nota> <http://www.w3.org/2000/01/rdf-schema#label> "nota" .
+# 
+# http://www.w3.org/2002/07/owl#DataProperty
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/caed_a5/ontology#Estado
+<http://purl.org/caed_a5/ontology#Estado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/caed_a5/ontology#Estado> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/caed_a5/ontology#Ideb> .
+# 
+# http://purl.org/caed_a5/ontology#Ideb
+<http://purl.org/caed_a5/ontology#Ideb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/caed_a5/ontology#Ideb> <http://www.w3.org/2000/01/rdf-schema#comment> "Ideb" .
+<http://purl.org/caed_a5/ontology#Ideb> <http://www.w3.org/2000/01/rdf-schema#label> "Ideb" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/caed_a5/ontology#Estado> <http://www.w3.org/2000/01/rdf-schema#comment> "Nome do Estado" .
+<http://purl.org/caed_a5/ontology#Estado> <http://www.w3.org/2000/01/rdf-schema#label> "Estado" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointProperties> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/caed_a5/ontology#Aprendizagem> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/caed_a5/ontology#Estado> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/caed_a5/ontology#Evolucao> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/caed_a5/ontology#Fluxo> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/caed_a5/ontology#Sigla> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/caed_a5/ontology#nota> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
