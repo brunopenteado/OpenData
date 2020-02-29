@@ -1,0 +1,60 @@
+{
+  "@context" : {
+    "hasFluxo2015" : {
+      "@id" : "http://purl.org/caed_a1/ontology#hasFluxo2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasSigla" : {
+      "@id" : "http://purl.org/caed_a1/ontology#hasSigla"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "hasAprendizado2015" : {
+      "@id" : "http://purl.org/caed_a1/ontology#hasAprendizado2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "hasIdeb" : {
+      "@id" : "http://purl.org/caed_a1/ontology#hasIdeb",
+      "@type" : "@id"
+    },
+    "hasAprendizado2017" : {
+      "@id" : "http://purl.org/caed_a1/ontology#hasAprendizado2017",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Estados_do_Brasil" : {
+      "@id" : "http://purl.org/caed_a1/ontology#Estados_do_Brasil"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasEvolucao2017" : {
+      "@id" : "http://purl.org/caed_a1/ontology#hasEvolucao2017",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasFluxo2017" : {
+      "@id" : "http://purl.org/caed_a1/ontology#hasFluxo2017",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "hasNotaIDEB2015" : {
+      "@id" : "http://purl.org/caed_a1/ontology#hasNotaIDEB2015",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "IDEB_2017_-_Anos_Finais" : {
+      "@id" : "http://purl.org/caed_a1/ontology#IDEB_2017_-_Anos_Finais"
+    },
+    "IDEB_2015_-_Anos_Finais" : {
+      "@id" : "http://purl.org/caed_a1/ontology#IDEB_2015_-_Anos_Finais"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "hasNotaIDEB2017" : {
+      "@id" : "http://purl.org/caed_a1/ontology#hasNotaIDEB2017",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    }
+  }
+}

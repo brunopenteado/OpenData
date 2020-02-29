@@ -1,0 +1,20 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "ex:Estados_do_Brasil" "ex:IDEB_2017_-_Anos_Finais" "ex:IDEB_2015_-_Anos_Finais" ; /*classes style*/
+	"ex:" -> "http://creativecommons.org/licenses/by/3.0/%20" [ label = "dc:license" ];
+	"ex:hasNotaIDEB2015" -> "ex:hasNotaIDEB2017" [ label = "owl:propertyDisjointWith" ];
+	"ex:IDEB_2015_-_Anos_Finais" -> "ex:IDEB_2017_-_Anos_Finais" [ label = "owl:disjointWith" ];
+	"ex:hasFluxo2015" -> "ex:hasFluxo2017" [ label = "owl:propertyDisjointWith" ];
+	"ex:Estados_do_Brasil" -> "ex:IDEB_2017_-_Anos_Finais" [ label = "owl:disjointWith" ];
+	"ex:Estados_do_Brasil" -> "ex:IDEB_2015_-_Anos_Finais" [ label = "owl:disjointWith" ];
+	"ex:hasAprendizado2015" -> "ex:hasAprendizado2017" [ label = "owl:propertyDisjointWith" ];
+	"ex:IDEB_2015_-_Anos_Finais" -> "xsd:double" [ label = "ex:hasNotaIDEB2015" ];
+	"ex:IDEB_2015_-_Anos_Finais" -> "xsd:double" [ label = "ex:hasFluxo2015" ];
+	"ex:IDEB_2017_-_Anos_Finais" -> "xsd:double" [ label = "ex:hasFluxo2017" ];
+	"ex:IDEB_2015_-_Anos_Finais" -> "xsd:double" [ label = "ex:hasAprendizado2015" ];
+	"ex:IDEB_2017_-_Anos_Finais" -> "xsd:double" [ label = "ex:hasEvolucao2017" ];
+	"ex:IDEB_2017_-_Anos_Finais" -> "xsd:double" [ label = "ex:hasAprendizado2017" ];
+	"ex:IDEB_2017_-_Anos_Finais" -> "xsd:double" [ label = "ex:hasNotaIDEB2017" ];
+
+}

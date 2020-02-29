@@ -1,0 +1,124 @@
+@prefix : <http://purl.org/caed_a1/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/caed_a1/ontology#> .
+
+<http://purl.org/caed_a1/ontology#> rdf:type owl:Ontology ;
+                                     <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/%20> ;
+                                     owl:versionInfo "1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/caed_a1/ontology#hasIdeb
+:hasIdeb rdf:type owl:ObjectProperty ;
+         rdfs:comment "Conecta um estado à uma nota do IDEB" ;
+         rdfs:label "hasIdeb" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/caed_a1/ontology#hasAprendizado2015
+:hasAprendizado2015 rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :IDEB_2015_-_Anos_Finais ;
+                    rdfs:range xsd:double ;
+                    owl:propertyDisjointWith :hasAprendizado2017 ;
+                    rdfs:comment "Aprendizado do IDEB de 2015" ;
+                    rdfs:label "hasAprendizado2015" .
+
+
+###  http://purl.org/caed_a1/ontology#hasAprendizado2017
+:hasAprendizado2017 rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :IDEB_2017_-_Anos_Finais ;
+                    rdfs:range xsd:double ;
+                    rdfs:comment "Aprendizado do IDEB de 2017" ;
+                    rdfs:label "hasAprendizado2017" .
+
+
+###  http://purl.org/caed_a1/ontology#hasEvolucao2017
+:hasEvolucao2017 rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :IDEB_2017_-_Anos_Finais ;
+                 rdfs:range xsd:double ;
+                 rdfs:comment "Evolucao do IDEB de 2015 para 2017" ;
+                 rdfs:label "hasEvolucao2017" .
+
+
+###  http://purl.org/caed_a1/ontology#hasFluxo2015
+:hasFluxo2015 rdf:type owl:DatatypeProperty ;
+              rdfs:domain :IDEB_2015_-_Anos_Finais ;
+              rdfs:range xsd:double ;
+              owl:propertyDisjointWith :hasFluxo2017 ;
+              rdfs:comment "Fluxo do IDEB de 2015" ;
+              rdfs:label "hasFluxo2015" .
+
+
+###  http://purl.org/caed_a1/ontology#hasFluxo2017
+:hasFluxo2017 rdf:type owl:DatatypeProperty ;
+              rdfs:domain :IDEB_2017_-_Anos_Finais ;
+              rdfs:range xsd:double ;
+              rdfs:comment "Fluxo do IDEB de 2017" ;
+              rdfs:label "hasFluxo2017" .
+
+
+###  http://purl.org/caed_a1/ontology#hasNotaIDEB2015
+:hasNotaIDEB2015 rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :IDEB_2015_-_Anos_Finais ;
+                 rdfs:range xsd:double ;
+                 owl:propertyDisjointWith :hasNotaIDEB2017 ;
+                 rdfs:comment "Nota do IDEB 2015" ;
+                 rdfs:label "hasNotaIDEB2015" .
+
+
+###  http://purl.org/caed_a1/ontology#hasNotaIDEB2017
+:hasNotaIDEB2017 rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :IDEB_2017_-_Anos_Finais ;
+                 rdfs:range xsd:double ;
+                 rdfs:comment "Nota do IDEB 2017" ;
+                 rdfs:label "hasNotaIDEB2017" .
+
+
+###  http://purl.org/caed_a1/ontology#hasSigla
+:hasSigla rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Sigla do estado" ;
+          rdfs:label "hasSigla" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/caed_a1/ontology#Estados_do_Brasil
+:Estados_do_Brasil rdf:type owl:Class ;
+                   owl:disjointWith :IDEB_2015_-_Anos_Finais ,
+                                    :IDEB_2017_-_Anos_Finais ;
+                   rdfs:comment "Dataset contendo os estados do Brasil" .
+
+
+###  http://purl.org/caed_a1/ontology#IDEB_2015_-_Anos_Finais
+:IDEB_2015_-_Anos_Finais rdf:type owl:Class ;
+                         owl:disjointWith :IDEB_2017_-_Anos_Finais ;
+                         rdfs:comment "Dataset contendo as notas do IDEB por estado do ano de 2015" ;
+                         rdfs:label "IDEB 2015 - Anos Finais" .
+
+
+###  http://purl.org/caed_a1/ontology#IDEB_2017_-_Anos_Finais
+:IDEB_2017_-_Anos_Finais rdf:type owl:Class ;
+                         rdfs:comment "Dataset contendo as notas do IDEB por estado do ano de 2017" ;
+                         rdfs:label "IDEB 2017 - Anos Finais" .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
