@@ -1,0 +1,103 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ex: <http://purl.org/caed_a1/ontology#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbp: <http://pt.dbpedia.org/property/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://purl.org/caed_a1/ontology#>
+  a owl:Ontology ;
+  owl:versionInfo "1.0" ;
+  dc:license <http://creativecommons.org/licenses/by/3.0/%20> .
+
+<http://purl.org/caed_a1/ontology#hasIdeb>
+  a owl:ObjectProperty ;
+  rdfs:label "hasIdeb" ;
+  rdfs:comment "Conecta um estado à uma nota do IDEB" .
+
+<http://purl.org/caed_a1/ontology#hasAprendizado2015>
+  a owl:DatatypeProperty ;
+  rdfs:label "hasAprendizado2015" ;
+  rdfs:comment "Aprendizado do IDEB de 2015" ;
+  rdfs:domain <http://purl.org/caed_a1/ontology#IDEB_2015_-_Anos_Finais> ;
+  rdfs:range xsd:double ;
+  owl:propertyDisjointWith <http://purl.org/caed_a1/ontology#hasAprendizado2017> .
+
+<http://purl.org/caed_a1/ontology#IDEB_2015_-_Anos_Finais>
+  a owl:Class ;
+  rdfs:label "IDEB 2015 - Anos Finais" ;
+  rdfs:comment "Dataset contendo as notas do IDEB por estado do ano de 2015" ;
+  owl:disjointWith <http://purl.org/caed_a1/ontology#IDEB_2017_-_Anos_Finais> .
+
+<http://purl.org/caed_a1/ontology#hasAprendizado2017>
+  a owl:DatatypeProperty ;
+  rdfs:label "hasAprendizado2017" ;
+  rdfs:comment "Aprendizado do IDEB de 2017" ;
+  rdfs:domain <http://purl.org/caed_a1/ontology#IDEB_2017_-_Anos_Finais> ;
+  rdfs:range xsd:double .
+
+<http://purl.org/caed_a1/ontology#IDEB_2017_-_Anos_Finais>
+  a owl:Class ;
+  rdfs:label "IDEB 2017 - Anos Finais" ;
+  rdfs:comment "Dataset contendo as notas do IDEB por estado do ano de 2017" .
+
+<http://purl.org/caed_a1/ontology#hasEvolucao2017>
+  a owl:DatatypeProperty ;
+  rdfs:label "hasEvolucao2017" ;
+  rdfs:comment "Evolucao do IDEB de 2015 para 2017" ;
+  rdfs:domain <http://purl.org/caed_a1/ontology#IDEB_2017_-_Anos_Finais> ;
+  rdfs:range xsd:double .
+
+<http://purl.org/caed_a1/ontology#hasFluxo2015>
+  a owl:DatatypeProperty ;
+  rdfs:label "hasFluxo2015" ;
+  rdfs:comment "Fluxo do IDEB de 2015" ;
+  rdfs:domain <http://purl.org/caed_a1/ontology#IDEB_2015_-_Anos_Finais> ;
+  rdfs:range xsd:double ;
+  owl:propertyDisjointWith <http://purl.org/caed_a1/ontology#hasFluxo2017> .
+
+<http://purl.org/caed_a1/ontology#hasFluxo2017>
+  a owl:DatatypeProperty ;
+  rdfs:label "hasFluxo2017" ;
+  rdfs:comment "Fluxo do IDEB de 2017" ;
+  rdfs:domain <http://purl.org/caed_a1/ontology#IDEB_2017_-_Anos_Finais> ;
+  rdfs:range xsd:double .
+
+<http://purl.org/caed_a1/ontology#hasNotaIDEB2015>
+  a owl:DatatypeProperty ;
+  rdfs:label "hasNotaIDEB2015" ;
+  rdfs:comment "Nota do IDEB 2015" ;
+  rdfs:domain <http://purl.org/caed_a1/ontology#IDEB_2015_-_Anos_Finais> ;
+  rdfs:range xsd:double ;
+  owl:propertyDisjointWith <http://purl.org/caed_a1/ontology#hasNotaIDEB2017> .
+
+
+<http://purl.org/caed_a1/ontology#hasNotaIDEB2017>
+  a owl:DatatypeProperty ;
+  rdfs:label "hasNotaIDEB2017" ;
+  rdfs:comment "Nota do IDEB 2017" ;
+  rdfs:domain <http://purl.org/caed_a1/ontology#IDEB_2017_-_Anos_Finais> ;
+  rdfs:range xsd:double .
+
+<http://purl.org/caed_a1/ontology#hasSigla>
+  a owl:DatatypeProperty ;
+  rdfs:label "hasSigla" ;
+  rdfs:comment "Sigla do estado" .
+
+<http://purl.org/caed_a1/ontology#Estados_do_Brasil>
+  a owl:Class ;
+  rdfs:comment "Dataset contendo os estados do Brasil" ;
+  owl:disjointWith <http://purl.org/caed_a1/ontology#IDEB_2015_-_Anos_Finais>, <http://purl.org/caed_a1/ontology#IDEB_2017_-_Anos_Finais> .
