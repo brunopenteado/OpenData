@@ -1,1 +1,10 @@
+Arquivos:
+
+O arquivo 'consultaSQL.sql' mostra a consulta utilizada no cruzamentos das diversas bases utilizadas neste trabalho.
+
+O arquivo 'query.csv' traz os resultados da consulta e usadas posteriormente.
+
+O arquivo 'script.txt' traz os comandos básicos para ler o arquivo, pré-processar seus registros e executar as regressões lineares sobre os dados de interesse.
+
+O arquivo 'Desafio.pdf' traz a compilação desses dados, conforme pedido no edital.
 
