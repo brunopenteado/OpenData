@@ -1,0 +1,125 @@
+# Le o retorno do SQL
+# Filtra para usar apenas as escolas que apresentaram Questionário para Diretor no SAEB 2017 (3722 no total)
+col_classes = c("factor", "factor", "character", "character", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "factor", "factor", "numeric", "numeric", "numeric", "numeric", "factor", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor", "factor")
+
+x <- read.csv(file="query_v2.csv", header=T, sep=";", na.strings = c('NULL',''), dec=",", colClasses = col_classes)
+
+# Filtra para usar apenas as escolas do 3EM:
+xem <- subset(x, !is.na(x$IDESP_EM_18)) 
+# Pré-processamento
+xem <- subset(xem, xem$NO_CATEGORIA != '') # só 1 escola nao tem localizacao
+xem <- subset(xem, xem$COMPLEXIDADE_ESCOLAR != 'Nível 1') # só 1 escola neste nivel
+
+
+xaf <- subset(x, !is.na(x$IDESP_AF_18))
+xai <- subset(x, !is.na(x$IDESP_AI_18))
+
+########################################################
+# Criação de escalas TRI
+########################################################
+
+### ACOES ESCOLARES
+admissao <- dplyr::select(xem, c(TX_RESP_Q037, TX_RESP_Q038, TX_RESP_Q039, TX_RESP_Q040, TX_RESP_Q041, TX_RESP_Q042, TX_RESP_Q043, TX_RESP_Q044))
+model_irt <- gpcm(admissao, IRT.param = T)
+Theta <- factor.scores(model_irt, method = "EAP", resp.patterns = admissao)
+xem$AcoesEscolares <- 5 + Theta$score.dat$z1 * 1
+
+admissao <- dplyr::select(xaf, c(TX_RESP_Q037, TX_RESP_Q038, TX_RESP_Q039, TX_RESP_Q040, TX_RESP_Q041, TX_RESP_Q042, TX_RESP_Q043, TX_RESP_Q044))
+model_irt <- gpcm(admissao, IRT.param = T)
+Theta <- factor.scores(model_irt, method = "EAP", resp.patterns = admissao)
+xaf$AcoesEscolares <- 5 + Theta$score.dat$z1 * 1
+
+admissao <- dplyr::select(xai, c(TX_RESP_Q037, TX_RESP_Q038, TX_RESP_Q039, TX_RESP_Q040, TX_RESP_Q041, TX_RESP_Q042, TX_RESP_Q043, TX_RESP_Q044))
+model_irt <- gpcm(admissao, IRT.param = T)
+Theta <- factor.scores(model_irt, method = "EAP", resp.patterns = admissao)
+xai$AcoesEscolares <- 5 + Theta$score.dat$z1 * 1
+
+
+#### PROBLEMAS
+problemas <- dplyr::select(xem, c(TX_RESP_Q067, TX_RESP_Q068, TX_RESP_Q069, TX_RESP_Q070, TX_RESP_Q071, TX_RESP_Q072, TX_RESP_Q073, TX_RESP_Q074, TX_RESP_Q075, TX_RESP_Q076))
+model_irt <- gpcm(problemas, IRT.param = T)
+Theta <- factor.scores(model_irt, method = "EAP", resp.patterns = problemas)
+xem$Problemas <- 5 + Theta$score.dat$z1 * 1
+
+problemas <- dplyr::select(xaf, c(TX_RESP_Q067, TX_RESP_Q068, TX_RESP_Q069, TX_RESP_Q070, TX_RESP_Q071, TX_RESP_Q072, TX_RESP_Q073, TX_RESP_Q074, TX_RESP_Q075, TX_RESP_Q076))
+model_irt <- gpcm(problemas, IRT.param = T)
+Theta <- factor.scores(model_irt, method = "EAP", resp.patterns = problemas)
+xaf$Problemas <- 5 + Theta$score.dat$z1 * 1
+
+problemas <- dplyr::select(xai, c(TX_RESP_Q067, TX_RESP_Q068, TX_RESP_Q069, TX_RESP_Q070, TX_RESP_Q071, TX_RESP_Q072, TX_RESP_Q073, TX_RESP_Q074, TX_RESP_Q075, TX_RESP_Q076))
+model_irt <- gpcm(problemas, IRT.param = T)
+Theta <- factor.scores(model_irt, method = "EAP", resp.patterns = problemas)
+xai$Problemas <- 5 + Theta$score.dat$z1 * 1
+
+
+#### VIOLENCIA
+violencia <- dplyr::select(xem, c(TX_RESP_Q090, TX_RESP_Q091, TX_RESP_Q092, TX_RESP_Q093, TX_RESP_Q094, TX_RESP_Q095, TX_RESP_Q096, TX_RESP_Q097, TX_RESP_Q098, TX_RESP_Q099))
+model_irt <- gpcm(violencia, IRT.param = T)
+Theta <- factor.scores(model_irt, method = "EAP", resp.patterns = violencia)
+xem$Violencia <- 5 + Theta$score.dat$z1 * 1
+
+violencia <- dplyr::select(xaf, c(TX_RESP_Q090, TX_RESP_Q091, TX_RESP_Q092, TX_RESP_Q093, TX_RESP_Q094, TX_RESP_Q095, TX_RESP_Q096, TX_RESP_Q097, TX_RESP_Q098, TX_RESP_Q099))
+model_irt <- gpcm(violencia, IRT.param = T)
+Theta <- factor.scores(model_irt, method = "EAP", resp.patterns = violencia)
+xaf$Violencia <- 5 + Theta$score.dat$z1 * 1
+
+violencia <- dplyr::select(xai, c(TX_RESP_Q090, TX_RESP_Q091, TX_RESP_Q092, TX_RESP_Q093, TX_RESP_Q094, TX_RESP_Q095, TX_RESP_Q096, TX_RESP_Q097, TX_RESP_Q098, TX_RESP_Q099))
+model_irt <- gpcm(violencia, IRT.param = T)
+Theta <- factor.scores(model_irt, method = "EAP", resp.patterns = violencia)
+xai$Violencia <- 5 + Theta$score.dat$z1 * 1
+
+
+#### CLIMA COM OS PROFESSORES
+clima <- read.table(file="quest_prof_dir_saeb.csv", header=T, sep=';')
+clima$ID_ESCOLA <- as.factor(clima$ID_ESCOLA)
+model_irt_clima <- gpcm(clima[,9:20], IRT.param = T)
+Theta_clima <- factor.scores(model_irt_clima, method = "EAP", resp.patterns = clima[,9:20])
+clima$score <- 5 + Theta_clima$score.dat$z1 * 1
+notas_clima <- aggregate(clima$score, by=list(clima$ID_ESCOLA), mean)
+colnames(notas_clima) <- c('codigo_inep', 'ClimaProfessores')
+
+# São os mesmos questionários
+xem <- merge(xem, notas_clima, by='codigo_inep', all.x = T)
+xaf <- merge(xaf, notas_clima, by='codigo_inep', all.x = T)
+xai <- merge(xai, notas_clima, by='codigo_inep', all.x = T)
+
+
+########################################################
+# Avaliação dos modelos
+########################################################
+
+summary(lm(formula = IDESP_EM_18 ~ NO_CATEGORIA + MEDIA_ALUNOS_TURMA_EM + REGULARIDADE_DOCENTE + INSE + COMPLEXIDADE_ESCOLAR + NUM_Diretores_2014a2019 + PEI + ETI + AcoesEscolares + Problemas + Violencia + ClimaProfessores + TX_RESP_Q014 + TX_RESP_Q017, data = xem))
+
+summary(lm(formula = IDESP_AF_18 ~ NO_CATEGORIA + MEDIA_ALUNOS_TURMA_AF + REGULARIDADE_DOCENTE + INSE + COMPLEXIDADE_ESCOLAR + NUM_Diretores_2014a2019 + PEI + ETI + AcoesEscolares + Problemas + Violencia + ClimaProfessores + TX_RESP_Q014 + TX_RESP_Q017, data = xaf))
+
+summary(lm(formula = IDESP_AI_18 ~ NO_CATEGORIA + MEDIA_ALUNOS_TURMA_AI + REGULARIDADE_DOCENTE + INSE + COMPLEXIDADE_ESCOLAR + NUM_Diretores_2014a2019 + ETI + AcoesEscolares + Problemas + Violencia + ClimaProfessores + TX_RESP_Q014 + TX_RESP_Q017, data = xai))
+
+
+
+########################################################
+# Comparação de grupos
+########################################################
+baixo_inse_EM <- subset(xem, xem$INSE < quantile(xem$INSE)[2])
+alto_inse_EM <- subset(xem, xem$INSE < quantile(xem$INSE)[4])
+
+# Design 2x2: alto-baixo INSE e alto-baixo nota
+baixo_inse_baixa_nota_EM <- subset(baixo_inse_EM, baixo_inse_EM$IDESP_EM_18 < quantile(baixo_inse_EM$IDESP_EM_18)[2])
+baixo_inse_alta_nota_EM <- subset(baixo_inse_EM, baixo_inse_EM$IDESP_EM_18 > quantile(baixo_inse_EM$IDESP_EM_18)[4])
+
+alto_inse_baixa_nota_EM <- subset(alto_inse_EM, alto_inse_EM$IDESP_EM_18 < quantile(alto_inse_EM$IDESP_EM_18)[2])
+alto_inse_alta_nota_EM <- subset(alto_inse_EM, alto_inse_EM$IDESP_EM_18 > quantile(alto_inse_EM$IDESP_EM_18)[4])
+
+# Comparações das médias de cada grupo
+t.test(baixo_inse_baixa_nota_EM$Violencia, baixo_inse_alta_nota_EM$AcoesEscolares)
+t.test(alto_inse_baixa_nota_EM$Violencia, alto_inse_alta_nota_EM$AcoesEscolares)
+
+t.test(baixo_inse_baixa_nota_EM$Violencia, baixo_inse_alta_nota_EM$Problemas)
+t.test(alto_inse_baixa_nota_EM$Violencia, alto_inse_alta_nota_EM$Problemas)
+
+t.test(baixo_inse_baixa_nota_EM$Violencia, baixo_inse_alta_nota_EM$Violencia)
+t.test(alto_inse_baixa_nota_EM$Violencia, alto_inse_alta_nota_EM$Violencia)
+
+t.test(baixo_inse_baixa_nota_EM$Violencia, baixo_inse_alta_nota_EM$ClimaProfessores)
+t.test(alto_inse_baixa_nota_EM$Violencia, alto_inse_alta_nota_EM$ClimaProfessores)
+
+
