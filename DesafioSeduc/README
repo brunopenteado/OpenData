@@ -4,7 +4,7 @@ Os arquivos 'consultaSQL-Diretores.sql' e 'consultaSQL-Professores-SAEB' mostram
 
 O arquivo 'query_v2.csv' e 'quest_prof_dir_saeb.csv' trazem os resultados das consultas e usadas posteriormente, respectivamente.
 
-O arquivo 'script_v2.txt' traz os comandos básicos para ler os arquivos, pré-processar seus registros e executar as regressões lineares e testes comparativos sobre os dados de interesse.
+O arquivo 'script_v2.txt', executável no R, traz os comandos básicos para ler os arquivos, pré-processar seus registros e executar as regressões lineares e testes comparativos sobre os dados de interesse.
 
 O arquivo 'Desafio_v2.pdf' traz a compilação desses dados, conforme pedido no edital.
 
