@@ -1,10 +1,10 @@
 Arquivos:
 
-O arquivo 'consultaSQL.sql' mostra a consulta utilizada no cruzamentos das diversas bases utilizadas neste trabalho.
+Os arquivos 'consultaSQL-Diretores.sql' e 'consultaSQL-Professores-SAEB' mostram as consultas utilizadas no cruzamentos das diversas bases utilizadas neste trabalho (principalmente do SAEB e da Seduc).
 
-O arquivo 'query.csv' traz os resultados da consulta e usadas posteriormente.
+O arquivo 'query_v2.csv' e 'quest_prof_dir_saeb.csv' trazem os resultados das consultas e usadas posteriormente, respectivamente.
 
-O arquivo 'script.txt' traz os comandos básicos para ler o arquivo, pré-processar seus registros e executar as regressões lineares sobre os dados de interesse.
+O arquivo 'script_v2.txt' traz os comandos básicos para ler os arquivos, pré-processar seus registros e executar as regressões lineares e testes comparativos sobre os dados de interesse.
 
-O arquivo 'Desafio.pdf' traz a compilação desses dados, conforme pedido no edital.
+O arquivo 'Desafio_v2.pdf' traz a compilação desses dados, conforme pedido no edital.
 
